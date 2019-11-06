@@ -22,6 +22,23 @@ class _MainPageState extends State<MainPage> {
       body: Stack(
         children: <Widget>[
           Positioned(
+            child: Container(
+             decoration: BoxDecoration(
+               gradient: LinearGradient(
+                 colors: [
+                  
+                   Colors.blue[100],
+                   Colors.blue[300],
+                   Colors.blue[400],
+                 ],
+                 begin: Alignment.centerLeft,
+                 end: Alignment.centerRight,
+                 tileMode: TileMode.mirror
+               )
+             ),
+            ),
+          ),
+          Positioned(
             top: 34,
             left: 24,
             right: 24,
