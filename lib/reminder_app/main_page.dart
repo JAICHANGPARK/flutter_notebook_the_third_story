@@ -26,8 +26,8 @@ class _MainPageState extends State<MainPage> {
              decoration: BoxDecoration(
                gradient: LinearGradient(
                  colors: [
-                  
-                   Colors.blue[100],
+
+                   Colors.blue[200],
                    Colors.blue[300],
                    Colors.blue[400],
                  ],
@@ -39,7 +39,7 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
           Positioned(
-            top: 34,
+            top: 62,
             left: 24,
             right: 24,
             child: Container(
@@ -50,6 +50,37 @@ class _MainPageState extends State<MainPage> {
                     icon: Icon(Icons.arrow_back, color: Colors.black,),
                     onPressed: (){},
                   ),
+                ],
+              ),
+            ),
+          ),
+          Positioned(
+            left: 32,
+            top: 140,
+            child: Container(
+              height: 160,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text("Daily",style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 48,
+                    letterSpacing: 1.3
+                  ),),
+                  Text("Reminders",style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 48,
+                      letterSpacing: 1.3
+                  ),),
+                  Spacer(),
+                  Text("TODAY",style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      letterSpacing: 1.3
+                  ),)
                 ],
               ),
             ),
