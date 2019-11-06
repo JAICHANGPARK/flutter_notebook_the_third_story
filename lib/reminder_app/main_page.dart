@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:badges/badges.dart';
 
 class ReminderApp extends StatelessWidget {
   @override
@@ -33,7 +33,6 @@ class _MainPageState extends State<MainPage> {
                     icon: Icon(Icons.arrow_back, color: Colors.black,),
                     onPressed: (){},
                   ),
-                  
                 ],
               ),
             ),
