@@ -66,13 +66,13 @@ class _MainPageState extends State<MainPage> {
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 48,
-                    letterSpacing: 1.3
+
                   ),),
                   Text("Reminders",style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 48,
-                      letterSpacing: 1.3
+
                   ),),
                   Spacer(),
                   Text("TODAY",style: TextStyle(
@@ -82,6 +82,48 @@ class _MainPageState extends State<MainPage> {
                       letterSpacing: 1.3
                   ),)
                 ],
+              ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 130,
+            bottom: 0,
+            top: 340,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.1),
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(16)
+                )
+              ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 110,
+            bottom: 0,
+            top: 356,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(16)
+                  )
+              ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 80,
+            bottom: 0,
+            top: 372,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(16)
+                  )
               ),
             ),
           )
