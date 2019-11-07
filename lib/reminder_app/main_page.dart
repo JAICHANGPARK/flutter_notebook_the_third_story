@@ -125,6 +125,65 @@ class _MainPageState extends State<MainPage> {
                       topRight: Radius.circular(16)
                   )
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 32),
+                      child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child: Text("SHARED REMINDERS", style: TextStyle(
+                          color: Colors.blue[300],
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+
+                        ),),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 24,),
+                  Expanded(
+                    flex: 4,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.blue[100],
+                            borderRadius: BorderRadius.circular(48)
+                          ),
+                          padding: EdgeInsets.symmetric(vertical: 8),
+                          child: Column(
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 24,
+                                backgroundImage: NetworkImage(""),
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                          width: 64,
+                          decoration: BoxDecoration(
+                              color: Colors.blue[100],
+                              borderRadius: BorderRadius.circular(48)
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 6,
+                    child: Placeholder(),
+                  ),
+
+                ],
+              ),
             ),
           )
         ],
