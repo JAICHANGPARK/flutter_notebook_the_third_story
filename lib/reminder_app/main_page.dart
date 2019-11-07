@@ -50,6 +50,10 @@ class _MainPageState extends State<MainPage> {
                     icon: Icon(Icons.arrow_back, color: Colors.black,),
                     onPressed: (){},
                   ),
+                  Badge(
+                    child: Icon(Icons.noti),
+                    position: BadgePosition.topLeft(),
+                  ),
                 ],
               ),
             ),
