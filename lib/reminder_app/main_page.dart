@@ -45,14 +45,18 @@ class _MainPageState extends State<MainPage> {
             child: Container(
               height: 38,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   IconButton(
                     icon: Icon(Icons.arrow_back, color: Colors.black,),
                     onPressed: (){},
                   ),
                   Badge(
-                    child: Icon(Icons.noti),
+                    child: Icon(Icons.notifications_none,
+                    color: Colors.white,
+                    size: 32,),
                     position: BadgePosition.topLeft(),
+
                   ),
                 ],
               ),
