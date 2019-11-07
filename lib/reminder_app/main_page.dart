@@ -290,7 +290,18 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Expanded(
                             flex: 8,
-                            child: Placeholder(),
+                            child: ListView(
+                              children: <Widget>[
+                                Container(
+                                  height: 72,
+                                  child: Row(
+                                    children: <Widget>[
+                                      
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ],
                       ),
