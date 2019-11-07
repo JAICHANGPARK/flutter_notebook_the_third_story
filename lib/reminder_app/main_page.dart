@@ -146,35 +146,110 @@ class _MainPageState extends State<MainPage> {
                   SizedBox(height: 24,),
                   Expanded(
                     flex: 4,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: <Widget>[
-                        Container(
-                          margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
-                          width: 64,
-                          decoration: BoxDecoration(
-                            color: Colors.blue[100],
-                            borderRadius: BorderRadius.circular(48)
-                          ),
-                          padding: EdgeInsets.symmetric(vertical: 8),
-                          child: Column(
-                            children: <Widget>[
-                              CircleAvatar(
-                                radius: 24,
-                                backgroundImage: NetworkImage(""),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
-                          width: 64,
-                          decoration: BoxDecoration(
-                              color: Colors.blue[100],
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 32),
+                      child: ListView(
+                        reverse: true,
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.blue[50],
                               borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                ),
+                                Text("DR",style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontWeight: FontWeight.bold,
+                                ),)
+                              ],
+                            ),
                           ),
-                        )
-                      ],
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[100],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                ),
+                                Text("DR",style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontWeight: FontWeight.bold,
+                                ),)
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                ),
+                                Text("DR",style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontWeight: FontWeight.bold,
+                                ),)
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                ),
+                                Text("DR",style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontWeight: FontWeight.bold,
+                                ),)
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
