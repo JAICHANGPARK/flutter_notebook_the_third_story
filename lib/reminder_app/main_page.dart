@@ -286,7 +286,7 @@ class _MainPageState extends State<MainPage> {
                             child: Align(
                               alignment: Alignment.bottomLeft,
                               child: Text("LASTEST REMINDERS",style: TextStyle(
-                                color: Colors.blue[400],
+                                color: Colors.blue[300],
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),),
