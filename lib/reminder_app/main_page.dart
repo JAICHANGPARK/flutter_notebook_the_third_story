@@ -175,11 +175,32 @@ class _MainPageState extends State<MainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            margin: EdgeInsets.only(right: 4, top: 24, bottom: 8),
                             width: 64,
                             decoration: BoxDecoration(
                                 color: Colors.red[500],
-                                borderRadius: BorderRadius.circular(48)
+                                borderRadius: BorderRadius.circular(48),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.red[50],
+                                  blurRadius: 7,
+                                  spreadRadius:10
+                                )
+                              ]
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                ),
+                                Text("DR",style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),)
+                              ],
                             ),
                           ),
                           Container(
@@ -254,7 +275,26 @@ class _MainPageState extends State<MainPage> {
                   ),
                   Expanded(
                     flex: 6,
-                    child: Placeholder(),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 32),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 2,
+                            child: Text("LASTEST REMINDERS",style: TextStyle(
+                              color: Colors.blue[400],
+                              fontWeight: FontWeight.bold,
+                            ),),
+
+                          ),
+                          Expanded(
+                            flex: 8,
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
 
                 ],
