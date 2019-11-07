@@ -273,6 +273,7 @@ class _MainPageState extends State<MainPage> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 4,),
                   Expanded(
                     flex: 6,
                     child: Padding(
@@ -282,10 +283,14 @@ class _MainPageState extends State<MainPage> {
                         children: <Widget>[
                           Expanded(
                             flex: 2,
-                            child: Text("LASTEST REMINDERS",style: TextStyle(
-                              color: Colors.blue[400],
-                              fontWeight: FontWeight.bold,
-                            ),),
+                            child: Align(
+                              alignment: Alignment.bottomLeft,
+                              child: Text("LASTEST REMINDERS",style: TextStyle(
+                                color: Colors.blue[400],
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                            ),
 
                           ),
                           Expanded(
@@ -296,10 +301,134 @@ class _MainPageState extends State<MainPage> {
                                   height: 72,
                                   child: Row(
                                     children: <Widget>[
-                                      
+                                      Expanded(
+                                        flex: 2,
+                                        child: Container(
+                                          margin: EdgeInsets.all(7),
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue[50],
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Center(
+                                            child: Icon(Icons.folder_open),
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 7,
+                                        child: Container(
+                                          padding: EdgeInsets.only(left: 12),
+
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Text("New Job Activities",style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.blue[200]
+                                              ),),
+                                              Text("23 Jun 2019",style: TextStyle(
+                                                fontSize: 15,
+                                                letterSpacing: 1.2,
+                                                color: Colors.blue[200],
+                                                fontWeight: FontWeight.w300,
+                                              ),)
+                                            ],
+                                          ),
+                                        ),
+                                      )
                                     ],
                                   ),
-                                )
+                                ),
+                                Container(
+                                  height: 72,
+                                  child: Row(
+                                    children: <Widget>[
+                                      Expanded(
+                                        flex: 2,
+                                        child: Container(
+                                          margin: EdgeInsets.all(7),
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue[50],
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Center(
+                                            child: Icon(Icons.folder_open),
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 7,
+                                        child: Container(
+                                          padding: EdgeInsets.only(left: 12),
+
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Text("New Job Activities",style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.blue[200]
+                                              ),),
+                                              Text("23 Jun 2019",style: TextStyle(
+                                                fontSize: 15,
+                                                letterSpacing: 1.2,
+                                                color: Colors.blue[200],
+                                                fontWeight: FontWeight.w300,
+                                              ),)
+                                            ],
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  height: 72,
+                                  child: Row(
+                                    children: <Widget>[
+                                      Expanded(
+                                        flex: 2,
+                                        child: Container(
+                                          margin: EdgeInsets.all(7),
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue[50],
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Center(
+                                            child: Icon(Icons.folder_open),
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 7,
+                                        child: Container(
+                                          padding: EdgeInsets.only(left: 12),
+
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Text("New Job Activities",style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.blue[200]
+                                              ),),
+                                              Text("23 Jun 2019",style: TextStyle(
+                                                fontSize: 15,
+                                                letterSpacing: 1.2,
+                                                color: Colors.blue[200],
+                                                fontWeight: FontWeight.w300,
+                                              ),)
+                                            ],
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),
                           ),
