@@ -145,7 +145,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                   SizedBox(height: 24,),
                   Expanded(
-                    flex: 4,
+                    flex: 5,
                     child: Padding(
                       padding: const EdgeInsets.only(right: 32),
                       child: ListView(
@@ -153,7 +153,7 @@ class _MainPageState extends State<MainPage> {
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Container(
-                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 20),
                             width: 64,
                             decoration: BoxDecoration(
                               color: Colors.blue[50],
@@ -178,12 +178,12 @@ class _MainPageState extends State<MainPage> {
                             margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
                             width: 64,
                             decoration: BoxDecoration(
-                                color: Colors.blue[100],
+                                color: Colors.red[500],
                                 borderRadius: BorderRadius.circular(48)
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 20),
                             width: 64,
                             decoration: BoxDecoration(
                                 color: Colors.blue[50],
@@ -205,7 +205,7 @@ class _MainPageState extends State<MainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 20),
                             width: 64,
                             decoration: BoxDecoration(
                                 color: Colors.blue[50],
@@ -227,7 +227,7 @@ class _MainPageState extends State<MainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 20),
                             width: 64,
                             decoration: BoxDecoration(
                                 color: Colors.blue[50],
