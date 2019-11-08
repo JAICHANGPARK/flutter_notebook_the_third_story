@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/food_catering_app/home_page.dart';
 
 
 class FoodCateringApp extends StatelessWidget {
@@ -83,16 +84,22 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 SizedBox(height: 16,),
-                Container(
-                  height: 42,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(4)
-                  ),
-                  child: Center(
-                    child: Text("Login to account",style: TextStyle(
-                      color: Colors.white,
-                    ),),
+                InkWell(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder:
+                    (context) => HomePage()));
+                  },
+                  child: Container(
+                    height: 42,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(4)
+                    ),
+                    child: Center(
+                      child: Text("Login to account",style: TextStyle(
+                        color: Colors.white,
+                      ),),
+                    ),
                   ),
                 )
               ],
