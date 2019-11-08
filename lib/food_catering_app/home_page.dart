@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -18,9 +17,7 @@ class _HomePageState extends State<HomePage> {
             right: 0,
             child: Container(
               height: 60,
-              decoration: BoxDecoration(
-                color: Colors.red
-              ),
+              decoration: BoxDecoration(color: Colors.red),
             ),
           ),
           Positioned(
@@ -29,9 +26,7 @@ class _HomePageState extends State<HomePage> {
             top: 0,
             child: Container(
               height: 210,
-              decoration: BoxDecoration(
-                color: Colors.blue
-              ),
+              decoration: BoxDecoration(color: Colors.blue),
             ),
           )
         ],
@@ -39,21 +34,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
