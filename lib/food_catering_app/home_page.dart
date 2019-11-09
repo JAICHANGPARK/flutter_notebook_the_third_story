@@ -17,18 +17,15 @@ class _HomePageState extends State<HomePage> {
             right: 0,
             bottom: 0,
             child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.blueGrey[50]
-              ),
+              decoration: BoxDecoration(color: Colors.blueGrey[50]),
               child: ListView(
                 children: <Widget>[
                   Container(
                     height: 120,
-                    margin: EdgeInsets.only(bottom: 16, left: 16 , right: 16),
+                    margin: EdgeInsets.only(bottom: 16, left: 16, right: 16),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      color: Colors.white
-                    ),
+                        borderRadius: BorderRadius.circular(8),
+                        color: Colors.white),
                     child: Row(
                       children: <Widget>[
                         Expanded(
@@ -36,66 +33,112 @@ class _HomePageState extends State<HomePage> {
                           child: Container(
                             margin: EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
-                                image: NetworkImage("https://cdn.pixabay.com/photo/2016/08/09/10/30/tomatoes-1580273__340.jpg"),
-                                fit: BoxFit.cover
-                              )
-
-                            ),
+                                color: Colors.green,
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2016/08/09/10/30/tomatoes-1580273__340.jpg"),
+                                    fit: BoxFit.cover)),
                           ),
                         ),
                         Expanded(
                           flex: 8,
                           child: Container(
                             padding: EdgeInsets.only(bottom: 8, top: 8),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                  Text("Cezarre Original"),
+                                Text(
+                                  "Cezarre Original",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.only(right: 48),
                                   child: Row(
                                     children: <Widget>[
-                                      Icon(Icons.star, color: Colors.yellow,
-                                      size: 14,),
-                                      Text("4.9"),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                        size: 14,
+                                      ),
+                                      Text(
+                                        "4.9",
+                                        style: TextStyle(fontSize: 12),
+                                      ),
                                       Spacer(),
-                                      Icon(Icons.timer, color: Colors.grey,
-                                        size: 14,),
-                                      Text("15 mins"),
+                                      Icon(
+                                        Icons.timer,
+                                        color: Colors.grey,
+                                        size: 14,
+                                      ),
+                                      Text(
+                                        "15 mins",
+                                        style: TextStyle(fontSize: 12),
+                                      ),
                                       Spacer(),
-                                      Icon(Icons.info_outline, color: Colors.grey,
-                                        size: 14,),
-                                      Text("cheese"),
+                                      Icon(
+                                        Icons.info_outline,
+                                        color: Colors.grey,
+                                        size: 14,
+                                      ),
+                                      Text(
+                                        "Cheese",
+                                        style: TextStyle(fontSize: 12),
+                                      ),
                                     ],
                                   ),
                                 ),
-                                Text("cheesy mayo sauce and mozzarella, tomatoes, green pepper, onion",),
-                                Row(
-                                  children: <Widget>[
-                                    Icon(Icons.monetization_on, color: Colors.grey,),
-                                    Text("124.00"),
-                                    Container(
-                                      width: 82,
-                                      height: 24,
-                                      decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.circular(5)
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 32),
+                                  child: Text(
+                                    "cheesy mayo sauce and mozzarella, tomatoes, green pepper, onion",
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 24),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.monetization_on,
+                                        color: Colors.grey,
+                                        size: 16,
                                       ),
-                                      child: Center(
-                                        child: Text("Add to cart",style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 10
-                                        ),),
+                                      SizedBox(
+                                        width: 8,
                                       ),
-                                    )
-                                  ],
+                                      Text(
+                                        "124.00",
+                                        style: TextStyle(fontSize: 16),
+                                      ),
+                                      Spacer(),
+                                      Container(
+                                        width: 82,
+                                        height: 24,
+                                        decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius:
+                                                BorderRadius.circular(5)),
+                                        child: Center(
+                                          child: Text(
+                                            "Add to cart",
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 10),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
@@ -145,7 +188,10 @@ class _HomePageState extends State<HomePage> {
                     flex: 1,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[Icon(Icons.add_shopping_cart), Text("Cart")],
+                      children: <Widget>[
+                        Icon(Icons.add_shopping_cart),
+                        Text("Cart")
+                      ],
                     ),
                   ),
                   Expanded(
@@ -159,7 +205,10 @@ class _HomePageState extends State<HomePage> {
                     flex: 1,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[Icon(Icons.account_circle), Text("Profile")],
+                      children: <Widget>[
+                        Icon(Icons.account_circle),
+                        Text("Profile")
+                      ],
                     ),
                   )
                 ],
@@ -215,7 +264,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-
         ],
       ),
     );
