@@ -18,10 +18,61 @@ class _HomePageState extends State<HomePage> {
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.blueGrey[100]
+                  color: Colors.blueGrey[50]
               ),
               child: ListView(
                 children: <Widget>[
+                  Container(
+                    height: 120,
+                    margin: EdgeInsets.only(bottom: 16, left: 16 , right: 16),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.white
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 4,
+                          child: Container(
+                            margin: EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage("https://cdn.pixabay.com/photo/2016/08/09/10/30/tomatoes-1580273__340.jpg"),
+                                fit: BoxFit.cover
+                              )
+
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 8,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    margin: EdgeInsets.only(bottom: 16),
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 120,
+                    margin: EdgeInsets.only(bottom: 16),
+                    child: Placeholder(),
+                  ),
                   Container(
                     height: 120,
                     margin: EdgeInsets.only(bottom: 16),
