@@ -12,6 +12,26 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: <Widget>[
           Positioned(
+            top: 230,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.blueGrey[100]
+              ),
+              child: ListView(
+                children: <Widget>[
+                  Container(
+                    height: 120,
+                    margin: EdgeInsets.only(bottom: 16),
+                    child: Placeholder(),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Positioned(
             bottom: 0,
             left: 0,
             right: 0,
@@ -102,7 +122,8 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-          )
+          ),
+
         ],
       ),
     );
