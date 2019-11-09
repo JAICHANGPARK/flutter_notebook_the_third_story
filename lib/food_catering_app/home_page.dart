@@ -17,7 +17,41 @@ class _HomePageState extends State<HomePage> {
             right: 0,
             child: Container(
               height: 60,
-              decoration: BoxDecoration(color: Colors.red),
+              decoration: BoxDecoration(color: Colors.white.withOpacity(0.5)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[Icon(Icons.apps), Text("Menu")],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[Icon(Icons.add_shopping_cart), Text("Cart")],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[Icon(Icons.menu), Text("Orders")],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[Icon(Icons.account_circle), Text("Profile")],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
