@@ -49,13 +49,54 @@ class _HomePageState extends State<HomePage> {
                         Expanded(
                           flex: 8,
                           child: Container(
+                            padding: EdgeInsets.only(bottom: 8, top: 8),
                             decoration: BoxDecoration(
                               color: Colors.blue,
                             ),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-
+                                  Text("Cezarre Original"),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 48),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Icon(Icons.star, color: Colors.yellow,
+                                      size: 14,),
+                                      Text("4.9"),
+                                      Spacer(),
+                                      Icon(Icons.timer, color: Colors.grey,
+                                        size: 14,),
+                                      Text("15 mins"),
+                                      Spacer(),
+                                      Icon(Icons.info_outline, color: Colors.grey,
+                                        size: 14,),
+                                      Text("cheese"),
+                                    ],
+                                  ),
+                                ),
+                                Text("cheesy mayo sauce and mozzarella, tomatoes, green pepper, onion",),
+                                Row(
+                                  children: <Widget>[
+                                    Icon(Icons.monetization_on, color: Colors.grey,),
+                                    Text("124.00"),
+                                    Container(
+                                      width: 82,
+                                      height: 24,
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(5)
+                                      ),
+                                      child: Center(
+                                        child: Text("Add to cart",style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 10
+                                        ),),
+                                      ),
+                                    )
+                                  ],
+                                )
                               ],
                             ),
                           ),
