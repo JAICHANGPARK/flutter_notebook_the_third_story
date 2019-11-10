@@ -75,7 +75,9 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                         Text(
                           "15 mins",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,),
                         ),
                         Spacer(),
                         Icon(
@@ -85,7 +87,9 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                         Text(
                           "Cheese",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                          color: Colors.grey),
                         ),
                       ],
                     ),
