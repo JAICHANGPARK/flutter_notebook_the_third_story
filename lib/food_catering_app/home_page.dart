@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/food_catering_app/detail_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -22,7 +23,9 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   InkWell(
                     onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context){}));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                        return DetailPage();
+                      }));
 
                     },
                     child: Container(
