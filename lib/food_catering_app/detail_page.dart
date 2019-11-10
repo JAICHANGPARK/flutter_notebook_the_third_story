@@ -34,9 +34,7 @@ class _DetailPageState extends State<DetailPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              padding: EdgeInsets.only(left: 16, right: 16,
-              top: 16),
-
+              padding: EdgeInsets.only(left: 16, right: 16, top: 16),
               height: MediaQuery.of(context).size.height / 2 - 60,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -75,9 +73,11 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                         Text(
                           "15 mins",
-                          style: TextStyle(fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.grey,),
+                            color: Colors.grey,
+                          ),
                         ),
                         Spacer(),
                         Icon(
@@ -87,23 +87,121 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                         Text(
                           "Cheese",
-                          style: TextStyle(fontSize: 16,
+                          style: TextStyle(
+                              fontSize: 16,
                               fontWeight: FontWeight.bold,
-                          color: Colors.grey),
+                              color: Colors.grey),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 32),
+                    padding:
+                        const EdgeInsets.only(right: 32, top: 8, bottom: 8),
                     child: Text(
+                      "cheesy mayo sauce and mozzarella, tomatoes, green pepper, onion,"
+                      "cheesy mayo sauce and mozzarella, tomatoes, green pepper, onion,"
                       "cheesy mayo sauce and mozzarella, tomatoes, green pepper, onion",
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 14,
                         color: Colors.grey,
                       ),
                     ),
                   ),
+                  SizedBox(height: 16,),
+                  Container(
+                    height: 48,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          Icons.monetization_on,
+                          color: Colors.grey,
+                          size: 24,
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "136.00",
+                          style: TextStyle(fontSize: 24),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: VerticalDivider(
+                            width: 24,
+                            thickness:2,
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text("230g", style: TextStyle(
+                          fontSize: 20
+                        ),),
+                        Spacer(),
+                        Container(
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(6)
+                          ),
+                          child: Center(
+
+                            child: Text("Add to cart",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 16,),
+                  Container(
+                    height: 48,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          Icons.monetization_on,
+                          color: Colors.grey,
+                          size: 24,
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "172.00",
+                          style: TextStyle(fontSize: 24),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: VerticalDivider(
+                            width: 24,
+                            thickness:2,
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text("340g", style: TextStyle(
+                            fontSize: 20
+                        ),),
+                        Spacer(),
+                        Container(
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(6)
+                          ),
+                          child: Center(
+
+                            child: Text("Add to cart",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
@@ -113,21 +211,3 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
