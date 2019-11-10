@@ -108,7 +108,9 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Container(
                     height: 48,
                     child: Row(
@@ -130,32 +132,35 @@ class _DetailPageState extends State<DetailPage> {
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: VerticalDivider(
                             width: 24,
-                            thickness:2,
+                            thickness: 2,
                             color: Colors.grey,
                           ),
                         ),
-                        Text("230g", style: TextStyle(
-                          fontSize: 20
-                        ),),
+                        Text(
+                          "230g",
+                          style: TextStyle(fontSize: 20),
+                        ),
                         Spacer(),
                         Container(
                           width: 120,
                           decoration: BoxDecoration(
-                            color: Colors.red,
-                            borderRadius: BorderRadius.circular(6)
-                          ),
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(6)),
                           child: Center(
-
-                            child: Text("Add to cart",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),),
+                            child: Text(
+                              "Add to cart",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         )
                       ],
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Container(
                     height: 48,
                     child: Row(
@@ -177,26 +182,27 @@ class _DetailPageState extends State<DetailPage> {
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: VerticalDivider(
                             width: 24,
-                            thickness:2,
+                            thickness: 2,
                             color: Colors.grey,
                           ),
                         ),
-                        Text("340g", style: TextStyle(
-                            fontSize: 20
-                        ),),
+                        Text(
+                          "340g",
+                          style: TextStyle(fontSize: 20),
+                        ),
                         Spacer(),
                         Container(
                           width: 120,
                           decoration: BoxDecoration(
                               color: Colors.red,
-                              borderRadius: BorderRadius.circular(6)
-                          ),
+                              borderRadius: BorderRadius.circular(6)),
                           child: Center(
-
-                            child: Text("Add to cart",
+                            child: Text(
+                              "Add to cart",
                               style: TextStyle(
                                 color: Colors.white,
-                              ),),
+                              ),
+                            ),
                           ),
                         )
                       ],
