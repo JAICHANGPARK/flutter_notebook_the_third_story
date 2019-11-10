@@ -45,15 +45,18 @@ class _HomePageState extends State<HomePage> {
                         children: <Widget>[
                           Expanded(
                             flex: 4,
-                            child: Container(
-                              margin: EdgeInsets.all(8),
-                              decoration: BoxDecoration(
-                                  color: Colors.green,
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2016/08/09/10/30/tomatoes-1580273__340.jpg"),
-                                      fit: BoxFit.cover)),
+                            child: Hero(
+                              tag: "food_01",
+                              child: Container(
+                                margin: EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                    color: Colors.green,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/08/09/10/30/tomatoes-1580273__340.jpg"),
+                                        fit: BoxFit.cover)),
+                              ),
                             ),
                           ),
                           Expanded(
