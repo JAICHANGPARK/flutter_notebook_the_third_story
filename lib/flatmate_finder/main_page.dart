@@ -65,6 +65,46 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ],
               ),
+            ),
+            SizedBox(
+              height: 24,
+            ),
+            Container(
+              height: 58,
+              margin: EdgeInsets.only(left: 24, right: 24),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.indigo[200]),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      margin: EdgeInsets.all(4),
+                      decoration: BoxDecoration(color: Colors.red,
+                      borderRadius: BorderRadius.circular(6)),
+                      child: Center(
+                        child: Text("A Room", style: TextStyle(
+                          color: Colors.white,
+                        ),),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      child: Center(
+                        child: Text("A Housemate",style: TextStyle(
+                          color: Colors.indigo[400],
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                        ),),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
