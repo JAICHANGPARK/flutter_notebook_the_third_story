@@ -19,7 +19,56 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            SafeArea(
+              top: true,
+              child: Container(
+                height: 32,
+              ),
+            ),
+            Container(
+              height: 140,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "Hi,Dreamwalker",
+                    style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.indigo),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Text(
+                    "Advertise your room or find",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        color: Colors.indigo[300],
+                        fontSize: 18,
+                        letterSpacing: 1.2),
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  Text(
+                    "housemates with similar interests.",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        color: Colors.indigo[300],
+                        fontSize: 18,
+                        letterSpacing: 1.2),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         elevation: 19,
         child: Container(
