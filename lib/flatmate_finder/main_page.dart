@@ -70,7 +70,7 @@ class _MainPageState extends State<MainPage> {
               height: 24,
             ),
             Container(
-              height: 58,
+              height: 52,
               margin: EdgeInsets.only(left: 24, right: 24),
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.indigo[200]),
@@ -82,12 +82,16 @@ class _MainPageState extends State<MainPage> {
                     flex: 1,
                     child: Container(
                       margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(color: Colors.red,
-                      borderRadius: BorderRadius.circular(6)),
+                      decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(6)),
                       child: Center(
-                        child: Text("A Room", style: TextStyle(
-                          color: Colors.white,
-                        ),),
+                        child: Text(
+                          "A Room",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -95,16 +99,101 @@ class _MainPageState extends State<MainPage> {
                     flex: 1,
                     child: Container(
                       child: Center(
-                        child: Text("A Housemate",style: TextStyle(
-                          color: Colors.indigo[400],
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16
-                        ),),
+                        child: Text(
+                          "A Housemate",
+                          style: TextStyle(
+                              color: Colors.indigo[400],
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Container(
+              height: 52,
+              margin: EdgeInsets.symmetric(horizontal: 24),
+              decoration: BoxDecoration(
+                color: Colors.blue[50],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Search by area or postcode",
+                  hintStyle: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey[300],
+                  ),
+                  suffixIcon: Icon(
+                    Icons.search,
+                    size: 28,
+                    color: Colors.black,
+                  ),
+                  border: InputBorder.none,
+                ),
+              ),
+            ),
+            SizedBox(height: 24,),
+            Column(
+
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left: 24),
+                  child: Text("Recommended",style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo[500]
+                  ),),
+                ),
+                ListView(
+                  padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      height: 260,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 8,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      height: 260,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    )
+                  ],
+                )
+              ],
             )
           ],
         ),
