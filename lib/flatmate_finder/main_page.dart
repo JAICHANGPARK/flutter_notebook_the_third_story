@@ -139,25 +139,29 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
-            SizedBox(height: 24,),
+            SizedBox(
+              height: 24,
+            ),
             Column(
-
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(left: 24),
-                  child: Text("Recommended",style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.indigo[500]
-                  ),),
+                  child: Text(
+                    "Recommended",
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.indigo[500]),
+                  ),
                 ),
                 ListView(
                   padding: EdgeInsets.zero,
                   shrinkWrap: true,
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                       height: 260,
                       decoration: BoxDecoration(
                         color: Colors.blue,
@@ -168,8 +172,43 @@ class _MainPageState extends State<MainPage> {
                             flex: 8,
                             child: Container(
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                
+                                borderRadius: BorderRadius.circular(12),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    right: 16,
+                                    top: 16,
+                                    child: Column(
+                                      children: <Widget>[
+                                        Container(
+                                          height: 34,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Container(
+                                          height: 34,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius: BorderRadius.circular(8)
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
                           ),
@@ -185,7 +224,8 @@ class _MainPageState extends State<MainPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                       height: 260,
                       decoration: BoxDecoration(
                         color: Colors.blue,
