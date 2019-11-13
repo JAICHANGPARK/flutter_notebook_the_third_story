@@ -163,9 +163,7 @@ class _MainPageState extends State<MainPage> {
                       margin:
                           EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                       height: 260,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
+
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -239,11 +237,14 @@ class _MainPageState extends State<MainPage> {
                             flex: 2,
                             child: Align(
                               alignment: Alignment.centerLeft,
-                              child: Text("Looking for a student housemate",style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
+                              child: Text(
+                                "Looking for a student housemate",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,),
                             ),
                           ),
                           Expanded(
@@ -256,18 +257,35 @@ class _MainPageState extends State<MainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(6),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"
+                                      ),
+                                      fit: BoxFit.cover,
+                                    )
                                   ),
                                 ),
-                                Column(
-                                  children: <Widget>[
-                                    Text("Dreamwalker"),
-                                    Text("1 hours ago")
-                                  ],
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Dreamwalker", style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Text("1 hours ago", style: TextStyle(
+                                        fontSize: 12,
+
+                                      ),)
+                                    ],
+                                  ),
                                 ),
                                 Spacer(),
                                 IconButton(
-                                  icon: Icon(Icons.more_vert), onPressed: () {},
-
+                                  icon: Icon(Icons.more_vert),
+                                  onPressed: () {},
                                 )
                               ],
                             ),
@@ -277,12 +295,272 @@ class _MainPageState extends State<MainPage> {
                     ),
                     Container(
                       margin:
-                          EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                       height: 260,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
+
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 8,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    right: 16,
+                                    top: 16,
+                                    child: Column(
+                                      children: <Widget>[
+                                        Container(
+                                          height: 34,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                            BorderRadius.circular(8),
+                                            color: Colors.white,
+                                          ),
+                                          child: Row(
+                                            crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Icon(
+                                                Icons.add_location,
+                                                size: 16,
+                                              ),
+                                              Text("2.5 miles")
+                                            ],
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Container(
+                                          height: 34,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              borderRadius:
+                                              BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              "\$139/month",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Looking for a student housemate",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  height: 48,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(6),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"
+                                        ),
+                                        fit: BoxFit.cover,
+                                      )
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Dreamwalker", style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Text("1 hours ago", style: TextStyle(
+                                        fontSize: 12,
+
+                                      ),)
+                                    ],
+                                  ),
+                                ),
+                                Spacer(),
+                                IconButton(
+                                  icon: Icon(Icons.more_vert),
+                                  onPressed: () {},
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    )
+                    ),
+                    Container(
+                      margin:
+                      EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      height: 260,
+
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 8,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    right: 16,
+                                    top: 16,
+                                    child: Column(
+                                      children: <Widget>[
+                                        Container(
+                                          height: 34,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                            BorderRadius.circular(8),
+                                            color: Colors.white,
+                                          ),
+                                          child: Row(
+                                            crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Icon(
+                                                Icons.add_location,
+                                                size: 16,
+                                              ),
+                                              Text("2.5 miles")
+                                            ],
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Container(
+                                          height: 34,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              borderRadius:
+                                              BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              "\$139/month",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Looking for a student housemate",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  height: 48,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(6),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"
+                                        ),
+                                        fit: BoxFit.cover,
+                                      )
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Dreamwalker", style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Text("1 hours ago", style: TextStyle(
+                                        fontSize: 12,
+
+                                      ),)
+                                    ],
+                                  ),
+                                ),
+                                Spacer(),
+                                IconButton(
+                                  icon: Icon(Icons.more_vert),
+                                  onPressed: () {},
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 )
               ],
