@@ -167,6 +167,7 @@ class _MainPageState extends State<MainPage> {
                         color: Colors.blue,
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Expanded(
                             flex: 8,
@@ -190,8 +191,22 @@ class _MainPageState extends State<MainPage> {
                                           height: 34,
                                           width: 100,
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(8),
+                                            borderRadius:
+                                                BorderRadius.circular(8),
                                             color: Colors.white,
+                                          ),
+                                          child: Row(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Icon(
+                                                Icons.add_location,
+                                                size: 16,
+                                              ),
+                                              Text("2.5 miles")
+                                            ],
                                           ),
                                         ),
                                         SizedBox(
@@ -201,8 +216,16 @@ class _MainPageState extends State<MainPage> {
                                           height: 34,
                                           width: 100,
                                           decoration: BoxDecoration(
-                                            color: Colors.red,
-                                            borderRadius: BorderRadius.circular(8)
+                                              color: Colors.red,
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              "\$139/month",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                           ),
                                         )
                                       ],
@@ -214,11 +237,40 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Expanded(
                             flex: 2,
-                            child: Placeholder(),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text("Looking for a student housemate",style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
+                              textAlign: TextAlign.center,),
+                            ),
                           ),
                           Expanded(
                             flex: 3,
-                            child: Placeholder(),
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  height: 48,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(6),
+                                  ),
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Text("Dreamwalker"),
+                                    Text("1 hours ago")
+                                  ],
+                                ),
+                                Spacer(),
+                                IconButton(
+                                  icon: Icon(Icons.more_vert), onPressed: () {},
+
+                                )
+                              ],
+                            ),
                           ),
                         ],
                       ),
