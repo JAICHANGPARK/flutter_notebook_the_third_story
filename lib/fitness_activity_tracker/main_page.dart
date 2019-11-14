@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/fitness_activity_tracker/static_page.dart';
+import 'package:page_transition/page_transition.dart';
 
 class FitnessActivityTracker extends StatelessWidget {
   @override
@@ -28,12 +30,11 @@ class _MainPageState extends State<MainPage> {
             top: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(32),
-                  bottomRight: Radius.circular(32),
-                )
-              ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(32),
+                    bottomRight: Radius.circular(32),
+                  )),
             ),
           ),
           Positioned(
@@ -46,16 +47,22 @@ class _MainPageState extends State<MainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text("Statistics",style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),),
+                  Text(
+                    "Statistics",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   IconButton(
-                    icon: Icon(Icons.keyboard_arrow_up,),
+                    icon: Icon(
+                      Icons.keyboard_arrow_up,
+                    ),
                     color: Colors.white,
-                    onPressed: (){
-
+                    onPressed: () {
+                      Navigator.of(context)
+                          .push(PageTransition(child: StatisticsPage(), type: PageTransitionType.downToUp));
                     },
                   )
                 ],
@@ -67,17 +74,6 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
