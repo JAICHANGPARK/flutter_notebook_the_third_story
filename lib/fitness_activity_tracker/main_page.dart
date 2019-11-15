@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/fitness_activity_tracker/static_page.dart';
 import 'package:page_transition/page_transition.dart';
@@ -29,6 +30,7 @@ class _MainPageState extends State<MainPage> {
             bottom: 100,
             top: 0,
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -37,7 +39,16 @@ class _MainPageState extends State<MainPage> {
                   )),
               child: Column(
                 children: <Widget>[
-                  
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(Icons.menu),
+                        onPressed: (){},
+                      ),
+                      CircleAvatar(),
+                    ],
+                  )
                 ],
               ),
             ),
