@@ -38,16 +38,83 @@ class _MainPageState extends State<MainPage> {
                     bottomRight: Radius.circular(32),
                   )),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       IconButton(
                         icon: Icon(Icons.menu),
-                        onPressed: (){},
+                        onPressed: () {},
                       ),
                       CircleAvatar(),
                     ],
+                  ),
+                  SizedBox(
+                    height: 32,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Text(
+                      "Activity",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 24,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 16, right: 16),
+                    height: MediaQuery.of(context).size.height / 1.65,
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 1,
+                          child: Row(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8, bottom: 8),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all()
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  margin: EdgeInsets.only(left: 8, bottom: 8),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                      border: Border.all()
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                            flex: 1,
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
+                                  flex: 1,
+                                  child: Placeholder(),
+                                ),
+                              ],
+                            )),
+                      ],
+                    ),
                   )
                 ],
               ),
@@ -77,8 +144,9 @@ class _MainPageState extends State<MainPage> {
                     ),
                     color: Colors.white,
                     onPressed: () {
-                      Navigator.of(context)
-                          .push(PageTransition(child: StatisticsPage(), type: PageTransitionType.downToUp));
+                      Navigator.of(context).push(PageTransition(
+                          child: StatisticsPage(),
+                          type: PageTransitionType.downToUp));
                     },
                   )
                 ],
@@ -90,16 +158,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
