@@ -35,6 +35,11 @@ class _MainPageState extends State<MainPage> {
                     bottomLeft: Radius.circular(32),
                     bottomRight: Radius.circular(32),
                   )),
+              child: Column(
+                children: <Widget>[
+                  
+                ],
+              ),
             ),
           ),
           Positioned(
