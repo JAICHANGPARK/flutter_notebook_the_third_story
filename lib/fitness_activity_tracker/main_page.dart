@@ -181,7 +181,44 @@ class _MainPageState extends State<MainPage> {
                                     margin: EdgeInsets.only(right: 8, top: 8),
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(16),
-                                        border: Border.all()),
+                                        border:
+                                        Border.all(color: Colors.grey[300])),
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 24, bottom: 24),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Icon(
+                                          Icons.directions_walk,
+                                          color: Colors.purple,
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "6551",
+                                          style: TextStyle(
+                                            fontSize: 28,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "steps",
+                                          style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 19,
+                                              fontWeight: FontWeight.w300),
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "Step",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Expanded(
@@ -190,7 +227,44 @@ class _MainPageState extends State<MainPage> {
                                     margin: EdgeInsets.only(left: 8, top: 8),
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(16),
-                                        border: Border.all()),
+                                        border:
+                                        Border.all(color: Colors.grey[300])),
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 24, bottom: 24),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Icon(
+                                          Icons.local_drink,
+                                          color: Colors.blue,
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "4",
+                                          style: TextStyle(
+                                            fontSize: 28,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "cups",
+                                          style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 19,
+                                              fontWeight: FontWeight.w300),
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "Water",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
