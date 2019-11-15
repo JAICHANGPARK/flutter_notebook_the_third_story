@@ -81,18 +81,90 @@ class _MainPageState extends State<MainPage> {
                                 child: Container(
                                   margin: EdgeInsets.only(right: 8, bottom: 8),
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all()
+                                      borderRadius: BorderRadius.circular(16),
+                                      border:
+                                          Border.all(color: Colors.grey[300])),
+                                  padding: EdgeInsets.only(
+                                      left: 24, top: 24, bottom: 24),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.favorite_border,
+                                        color: Colors.red,
+                                      ),
+                                      Spacer(),
+                                      Text(
+                                        "131",
+                                        style: TextStyle(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "bpm",
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 19,
+                                            fontWeight: FontWeight.w300),
+                                      ),
+                                      Spacer(),
+                                      Text(
+                                        "Heart rate",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
                               ),
                               Expanded(
                                 flex: 1,
                                 child: Container(
+                                  padding: EdgeInsets.only(
+                                      left: 24, top: 24, bottom: 24),
                                   margin: EdgeInsets.only(left: 8, bottom: 8),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(16),
-                                      border: Border.all()
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(color: Colors.grey[300]),
+                                  ),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.whatshot,
+                                        color: Colors.orange[500],
+                                      ),
+                                      Spacer(),
+                                      Text(
+                                        "450",
+                                        style: TextStyle(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "kcal",
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 19,
+                                            fontWeight: FontWeight.w300),
+                                      ),
+                                      Spacer(),
+                                      Text(
+                                        "Calories",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
                               ),
@@ -109,18 +181,16 @@ class _MainPageState extends State<MainPage> {
                                     margin: EdgeInsets.only(right: 8, top: 8),
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(16),
-                                        border: Border.all()
-                                    ),
+                                        border: Border.all()),
                                   ),
                                 ),
                                 Expanded(
                                   flex: 1,
                                   child: Container(
-                                    margin: EdgeInsets.only(left: 8,top: 8),
+                                    margin: EdgeInsets.only(left: 8, top: 8),
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(16),
-                                        border: Border.all()
-                                    ),
+                                        border: Border.all()),
                                   ),
                                 ),
                               ],
