@@ -105,11 +105,23 @@ class _MainPageState extends State<MainPage> {
                               children: <Widget>[
                                 Expanded(
                                   flex: 1,
-                                  child: Placeholder(),
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 8, top: 8),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(16),
+                                        border: Border.all()
+                                    ),
+                                  ),
                                 ),
                                 Expanded(
                                   flex: 1,
-                                  child: Placeholder(),
+                                  child: Container(
+                                    margin: EdgeInsets.only(left: 8,top: 8),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(16),
+                                        border: Border.all()
+                                    ),
+                                  ),
                                 ),
                               ],
                             )),
