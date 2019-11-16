@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -137,7 +138,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
                     ],
                   ),
                   Container(
-                    height: 220,
+                    height: 200,
                     child: Column(
                       children: <Widget>[
                         Expanded(
@@ -216,6 +217,196 @@ class _StatisticsPageState extends State<StatisticsPage> {
                                         color: Colors.white.withOpacity(0.2)),
                                   )
                                 ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 180,
+                    width: MediaQuery.of(context).size.width,
+                    child: BarChart(
+                      BarChartData(
+                          alignment: BarChartAlignment.spaceBetween,
+                          maxY: 20,
+                          titlesData: FlTitlesData(
+                            show: true,
+                            bottomTitles: SideTitles(
+                                showTitles: true,
+                                textStyle: TextStyle(
+                                    color: Colors.white, fontSize: 12),
+                                margin: 20,
+                                getTitles: (double value) {
+                                  switch (value.toInt()) {
+                                    case 0:
+                                      return "14";
+                                    case 1:
+                                      return "";
+                                    case 2:
+                                      return "16";
+                                    case 3:
+                                      return "";
+                                    case 4:
+                                      return "18";
+                                    case 5:
+                                      return "";
+                                    case 6:
+                                      return "20";
+                                    case 7:
+                                      return "";
+                                    case 8:
+                                      return "22";
+                                    default:
+                                      return '';
+                                  }
+                                }),
+                            leftTitles: const SideTitles(showTitles: false),
+                          ),
+                          borderData: FlBorderData(
+                            show: false,
+                          ),
+                          barGroups: [
+                            BarChartGroupData(
+                              x: 0,
+                              barRods: [
+                                BarChartRodData(
+                                    y: 14, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 1,
+                              barRods: [
+                                BarChartRodData(y: 8, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 2,
+                              barRods: [
+                                BarChartRodData(y: 8, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 3,
+                              barRods: [
+                                BarChartRodData(y: 4, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 4,
+                              barRods: [
+                                BarChartRodData(y: 6, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 5,
+                              barRods: [
+                                BarChartRodData(
+                                    y: 18, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 6,
+                              barRods: [
+                                BarChartRodData(
+                                    y: 10, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 7,
+                              barRods: [
+                                BarChartRodData(y: 8, color: Colors.orange[400])
+                              ],
+                            ),
+                            BarChartGroupData(
+                              x: 8,
+                              barRods: [
+                                BarChartRodData(
+                                    y: 10, color: Colors.orange[400])
+                              ],
+                            ),
+                          ]),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    height: 80,
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          height: 60,
+                          width: 52,
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Center(
+                            child: Icon(
+                              Icons.favorite_border,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Spacer(),
+                        Container(
+                          width: 100,
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                top: 0,
+                                right: 16,
+                                child: Text("MIN",style: TextStyle(
+                                  color: Colors.white,
+                                ),),
+                              ),
+                              Positioned(
+                                top: 16,
+                                left: 16,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text("64",style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 28
+                                    ),),
+                                    Text("bpm",style: TextStyle(
+                                      color: Colors.white.withOpacity(0.2),
+                                    ),)
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 24,
+                        ),
+                        Container(
+                          width: 100,
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                top: 0,
+                                right: 16,
+                                child: Text("MAX",style: TextStyle(
+                                  color: Colors.white,
+                                ),),
+                              ),
+                              Positioned(
+                                top: 16,
+                                left: 16,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text("146",style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 28
+                                    ),),
+                                    Text("bpm",style: TextStyle(
+                                      color: Colors.white.withOpacity(0.2),
+                                    ),)
+                                  ],
+                                ),
                               )
                             ],
                           ),
