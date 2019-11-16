@@ -83,6 +83,58 @@ class _StatisticsPageState extends State<StatisticsPage> {
                         ),
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 24,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        height: 28,
+                        width: 70,
+                        decoration: BoxDecoration(
+                            border:
+                                Border.all(color: Colors.white.withOpacity(.2)),
+                            borderRadius: BorderRadius.circular(24)),
+                        child: Center(
+                            child: Text(
+                          "Day",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )),
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Container(
+                        height: 28,
+                        width: 70,
+                        decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24)),
+                        child: Center(
+                            child: Text(
+                          "Week",
+                          style: TextStyle(color: Colors.white.withOpacity(.3)),
+                        )),
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Container(
+                        height: 28,
+                        width: 70,
+                        decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24)),
+                        child: Center(
+                            child: Text(
+                          "Month",
+                          style: TextStyle(color: Colors.white.withOpacity(.3)),
+                        )),
+                      )
+                    ],
                   )
                 ],
               ),
