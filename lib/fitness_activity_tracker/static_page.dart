@@ -154,17 +154,71 @@ class _StatisticsPageState extends State<StatisticsPage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(width: 32,),
-                              Text("steps", style: TextStyle(
-                                color: Colors.white.withOpacity(0.2),
-                                fontSize: 28,
-                              ),)
+                              SizedBox(
+                                width: 32,
+                              ),
+                              Text(
+                                "steps",
+                                style: TextStyle(
+                                  color: Colors.white.withOpacity(0.2),
+                                  fontSize: 28,
+                                ),
+                              )
                             ],
                           ),
                         ),
                         Expanded(
                           flex: 2,
-                          child: Placeholder(),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "5.1",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 18),
+                                  ),
+                                  Text(
+                                    "distance",
+                                    style: TextStyle(
+                                        color: Colors.white.withOpacity(0.2)),
+                                  )
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "450",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 18),
+                                  ),
+                                  Text(
+                                    "kcal",
+                                    style: TextStyle(
+                                        color: Colors.white.withOpacity(0.2)),
+                                  )
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "13.9km/h",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 18),
+                                  ),
+                                  Text(
+                                    "average speed",
+                                    style: TextStyle(
+                                        color: Colors.white.withOpacity(0.2)),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     ),
