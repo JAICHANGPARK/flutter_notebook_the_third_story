@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   badges: any
   page_transition: ^1.1.5
+  fl_chart: ^0.4.2
 
 
 dev_dependencies:
