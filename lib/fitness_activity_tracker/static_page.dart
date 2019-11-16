@@ -135,7 +135,40 @@ class _StatisticsPageState extends State<StatisticsPage> {
                         )),
                       )
                     ],
-                  )
+                  ),
+                  Container(
+                    height: 220,
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 4,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "6551",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 48,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(width: 32,),
+                              Text("steps", style: TextStyle(
+                                color: Colors.white.withOpacity(0.2),
+                                fontSize: 28,
+                              ),)
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Placeholder(),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
