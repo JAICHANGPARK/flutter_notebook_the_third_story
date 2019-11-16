@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StatisticsPage extends StatefulWidget {
@@ -45,6 +46,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
           Padding(
             padding: const EdgeInsets.only(top: 42),
             child: Container(
+              padding: EdgeInsets.only(left: 24, top: 48, right: 24),
               height: MediaQuery.of(context).size.height - 130,
               decoration: BoxDecoration(
                   color: Colors.black,
@@ -52,6 +54,38 @@ class _StatisticsPageState extends State<StatisticsPage> {
                     topRight: Radius.circular(32),
                     topLeft: Radius.circular(32),
                   )),
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Walk",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.calendar_today,
+                        color: Colors.white,
+                        size: 18,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        "23 November, 2019",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           )
         ],
