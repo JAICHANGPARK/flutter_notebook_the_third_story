@@ -15,27 +15,37 @@ class _StatisticsPageState extends State<StatisticsPage> {
             top: true,
             left: true,
             right: true,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.more_horiz),
-                ),
-                Text("Statistics"),
-                IconButton(
-                  icon: Icon(Icons.keyboard_arrow_down),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                )
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.more_horiz),
+                  ),
+                  Text(
+                    "Statistics",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.keyboard_arrow_down),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  )
+                ],
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 64),
+            padding: const EdgeInsets.only(top: 42),
             child: Container(
-              height: MediaQuery.of(context).size.height - 136,
+              height: MediaQuery.of(context).size.height - 130,
               decoration: BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.only(
