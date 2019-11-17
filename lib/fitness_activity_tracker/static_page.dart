@@ -355,9 +355,12 @@ class _StatisticsPageState extends State<StatisticsPage> {
                               Positioned(
                                 top: 0,
                                 right: 16,
-                                child: Text("MIN",style: TextStyle(
-                                  color: Colors.white,
-                                ),),
+                                child: Text(
+                                  "MIN",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                               Positioned(
                                 top: 16,
@@ -365,13 +368,17 @@ class _StatisticsPageState extends State<StatisticsPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
-                                    Text("64",style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 28
-                                    ),),
-                                    Text("bpm",style: TextStyle(
-                                      color: Colors.white.withOpacity(0.2),
-                                    ),)
+                                    Text(
+                                      "64",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 28),
+                                    ),
+                                    Text(
+                                      "bpm",
+                                      style: TextStyle(
+                                        color: Colors.white.withOpacity(0.2),
+                                      ),
+                                    )
                                   ],
                                 ),
                               )
@@ -388,9 +395,12 @@ class _StatisticsPageState extends State<StatisticsPage> {
                               Positioned(
                                 top: 0,
                                 right: 16,
-                                child: Text("MAX",style: TextStyle(
-                                  color: Colors.white,
-                                ),),
+                                child: Text(
+                                  "MAX",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                               Positioned(
                                 top: 16,
@@ -398,13 +408,17 @@ class _StatisticsPageState extends State<StatisticsPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
-                                    Text("146",style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 28
-                                    ),),
-                                    Text("bpm",style: TextStyle(
-                                      color: Colors.white.withOpacity(0.2),
-                                    ),)
+                                    Text(
+                                      "146",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 28),
+                                    ),
+                                    Text(
+                                      "bpm",
+                                      style: TextStyle(
+                                        color: Colors.white.withOpacity(0.2),
+                                      ),
+                                    )
                                   ],
                                 ),
                               )
