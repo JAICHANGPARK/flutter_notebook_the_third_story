@@ -125,10 +125,60 @@ class _MainPageState extends State<MainPage> {
                 ],
               ),
             ),
-            Container(
-              height: MediaQuery.of(context).size.height / 3,
-              child: Placeholder()
+            SizedBox(
+              height: 16,
             ),
+            Container(
+                height: MediaQuery.of(context).size.height / 3,
+                padding: EdgeInsets.only(left: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Expanded(
+                        flex: 2,
+                        child: Text(
+                          "Popular hotel",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w700),
+                        )),
+                    Expanded(
+                      flex: 8,
+                      child: ListView(
+                        padding: EdgeInsets.zero,
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin:
+                                EdgeInsets.only(right: 24, top: 8, bottom: 8),
+                            width: 140,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin:
+                                EdgeInsets.only(right: 24, top: 8, bottom: 8),
+                            width: 140,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin:
+                                EdgeInsets.only(right: 24, top: 8, bottom: 8),
+                            width: 140,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              color: Colors.red,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                )),
           ],
         ),
       ),
@@ -136,22 +186,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
