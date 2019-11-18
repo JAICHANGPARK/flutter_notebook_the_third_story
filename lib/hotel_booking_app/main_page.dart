@@ -124,7 +124,11 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height / 3,
+              child: Placeholder()
+            ),
           ],
         ),
       ),
@@ -132,3 +136,22 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
