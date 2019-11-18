@@ -180,33 +180,47 @@ class _MainPageState extends State<MainPage> {
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: <Widget>[
-                                          Text("Sultans dine", style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold
-                                          ),),
-                                          Text("Kingdon Tower, Brazil", style: TextStyle(
-                                            fontSize: 10,
-                                            color: Colors.grey
-                                          ),),
+                                          Text(
+                                            "Sultans dine",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "Kingdon Tower, Brazil",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.grey),
+                                          ),
                                           Row(
                                             children: <Widget>[
-                                              Text("\$180/night", style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.indigo,
-                                                fontWeight: FontWeight.bold,
-                                              ),),
+                                              Text(
+                                                "\$180/night",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.indigo,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               Spacer(),
-                                              Text("4.5", style: TextStyle(
-                                                fontSize: 12,
+                                              Text(
+                                                "4.5",
+                                                style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: Colors.greenAccent,
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              Icon(
+                                                Icons.star,
+                                                size: 12,
                                                 color: Colors.greenAccent,
-                                                fontWeight: FontWeight.bold
-                                              ),),
-
-                                              Icon(Icons.star, size: 12,color: Colors.greenAccent,)
+                                              )
                                             ],
                                           )
                                         ],
@@ -217,7 +231,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Container(
                             margin:
-                            EdgeInsets.only(right: 24, top: 8, bottom: 8),
+                                EdgeInsets.only(right: 24, top: 8, bottom: 8),
                             width: 140,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
@@ -248,33 +262,47 @@ class _MainPageState extends State<MainPage> {
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
-                                          Text("Sultans dine", style: TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold
-                                          ),),
-                                          Text("Kingdon Tower, Brazil", style: TextStyle(
-                                              fontSize: 10,
-                                              color: Colors.grey
-                                          ),),
+                                          Text(
+                                            "Sultans dine",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "Kingdon Tower, Brazil",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.grey),
+                                          ),
                                           Row(
                                             children: <Widget>[
-                                              Text("\$180/night", style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.indigo,
-                                                fontWeight: FontWeight.bold,
-                                              ),),
-                                              Spacer(),
-                                              Text("4.5", style: TextStyle(
+                                              Text(
+                                                "\$180/night",
+                                                style: TextStyle(
                                                   fontSize: 12,
-                                                  color: Colors.greenAccent,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-
-                                              Icon(Icons.star, size: 12,color: Colors.greenAccent,)
+                                                  color: Colors.indigo,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Spacer(),
+                                              Text(
+                                                "4.5",
+                                                style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: Colors.greenAccent,
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              Icon(
+                                                Icons.star,
+                                                size: 12,
+                                                color: Colors.greenAccent,
+                                              )
                                             ],
                                           )
                                         ],
@@ -285,7 +313,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Container(
                             margin:
-                            EdgeInsets.only(right: 24, top: 8, bottom: 8),
+                                EdgeInsets.only(right: 24, top: 8, bottom: 8),
                             width: 140,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
@@ -316,33 +344,47 @@ class _MainPageState extends State<MainPage> {
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
-                                          Text("Sultans dine", style: TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold
-                                          ),),
-                                          Text("Kingdon Tower, Brazil", style: TextStyle(
-                                              fontSize: 10,
-                                              color: Colors.grey
-                                          ),),
+                                          Text(
+                                            "Sultans dine",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "Kingdon Tower, Brazil",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.grey),
+                                          ),
                                           Row(
                                             children: <Widget>[
-                                              Text("\$180/night", style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.indigo,
-                                                fontWeight: FontWeight.bold,
-                                              ),),
-                                              Spacer(),
-                                              Text("4.5", style: TextStyle(
+                                              Text(
+                                                "\$180/night",
+                                                style: TextStyle(
                                                   fontSize: 12,
-                                                  color: Colors.greenAccent,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-
-                                              Icon(Icons.star, size: 12,color: Colors.greenAccent,)
+                                                  color: Colors.indigo,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Spacer(),
+                                              Text(
+                                                "4.5",
+                                                style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: Colors.greenAccent,
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              Icon(
+                                                Icons.star,
+                                                size: 12,
+                                                color: Colors.greenAccent,
+                                              )
                                             ],
                                           )
                                         ],
