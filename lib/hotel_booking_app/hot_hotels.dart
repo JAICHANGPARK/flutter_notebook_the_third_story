@@ -39,8 +39,7 @@ class HotHotelsWidget extends StatelessWidget {
               padding: EdgeInsets.zero,
               children: <Widget>[
                 Container(
-                  margin:
-                  EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                   height: MediaQuery.of(context).size.height / 5,
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -73,8 +72,7 @@ class HotHotelsWidget extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
                                 "The westin dhaka",
@@ -95,8 +93,7 @@ class HotHotelsWidget extends StatelessWidget {
                                   Text(
                                     " Kensington place",
                                     style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 12),
+                                        color: Colors.grey, fontSize: 12),
                                   )
                                 ],
                               ),
@@ -123,8 +120,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -135,9 +131,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                     Expanded(
@@ -146,8 +142,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -158,9 +153,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                     Expanded(
@@ -169,8 +164,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -181,9 +175,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                     Expanded(
@@ -192,8 +186,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -204,9 +197,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                   ],
@@ -219,19 +212,21 @@ class HotHotelsWidget extends StatelessWidget {
                       Expanded(
                         flex: 3,
                         child: Container(
-                          margin: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                          margin: EdgeInsets.only(
+                              left: 8, right: 8, top: 8, bottom: 8),
                           decoration: BoxDecoration(
                               color: Colors.greenAccent,
-                              borderRadius: BorderRadius.circular(16)
-                          ),
+                              borderRadius: BorderRadius.circular(16)),
                           child: Center(
                             child: RotatedBox(
-                              child: Text("Book now",
+                              child: Text(
+                                "Book now",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 18
-                                ),), quarterTurns: 3,
+                                    fontSize: 18),
+                              ),
+                              quarterTurns: 3,
                             ),
                           ),
                         ),
@@ -240,8 +235,7 @@ class HotHotelsWidget extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin:
-                  EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                   height: MediaQuery.of(context).size.height / 5,
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -274,8 +268,7 @@ class HotHotelsWidget extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
                                 "The westin dhaka",
@@ -296,8 +289,7 @@ class HotHotelsWidget extends StatelessWidget {
                                   Text(
                                     " Kensington place",
                                     style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 12),
+                                        color: Colors.grey, fontSize: 12),
                                   )
                                 ],
                               ),
@@ -324,8 +316,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -336,9 +327,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                     Expanded(
@@ -347,8 +338,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -359,9 +349,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                     Expanded(
@@ -370,8 +360,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -382,9 +371,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                     Expanded(
@@ -393,8 +382,7 @@ class HotHotelsWidget extends StatelessWidget {
                                         margin: EdgeInsets.all(6),
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                4),
+                                                BorderRadius.circular(4),
                                             color: Colors.white,
                                             boxShadow: [
                                               BoxShadow(
@@ -405,9 +393,9 @@ class HotHotelsWidget extends StatelessWidget {
                                             ]),
                                         child: Center(
                                             child: Icon(
-                                              Icons.access_alarms,
-                                              color: Colors.greenAccent,
-                                            )),
+                                          Icons.access_alarms,
+                                          color: Colors.greenAccent,
+                                        )),
                                       ),
                                     ),
                                   ],
@@ -420,19 +408,21 @@ class HotHotelsWidget extends StatelessWidget {
                       Expanded(
                         flex: 3,
                         child: Container(
-                          margin: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                          margin: EdgeInsets.only(
+                              left: 8, right: 8, top: 8, bottom: 8),
                           decoration: BoxDecoration(
                               color: Colors.greenAccent,
-                              borderRadius: BorderRadius.circular(16)
-                          ),
+                              borderRadius: BorderRadius.circular(16)),
                           child: Center(
                             child: RotatedBox(
-                              child: Text("Book now",
+                              child: Text(
+                                "Book now",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 18
-                                ),), quarterTurns: 3,
+                                    fontSize: 18),
+                              ),
+                              quarterTurns: 3,
                             ),
                           ),
                         ),
