@@ -14,7 +14,7 @@ class _TopWidgetState extends State<TopWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height / 4,
+      height: MediaQuery.of(context).size.height / 4.4,
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: <Widget>[
@@ -58,7 +58,7 @@ class _TopWidgetState extends State<TopWidget> {
           ),
           Expanded(
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
+              margin: EdgeInsets.symmetric(horizontal: 0, vertical: 16),
               decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(16)),
