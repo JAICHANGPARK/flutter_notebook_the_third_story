@@ -46,29 +46,41 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
         ),
         Expanded(
           flex: 5,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text("Platinum Grand", style: TextStyle(
-                color: Colors.black,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),),
-              Row(
-                children: <Widget>[
-                  Text("Tokyo square, Japan - ",style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12
-                  ),),
-                  Text("Show in map", style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 12
-                  ),)
-                ],
-              ),
-              Text("This upscale, contemporary hotel is 2 km from Hazrat Shahjalal International Airport and 11 km from"
-                  "Jatiyo Sangsad Bhaban, the Banfladesh Parliament.", )
-            ],
+          child: Padding(
+            padding: const EdgeInsets.only(
+              left: 16,
+              top: 24,
+
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text("Platinum Grand", style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),),
+                SizedBox(height: 8,),
+                Row(
+                  children: <Widget>[
+                    Text("Tokyo square, Japan - ",style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12
+                    ),),
+                    Text("Show in map", style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12
+                    ),)
+                  ],
+                ),
+                SizedBox(height: 16,),
+                Text("This upscale, contemporary hotel is 2 km from Hazrat Shahjalal International Airport and 11 km from"
+                    "Jatiyo Sangsad Bhaban, the Banfladesh Parliament.", style: TextStyle(
+                  color: Colors.blueGrey[300],
+                  fontWeight: FontWeight.bold,
+                ),)
+              ],
+            ),
           ),
         ),
         Expanded(
