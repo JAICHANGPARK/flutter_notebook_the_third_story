@@ -211,7 +211,6 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
                             ),
                             Positioned(
                               left: 8,
-                              top: 0,
                               bottom: 0,
                               child: Container(
                                 height: 18,
