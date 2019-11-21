@@ -103,8 +103,21 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("Price"),
-                      Text("\$120"),
+                      Text(
+                        "Price",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "\$120",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -114,19 +127,50 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("Reviews"),
+                      Text(
+                        "Reviews",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Row(
                         children: <Widget>[
-                          Text("4.5",style: TextStyle(
+                          Text(
+                            "4.5",
+                            style: TextStyle(
+                              color: Colors.greenAccent,
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Icon(
+                            Icons.star,
                             color: Colors.greenAccent,
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                          ),),
-                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
-                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
-                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
-                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
-                          Icon(Icons.star, color: Colors.grey, size: 12,),
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.greenAccent,
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.greenAccent,
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.greenAccent,
+                            size: 12,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.grey,
+                            size: 12,
+                          ),
                         ],
                       )
                     ],
@@ -138,17 +182,88 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Text("Recently boocked"),
+                      Text(
+                        "Recently boocked",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Container(
                         height: 18,
                         width: 64,
                         child: Stack(
                           children: <Widget>[
-                            
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              bottom: 0,
+                              child: Container(
+                                height: 18,
+                                width: 18,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 8,
+                              top: 0,
+                              bottom: 0,
+                              child: Container(
+                                height: 18,
+                                width: 18,
+                                decoration: BoxDecoration(
+                                  color: Colors.red,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 16,
+                              top: 0,
+                              bottom: 0,
+                              child: Container(
+                                height: 18,
+                                width: 18,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 24,
+                              top: 0,
+                              bottom: 0,
+                              child: Container(
+                                height: 18,
+                                width: 18,
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 28,
+                              top: 0,
+                              bottom: 0,
+                              child: Container(
+                                height: 18,
+                                width: 18,
+                                decoration: BoxDecoration(
+                                  color: Colors.pink,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       )
-
                     ],
                   ),
                 )
