@@ -135,9 +135,19 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
                 Expanded(
                   flex: 5,
                   child: Column(
-                    
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Text("Recently boocked"),
+                      Container(
+                        height: 18,
+                        width: 64,
+                        child: Stack(
+                          children: <Widget>[
+                            
+                          ],
+                        ),
+                      )
 
                     ],
                   ),
