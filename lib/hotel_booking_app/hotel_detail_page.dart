@@ -272,7 +272,151 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
         ),
         Expanded(
           flex: 3,
-          child: Placeholder(),
+          child: Padding(
+            padding: const EdgeInsets.only(left: 16, right: 16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Amminities",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 16,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                blurRadius: 3,
+                                spreadRadius: 2
+                              )
+                            ],
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(4)),
+                        ),
+                        SizedBox(height: 8,),
+                        Text("Parking")
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 3,
+                                    spreadRadius: 2
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(4)),
+                        ),
+                        SizedBox(height: 8,),
+                        Text("Bath")
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 3,
+                                    spreadRadius: 2
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(4)),
+                        ),
+                        SizedBox(height: 8,),
+                        Text("Bar")
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 3,
+                                    spreadRadius: 2
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(4)),
+                          child: Icon(Icons.card_giftcard, color: Colors.greenAccent,),
+                        ),
+                        SizedBox(height: 8,),
+                        Text("WiFi")
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 3,
+                                    spreadRadius: 2
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(4)),
+                          child: Icon(Icons.fitness_center, color: Colors.greenAccent,),
+                        ),
+                        SizedBox(height: 8,),
+                        Text("Gym")
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 3,
+                                    spreadRadius: 2
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(4)),
+                          child: Icon(Icons.more_horiz, color: Colors.greenAccent,),
+                        ),
+                        SizedBox(height: 8,),
+                        Text("more")
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
         ),
         Expanded(
           flex: 3,
