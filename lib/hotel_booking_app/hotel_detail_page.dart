@@ -44,7 +44,7 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
           ),
         ),
         Expanded(
-          flex: 5,
+          flex: 4,
           child: Padding(
             padding: const EdgeInsets.only(
               left: 16,
@@ -92,8 +92,59 @@ class _HotelDetailPageState extends State<HotelDetailPage> {
           ),
         ),
         Expanded(
-          flex: 3,
-          child: Placeholder(),
+          flex: 2,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 16, right: 16),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  flex: 3,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Price"),
+                      Text("\$120"),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  flex: 3,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Reviews"),
+                      Row(
+                        children: <Widget>[
+                          Text("4.5",style: TextStyle(
+                            color: Colors.greenAccent,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
+                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
+                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
+                          Icon(Icons.star, color: Colors.greenAccent, size: 12,),
+                          Icon(Icons.star, color: Colors.grey, size: 12,),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Expanded(
+                  flex: 5,
+                  child: Column(
+                    
+                    children: <Widget>[
+                      Text("Recently boocked"),
+
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
         ),
         Expanded(
           flex: 3,
