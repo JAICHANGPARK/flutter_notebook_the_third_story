@@ -28,17 +28,31 @@ class _AppMainState extends State<AppMain> {
               child: Column(
                 children: <Widget>[
                   Expanded(
-                    flex: 5,
+                    flex: 6,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 16, right: 16),
+                      padding:
+                          const EdgeInsets.only(left: 16, right: 16, top: 24),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: <Widget>[
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              Text("Folders"),
-                              Text("See All"),
+                              Text(
+                                "Folders",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              Text(
+                                "See All",
+                                style: TextStyle(
+                                    color: Colors.blueAccent,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12),
+                              ),
                             ],
                           ),
                           Container(
@@ -48,7 +62,24 @@ class _AppMainState extends State<AppMain> {
                               shrinkWrap: true,
                               children: <Widget>[
                                 Container(
-                                  width: 160,
+                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  width: 120,
+                                  height: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  width: 120,
+                                  height: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  width: 120,
                                   height: 160,
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
