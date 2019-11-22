@@ -62,13 +62,46 @@ class _AppMainState extends State<AppMain> {
                               shrinkWrap: true,
                               children: <Widget>[
                                 Container(
+                                  padding: EdgeInsets.symmetric(vertical: 8),
                                   margin: EdgeInsets.only(
                                       right: 16, bottom: 16, top: 16),
                                   width: 120,
                                   height: 160,
                                   decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.blue[100],
+                                            blurRadius: 5,
+                                            spreadRadius: 1,
+                                            offset: Offset(0, 4))
+                                      ],
                                       color: Colors.blue,
                                       borderRadius: BorderRadius.circular(16)),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceAround,
+                                    children: <Widget>[
+                                      CircleAvatar(
+                                        radius: 27,
+                                        backgroundColor: Colors.blue[100],
+                                      ),
+                                      Text(
+                                        "My Projects",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14),
+                                      ),
+                                      Text(
+                                        "Created 20.02.95",
+                                        style: TextStyle(
+                                          color: Colors.white.withOpacity(0.5),
+                                          fontSize: 12,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(
@@ -81,6 +114,31 @@ class _AppMainState extends State<AppMain> {
                                       border: Border.all(
                                         color: Colors.grey,
                                       )),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                    children: <Widget>[
+                                      CircleAvatar(
+                                        radius: 27,
+                                        backgroundColor: Colors.blue[100],
+                                      ),
+                                      Text(
+                                        "Dribbble",
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14),
+                                      ),
+                                      Text(
+                                        "Created 20.02.95",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(
@@ -88,9 +146,37 @@ class _AppMainState extends State<AppMain> {
                                   width: 120,
                                   height: 160,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                      border: Border.all(
+                                        color: Colors.grey,
+                                      )),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                    children: <Widget>[
+                                      CircleAvatar(
+                                        radius: 27,
+                                        backgroundColor: Colors.blue[100],
+                                      ),
+                                      Text(
+                                        "Behance",
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14),
+                                      ),
+                                      Text(
+                                        "Created 20.02.95",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12,
+                                        ),
+                                      )
+                                    ],
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           )
