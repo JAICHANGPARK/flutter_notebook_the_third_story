@@ -117,7 +117,7 @@ class _AppMainState extends State<AppMain> {
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
+                                        MainAxisAlignment.spaceAround,
                                     children: <Widget>[
                                       CircleAvatar(
                                         radius: 27,
@@ -154,7 +154,7 @@ class _AppMainState extends State<AppMain> {
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
+                                        MainAxisAlignment.spaceAround,
                                     children: <Widget>[
                                       CircleAvatar(
                                         radius: 27,
