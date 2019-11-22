@@ -62,23 +62,29 @@ class _AppMainState extends State<AppMain> {
                               shrinkWrap: true,
                               children: <Widget>[
                                 Container(
-                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  margin: EdgeInsets.only(
+                                      right: 16, bottom: 16, top: 16),
                                   width: 120,
                                   height: 160,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                  ),
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(16)),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  margin: EdgeInsets.only(
+                                      right: 16, bottom: 16, top: 16),
                                   width: 120,
                                   height: 160,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                  ),
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                      border: Border.all(
+                                        color: Colors.grey,
+                                      )),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  margin: EdgeInsets.only(
+                                      right: 16, bottom: 16, top: 16),
                                   width: 120,
                                   height: 160,
                                   decoration: BoxDecoration(
