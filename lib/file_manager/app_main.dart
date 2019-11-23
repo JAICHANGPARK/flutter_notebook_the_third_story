@@ -201,13 +201,28 @@ class _AppMainState extends State<AppMain> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text("Hello"),
-                          Text("Dreamwalker....")
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Text(
+                              "Hello",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                            Text(
+                              "Dreamwalker....",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24),
+                            )
+                          ],
+                        ),
                       ),
                       Container(
                         height: 42,
@@ -215,6 +230,10 @@ class _AppMainState extends State<AppMain> {
                         decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                              fit: BoxFit.cover),
                         ),
                       )
                     ],
