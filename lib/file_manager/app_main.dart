@@ -237,6 +237,16 @@ class _AppMainState extends State<AppMain> {
                         ),
                       )
                     ],
+                  ),
+                  SizedBox(height: 16,),
+                  Container(
+                    height: 58,
+                    width: MediaQuery.of(context).size.width,
+                    margin: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(32)
+                    ),
                   )
                 ],
               ),
