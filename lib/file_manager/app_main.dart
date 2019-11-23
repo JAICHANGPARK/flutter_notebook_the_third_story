@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +8,11 @@ class AppMain extends StatefulWidget {
 }
 
 class _AppMainState extends State<AppMain> {
-
-  Widget _buildFolderView(){
+  Widget _buildFolderView() {
     return Expanded(
       flex: 6,
       child: Padding(
-        padding:
-        const EdgeInsets.only(left: 16, right: 16, top: 24),
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 24),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
@@ -45,8 +44,7 @@ class _AppMainState extends State<AppMain> {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 8),
-                    margin: EdgeInsets.only(
-                        right: 16, bottom: 16, top: 16),
+                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
                     width: 120,
                     height: 160,
                     decoration: BoxDecoration(
@@ -61,8 +59,7 @@ class _AppMainState extends State<AppMain> {
                         borderRadius: BorderRadius.circular(16)),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment:
-                      MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         CircleAvatar(
                           radius: 27,
@@ -86,8 +83,7 @@ class _AppMainState extends State<AppMain> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(
-                        right: 16, bottom: 16, top: 16),
+                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
                     width: 120,
                     height: 160,
                     decoration: BoxDecoration(
@@ -98,8 +94,7 @@ class _AppMainState extends State<AppMain> {
                         )),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment:
-                      MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         CircleAvatar(
                           radius: 27,
@@ -123,8 +118,7 @@ class _AppMainState extends State<AppMain> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(
-                        right: 16, bottom: 16, top: 16),
+                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
                     width: 120,
                     height: 160,
                     decoration: BoxDecoration(
@@ -135,8 +129,7 @@ class _AppMainState extends State<AppMain> {
                         )),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment:
-                      MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         CircleAvatar(
                           radius: 27,
@@ -167,6 +160,7 @@ class _AppMainState extends State<AppMain> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -176,10 +170,57 @@ class _AppMainState extends State<AppMain> {
           Positioned(
             left: 16,
             top: 32,
-            right: 0,
+            right: 16,
             child: Container(
               height: MediaQuery.of(context).size.height / 3.5,
-              child: Placeholder(),
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(
+                          Icons.menu,
+                          color: Colors.white,
+                        ),
+                        iconSize: 35,
+                        padding: EdgeInsets.zero,
+                        onPressed: () {},
+                      ),
+                      Badge(
+                        child: Icon(
+                          Icons.notifications_none,
+                          size: 32,
+                          color: Colors.white,
+                        ),
+                        position: BadgePosition.topRight(),
+                        padding: EdgeInsets.all(8),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text("Hello"),
+                          Text("Dreamwalker....")
+                        ],
+                      ),
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
