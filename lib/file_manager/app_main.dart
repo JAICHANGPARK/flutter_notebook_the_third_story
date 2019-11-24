@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -260,8 +261,8 @@ class _AppMainState extends State<AppMain> {
                               flex: 8,
                               child: TextField(
                                 decoration: InputDecoration(
-                                  hintStyle:
-                                      TextStyle(color: Colors.grey, fontSize: 14),
+                                  hintStyle: TextStyle(
+                                      color: Colors.grey, fontSize: 14),
                                   hintText: "Search",
                                   border: InputBorder.none,
                                 ),
@@ -309,26 +310,117 @@ class _AppMainState extends State<AppMain> {
                       _buildFolderView(),
                       Expanded(
                         flex: 7,
-                        child: Placeholder(),
+                        child: ListView(
+                          padding: EdgeInsets.zero,
+                          scrollDirection: Axis.vertical,
+                          shrinkWrap: true,
+                          children: <Widget>[
+                            Container(
+                              height: 72,
+                              width: MediaQuery.of(context).size.width,
+                              margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(color: Colors.grey),
+                                borderRadius: BorderRadius.circular(16)
+                              ),
+                            ),
+                            Container(
+                              height: 84,
+                              width: MediaQuery.of(context).size.width,
+                              margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            ),
+                            Container(
+                              height: 84,
+                              width: MediaQuery.of(context).size.width,
+                              margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            )
+
+                          ],
+                        ),
                       ),
                       Expanded(
-                        flex: 3,
-                        child: Column(
-                          children: <Widget>[
-                            Text("Shared"),
-                            Row(
-                              children: <Widget>[
-                                Container(
-                                  height: 52,
-                                  width: 52,
-                                  decoration: BoxDecoration(
-                                    color: Colors.greenAccent,
+                        flex: 4,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16, right: 16),
 
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text("Shared", style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),),
+                              Container(
+                                height: 72,
+                                child: Row(
+                                  children: <Widget>[
+                                    Expanded(
+                                      flex: 1,
+                                      child: Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(color: Colors.deepOrange),
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                      child: Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(color: Colors.deepOrange),
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                      child: Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(color: Colors.deepOrange),
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                      child: Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(color: Colors.deepOrange),
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                      child: DottedBorder(
+                                        borderType: BorderType.RRect,
+                                        strokeCap: StrokeCap.round,
+                                        color: Colors.black,
+                                        strokeWidth: 1,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
@@ -342,17 +434,3 @@ class _AppMainState extends State<AppMain> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

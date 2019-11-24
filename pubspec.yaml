@@ -27,6 +27,8 @@ dependencies:
   page_transition: ^1.1.5
   fl_chart: ^0.4.2
   percent_indicator: ^2.1.1+1
+  dotted_border: ^1.0.3
+  path_drawing: ^0.4.1
 
 
 dev_dependencies:
