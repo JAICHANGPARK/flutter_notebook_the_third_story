@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class AppMain extends StatefulWidget {
   @override
@@ -331,21 +332,45 @@ class _AppMainState extends State<AppMain> {
                                     child: Container(
                                       margin: EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: Colors.red,
+                                        color: Colors.green
                                       ),
                                     ),
                                   ),
                                   Expanded(
                                     flex: 8,
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: <Widget>[
-                                        
+                                        Text("Introductions.PDF", style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16
+                                        ),),
+                                        Text("Googledrive/stored/folder..", style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12
+                                        ),)
+
                                       ],
                                     ),
                                   ),
                                   Expanded(
                                     flex: 3,
-                                    child: Placeholder(),
+                                    child: new CircularPercentIndicator(
+                                      radius: 48.0,
+                                      lineWidth: 5.0,
+                                      percent: 0.5,
+                                      center: Container(
+                                        height: 16,
+                                        width: 16,
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange,
+                                          shape: BoxShape.circle
+                                        ),
+                                      ),
+                                      progressColor: Colors.orange,
+                                    )
                                   )
                                 ],
                               ),
