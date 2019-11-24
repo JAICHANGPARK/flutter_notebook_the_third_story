@@ -328,11 +328,20 @@ class _AppMainState extends State<AppMain> {
                                 children: <Widget>[
                                   Expanded(
                                     flex: 3,
-                                    child: Placeholder(),
+                                    child: Container(
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                      ),
+                                    ),
                                   ),
                                   Expanded(
                                     flex: 8,
-                                    child: Placeholder(),
+                                    child: Column(
+                                      children: <Widget>[
+                                        
+                                      ],
+                                    ),
                                   ),
                                   Expanded(
                                     flex: 3,
