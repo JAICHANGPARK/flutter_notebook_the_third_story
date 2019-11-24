@@ -331,57 +331,107 @@ class _AppMainState extends State<AppMain> {
                                     flex: 3,
                                     child: Container(
                                       margin: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(
-                                        color: Colors.green
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.green),
                                     ),
                                   ),
                                   Expanded(
                                     flex: 8,
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: <Widget>[
-                                        Text("Introductions.PDF", style: TextStyle(
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16
-                                        ),),
-                                        Text("Googledrive/stored/folder..", style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 12
-                                        ),)
-
+                                        Text(
+                                          "Introductions.PDF",
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16),
+                                        ),
+                                        Text(
+                                          "Googledrive/stored/folder..",
+                                          style: TextStyle(
+                                              color: Colors.grey, fontSize: 12),
+                                        )
                                       ],
                                     ),
                                   ),
                                   Expanded(
-                                    flex: 3,
-                                    child: new CircularPercentIndicator(
-                                      radius: 48.0,
-                                      lineWidth: 5.0,
-                                      percent: 0.5,
-                                      center: Container(
-                                        height: 16,
-                                        width: 16,
-                                        decoration: BoxDecoration(
-                                          color: Colors.orange,
-                                          shape: BoxShape.circle
+                                      flex: 3,
+                                      child: new CircularPercentIndicator(
+                                        radius: 48.0,
+                                        lineWidth: 5.0,
+                                        percent: 0.5,
+                                        center: Container(
+                                          height: 16,
+                                          width: 16,
+                                          decoration: BoxDecoration(
+                                              color: Colors.orange,
+                                              shape: BoxShape.circle),
                                         ),
-                                      ),
-                                      progressColor: Colors.orange,
-                                    )
-                                  )
+                                        progressColor: Colors.orange,
+                                      ))
                                 ],
                               ),
                             ),
                             Container(
-                              height: 84,
+                              height: 72,
                               width: MediaQuery.of(context).size.width,
                               margin: EdgeInsets.only(
                                   left: 16, right: 16, bottom: 16),
                               decoration: BoxDecoration(
-                                color: Colors.red,
+                                  color: Colors.green[100],
+                                  border: Border.all(color: Colors.green),
+                                  borderRadius: BorderRadius.circular(16)),
+                              child: Row(
+                                children: <Widget>[
+                                  Expanded(
+                                    flex: 3,
+                                    child: Container(
+                                      margin: EdgeInsets.all(8),
+                                      decoration:
+                                          BoxDecoration(color: Colors.green),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 8,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Text(
+                                          "Introductions.PDF",
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16),
+                                        ),
+                                        Text(
+                                          "Googledrive/stored/folder..",
+                                          style: TextStyle(
+                                              color: Colors.grey, fontSize: 12),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                      flex: 3,
+                                      child: Container(
+                                        height: 26,
+                                        width: 26,
+                                        decoration: BoxDecoration(
+                                          color: Colors.green,
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Center(
+                                          child: Icon(Icons.check, color: Colors.white,),
+                                        ),
+                                      ))
+                                ],
                               ),
                             ),
                             Container(
