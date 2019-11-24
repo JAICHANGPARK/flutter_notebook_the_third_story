@@ -318,17 +318,34 @@ class _AppMainState extends State<AppMain> {
                             Container(
                               height: 72,
                               width: MediaQuery.of(context).size.width,
-                              margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                              margin: EdgeInsets.only(
+                                  left: 16, right: 16, bottom: 16),
                               decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(color: Colors.grey),
-                                borderRadius: BorderRadius.circular(16)
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.grey),
+                                  borderRadius: BorderRadius.circular(16)),
+                              child: Row(
+                                children: <Widget>[
+                                  Expanded(
+                                    flex: 3,
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    flex: 8,
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Placeholder(),
+                                  )
+                                ],
                               ),
                             ),
                             Container(
                               height: 84,
                               width: MediaQuery.of(context).size.width,
-                              margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                              margin: EdgeInsets.only(
+                                  left: 16, right: 16, bottom: 16),
                               decoration: BoxDecoration(
                                 color: Colors.red,
                               ),
@@ -336,12 +353,12 @@ class _AppMainState extends State<AppMain> {
                             Container(
                               height: 84,
                               width: MediaQuery.of(context).size.width,
-                              margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                              margin: EdgeInsets.only(
+                                  left: 16, right: 16, bottom: 16),
                               decoration: BoxDecoration(
                                 color: Colors.red,
                               ),
                             )
-
                           ],
                         ),
                       ),
@@ -349,15 +366,16 @@ class _AppMainState extends State<AppMain> {
                         flex: 4,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16, right: 16),
-
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text("Shared", style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18
-                              ),),
+                              Text(
+                                "Shared",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18),
+                              ),
                               Container(
                                 height: 72,
                                 child: Row(
@@ -368,7 +386,8 @@ class _AppMainState extends State<AppMain> {
                                         margin: EdgeInsets.all(8),
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.deepOrange),
+                                          border: Border.all(
+                                              color: Colors.deepOrange),
                                         ),
                                       ),
                                     ),
@@ -378,7 +397,8 @@ class _AppMainState extends State<AppMain> {
                                         margin: EdgeInsets.all(8),
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.deepOrange),
+                                          border: Border.all(
+                                              color: Colors.deepOrange),
                                         ),
                                       ),
                                     ),
@@ -388,7 +408,8 @@ class _AppMainState extends State<AppMain> {
                                         margin: EdgeInsets.all(8),
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.deepOrange),
+                                          border: Border.all(
+                                              color: Colors.deepOrange),
                                         ),
                                       ),
                                     ),
@@ -398,7 +419,8 @@ class _AppMainState extends State<AppMain> {
                                         margin: EdgeInsets.all(8),
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.deepOrange),
+                                          border: Border.all(
+                                              color: Colors.deepOrange),
                                         ),
                                       ),
                                     ),
