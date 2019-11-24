@@ -10,7 +10,7 @@ class AppMain extends StatefulWidget {
 class _AppMainState extends State<AppMain> {
   Widget _buildFolderView() {
     return Expanded(
-      flex: 6,
+      flex: 8,
       child: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, top: 24),
         child: Column(
@@ -308,12 +308,28 @@ class _AppMainState extends State<AppMain> {
                     children: <Widget>[
                       _buildFolderView(),
                       Expanded(
-                        flex: 6,
+                        flex: 7,
                         child: Placeholder(),
                       ),
                       Expanded(
-                        flex: 2,
-                        child: Placeholder(),
+                        flex: 3,
+                        child: Column(
+                          children: <Widget>[
+                            Text("Shared"),
+                            Row(
+                              children: <Widget>[
+                                Container(
+                                  height: 52,
+                                  width: 52,
+                                  decoration: BoxDecoration(
+                                    color: Colors.greenAccent,
+
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
@@ -326,3 +342,17 @@ class _AppMainState extends State<AppMain> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

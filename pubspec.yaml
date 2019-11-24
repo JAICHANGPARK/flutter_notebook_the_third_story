@@ -26,6 +26,7 @@ dependencies:
   badges: any
   page_transition: ^1.1.5
   fl_chart: ^0.4.2
+  percent_indicator: ^2.1.1+1
 
 
 dev_dependencies:
