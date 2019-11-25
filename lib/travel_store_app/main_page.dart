@@ -57,7 +57,9 @@ class _MainPageState extends State<MainPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text(
                           "The original solo female travel blogger who",
                           style: TextStyle(
@@ -92,16 +94,20 @@ class _MainPageState extends State<MainPage> {
             bottom: 0,
             child: Container(
               height: 80,
-              decoration: BoxDecoration(color: Colors.brown,
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(24),
-                topLeft: Radius.circular(24)
+              decoration: BoxDecoration(
+                  color: Colors.brown,
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(24),
+                      topLeft: Radius.circular(24))),
+              child: Center(
+                  child: Text(
+                "Skip",
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.yellow,
+                  fontWeight: FontWeight.bold,
+                ),
               )),
-              child: Center(child: Text("Skip", style: TextStyle(
-                fontSize: 22,
-                color: Colors.yellow,
-                fontWeight: FontWeight.bold,
-              ),)),
             ),
           )
         ],
