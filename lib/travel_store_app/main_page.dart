@@ -120,13 +120,32 @@ class _MainPageState extends State<MainPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24),
                 ),
-                padding: EdgeInsets.only(left: 24, right: 16, top: 24),
+                padding: EdgeInsets.only(left: 24, right: 24, top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Good morning"),
-                    Text("Dreamwalker"),
-                    Text("Where you would like to Go?"),
+                    Text("Good morning", style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12
+
+                    ),),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text("Dreamwalker", style: TextStyle(
+                      color: Colors.orange,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Text("Where you would like to Go?", style: TextStyle(
+                      color: Colors.brown,
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.5
+
+                    ),),
                     SizedBox(
                       height: 24,
                     ),
