@@ -115,7 +115,25 @@ class _MainPageState extends State<MainPage> {
             right: 24,
             bottom: 100,
             top: 380,
-            child: Container()
+            child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(24),
+            ),
+              padding: EdgeInsets.only(left: 24, right: 16, top: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text("Good morning"),
+                  Text("Dreamwalker"),
+                  Text("Where you would like to Go?"),
+                  Container(
+                    height: 38,
+                    child: Placeholder(),
+                  )
+                ],
+              ),
+            )
           )
         ],
       ),
