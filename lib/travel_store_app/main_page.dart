@@ -124,28 +124,31 @@ class _MainPageState extends State<MainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Good morning", style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 12
-
-                    ),),
+                    Text(
+                      "Good morning",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
                     SizedBox(
                       height: 4,
                     ),
-                    Text("Dreamwalker", style: TextStyle(
-                      color: Colors.orange,
-                      fontWeight: FontWeight.bold,
-                    ),),
+                    Text(
+                      "Dreamwalker",
+                      style: TextStyle(
+                        color: Colors.orange,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     SizedBox(
                       height: 16,
                     ),
-                    Text("Where you would like to Go?", style: TextStyle(
-                      color: Colors.brown,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1.5
-
-                    ),),
+                    Text(
+                      "Where you would like to Go?",
+                      style: TextStyle(
+                          color: Colors.brown,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5),
+                    ),
                     SizedBox(
                       height: 24,
                     ),
