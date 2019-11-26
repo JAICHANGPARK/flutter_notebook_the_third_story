@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> {
                 children: <Widget>[
                   Positioned(
                     left: 24,
-                    top: 220,
+                    top: 180,
                     right: 0,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -114,12 +114,17 @@ class _MainPageState extends State<MainPage> {
               left: 24,
               right: 24,
               bottom: 100,
-              top: 380,
+              top: 340,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(24),
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          blurRadius: 2,
+                          spreadRadius: 3)
+                    ]),
                 padding: EdgeInsets.only(left: 24, right: 24, top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
