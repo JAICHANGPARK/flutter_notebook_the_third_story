@@ -111,50 +111,72 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
           Positioned(
-            left: 24,
-            right: 24,
-            bottom: 100,
-            top: 380,
-            child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(24),
-            ),
-              padding: EdgeInsets.only(left: 24, right: 16, top: 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text("Good morning"),
-                  Text("Dreamwalker"),
-                  Text("Where you would like to Go?"),
-                  Container(
-                    height: 38,
-                    child: Placeholder(),
-                  )
-                ],
-              ),
-            )
-          )
+              left: 24,
+              right: 24,
+              bottom: 100,
+              top: 380,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                padding: EdgeInsets.only(left: 24, right: 16, top: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text("Good morning"),
+                    Text("Dreamwalker"),
+                    Text("Where you would like to Go?"),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Container(
+                      height: 58,
+                      decoration:
+                          BoxDecoration(border: Border(bottom: BorderSide())),
+                      child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border(
+                                right: BorderSide(),
+                              )),
+                              child: Center(
+                                child: Icon(
+                                  Icons.search,
+                                  size: 32,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 9,
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Container(
+                                height: 58,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text("Search"),
+                                    Text("Sylhet, Bangladesh"),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ))
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
