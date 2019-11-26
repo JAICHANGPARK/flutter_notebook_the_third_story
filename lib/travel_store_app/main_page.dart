@@ -35,8 +35,8 @@ class _MainPageState extends State<MainPage> {
               child: Stack(
                 children: <Widget>[
                   Positioned(
-                    left: 16,
-                    top: 240,
+                    left: 24,
+                    top: 220,
                     right: 0,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -93,7 +93,7 @@ class _MainPageState extends State<MainPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: 80,
+              height: 72,
               decoration: BoxDecoration(
                   color: Colors.brown,
                   borderRadius: BorderRadius.only(
@@ -110,9 +110,33 @@ class _MainPageState extends State<MainPage> {
               )),
             ),
           ),
-          
+          Positioned(
+            left: 24,
+            right: 24,
+            bottom: 100,
+            top: 380,
+            child: Container()
+          )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
