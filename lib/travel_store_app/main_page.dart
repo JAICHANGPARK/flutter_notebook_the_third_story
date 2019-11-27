@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/travel_store_app/product_page.dart';
 
 class TravelStoreApp extends StatelessWidget {
   @override
@@ -92,22 +93,30 @@ class _MainPageState extends State<MainPage> {
             left: 0,
             right: 0,
             bottom: 0,
-            child: Container(
-              height: 72,
-              decoration: BoxDecoration(
-                  color: Colors.brown,
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(24),
-                      topLeft: Radius.circular(24))),
-              child: Center(
-                  child: Text(
-                "Skip",
-                style: TextStyle(
-                  fontSize: 22,
-                  color: Colors.yellow,
-                  fontWeight: FontWeight.bold,
-                ),
-              )),
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return ProductPage();
+                }));
+              },
+              child: Container(
+                height: 72,
+                decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(24),
+                        topLeft: Radius.circular(24))),
+                child: Center(
+                    child: Text(
+                  "Skip",
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.yellow,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )),
+              ),
             ),
           ),
           Positioned(
