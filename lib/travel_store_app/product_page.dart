@@ -55,21 +55,29 @@ class _ProductPageState extends State<ProductPage> {
                 Expanded(
                   flex: 8,
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 16, top: 16),
+                    padding: const EdgeInsets.only(bottom: 16, top: 16, right: 16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         Row(
                           children: <Widget>[
-                            Text("Adidas Shop"),
+                            Text("Adidas Shop", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+
+                            ),),
+                            Spacer(),
                             Icon(Icons.favorite,
-                            color: Colors.red,),
+                            color: Colors.red,
+                            size: 20,),
                           ],
                         ),
                         Row(
                           children: <Widget>[
-                            Text("Available"),
+                            Text("Available",style: TextStyle(
+                              fontSize: 10,
+                            ),),
+                            SizedBox(width: 8,),
                             Container(
                               height: 8,
                               width: 8,
@@ -80,16 +88,21 @@ class _ProductPageState extends State<ProductPage> {
                             ),
                           ],
                         ),
-                        Text("From 10:00 A.M. Until 12:00 A.M"),
+                        Text("From 10:00 A.M. Until 12:00 A.M", style: TextStyle(
+                          fontSize: 10,
+                        ),),
                         Row(
                           children: <Widget>[
-                            Icon(Icons.star, color: Colors.orange,),
-                            Icon(Icons.star, color: Colors.orange,),
-                            Icon(Icons.star, color: Colors.orange,),
-                            Icon(Icons.star, color: Colors.orange[100],),
-                            Icon(Icons.star, color: Colors.orange[100],),
+                            Icon(Icons.star, color: Colors.orange, size: 20,),
+                            Icon(Icons.star, color: Colors.orange,size: 20),
+                            Icon(Icons.star, color: Colors.orange,size: 20),
+                            Icon(Icons.star, color: Colors.orange[100],size: 20),
+                            Icon(Icons.star, color: Colors.orange[100],size: 20),
                             Spacer(),
-                            Text("37 ratings",)
+                            Text("37 ratings", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12
+                            ),)
                           ],
                         )
                       ],
