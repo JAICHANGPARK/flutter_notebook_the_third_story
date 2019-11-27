@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ProductPage extends StatefulWidget {
   @override
   _ProductPageState createState() => _ProductPageState();
@@ -12,17 +11,15 @@ class _ProductPageState extends State<ProductPage> {
     return Scaffold(
       appBar: AppBar(
         textTheme: TextTheme(
-          title: TextStyle(
-            color: Colors.black,
-            fontSize: 18,
-            fontWeight: FontWeight.bold
-          )
-        ),
+            title: TextStyle(
+                color: Colors.black,
+                fontSize: 18,
+                fontWeight: FontWeight.bold)),
         title: Text("Product"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.apps),
-            onPressed: (){},
+            onPressed: () {},
           )
         ],
         backgroundColor: Colors.transparent,
@@ -47,44 +44,26 @@ class _ProductPageState extends State<ProductPage> {
           ),
           Expanded(
             flex: 2,
-            child: Placeholder(),
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.brown,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(24),
+                      topRight: Radius.circular(24))),
+              child: Center(
+                child: Text(
+                  "Book now",
+                  style: TextStyle(
+                    color: Colors.orange,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ),
-
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
