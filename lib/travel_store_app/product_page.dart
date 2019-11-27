@@ -39,8 +39,65 @@ class _ProductPageState extends State<ProductPage> {
             child: Placeholder(),
           ),
           Expanded(
-            flex: 4,
-            child: Placeholder(),
+            flex: 3,
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                 flex: 3 ,
+                  child: Container(
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.deepOrangeAccent,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 8,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 16, top: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Text("Adidas Shop"),
+                            Icon(Icons.favorite,
+                            color: Colors.red,),
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text("Available"),
+                            Container(
+                              height: 8,
+                              width: 8,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.green,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text("From 10:00 A.M. Until 12:00 A.M"),
+                        Row(
+                          children: <Widget>[
+                            Icon(Icons.star, color: Colors.orange,),
+                            Icon(Icons.star, color: Colors.orange,),
+                            Icon(Icons.star, color: Colors.orange,),
+                            Icon(Icons.star, color: Colors.orange[100],),
+                            Icon(Icons.star, color: Colors.orange[100],),
+                            Spacer(),
+                            Text("37 ratings",)
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
           Expanded(
             flex: 2,
