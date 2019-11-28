@@ -73,15 +73,30 @@ class _BookPageState extends State<BookPage> {
                 ),
                 Expanded(
                   flex: 2,
-                  child: Column(
-                    children: <Widget>[
-                      Divider(),
-                      Row(
-                        children: <Widget>[
-                          
-                        ],
-                      )
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Column(
+                      children: <Widget>[
+                        Divider(
+                          color: Colors.grey,
+                          height: 16,
+                          thickness: 1.5,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text("Total", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),),
+                            Text("\$420", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
