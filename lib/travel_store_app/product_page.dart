@@ -99,7 +99,25 @@ class _ProductPageState extends State<ProductPage> {
           ),
           Expanded(
             flex: 9,
-            child: Placeholder(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Available shop in sylet"
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 10,
+                  child: Placeholder(),
+                )
+
+              ],
+            ),
           ),
           Expanded(
             flex: 3,
