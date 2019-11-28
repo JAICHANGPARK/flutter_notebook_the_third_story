@@ -97,7 +97,7 @@ class _ProductPageState extends State<ProductPage> {
             ),
           ),
           Expanded(
-            flex: 8,
+            flex: 9,
             child: Placeholder(),
           ),
           Expanded(
