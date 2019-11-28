@@ -105,17 +105,23 @@ class _ProductPageState extends State<ProductPage> {
                 Expanded(
                   flex: 1,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(left: 24),
                     child: Text(
-                      "Available shop in sylet"
+                      "Available shop in sylet",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                      ),
                     ),
                   ),
                 ),
                 Expanded(
                   flex: 10,
-                  child: Placeholder(),
+                  child: Center(
+                    child: Text("Maps"),
+                  ),
                 )
-
               ],
             ),
           ),
@@ -214,19 +220,26 @@ class _ProductPageState extends State<ProductPage> {
           ),
           Expanded(
             flex: 2,
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.brown,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(24),
-                      topRight: Radius.circular(24))),
-              child: Center(
-                child: Text(
-                  "Book now",
-                  style: TextStyle(
-                    color: Colors.orange,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=>
+                ));
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24))),
+                child: Center(
+                  child: Text(
+                    "Book now",
+                    style: TextStyle(
+                      color: Colors.orange,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
