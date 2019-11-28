@@ -110,10 +110,9 @@ class _ProductPageState extends State<ProductPage> {
                     child: Text(
                       "Available shop in sylet",
                       style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
                     ),
                   ),
                 ),
@@ -222,10 +221,9 @@ class _ProductPageState extends State<ProductPage> {
           Expanded(
             flex: 2,
             child: InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=>BookPage()
-                ));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BookPage()));
               },
               child: Container(
                 decoration: BoxDecoration(
