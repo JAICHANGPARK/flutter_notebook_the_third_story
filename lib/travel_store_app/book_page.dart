@@ -73,7 +73,16 @@ class _BookPageState extends State<BookPage> {
                 ),
                 Expanded(
                   flex: 2,
-                  child: Placeholder(),
+                  child: Column(
+                    children: <Widget>[
+                      Divider(),
+                      Row(
+                        children: <Widget>[
+                          
+                        ],
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
