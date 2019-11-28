@@ -50,21 +50,43 @@ class _ProductPageState extends State<ProductPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text("Winter Jacket", style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),),
+                        Text(
+                          "Winter Jacket",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18),
+                        ),
                         Spacer(),
-                        Text("Best jacket for winter", style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 12
-                        ),),
-                        Text("season"),
+                        Text(
+                          "Best jacket for winter",
+                          style: TextStyle(color: Colors.black54, fontSize: 12),
+                        ),
+                        Text(
+                          "season",
+                          style: TextStyle(color: Colors.black54, fontSize: 12),
+                        ),
                         Spacer(),
                         Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: <Widget>[
-                            Text("Price"),
-                            Text("\$210-320"),
+                            Text(
+                              "Price",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "\$210-320",
+                              style: TextStyle(
+                                  color: Colors.orangeAccent,
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ],
                         )
                       ],
