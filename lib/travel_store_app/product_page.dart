@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/travel_store_app/book_page.dart';
 
 class ProductPage extends StatefulWidget {
   @override
@@ -223,7 +224,7 @@ class _ProductPageState extends State<ProductPage> {
             child: InkWell(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=>
+                  builder: (context)=>BookPage()
                 ));
               },
               child: Container(
