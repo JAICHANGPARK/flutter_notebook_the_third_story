@@ -32,7 +32,24 @@ class _ProductPageState extends State<ProductPage> {
         children: <Widget>[
           Expanded(
             flex: 4,
-            child: Placeholder(),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  flex: 4,
+                  child:Container(
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.yellow,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 6,
+                  child:Placeholder(),
+                )
+              ],
+            ),
           ),
           Expanded(
             flex: 8,
