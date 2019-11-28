@@ -45,18 +45,30 @@ class _ProductPageState extends State<ProductPage> {
                 ),
                 Expanded(
                   flex: 6,
-                  child: Column(
-                    children: <Widget>[
-                      Text("Winter Jacket"),
-                      Text("Best jacket for winter"),
-                      Text("season"),
-                      Row(
-                        children: <Widget>[
-                          Text("Price"),
-                          Text("\$210-320"),
-                        ],
-                      )
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text("Winter Jacket", style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),),
+                        Spacer(),
+                        Text("Best jacket for winter", style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 12
+                        ),),
+                        Text("season"),
+                        Spacer(),
+                        Row(
+                          children: <Widget>[
+                            Text("Price"),
+                            Text("\$210-320"),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
