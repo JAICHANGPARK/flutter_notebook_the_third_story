@@ -37,7 +37,7 @@ class _ProductPageState extends State<ProductPage> {
                 Expanded(
                   flex: 4,
                   child: Container(
-                    margin: EdgeInsets.all(16),
+                    margin: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                     decoration: BoxDecoration(
                         color: Colors.yellow,
                         borderRadius: BorderRadius.circular(8)),
@@ -46,7 +46,8 @@ class _ProductPageState extends State<ProductPage> {
                 Expanded(
                   flex: 6,
                   child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
