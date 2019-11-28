@@ -31,8 +31,52 @@ class _BookPageState extends State<BookPage> {
       body: Column(
         children: <Widget>[
           Expanded(
-            flex: 9,
-            child: Placeholder(),
+            flex: 12,
+            child: Column(
+              children: <Widget>[
+                Expanded(
+                  flex: 10,
+                  child: ListView(
+                    children: <Widget>[
+                      Container(
+                        height: 120,
+                        margin: EdgeInsets.only(left: 24, right: 24,
+                        bottom: 16),
+                        child: Placeholder(),
+                      ),
+                      Container(
+                        height: 120,
+                        margin: EdgeInsets.only(left: 24, right: 24,
+                            bottom: 16),
+                        child: Placeholder(),
+                      ),
+                      Container(
+                        height: 120,
+                        margin: EdgeInsets.only(left: 24, right: 24,
+                            bottom: 16),
+                        child: Placeholder(),
+                      ),
+                      Container(
+                        height: 120,
+                        margin: EdgeInsets.only(left: 24, right: 24,
+                            bottom: 16),
+                        child: Placeholder(),
+                      ),
+                      Container(
+                        height: 120,
+                        margin: EdgeInsets.only(left: 24, right: 24,
+                            bottom: 16),
+                        child: Placeholder(),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Placeholder(),
+                )
+              ],
+            ),
           ),
           Expanded(
             flex: 4,
