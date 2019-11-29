@@ -40,8 +40,7 @@ class _BookPageState extends State<BookPage> {
                     children: <Widget>[
                       Container(
                         height: 100,
-                        margin:
-                            EdgeInsets.only(left: 24, right: 24, bottom: 8),
+                        margin: EdgeInsets.only(left: 24, right: 24, bottom: 8),
                         child: Row(
                           children: <Widget>[
                             Expanded(
@@ -71,39 +70,53 @@ class _BookPageState extends State<BookPage> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Text("Jacket"),
-                                    SizedBox(height: 12,),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
                                     Row(
                                       children: <Widget>[
                                         Expanded(
                                           child: Container(
+                                            margin: EdgeInsets.all(2),
                                             height: 48,
                                             decoration: BoxDecoration(
-                                              color: Colors.blueGrey[100],
-                                            ),
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                    BorderRadius.circular(8)),
                                             child: Center(
-                                              child: Text("-"),
+                                              child: Text("-",style: TextStyle(
+                                                fontSize: 30
+                                              ),),
                                             ),
                                           ),
                                         ),
                                         Expanded(
                                           child: Container(
                                             height: 48,
+                                            margin: EdgeInsets.all(2),
                                             decoration: BoxDecoration(
-                                              color: Colors.brown,
-                                            ),
+                                                color: Colors.brown,
+                                                borderRadius:
+                                                    BorderRadius.circular(8)),
                                             child: Center(
-                                              child: Text("1"),
+                                              child: Text("1",style: TextStyle(
+                                                color: Colors.white
+                                              ),),
                                             ),
                                           ),
                                         ),
                                         Expanded(
                                           child: Container(
                                             height: 48,
+                                            margin: EdgeInsets.all(2),
                                             decoration: BoxDecoration(
-                                              color: Colors.blueGrey[100],
-                                            ),
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                    BorderRadius.circular(8)),
                                             child: Center(
-                                              child: Text("+"),
+                                              child: Text("+",style: TextStyle(
+                                                fontSize: 20
+                                              ),),
                                             ),
                                           ),
                                         ),
