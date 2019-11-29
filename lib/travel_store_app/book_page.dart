@@ -172,28 +172,536 @@ class _BookPageState extends State<BookPage> {
                         ),
                       ),
                       Container(
-                        height: 120,
-                        margin:
-                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
-                        child: Placeholder(),
+                        height: 100,
+                        margin: EdgeInsets.only(left: 24, right: 24, bottom: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Center(
+                                child: Icon(Icons.cancel),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 7,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Jacket",style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Container(
+                                            margin: EdgeInsets.all(2),
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "-",
+                                                style: TextStyle(fontSize: 30),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.brown,
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "1",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "+",
+                                                style: TextStyle(fontSize: 20),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 3,
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 8, right: 0, bottom: 24, top: 16),
+                                child: Column(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text(
+                                      "\$ 210",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\$ 610",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        decoration: TextDecoration.lineThrough,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "-64%",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
-                        height: 120,
-                        margin:
-                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
-                        child: Placeholder(),
+                        height: 100,
+                        margin: EdgeInsets.only(left: 24, right: 24, bottom: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Center(
+                                child: Icon(Icons.cancel),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 7,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Jacket",style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Container(
+                                            margin: EdgeInsets.all(2),
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "-",
+                                                style: TextStyle(fontSize: 30),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.brown,
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "1",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "+",
+                                                style: TextStyle(fontSize: 20),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 3,
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 8, right: 0, bottom: 24, top: 16),
+                                child: Column(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text(
+                                      "\$ 210",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\$ 610",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        decoration: TextDecoration.lineThrough,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "-64%",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
-                        height: 120,
-                        margin:
-                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
-                        child: Placeholder(),
+                        height: 100,
+                        margin: EdgeInsets.only(left: 24, right: 24, bottom: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Center(
+                                child: Icon(Icons.cancel),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 7,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Jacket",style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Container(
+                                            margin: EdgeInsets.all(2),
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "-",
+                                                style: TextStyle(fontSize: 30),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.brown,
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "1",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "+",
+                                                style: TextStyle(fontSize: 20),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 3,
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 8, right: 0, bottom: 24, top: 16),
+                                child: Column(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text(
+                                      "\$ 210",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\$ 610",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        decoration: TextDecoration.lineThrough,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "-64%",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
-                        height: 120,
-                        margin:
-                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
-                        child: Placeholder(),
+                        height: 100,
+                        margin: EdgeInsets.only(left: 24, right: 24, bottom: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Center(
+                                child: Icon(Icons.cancel),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 7,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Jacket",style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Container(
+                                            margin: EdgeInsets.all(2),
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "-",
+                                                style: TextStyle(fontSize: 30),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.brown,
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "1",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            margin: EdgeInsets.all(2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.blueGrey[100],
+                                                borderRadius:
+                                                BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Text(
+                                                "+",
+                                                style: TextStyle(fontSize: 20),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 3,
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 8, right: 0, bottom: 24, top: 16),
+                                child: Column(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text(
+                                      "\$ 210",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\$ 610",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        decoration: TextDecoration.lineThrough,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "-64%",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
