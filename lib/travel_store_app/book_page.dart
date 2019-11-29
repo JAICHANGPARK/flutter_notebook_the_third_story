@@ -69,7 +69,10 @@ class _BookPageState extends State<BookPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
-                                    Text("Jacket"),
+                                    Text("Jacket",style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold
+                                    ),),
                                     SizedBox(
                                       height: 12,
                                     ),
@@ -84,9 +87,10 @@ class _BookPageState extends State<BookPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(8)),
                                             child: Center(
-                                              child: Text("-",style: TextStyle(
-                                                fontSize: 30
-                                              ),),
+                                              child: Text(
+                                                "-",
+                                                style: TextStyle(fontSize: 30),
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -99,9 +103,11 @@ class _BookPageState extends State<BookPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(8)),
                                             child: Center(
-                                              child: Text("1",style: TextStyle(
-                                                color: Colors.white
-                                              ),),
+                                              child: Text(
+                                                "1",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -114,9 +120,10 @@ class _BookPageState extends State<BookPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(8)),
                                             child: Center(
-                                              child: Text("+",style: TextStyle(
-                                                fontSize: 20
-                                              ),),
+                                              child: Text(
+                                                "+",
+                                                style: TextStyle(fontSize: 20),
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -128,7 +135,38 @@ class _BookPageState extends State<BookPage> {
                             ),
                             Expanded(
                               flex: 3,
-                              child: Placeholder(),
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 8, right: 0, bottom: 24, top: 16),
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text(
+                                      "\$ 210",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\$ 610",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        decoration: TextDecoration.lineThrough,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "-64%",
+                                      style: TextStyle(
+                                        color: Colors.red,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
                             ),
                           ],
                         ),
