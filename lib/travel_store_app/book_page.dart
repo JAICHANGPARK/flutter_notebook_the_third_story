@@ -103,8 +103,9 @@ class _BookPageState extends State<BookPage> {
             ),
           ),
           Expanded(
-            flex: 4,
+            flex: 5,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Expanded(
                   flex: 2,
