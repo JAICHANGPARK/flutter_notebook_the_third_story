@@ -155,12 +155,64 @@ class _BookPageState extends State<BookPage> {
                         ),
                         Expanded(
                           flex: 1,
-                          child: Placeholder(),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                  flex: 5,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                    decoration: BoxDecoration(
+                                        color: Colors.indigo[300],
+                                        borderRadius: BorderRadius.circular(7)
+                                    ),
+                                  )
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  height: 28,
+                                  width: 28,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.grey)
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Expanded(
                           flex: 1,
-                          child: Placeholder(),
-                        )
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                  flex: 5,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                    decoration: BoxDecoration(
+                                        color: Colors.indigo[300],
+                                        borderRadius: BorderRadius.circular(7)
+                                    ),
+                                  )
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  height: 28,
+                                  width: 28,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.grey)
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   )
