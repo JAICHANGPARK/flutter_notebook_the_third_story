@@ -40,32 +40,32 @@ class _BookPageState extends State<BookPage> {
                     children: <Widget>[
                       Container(
                         height: 120,
-                        margin: EdgeInsets.only(left: 24, right: 24,
-                        bottom: 16),
+                        margin:
+                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
                         child: Placeholder(),
                       ),
                       Container(
                         height: 120,
-                        margin: EdgeInsets.only(left: 24, right: 24,
-                            bottom: 16),
+                        margin:
+                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
                         child: Placeholder(),
                       ),
                       Container(
                         height: 120,
-                        margin: EdgeInsets.only(left: 24, right: 24,
-                            bottom: 16),
+                        margin:
+                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
                         child: Placeholder(),
                       ),
                       Container(
                         height: 120,
-                        margin: EdgeInsets.only(left: 24, right: 24,
-                            bottom: 16),
+                        margin:
+                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
                         child: Placeholder(),
                       ),
                       Container(
                         height: 120,
-                        margin: EdgeInsets.only(left: 24, right: 24,
-                            bottom: 16),
+                        margin:
+                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
                         child: Placeholder(),
                       ),
                     ],
@@ -85,14 +85,20 @@ class _BookPageState extends State<BookPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text("Total", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),),
-                            Text("\$420", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),),
+                            Text(
+                              "Total",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Text(
+                              "\$420",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
                           ],
                         )
                       ],
@@ -113,10 +119,8 @@ class _BookPageState extends State<BookPage> {
                     flex: 2,
                     child: Text(
                       "Select Card",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                   ),
                   Expanded(
@@ -128,26 +132,26 @@ class _BookPageState extends State<BookPage> {
                           child: Column(
                             children: <Widget>[
                               Expanded(
-                                flex: 5,
-                                child: Container(
-                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
-                                  decoration: BoxDecoration(
-                                    color: Colors.indigo,
-                                    borderRadius: BorderRadius.circular(7)
-                                  ),
-                                )
-                              ),
+                                  flex: 5,
+                                  child: Container(
+                                    margin: EdgeInsets.only(
+                                        right: 8, bottom: 8, top: 8),
+                                    decoration: BoxDecoration(
+                                        color: Colors.indigo,
+                                        borderRadius: BorderRadius.circular(7)),
+                                  )),
                               Expanded(
                                 flex: 3,
                                 child: Container(
-                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  margin: EdgeInsets.only(
+                                      right: 8, bottom: 8, top: 8),
                                   height: 28,
                                   width: 28,
                                   decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Colors.yellow,
-                                    border: Border.all(color: Colors.orangeAccent)
-                                  ),
+                                      shape: BoxShape.circle,
+                                      color: Colors.yellow,
+                                      border: Border.all(
+                                          color: Colors.orangeAccent)),
                                 ),
                               )
                             ],
@@ -160,24 +164,23 @@ class _BookPageState extends State<BookPage> {
                               Expanded(
                                   flex: 5,
                                   child: Container(
-                                    margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                    margin: EdgeInsets.only(
+                                        right: 8, bottom: 8, top: 8),
                                     decoration: BoxDecoration(
                                         color: Colors.indigo[300],
-                                        borderRadius: BorderRadius.circular(7)
-                                    ),
-                                  )
-                              ),
+                                        borderRadius: BorderRadius.circular(7)),
+                                  )),
                               Expanded(
                                 flex: 3,
                                 child: Container(
-                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  margin: EdgeInsets.only(
+                                      right: 8, bottom: 8, top: 8),
                                   height: 28,
                                   width: 28,
                                   decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white,
-                                      border: Border.all(color: Colors.grey)
-                                  ),
+                                      border: Border.all(color: Colors.grey)),
                                 ),
                               )
                             ],
@@ -190,24 +193,23 @@ class _BookPageState extends State<BookPage> {
                               Expanded(
                                   flex: 5,
                                   child: Container(
-                                    margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                    margin: EdgeInsets.only(
+                                        right: 8, bottom: 8, top: 8),
                                     decoration: BoxDecoration(
                                         color: Colors.indigo[300],
-                                        borderRadius: BorderRadius.circular(7)
-                                    ),
-                                  )
-                              ),
+                                        borderRadius: BorderRadius.circular(7)),
+                                  )),
                               Expanded(
                                 flex: 3,
                                 child: Container(
-                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  margin: EdgeInsets.only(
+                                      right: 8, bottom: 8, top: 8),
                                   height: 28,
                                   width: 28,
                                   decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white,
-                                      border: Border.all(color: Colors.grey)
-                                  ),
+                                      border: Border.all(color: Colors.grey)),
                                 ),
                               )
                             ],
@@ -240,7 +242,6 @@ class _BookPageState extends State<BookPage> {
               ),
             ),
           ),
-
         ],
       ),
     );
