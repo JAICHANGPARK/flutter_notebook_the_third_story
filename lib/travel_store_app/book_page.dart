@@ -104,35 +104,68 @@ class _BookPageState extends State<BookPage> {
           ),
           Expanded(
             flex: 5,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Expanded(
-                  flex: 2,
-                  child: Text(
-                    "Select Card"
-                  ),
-                ),
-                Expanded(
-                  flex: 8,
-                  child: Row(
-                    children: <Widget>[
-                      Expanded(
-                        flex: 1,
-                        child: Placeholder(),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      "Select Card",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
                       ),
-                      Expanded(
-                        flex: 1,
-                        child: Placeholder(),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Placeholder(),
-                      )
-                    ],
+                    ),
                   ),
-                )
-              ],
+                  Expanded(
+                    flex: 8,
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 5,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.indigo,
+                                    borderRadius: BorderRadius.circular(7)
+                                  ),
+                                )
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8,bottom: 8,top: 8),
+                                  height: 28,
+                                  width: 28,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.yellow,
+                                    border: Border.all(color: Colors.orangeAccent)
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Placeholder(),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Expanded(
