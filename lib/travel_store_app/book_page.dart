@@ -39,10 +39,86 @@ class _BookPageState extends State<BookPage> {
                   child: ListView(
                     children: <Widget>[
                       Container(
-                        height: 120,
+                        height: 100,
                         margin:
-                            EdgeInsets.only(left: 24, right: 24, bottom: 16),
-                        child: Placeholder(),
+                            EdgeInsets.only(left: 24, right: 24, bottom: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Center(
+                                child: Icon(Icons.cancel),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 7,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Jacket"),
+                                    SizedBox(height: 12,),
+                                    Row(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                              color: Colors.blueGrey[100],
+                                            ),
+                                            child: Center(
+                                              child: Text("-"),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                              color: Colors.brown,
+                                            ),
+                                            child: Center(
+                                              child: Text("1"),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            height: 48,
+                                            decoration: BoxDecoration(
+                                              color: Colors.blueGrey[100],
+                                            ),
+                                            child: Center(
+                                              child: Text("+"),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 3,
+                              child: Placeholder(),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
                         height: 120,
