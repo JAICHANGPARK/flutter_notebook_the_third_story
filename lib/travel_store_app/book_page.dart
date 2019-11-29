@@ -104,7 +104,35 @@ class _BookPageState extends State<BookPage> {
           ),
           Expanded(
             flex: 4,
-            child: Placeholder(),
+            child: Column(
+              children: <Widget>[
+                Expanded(
+                  flex: 2,
+                  child: Text(
+                    "Select Card"
+                  ),
+                ),
+                Expanded(
+                  flex: 8,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
           Expanded(
             flex: 2,
