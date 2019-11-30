@@ -18,7 +18,84 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.blue[50],
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            flex: 3,
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                    Container(
+                      height: 38,
+                      width: 38,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                      child: Center(
+                        child: Icon(Icons.menu),
+                      ),
+                    ),
+                  Text("Camera",style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24
+                  ),),
+                  CircleAvatar(
+                    backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+           child: Row(
+             children: <Widget>[
+               
+             ],
+           ),
+          ),
+          Expanded(
+            flex: 10,
+            child: Placeholder(),
+          ),
+          Expanded(
+            flex: 2,
+            child: Placeholder(),
+          ),
+        ],
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
