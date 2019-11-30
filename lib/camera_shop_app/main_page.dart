@@ -143,7 +143,38 @@ class _MainPageState extends State<MainPage> {
           ),
           Expanded(
             flex: 2,
-            child: Placeholder(),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  height: 14,
+                  width: 14,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    shape: BoxShape.circle
+                  ),
+                ),
+                SizedBox(width: 4,),
+                Container(
+                  height: 14,
+                  width: 14,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle
+                  ),
+                ),
+                SizedBox(width: 4,),
+                Container(
+                  height: 14,
+                  width: 14,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle
+                  ),
+                )
+              ],
+            ),
           ),
         ],
       ),
