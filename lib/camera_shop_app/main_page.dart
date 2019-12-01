@@ -130,15 +130,24 @@ class _MainPageState extends State<MainPage> {
                               blurRadius: 3,
                               spreadRadius: 1)
                         ]),
-                    padding: EdgeInsets.only(top: 32, bottom: 32),
+                    padding: EdgeInsets.only(top: 32, bottom: 24),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Text("Canon RF Lenses"),
-                        Text("EF-M to RF adapter design"),
+                        Text("Canon RF Lenses", style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 22
+                        ),),
+                        Text("EF-M to RF adapter design", style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                          
+                        ),),
                         Container(
-                          height: 200,
+                          height: 170,
+                          margin: EdgeInsets.all(16),
                           child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -149,8 +158,15 @@ class _MainPageState extends State<MainPage> {
                           ),
                           ),
                         ),
-                        Text("\$544.99"),
-                        Text("2mm sharter flange back\ndistance 20mm"),
+                        Text("\$544.99", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),),
+                        Text("2mm sharter flange back\ndistance 20mm", textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey
+                        ),),
                         Container(
                           height: 38,
                           width: 120,
