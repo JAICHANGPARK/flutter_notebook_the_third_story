@@ -22,7 +22,9 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Colors.blue[50],
       body: Column(
         children: <Widget>[
-          SizedBox(height: 24,),
+          SizedBox(
+            height: 24,
+          ),
           Expanded(
             flex: 3,
             child: Padding(
@@ -30,24 +32,26 @@ class _MainPageState extends State<MainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                    Container(
-                      height: 38,
-                      width: 38,
-                      decoration: BoxDecoration(
+                  Container(
+                    height: 38,
+                    width: 38,
+                    decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Center(
-                        child: Icon(Icons.menu),
-                      ),
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Center(
+                      child: Icon(Icons.menu),
                     ),
-                  Text("Camera",style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24
-                  ),),
+                  ),
+                  Text(
+                    "Camera",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24),
+                  ),
                   CircleAvatar(
-                    backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                    backgroundImage: NetworkImage(
+                        "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                   ),
                 ],
               ),
@@ -55,50 +59,55 @@ class _MainPageState extends State<MainPage> {
           ),
           Expanded(
             flex: 2,
-           child: Row(
-             mainAxisAlignment: MainAxisAlignment.center,
-             crossAxisAlignment: CrossAxisAlignment.center,
-             children: <Widget>[
-               Container(
-                 height: 42,
-                 width: 72,
-                 decoration: BoxDecoration(
-                   color: Colors.black,
-                    borderRadius: BorderRadius.circular(24)
-                 ),
-                 child: Center(
-                   child: Text("Newest",style: TextStyle(
-                     color: Colors.white
-                   ),),
-                 ),
-               ),
-               SizedBox(width: 8,),
-               Container(
-
-                 height: 42,
-                 width: 72,
-                 decoration: BoxDecoration(
-                     color: Colors.white.withOpacity(0.5),
-                     borderRadius: BorderRadius.circular(24)
-                 ),
-                 child: Center(
-                   child: Text("Oldest",),
-                 ),
-               ),
-               SizedBox(width: 8,),
-               Container(
-                 height: 42,
-                 width: 72,
-                 decoration: BoxDecoration(
-                     color: Colors.white.withOpacity(0.5),
-                     borderRadius: BorderRadius.circular(24)
-                 ),
-                 child: Center(
-                   child: Text("Price",),
-                 ),
-               )
-             ],
-           ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  height: 42,
+                  width: 72,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(24)),
+                  child: Center(
+                    child: Text(
+                      "Newest",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                Container(
+                  height: 42,
+                  width: 72,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(24)),
+                  child: Center(
+                    child: Text(
+                      "Oldest",
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                Container(
+                  height: 42,
+                  width: 72,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(24)),
+                  child: Center(
+                    child: Text(
+                      "Price",
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
           Expanded(
             flex: 14,
@@ -111,16 +120,14 @@ class _MainPageState extends State<MainPage> {
                     width: 240,
                     margin: EdgeInsets.all(24),
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(24),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
-                          blurRadius: 3,
-                          spreadRadius: 1
-                        )
-                      ]
-                    ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black.withOpacity(0.1),
+                              blurRadius: 3,
+                              spreadRadius: 1)
+                        ]),
                   ),
                   Container(
                     width: 240,
@@ -132,10 +139,8 @@ class _MainPageState extends State<MainPage> {
                           BoxShadow(
                               color: Colors.black.withOpacity(0.1),
                               blurRadius: 3,
-                              spreadRadius: 1
-                          )
-                        ]
-                    ),
+                              spreadRadius: 1)
+                        ]),
                   ),
                 ],
               ),
@@ -151,27 +156,25 @@ class _MainPageState extends State<MainPage> {
                   height: 14,
                   width: 14,
                   decoration: BoxDecoration(
-                    color: Colors.black,
-                    shape: BoxShape.circle
-                  ),
+                      color: Colors.black, shape: BoxShape.circle),
                 ),
-                SizedBox(width: 4,),
+                SizedBox(
+                  width: 4,
+                ),
                 Container(
                   height: 14,
                   width: 14,
                   decoration: BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle
-                  ),
+                      color: Colors.white, shape: BoxShape.circle),
                 ),
-                SizedBox(width: 4,),
+                SizedBox(
+                  width: 4,
+                ),
                 Container(
                   height: 14,
                   width: 14,
                   decoration: BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle
-                  ),
+                      color: Colors.white, shape: BoxShape.circle),
                 )
               ],
             ),
@@ -181,29 +184,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
