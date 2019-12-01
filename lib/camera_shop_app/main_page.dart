@@ -171,7 +171,9 @@ class _MainPageState extends State<MainPage> {
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11, color: Colors.grey),
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Container(
                           height: 38,
                           width: 120,
@@ -228,10 +230,10 @@ class _MainPageState extends State<MainPage> {
                           child: Container(
                             decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  image: NetworkImage(""
-                                      "https://img.vistek.net/prodimgalt/large/427066_7.jpg?tr=w-495,h-495"),
-                                  fit: BoxFit.fitHeight,
-                                )),
+                              image: NetworkImage(""
+                                  "https://img.vistek.net/prodimgalt/large/427066_7.jpg?tr=w-495,h-495"),
+                              fit: BoxFit.fitHeight,
+                            )),
                           ),
                         ),
                         Text(
@@ -244,7 +246,9 @@ class _MainPageState extends State<MainPage> {
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11, color: Colors.grey),
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Container(
                           height: 38,
                           width: 120,
