@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:notebook_the_third_story/fitness_activity_tracker/main_page.dart';
@@ -129,18 +130,29 @@ class _MainPageState extends State<MainPage> {
                               blurRadius: 3,
                               spreadRadius: 1)
                         ]),
+                    padding: EdgeInsets.only(top: 32, bottom: 32),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text("Canon RF Lenses"),
                         Text("EF-M to RF adapter design"),
                         Container(
-                          height: 240,
-                          child: Placeholder(),
+                          height: 200,
+                          child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(""
+                                  "https://img.vistek.net/prodimgalt/large/427066_7.jpg?tr=w-495,h-495"),
+                              fit: BoxFit.fitHeight,
+                            )
+                          ),
+                          ),
                         ),
                         Text("\$544.99"),
                         Text("2mm sharter flange back\ndistance 20mm"),
                         Container(
-                          height: 48,
+                          height: 38,
                           width: 120,
                           decoration: BoxDecoration(
                             color: Colors.yellow,
