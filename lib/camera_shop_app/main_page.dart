@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:notebook_the_third_story/fitness_activity_tracker/main_page.dart';
 
 class CameraShopApp extends StatelessWidget {
@@ -128,6 +129,34 @@ class _MainPageState extends State<MainPage> {
                               blurRadius: 3,
                               spreadRadius: 1)
                         ]),
+                    child: Column(
+                      children: <Widget>[
+                        Text("Canon RF Lenses"),
+                        Text("EF-M to RF adapter design"),
+                        Container(
+                          height: 240,
+                          child: Placeholder(),
+                        ),
+                        Text("\$544.99"),
+                        Text("2mm sharter flange back\ndistance 20mm"),
+                        Container(
+                          height: 48,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Buy",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     width: 240,
