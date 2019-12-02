@@ -55,6 +55,22 @@ class _DetailPageState extends State<DetailPage> {
             flex: 12,
             child: Stack(
               children: <Widget>[
+
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  bottom: 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(32),
+                        topLeft: Radius.circular(32),
+                      ),
+                    ),
+                  ),
+                ),
                 Positioned(
                   left: 0,
                   right: 0,
@@ -62,15 +78,14 @@ class _DetailPageState extends State<DetailPage> {
                   child: Container(
                     height: MediaQuery.of(context).size.height / 5,
                     decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(32),
-                            topLeft: Radius.circular(32))),
+                      color: Colors.black,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(32),
+                        topLeft: Radius.circular(32),
+                      ),
+                    ),
                   ),
                 ),
-                Positioned(
-                  left: 0,
-                )
               ],
             ),
           )
@@ -79,22 +94,3 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
