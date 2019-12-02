@@ -55,7 +55,6 @@ class _DetailPageState extends State<DetailPage> {
             flex: 12,
             child: Stack(
               children: <Widget>[
-
                 Positioned(
                   left: 0,
                   right: 0,
@@ -84,29 +83,33 @@ class _DetailPageState extends State<DetailPage> {
                         topLeft: Radius.circular(32),
                       ),
                     ),
-                    padding: EdgeInsets.only(left: 24, top: 48, right: 24, bottom: 24
-                    ),
+                    padding: EdgeInsets.only(
+                        left: 24, top: 48, right: 24, bottom: 24),
                     child: Row(
                       children: <Widget>[
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-
                           children: <Widget>[
-                            Text("Now", style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),),
-                            Text("\$399.10", style: TextStyle(
-                              color: Colors.yellow,
-                              fontWeight: FontWeight.bold,
-                                fontSize: 24
-                            ),),
-                            Text("40% OFF", style: TextStyle(
-                              color: Colors.white.withOpacity(0.5),
-                                fontSize: 12
-                            ),),
-
+                            Text(
+                              "Now",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18),
+                            ),
+                            Text(
+                              "\$399.10",
+                              style: TextStyle(
+                                  color: Colors.yellow,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24),
+                            ),
+                            Text(
+                              "40% OFF",
+                              style: TextStyle(
+                                  color: Colors.white.withOpacity(0.5),
+                                  fontSize: 12),
+                            ),
                           ],
                         )
                       ],
