@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:notebook_the_third_story/camera_shop_app/detail_page.dart';
 import 'package:notebook_the_third_story/fitness_activity_tracker/main_page.dart';
+import 'package:page_transition/page_transition.dart';
 
 class CameraShopApp extends StatelessWidget {
   @override
@@ -118,79 +120,85 @@ class _MainPageState extends State<MainPage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  Container(
-                    width: 240,
-                    margin: EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.black.withOpacity(0.1),
-                              blurRadius: 3,
-                              spreadRadius: 1)
-                        ]),
-                    padding: EdgeInsets.only(top: 32, bottom: 24),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Text(
-                          "Canon RF Lenses",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 22),
-                        ),
-                        Text(
-                          "EF-M to RF adapter design",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Container(
-                          height: 170,
-                          margin: EdgeInsets.all(16),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                image: DecorationImage(
-                              image: NetworkImage(""
-                                  "https://img.vistek.net/prodimgalt/large/427066_7.jpg?tr=w-495,h-495"),
-                              fit: BoxFit.fitHeight,
-                            )),
-                          ),
-                        ),
-                        Text(
-                          "\$544.99",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20),
-                        ),
-                        Text(
-                          "2mm sharter flange back\ndistance 20mm",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 11, color: Colors.grey),
-                        ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        Container(
-                          height: 38,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.yellow,
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Buy",
-                              style: TextStyle(
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, PageTransition(child: DetailPage(), type: PageTransitionType.downToUp,
+                      ));
+                    },
+                    child: Container(
+                      width: 240,
+                      margin: EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(24),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                blurRadius: 3,
+                                spreadRadius: 1)
+                          ]),
+                      padding: EdgeInsets.only(top: 32, bottom: 24),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Text(
+                            "Canon RF Lenses",
+                            style: TextStyle(
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
-                              ),
+                                fontSize: 22),
+                          ),
+                          Text(
+                            "EF-M to RF adapter design",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        )
-                      ],
+                          Container(
+                            height: 170,
+                            margin: EdgeInsets.all(16),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                image: NetworkImage(""
+                                    "https://img.vistek.net/prodimgalt/large/427066_7.jpg?tr=w-495,h-495"),
+                                fit: BoxFit.fitHeight,
+                              )),
+                            ),
+                          ),
+                          Text(
+                            "\$544.99",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                          Text(
+                            "2mm sharter flange back\ndistance 20mm",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 11, color: Colors.grey),
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Container(
+                            height: 38,
+                            width: 120,
+                            decoration: BoxDecoration(
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Buy",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Container(
