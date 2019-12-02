@@ -18,25 +18,35 @@ class _DetailPageState extends State<DetailPage> {
               top: true,
               left: true,
               right: true,
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    height: 42,
-                    width: 42,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 24, right: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Icon(
+                        Icons.arrow_back_ios,
+                      ),
                     ),
-                    child: Icon(
-                      Icons.arrow_back_ios,
+                    Text(
+                      "Detail",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                     ),
-                  ),
-                  Text("Detail"),
-                  IconButton(
-                    icon: Icon(Icons.more_vert),
-                    onPressed: (){},
-                  )
-                ],
+                    IconButton(
+                      padding: EdgeInsets.zero,
+                      icon: Icon(Icons.more_vert),
+                      onPressed: () {},
+                      iconSize: 32,
+                    )
+                  ],
+                ),
               ),
             ),
           ),
