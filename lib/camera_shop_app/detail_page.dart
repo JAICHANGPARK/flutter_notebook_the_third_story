@@ -22,6 +22,7 @@ class _DetailPageState extends State<DetailPage> {
                 padding: const EdgeInsets.only(left: 24, right: 16),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       height: 42,
@@ -35,7 +36,7 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                     ),
                     Text(
-                      "Detail",
+                      "Details",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                     ),
