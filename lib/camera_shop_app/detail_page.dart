@@ -86,6 +86,7 @@ class _DetailPageState extends State<DetailPage> {
                     padding: EdgeInsets.only(
                         left: 24, top: 48, right: 24, bottom: 24),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -133,6 +134,21 @@ class _DetailPageState extends State<DetailPage> {
                             ),
                           ],
                         ),
+                        SizedBox(width: 24,),
+                        Container(
+                          height: 42,
+                          width: 96,
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(36)
+                          ),
+                          child: Center(child: Text(""
+                              "Buy",style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18
+                          ),)),
+                        )
 
                       ],
                     ),
