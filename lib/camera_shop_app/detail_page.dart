@@ -111,7 +111,29 @@ class _DetailPageState extends State<DetailPage> {
                                   fontSize: 12),
                             ),
                           ],
-                        )
+                        ),
+                        SizedBox(width: 24,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "Before",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18),
+                            ),
+                            Text(
+                              "\$459.60",
+                              style: TextStyle(
+                                decoration: TextDecoration.lineThrough,
+                                  color: Colors.white.withOpacity(0.5),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24),
+                            ),
+                          ],
+                        ),
+
                       ],
                     ),
                   ),
@@ -124,3 +146,13 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
