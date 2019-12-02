@@ -31,6 +31,11 @@ class _DetailPageState extends State<DetailPage> {
                       Icons.arrow_back_ios,
                     ),
                   ),
+                  Text("Detail"),
+                  IconButton(
+                    icon: Icon(Icons.more_vert),
+                    onPressed: (){},
+                  )
                 ],
               ),
             ),
