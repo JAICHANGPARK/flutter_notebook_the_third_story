@@ -53,10 +53,48 @@ class _DetailPageState extends State<DetailPage> {
           ),
           Expanded(
             flex: 12,
-            child: Placeholder(),
+            child: Stack(
+              children: <Widget>[
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    height: MediaQuery.of(context).size.height / 5,
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(32),
+                            topLeft: Radius.circular(32))),
+                  ),
+                ),
+                Positioned(
+                  left: 0,
+                )
+              ],
+            ),
           )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
