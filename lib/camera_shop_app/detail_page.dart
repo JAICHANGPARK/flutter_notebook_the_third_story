@@ -8,6 +8,13 @@ class DetailPage extends StatefulWidget {
 class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.blue[50],
+      body: Column(
+        children: <Widget>[
+          
+        ],
+      ),
+    );
   }
 }

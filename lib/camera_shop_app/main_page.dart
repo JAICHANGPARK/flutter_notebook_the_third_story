@@ -121,9 +121,13 @@ class _MainPageState extends State<MainPage> {
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   InkWell(
-                    onTap: (){
-                      Navigator.push(context, PageTransition(child: DetailPage(), type: PageTransitionType.downToUp,
-                      ));
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          PageTransition(
+                            child: DetailPage(),
+                            type: PageTransitionType.downToUp,
+                          ));
                     },
                     child: Container(
                       width: 240,
