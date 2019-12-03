@@ -61,6 +61,7 @@ class _DetailPageState extends State<DetailPage> {
                   top: 0,
                   bottom: 0,
                   child: Container(
+                    padding: EdgeInsets.only(left: 24, right: 24, top: 48),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
