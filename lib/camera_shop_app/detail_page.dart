@@ -89,6 +89,35 @@ class _DetailPageState extends State<DetailPage> {
                                 "https://images-na.ssl-images-amazon.com/images/I/41y0AZedlsL._SX466_.jpg"),
                             fit: BoxFit.fitHeight,
                           )),
+                        ),
+                        SizedBox(height: 32,),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                           Container(
+                              height: 32,
+                              width: 96,
+                              decoration: BoxDecoration(
+                                color: Colors.blueGrey
+                              ),
+                              child: Center(
+                                child: Text("White"),
+                              ),
+                            ),
+                            Container(
+                              height: 32,
+                              width: 96,
+                              decoration: BoxDecoration(
+                                color: Colors.black
+                              ),
+                              child: Center(
+                                child: Text("Black", style: TextStyle(
+                                  color: Colors.white
+                                ),),
+                              ),
+                            ),
+
+                          ],
                         )
                       ],
                     ),
