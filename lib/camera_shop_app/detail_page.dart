@@ -113,7 +113,9 @@ class _DetailPageState extends State<DetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(width: 24,),
+                        SizedBox(
+                          width: 24,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -127,29 +129,32 @@ class _DetailPageState extends State<DetailPage> {
                             Text(
                               "\$459.60",
                               style: TextStyle(
-                                decoration: TextDecoration.lineThrough,
+                                  decoration: TextDecoration.lineThrough,
                                   color: Colors.white.withOpacity(0.5),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 24),
                             ),
                           ],
                         ),
-                        SizedBox(width: 24,),
+                        SizedBox(
+                          width: 24,
+                        ),
                         Container(
                           height: 42,
                           width: 96,
                           decoration: BoxDecoration(
-                            color: Colors.yellow,
-                            borderRadius: BorderRadius.circular(36)
-                          ),
-                          child: Center(child: Text(""
-                              "Buy",style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18
-                          ),)),
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.circular(36)),
+                          child: Center(
+                              child: Text(
+                            ""
+                            "Buy",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18),
+                          )),
                         )
-
                       ],
                     ),
                   ),
@@ -162,13 +167,3 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
