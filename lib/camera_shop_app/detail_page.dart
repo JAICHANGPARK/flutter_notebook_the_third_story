@@ -73,17 +73,32 @@ class _DetailPageState extends State<DetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text("GoPro Superior"),
+                            Text("GoPro Superior",style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 28
+                            ),),
                             Icon(
                               Icons.favorite,
                               color: Colors.red,
                             ),
                           ],
                         ),
-                        Text("GoPro rose to prominence"),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("GoPro rose to prominence",style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                        ),),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Container(
-                          height: 280,
+                          height: 240,
                           decoration: BoxDecoration(
                               image: DecorationImage(
                             image: NetworkImage(
@@ -91,7 +106,7 @@ class _DetailPageState extends State<DetailPage> {
                             fit: BoxFit.fitHeight,
                           )),
                         ),
-                        SizedBox(height: 32,),
+                        SizedBox(height: 16,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
