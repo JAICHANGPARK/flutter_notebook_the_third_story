@@ -68,6 +68,26 @@ class _DetailPageState extends State<DetailPage> {
                         topLeft: Radius.circular(32),
                       ),
                     ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Text("GoPro Superior"),
+                            Icon(Icons.favorite, color: Colors.red,),
+                          ],
+                        ),
+                        Text("GoPro rose to prominence"),
+                       Container(
+                         height: 160,
+                         decoration: BoxDecoration(
+                           image: DecorationImage(
+                             image: NetworkImage()
+                           )
+                         ),
+                       )
+                      ],
+                    ),
                   ),
                 ),
                 Positioned(
