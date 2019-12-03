@@ -74,18 +74,22 @@ class _DetailPageState extends State<DetailPage> {
                         Row(
                           children: <Widget>[
                             Text("GoPro Superior"),
-                            Icon(Icons.favorite, color: Colors.red,),
+                            Icon(
+                              Icons.favorite,
+                              color: Colors.red,
+                            ),
                           ],
                         ),
                         Text("GoPro rose to prominence"),
-                       Container(
-                         height: 160,
-                         decoration: BoxDecoration(
-                           image: DecorationImage(
-                             image: NetworkImage()
-                           )
-                         ),
-                       )
+                        Container(
+                          height: 280,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                            image: NetworkImage(
+                                "https://images-na.ssl-images-amazon.com/images/I/41y0AZedlsL._SX466_.jpg"),
+                            fit: BoxFit.fitHeight,
+                          )),
+                        )
                       ],
                     ),
                   ),
