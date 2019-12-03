@@ -96,19 +96,26 @@ class _DetailPageState extends State<DetailPage> {
                           children: <Widget>[
                            Container(
                               height: 32,
-                              width: 96,
+                              width: 80,
                               decoration: BoxDecoration(
-                                color: Colors.blueGrey
+                                color: Colors.blueGrey[50],
+                                borderRadius: BorderRadius.circular(15)
                               ),
                               child: Center(
-                                child: Text("White"),
+                                child: Text("White",style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                ),),
                               ),
+                            ),
+                            SizedBox(width: 12,
                             ),
                             Container(
                               height: 32,
-                              width: 96,
+                              width: 80,
                               decoration: BoxDecoration(
-                                color: Colors.black
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(16)
                               ),
                               child: Center(
                                 child: Text("Black", style: TextStyle(
