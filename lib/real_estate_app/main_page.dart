@@ -47,27 +47,33 @@ class _MainPageState extends State<MainPage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-              ),
-              height: MediaQuery.of(context).size.height / 6,
-              width: MediaQuery.of(context).size.width,
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    flex: 8,
-                    child: Container(
-                      decoration: BoxDecoration(color: Colors.blue),
+            SafeArea(
+              top: true,
+
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                height: MediaQuery.of(context).size.height / 8,
+                width: MediaQuery.of(context).size.width,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 12,
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.blue),
+                      ),
                     ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      decoration: BoxDecoration(color: Colors.red),
-                    ),
-                  )
-                ],
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.red,
+                        shape: BoxShape.circle,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],
