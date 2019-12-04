@@ -83,7 +83,7 @@ class _MainPageState extends State<MainPage> {
                     Expanded(
                       flex: 3,
                       child: Container(
-                        margin: EdgeInsets.all(8),
+                        margin: EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.circle,
