@@ -60,6 +60,7 @@ class _MainPageState extends State<MainPage> {
                     Expanded(
                       flex: 12,
                       child: Container(
+                          padding: EdgeInsets.only(left: 16, right: 16),
                           margin: EdgeInsets.all(16),
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -76,7 +77,6 @@ class _MainPageState extends State<MainPage> {
                               border: InputBorder.none,
                               hintText: "Enter location...",
                               icon: Icon(Icons.search),
-
                             ),
                           )),
                     ),
