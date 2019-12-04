@@ -43,9 +43,34 @@ class _MainPageState extends State<MainPage> {
               title: Text("Profile"),
             ),
           ]),
+      backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[],
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              height: MediaQuery.of(context).size.height / 6,
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    flex: 8,
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.blue),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.red),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
