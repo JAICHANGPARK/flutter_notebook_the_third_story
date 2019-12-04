@@ -49,26 +49,56 @@ class _MainPageState extends State<MainPage> {
           children: <Widget>[
             SafeArea(
               top: true,
-
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
-                height: MediaQuery.of(context).size.height / 8,
+                height: MediaQuery.of(context).size.height / 8.5,
                 width: MediaQuery.of(context).size.width,
                 child: Row(
                   children: <Widget>[
                     Expanded(
                       flex: 12,
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.blue),
-                      ),
+                          margin: EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(32),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(0.15),
+                                  blurRadius: 1,
+                                  spreadRadius: 2),
+                            ],
+                          ),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: "Enter location...",
+                              icon: Icon(Icons.search),
+
+                            ),
+                          )),
                     ),
                     Expanded(
                       flex: 3,
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.red,
-                        shape: BoxShape.circle,
+                        margin: EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black.withOpacity(0.15),
+                                blurRadius: 1,
+                                spreadRadius: 2),
+                          ],
+                        ),
+                        child: Center(
+                          child: Icon(
+                            Icons.tune,
+                            color: Colors.red[400],
+                          ),
                         ),
                       ),
                     )
