@@ -113,12 +113,22 @@ class _MainPageState extends State<MainPage> {
               height: MediaQuery.of(context).size.height / 2.3,
               child: Column(
                 children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text("Travel with us"),
-                      Text("See All"),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, right: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Text("Travel with us",
+                         style: TextStyle(
+                           color: Colors.black,
+                           fontWeight: FontWeight.bold,
+                           fontSize: 24
+                         ),),
+                        Text("See All", style: TextStyle(
+                          fontSize: 16
+                        ),),
+                      ],
+                    ),
                   ),
                   Container(
                     height: MediaQuery.of(context).size.height / 3.5,
@@ -137,7 +147,29 @@ class _MainPageState extends State<MainPage> {
                   ),
                   Row(
                     children: <Widget>[
-                      
+                      Column(
+                        children: <Widget>[
+                          Text("Walk to Oak Park"),
+                          Text("Bright Madison Street Loft"),
+                        ],
+                      )
+                      ,
+                      Container(
+                        height: 34,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.1),
+                              blurRadius: 1,
+                              spreadRadius: 1
+                            )
+                          ]
+                        ),
+                      )
+
                     ],
                   )
                 ],
