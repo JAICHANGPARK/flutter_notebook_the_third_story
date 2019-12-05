@@ -112,7 +112,15 @@ class _MainPageState extends State<MainPage> {
             Container(
               height: MediaQuery.of(context).size.height / 2.3,
               child: Column(
-                children: <Widget>[],
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text("Travel with us"),
+                      Text("See All"),
+                    ],
+                  ),
+                ],
               ),
             )
           ],
@@ -121,27 +129,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
