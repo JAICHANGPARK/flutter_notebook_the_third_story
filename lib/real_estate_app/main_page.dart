@@ -183,21 +183,40 @@ class _MainPageState extends State<MainPage> {
                     child: Row(
                       children: <Widget>[
                         Icon(Icons.add_location),
-                        Text("Forest Park, Illinois, USA",
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold,
-                        ),),
+                        Text(
+                          "Forest Park, Illinois, USA",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Spacer(),
-                        Icon(Icons.star_border,size: 20,),
-                        Icon(Icons.star_border,size: 20,),
-                        Icon(Icons.star_border,size: 20,),
-                        Icon(Icons.star_border,size: 20,),
-                        Icon(Icons.star_border,size: 20,),
+                        Icon(
+                          Icons.star_border,
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star_border,
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star_border,
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star_border,
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star_border,
+                          size: 20,
+                        ),
                       ],
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     child: Row(
@@ -206,14 +225,20 @@ class _MainPageState extends State<MainPage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text("Walk to Oak Park", style: TextStyle(
-                              fontWeight:FontWeight.bold,
-                              fontSize: 18,
-                            ),),
-                            Text("Bright Madison Street Loft", style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold,
-                            fontSize: 13),),
+                            Text(
+                              "Walk to Oak Park",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Text(
+                              "Bright Madison Street Loft",
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13),
+                            ),
                           ],
                         ),
                         Container(
