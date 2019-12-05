@@ -194,22 +194,27 @@ class _MainPageState extends State<MainPage> {
                         Icon(
                           Icons.star_border,
                           size: 20,
+                            color: Colors.pink[500]
                         ),
                         Icon(
                           Icons.star_border,
+                          size: 20,
+                            color: Colors.pink[500]
+                        ),
+                        Icon(
+                          Icons.star_border,
+                          size: 20,
+                            color: Colors.pink[500]
+                        ),
+                        Icon(
+                          Icons.star_border,
+                          color: Colors.pink[500],
                           size: 20,
                         ),
                         Icon(
                           Icons.star_border,
                           size: 20,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          size: 20,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          size: 20,
+                            color: Colors.pink[500]
                         ),
                       ],
                     ),
@@ -253,6 +258,19 @@ class _MainPageState extends State<MainPage> {
                                     blurRadius: 1,
                                     spreadRadius: 1)
                               ]),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Text("94\$", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.pink[500]
+                              ),),
+                              Text("Night", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),)
+                            ],
+                          ),
                         )
                       ],
                     ),
