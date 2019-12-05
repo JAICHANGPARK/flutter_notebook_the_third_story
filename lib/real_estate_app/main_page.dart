@@ -120,8 +120,32 @@ class _MainPageState extends State<MainPage> {
                       Text("See All"),
                     ],
                   ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 3.5,
+                    child: Placeholder(),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.add_location),
+                      Text("Forest Park, Illinois, USA"),
+                      Icon(Icons.star_border),
+                      Icon(Icons.star_border),
+                      Icon(Icons.star_border),
+                      Icon(Icons.star_border),
+                      Icon(Icons.star_border),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      
+                    ],
+                  )
                 ],
               ),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height / 2,
+              child: Placeholder(),
             )
           ],
         ),
@@ -129,3 +153,24 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
