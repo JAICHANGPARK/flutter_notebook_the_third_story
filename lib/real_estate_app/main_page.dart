@@ -178,39 +178,59 @@ class _MainPageState extends State<MainPage> {
                       ],
                     ),
                   ),
-                  Row(
-                    children: <Widget>[
-                      Icon(Icons.add_location),
-                      Text("Forest Park, Illinois, USA"),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(Icons.add_location),
+                        Text("Forest Park, Illinois, USA",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),),
+                        Spacer(),
+                        Icon(Icons.star_border,size: 20,),
+                        Icon(Icons.star_border,size: 20,),
+                        Icon(Icons.star_border,size: 20,),
+                        Icon(Icons.star_border,size: 20,),
+                        Icon(Icons.star_border,size: 20,),
+                      ],
+                    ),
                   ),
-                  Row(
-                    children: <Widget>[
-                      Column(
-                        children: <Widget>[
-                          Text("Walk to Oak Park"),
-                          Text("Bright Madison Street Loft"),
-                        ],
-                      ),
-                      Container(
-                        height: 34,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.black.withOpacity(0.1),
-                                  blurRadius: 1,
-                                  spreadRadius: 1)
-                            ]),
-                      )
-                    ],
+                  SizedBox(height: 16,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, right: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text("Walk to Oak Park", style: TextStyle(
+                              fontWeight:FontWeight.bold,
+                              fontSize: 18,
+                            ),),
+                            Text("Bright Madison Street Loft", style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                            fontSize: 13),),
+                          ],
+                        ),
+                        Container(
+                          height: 34,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 1,
+                                    spreadRadius: 1)
+                              ]),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
