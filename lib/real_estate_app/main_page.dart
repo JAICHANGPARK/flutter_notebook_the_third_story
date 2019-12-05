@@ -51,13 +51,11 @@ class _MainPageState extends State<MainPage> {
               top: true,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border(
-                    bottom: BorderSide(
+                    color: Colors.white,
+                    border: Border(
+                        bottom: BorderSide(
                       color: Colors.black.withOpacity(0.15),
-                    )
-                  )
-                ),
+                    ))),
                 height: MediaQuery.of(context).size.height / 8.5,
                 width: MediaQuery.of(context).size.width,
                 child: Row(
@@ -111,9 +109,39 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
+            Container(
+              height: MediaQuery.of(context).size.height / 2.3,
+              child: Column(
+                children: <Widget>[],
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
