@@ -128,7 +128,8 @@ class _MainPageState extends State<MainPage> {
                         ),
                         Text(
                           "See All",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 14,
+                              color: Colors.pink[500]),
                         ),
                       ],
                     ),
