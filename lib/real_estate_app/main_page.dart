@@ -317,6 +317,10 @@ class _MainPageState extends State<MainPage> {
                           decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage("https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071__340.jpg"),
+                              fit: BoxFit.cover,
+                            )
                           ),
                           child: Stack(
                             children: <Widget>[
@@ -343,6 +347,10 @@ class _MainPageState extends State<MainPage> {
                           decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage("https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602__340.jpg"),
+                              fit: BoxFit.cover,
+                            )
                           ),
                           child: Stack(
                             children: <Widget>[
