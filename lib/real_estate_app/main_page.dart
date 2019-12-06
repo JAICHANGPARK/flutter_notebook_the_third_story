@@ -316,6 +316,23 @@ class _MainPageState extends State<MainPage> {
                           height: 320,
                           decoration: BoxDecoration(
                             color: Colors.red,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                right: 12,
+                                top: 12,
+                                child: Container(
+                                  height: 32,
+                                  width: 32,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                  ),
+                                ),
+                              )
+                            ],
                           ),
                         ),
                         Container(
