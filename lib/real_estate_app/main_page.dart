@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RealEstateApp extends StatelessWidget {
@@ -282,6 +283,53 @@ class _MainPageState extends State<MainPage> {
                     color: Colors.black.withOpacity(0.1)
                   )
                 )
+              ),
+              padding: EdgeInsets.only(left: 16, right: 16),
+              child: Column(
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Text("High marks", style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 21
+                        ),),
+                        Text("See All",style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.pink[600]
+                        ),),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 9,
+                    child: GridView.count(crossAxisCount: 2,
+                      padding: EdgeInsets.zero,
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                      childAspectRatio: 2/3,
+                      children: <Widget>[
+                        Container(
+                          height: 320,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        ),
+                        Container(
+                          height: 320,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        )
+                      ],
+
+
+                    ),
+                  )
+                ],
               ),
 
             )
