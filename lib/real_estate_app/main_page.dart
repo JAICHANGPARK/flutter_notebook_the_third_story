@@ -272,9 +272,18 @@ class _MainPageState extends State<MainPage> {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             Container(
               height: MediaQuery.of(context).size.height / 2,
-              child: Placeholder(),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border(
+                  top: BorderSide(
+                    color: Colors.black.withOpacity(0.1)
+                  )
+                )
+              ),
+
             )
           ],
         ),
@@ -282,3 +291,24 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
