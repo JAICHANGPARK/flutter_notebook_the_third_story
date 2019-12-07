@@ -273,17 +273,15 @@ class _MainPageState extends State<MainPage> {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Container(
               height: MediaQuery.of(context).size.height / 2,
               decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border(
-                  top: BorderSide(
-                    color: Colors.black.withOpacity(0.1)
-                  )
-                )
-              ),
+                  color: Colors.white,
+                  border: Border(
+                      top: BorderSide(color: Colors.black.withOpacity(0.1)))),
               padding: EdgeInsets.only(left: 16, right: 16),
               child: Column(
                 children: <Widget>[
@@ -292,66 +290,40 @@ class _MainPageState extends State<MainPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text("High marks", style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 21
-                        ),),
-                        Text("See All",style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.pink[600]
-                        ),),
+                        Text(
+                          "High marks",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 21),
+                        ),
+                        Text(
+                          "See All",
+                          style:
+                              TextStyle(fontSize: 16, color: Colors.pink[600]),
+                        ),
                       ],
                     ),
                   ),
                   Expanded(
                     flex: 9,
-                    child: GridView.count(crossAxisCount: 2,
+                    child: GridView.count(
+                      crossAxisCount: 2,
                       padding: EdgeInsets.zero,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
-                      childAspectRatio: 2/3,
+                      childAspectRatio: 2 / 3,
                       children: <Widget>[
                         Container(
                           height: 320,
                           decoration: BoxDecoration(
-                            color: Colors.red,
-                            borderRadius: BorderRadius.circular(8),
-                            image: DecorationImage(
-                              image: NetworkImage("https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071__340.jpg"),
-                              fit: BoxFit.cover,
-                            )
-                          ),
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                                right: 12,
-                                top: 12,
-                                child: Container(
-                                  height: 32,
-                                  width: 32,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    shape: BoxShape.circle
-                                  ),
-                                  child: Icon(Icons.bookmark_border, size: 18,
-                                  color: Colors.pink[400],),
-                                ),
-
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          height: 320,
-                          decoration: BoxDecoration(
-                            color: Colors.red,
-                            borderRadius: BorderRadius.circular(8),
-                            image: DecorationImage(
-                              image: NetworkImage("https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602__340.jpg"),
-                              fit: BoxFit.cover,
-                            )
-                          ),
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071__340.jpg"),
+                                fit: BoxFit.cover,
+                              )),
                           child: Stack(
                             children: <Widget>[
                               Positioned(
@@ -362,24 +334,53 @@ class _MainPageState extends State<MainPage> {
                                   width: 32,
                                   decoration: BoxDecoration(
                                       color: Colors.white,
-                                      shape: BoxShape.circle
+                                      shape: BoxShape.circle),
+                                  child: Icon(
+                                    Icons.bookmark_border,
+                                    size: 18,
+                                    color: Colors.pink[400],
                                   ),
-                                  child: Icon(Icons.bookmark_border, size: 18,
-                                    color: Colors.pink[400],),
                                 ),
-
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 320,
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602__340.jpg"),
+                                fit: BoxFit.cover,
+                              )),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                right: 12,
+                                top: 12,
+                                child: Container(
+                                  height: 32,
+                                  width: 32,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle),
+                                  child: Icon(
+                                    Icons.bookmark_border,
+                                    size: 18,
+                                    color: Colors.pink[400],
+                                  ),
+                                ),
                               )
                             ],
                           ),
                         ),
                       ],
-
-
                     ),
                   )
                 ],
               ),
-
             )
           ],
         ),
@@ -387,24 +388,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
