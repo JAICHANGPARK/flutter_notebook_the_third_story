@@ -17,7 +17,50 @@ class _DetailPageState extends State<DetailPage> {
           right: true,
           child: Column(
             children: <Widget>[
-
+              Padding(
+                padding: const EdgeInsets.only(top: 24, right: 16, left: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Icon(Icons.arrow_back),
+                    Icon(Icons.share),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 7,
+                child: Placeholder(),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 3,
+                child: Placeholder(
+                  strokeWidth: 8,
+                ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 10,
+                child: Placeholder(
+                  color: Colors.pink,
+                  strokeWidth: 4,
+                ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 5,
+                child: Placeholder(
+                  color: Colors.pink,
+                  strokeWidth: 4,
+                ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 3,
+                child: Placeholder(
+                  color: Colors.pink,
+                  strokeWidth: 4,
+                ),
+              )
             ],
           ),
         ),
