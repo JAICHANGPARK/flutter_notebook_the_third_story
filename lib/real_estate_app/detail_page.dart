@@ -29,8 +29,10 @@ class _DetailPageState extends State<DetailPage> {
                     children: <Widget>[
                       Text("134\$",style: TextStyle(
                         color: Colors.black,
-                        fontSize: 18
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold
                       ),),
+                      SizedBox(width: 4,),
                       Text("Night", style: TextStyle(
                         fontSize: 18,
                         color: Colors.grey,
@@ -39,11 +41,16 @@ class _DetailPageState extends State<DetailPage> {
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.star_border,size: 14),
-                      Icon(Icons.star_border,size: 14),
-                      Icon(Icons.star_border,size: 14),
-                      Icon(Icons.star_border,size: 14),
-                      Icon(Icons.star_border,size: 14),
+                      Icon(Icons.star_border,size: 14
+                      ,color: Colors.pink[900],),
+                      Icon(Icons.star_border,size: 14
+                        ,color: Colors.pink[900],),
+                      Icon(Icons.star_border,size: 14
+                        ,color: Colors.pink[900],),
+                      Icon(Icons.star_border,size: 14
+                        ,color: Colors.pink[900],),
+                      Icon(Icons.star_border,size: 14
+                        ,color: Colors.pink[900],),
                     ],
                   )
                 ],
