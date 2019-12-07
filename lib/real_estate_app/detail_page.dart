@@ -22,7 +22,12 @@ class _DetailPageState extends State<DetailPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Icon(Icons.arrow_back),
+                    IconButton(
+                      icon: Icon(Icons.arrow_back),
+                      onPressed: (){
+                        Navigator.of(context).pop();
+                      },
+                    ),
                     Icon(Icons.share),
                   ],
                 ),
