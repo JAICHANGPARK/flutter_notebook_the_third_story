@@ -13,9 +13,7 @@ class _DetailPageState extends State<DetailPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          decoration: BoxDecoration(
-            color: Colors.white
-          ),
+          decoration: BoxDecoration(color: Colors.white),
           padding: EdgeInsets.only(left: 24, right: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -27,30 +25,52 @@ class _DetailPageState extends State<DetailPage> {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Text("134\$",style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold
-                      ),),
-                      SizedBox(width: 4,),
-                      Text("Night", style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.grey,
-                      ),)
+                      Text(
+                        "134\$",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Text(
+                        "Night",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.grey,
+                        ),
+                      )
                     ],
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.star_border,size: 14
-                      ,color: Colors.pink[900],),
-                      Icon(Icons.star_border,size: 14
-                        ,color: Colors.pink[900],),
-                      Icon(Icons.star_border,size: 14
-                        ,color: Colors.pink[900],),
-                      Icon(Icons.star_border,size: 14
-                        ,color: Colors.pink[900],),
-                      Icon(Icons.star_border,size: 14
-                        ,color: Colors.pink[900],),
+                      Icon(
+                        Icons.star_border,
+                        size: 14,
+                        color: Colors.pink[900],
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 14,
+                        color: Colors.pink[900],
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 14,
+                        color: Colors.pink[900],
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 14,
+                        color: Colors.pink[900],
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 14,
+                        color: Colors.pink[900],
+                      ),
                     ],
                   )
                 ],
@@ -60,9 +80,8 @@ class _DetailPageState extends State<DetailPage> {
                 margin: EdgeInsets.all(8),
                 width: MediaQuery.of(context).size.width / 2,
                 decoration: BoxDecoration(
-                  color: Colors.pink[900],
-                  borderRadius: BorderRadius.circular(8)
-                ),
+                    color: Colors.pink[900],
+                    borderRadius: BorderRadius.circular(8)),
               )
             ],
           ),
@@ -71,20 +90,3 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
