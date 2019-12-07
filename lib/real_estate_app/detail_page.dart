@@ -12,7 +12,7 @@ class _DetailPageState extends State<DetailPage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 72,
+          height: 80,
           decoration: BoxDecoration(color: Colors.white),
           padding: EdgeInsets.only(left: 24, right: 16),
           child: Row(
@@ -43,6 +43,9 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                       )
                     ],
+                  ),
+                  SizedBox(
+                    height: 4,
                   ),
                   Row(
                     children: <Widget>[
@@ -77,11 +80,20 @@ class _DetailPageState extends State<DetailPage> {
               ),
               Container(
                 height: 72,
-                margin: EdgeInsets.all(8),
-                width: MediaQuery.of(context).size.width / 2,
+                margin:
+                    EdgeInsets.only(left: 24, right: 8, top: 12, bottom: 12),
+                width: MediaQuery.of(context).size.width / 1.8,
                 decoration: BoxDecoration(
                     color: Colors.pink[900],
                     borderRadius: BorderRadius.circular(8)),
+                child: Center(
+                  child: Text(
+                    "Select Date",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               )
             ],
           ),
