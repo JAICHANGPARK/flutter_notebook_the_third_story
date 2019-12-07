@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/real_estate_app/detail_page.dart';
+import 'package:page_transition/page_transition.dart';
 
 class RealEstateApp extends StatelessWidget {
   @override
@@ -236,35 +238,43 @@ class _MainPageState extends State<MainPage> {
                             ),
                           ],
                         ),
-                        Container(
-                          height: 34,
-                          width: 100,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8),
-                              boxShadow: [
-                                BoxShadow(
-                                    color: Colors.black.withOpacity(0.1),
-                                    blurRadius: 1,
-                                    spreadRadius: 1)
-                              ]),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              Text(
-                                "94\$",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.pink[500]),
-                              ),
-                              Text(
-                                "Night",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                        InkWell(
+                          onTap: (){
+                            Navigator.of(context).push(
+                              PageTransition(child: DetailPage(), type:
+                              PageTransitionType.fade)
+                            );
+                          },
+                          child: Container(
+                            height: 34,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black.withOpacity(0.1),
+                                      blurRadius: 1,
+                                      spreadRadius: 1)
+                                ]),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                Text(
+                                  "94\$",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.pink[500]),
                                 ),
-                              )
-                            ],
+                                Text(
+                                  "Night",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
