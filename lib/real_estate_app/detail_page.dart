@@ -10,6 +10,18 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SingleChildScrollView(
+        child: SafeArea(
+          top: true,
+          left: true,
+          right: true,
+          child: Column(
+            children: <Widget>[
+
+            ],
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 80,
