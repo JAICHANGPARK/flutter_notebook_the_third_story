@@ -37,7 +37,18 @@ class _DetailPageState extends State<DetailPage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 7,
-                child: Placeholder(),
+                child: Column(
+                  children: <Widget>[
+                    Text("Soak up the Rustic Grand at a Deluxe Historic", ),
+                    Row(
+                      children: <Widget>[
+                        Icon(Icons.add_location),
+                        
+
+                      ],
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
