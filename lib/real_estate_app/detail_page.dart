@@ -97,6 +97,10 @@ class _DetailPageState extends State<DetailPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                   color: Colors.blue,
+                                  image: DecorationImage(
+                                    image: NetworkImage("https://cdn.pixabay.com/photo/2015/05/29/19/17/study-789631__340.jpg"),
+                                    fit: BoxFit.cover
+                                  ),
                                   borderRadius: BorderRadius.circular(8)),
                             ),
                           ),
@@ -116,7 +120,8 @@ class _DetailPageState extends State<DetailPage> {
                                 ],
                                   color: Colors.white, shape: BoxShape.circle),
                               child: Center(
-                                child: Icon(Icons.bookmark_border),
+                                child: Icon(Icons.bookmark_border,
+                                color: Colors.pink[900],),
                               ),
                             ),
                           ),
