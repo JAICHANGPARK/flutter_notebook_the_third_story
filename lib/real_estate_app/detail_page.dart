@@ -33,18 +33,24 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
               SizedBox(
-                height: 24,
+                height: 8,
               ),
               Container(
+                padding: EdgeInsets.only(left: 24, right: 24),
                 height: MediaQuery.of(context).size.height / 7,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Soak up the Rustic Grand at a Deluxe Historic", ),
+                    Text("Soak up the Rustic Grand at a Deluxe Historic",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),),
                     Row(
                       children: <Widget>[
                         Icon(Icons.add_location),
-                        
-
+                        Text("Forest Park, Illinois, USA"),
                       ],
                     )
                   ],
