@@ -191,7 +191,7 @@ class _DetailPageState extends State<DetailPage> {
               ),
               SizedBox(height: 16,),
               Container(
-                height: MediaQuery.of(context).size.height / 5,
+                height: MediaQuery.of(context).size.height / 5.5,
                 padding: EdgeInsets.only(left: 24, right: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -214,10 +214,32 @@ class _DetailPageState extends State<DetailPage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
-                child: Placeholder(
-                  color: Colors.pink,
-                  strokeWidth: 4,
-                ),
+                padding: EdgeInsets.only(left: 24, right: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        "Location",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 8,
+                      child: Container(
+                        color: Colors.pink,
+                        child: Center(
+
+                          child: Text("Maps Area"),
+                        ),
+                      ),
+                    )
+                  ],
+                )
               )
             ],
           ),
