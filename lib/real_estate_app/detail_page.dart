@@ -24,7 +24,7 @@ class _DetailPageState extends State<DetailPage> {
                   children: <Widget>[
                     IconButton(
                       icon: Icon(Icons.arrow_back),
-                      onPressed: (){
+                      onPressed: () {
                         Navigator.of(context).pop();
                       },
                     ),
