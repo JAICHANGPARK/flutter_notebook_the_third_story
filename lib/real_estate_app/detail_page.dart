@@ -49,8 +49,11 @@ class _DetailPageState extends State<DetailPage> {
                     ),),
                     Row(
                       children: <Widget>[
-                        Icon(Icons.add_location),
-                        Text("Forest Park, Illinois, USA"),
+                        Icon(Icons.add_location, size: 18,),
+                        Text("Forest Park, Illinois, USA",style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold
+                        ),),
                       ],
                     )
                   ],
