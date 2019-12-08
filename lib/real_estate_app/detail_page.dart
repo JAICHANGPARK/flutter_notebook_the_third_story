@@ -79,22 +79,56 @@ class _DetailPageState extends State<DetailPage> {
                       margin: EdgeInsets.all(8),
                       width: MediaQuery.of(context).size.width - 60,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8)),
+                    ),
+                    Container(
+                      margin:
+                          EdgeInsets.only(left: 8, right: 8, bottom: 8),
+                      width: MediaQuery.of(context).size.width - 60,
+                      child: Stack(
+                        children: <Widget>[
+
+                          Positioned(
+                            top: 16,
+                            right: 0,
+                            left: 0,
+                            bottom: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)),
+                            ),
+                          ),
+                          Positioned(
+                            top: 0,
+                            right: 32,
+                            child: Container(
+                              height: 48,
+                              width: 48,
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    blurRadius: 1,
+                                    spreadRadius: 1
+                                  )
+                                ],
+                                  color: Colors.white, shape: BoxShape.circle),
+                              child: Center(
+                                child: Icon(Icons.bookmark_border),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
                       margin: EdgeInsets.all(8),
                       width: MediaQuery.of(context).size.width - 60,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(8),
-                      width: MediaQuery.of(context).size.width - 60,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8)),
                     ),
                   ],
                 ),
@@ -189,58 +223,55 @@ class _DetailPageState extends State<DetailPage> {
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
-              Container(
-                height: MediaQuery.of(context).size.height / 5.5,
-                padding: EdgeInsets.only(left: 24, right: 24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text("About",style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20
-                    ),),
-                    Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                        " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-                        "Ut enim ad minim veniam, quis nostrud exercitation ullamco "
-                        "laboris nisi ut aliquip ex ea commodo consequat.",style: TextStyle(
-                      color: Colors.grey,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15
-                    ),),
-
-                  ],
-                )
+              SizedBox(
+                height: 16,
               ),
               Container(
-                height: MediaQuery.of(context).size.height / 3,
-                padding: EdgeInsets.only(left: 24, right: 24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Expanded(
-                      flex: 1,
-                      child: Text(
-                        "Location",
+                  height: MediaQuery.of(context).size.height / 5.5,
+                  padding: EdgeInsets.only(left: 24, right: 24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "About",
+                        style: TextStyle(color: Colors.black, fontSize: 20),
+                      ),
+                      Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                        " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                        "Ut enim ad minim veniam, quis nostrud exercitation ullamco "
+                        "laboris nisi ut aliquip ex ea commodo consequat.",
                         style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 15),
+                      ),
+                    ],
+                  )),
+              Container(
+                  height: MediaQuery.of(context).size.height / 3,
+                  padding: EdgeInsets.only(left: 24, right: 24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Expanded(
+                        flex: 1,
+                        child: Text(
+                          "Location",
+                          style: TextStyle(color: Colors.black, fontSize: 20),
                         ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 8,
-                      child: Container(
-                        color: Colors.pink,
-                        child: Center(
-
-                          child: Text("Maps Area"),
+                      Expanded(
+                        flex: 8,
+                        child: Container(
+                          color: Colors.pink,
+                          child: Center(
+                            child: Text("Maps Area"),
+                          ),
                         ),
-                      ),
-                    )
-                  ],
-                )
-              )
+                      )
+                    ],
+                  ))
             ],
           ),
         ),
