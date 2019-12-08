@@ -36,24 +36,34 @@ class _DetailPageState extends State<DetailPage> {
                 height: 8,
               ),
               Container(
-                padding: EdgeInsets.only(left: 24, right: 24),
+                padding: EdgeInsets.only(left: 24, right: 48),
                 height: MediaQuery.of(context).size.height / 7,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Soak up the Rustic Grand at a Deluxe Historic",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),),
+                    Text(
+                      "Soak up the Rustic Grand at a Deluxe Historic",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Row(
                       children: <Widget>[
-                        Icon(Icons.add_location, size: 18,),
-                        Text("Forest Park, Illinois, USA",style: TextStyle(
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold
-                        ),),
+                        Icon(
+                          Icons.add_location,
+                          size: 18,
+                          color: Colors.pink[900],
+                        ),
+                        Text(
+                          "Forest Park, Illinois, USA",
+                          style: TextStyle(
+                              color: Colors.grey, fontWeight: FontWeight.bold),
+                        ),
                       ],
                     )
                   ],
@@ -61,15 +71,56 @@ class _DetailPageState extends State<DetailPage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
-                child: Placeholder(
-                  strokeWidth: 8,
+                child: ListView(
+                  padding: EdgeInsets.zero,
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.all(8),
+                      width: MediaQuery.of(context).size.width - 60,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(8),
+                      width: MediaQuery.of(context).size.width - 60,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(8),
+                      width: MediaQuery.of(context).size.width - 60,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Container(
-                height: MediaQuery.of(context).size.height / 10,
-                child: Placeholder(
-                  color: Colors.pink,
-                  strokeWidth: 4,
+                height: MediaQuery.of(context).size.height / 13,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 100,
+                      margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(24)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.account_circle,
+                          ),
+                          Text("3 Guests"),
+                        ],
+                      ),
+                    )
+                  ],
                 ),
               ),
               Container(
