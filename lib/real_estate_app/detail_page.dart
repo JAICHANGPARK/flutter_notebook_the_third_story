@@ -101,6 +101,7 @@ class _DetailPageState extends State<DetailPage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 13.5,
+                padding: EdgeInsets.only(left: 12),
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
@@ -188,12 +189,28 @@ class _DetailPageState extends State<DetailPage> {
                   ],
                 ),
               ),
+              SizedBox(height: 16,),
               Container(
                 height: MediaQuery.of(context).size.height / 5,
-                child: Placeholder(
-                  color: Colors.pink,
-                  strokeWidth: 4,
-                ),
+                padding: EdgeInsets.only(left: 24, right: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text("About",style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20
+                    ),),
+                    Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                        " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                        "Ut enim ad minim veniam, quis nostrud exercitation ullamco "
+                        "laboris nisi ut aliquip ex ea commodo consequat.",style: TextStyle(
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 15
+                    ),),
+
+                  ],
+                )
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
