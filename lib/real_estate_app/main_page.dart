@@ -239,11 +239,10 @@ class _MainPageState extends State<MainPage> {
                           ],
                         ),
                         InkWell(
-                          onTap: (){
-                            Navigator.of(context).push(
-                              PageTransition(child: DetailPage(), type:
-                              PageTransitionType.fade)
-                            );
+                          onTap: () {
+                            Navigator.of(context).push(PageTransition(
+                                child: DetailPage(),
+                                type: PageTransitionType.fade));
                           },
                           child: Container(
                             height: 34,
