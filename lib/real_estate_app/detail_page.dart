@@ -100,7 +100,7 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
               Container(
-                height: MediaQuery.of(context).size.height / 13,
+                height: MediaQuery.of(context).size.height / 13.5,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
@@ -108,7 +108,72 @@ class _DetailPageState extends State<DetailPage> {
                       width: 100,
                       margin: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey),
+                          border: Border.all(color: Colors.grey[300]),
+                          borderRadius: BorderRadius.circular(24)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.account_circle,
+                            color: Colors.pink[900],
+                            size: 20,
+                          ),
+                          Text(
+                            "3 Guests",
+                            style: TextStyle(color: Colors.pink[900]),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 80,
+                      margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey[300]),
+                          borderRadius: BorderRadius.circular(24)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.beach_access,
+                            color: Colors.pink[900],
+                            size: 20,
+                          ),
+                          Text(
+                            "2 Bed",
+                            style: TextStyle(
+                              color: Colors.pink[900],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 120,
+                      margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey[300]),
+                          borderRadius: BorderRadius.circular(24)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.airline_seat_legroom_extra,
+                            color: Colors.pink[900],
+                            size: 20,
+                          ),
+                          Text(
+                            "1 Bathroom",
+                            style: TextStyle(color: Colors.pink[900]),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 100,
+                      margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey[300]),
                           borderRadius: BorderRadius.circular(24)),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
