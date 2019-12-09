@@ -43,6 +43,32 @@ class _ProfilePageState extends State<ProfilePage> {
                     )
                   ],
                 ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 3.5,
+                child: Column(
+                  children: <Widget>[
+                    CircleAvatar(
+                      radius: 50,
+                    ),
+                    SizedBox(height: 24,),
+                    Text("Dreamwalker",style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                      letterSpacing: 1.5
+                    ),),
+                    SizedBox(height: 8,),
+                    Container(
+                      height: 42,
+                      width: MediaQuery.of(context).size.width / 2.4,
+                      decoration: BoxDecoration(
+                        color: Colors.teal[200],
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
@@ -51,3 +77,24 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
