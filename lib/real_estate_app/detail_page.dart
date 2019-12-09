@@ -83,12 +83,10 @@ class _DetailPageState extends State<DetailPage> {
                           borderRadius: BorderRadius.circular(8)),
                     ),
                     Container(
-                      margin:
-                          EdgeInsets.only(left: 8, right: 8, bottom: 8),
+                      margin: EdgeInsets.only(left: 8, right: 8, bottom: 8),
                       width: MediaQuery.of(context).size.width - 60,
                       child: Stack(
                         children: <Widget>[
-
                           Positioned(
                             top: 16,
                             right: 0,
@@ -98,9 +96,9 @@ class _DetailPageState extends State<DetailPage> {
                               decoration: BoxDecoration(
                                   color: Colors.blue,
                                   image: DecorationImage(
-                                    image: NetworkImage("https://cdn.pixabay.com/photo/2015/05/29/19/17/study-789631__340.jpg"),
-                                    fit: BoxFit.cover
-                                  ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/05/29/19/17/study-789631__340.jpg"),
+                                      fit: BoxFit.cover),
                                   borderRadius: BorderRadius.circular(8)),
                             ),
                           ),
@@ -110,18 +108,17 @@ class _DetailPageState extends State<DetailPage> {
                             child: Container(
                               height: 48,
                               width: 48,
-                              decoration: BoxDecoration(
-                                boxShadow: [
-                                  BoxShadow(
+                              decoration: BoxDecoration(boxShadow: [
+                                BoxShadow(
                                     color: Colors.black.withOpacity(0.1),
                                     blurRadius: 1,
-                                    spreadRadius: 1
-                                  )
-                                ],
-                                  color: Colors.white, shape: BoxShape.circle),
+                                    spreadRadius: 1)
+                              ], color: Colors.white, shape: BoxShape.circle),
                               child: Center(
-                                child: Icon(Icons.bookmark_border,
-                                color: Colors.pink[900],),
+                                child: Icon(
+                                  Icons.bookmark_border,
+                                  color: Colors.pink[900],
+                                ),
                               ),
                             ),
                           ),
