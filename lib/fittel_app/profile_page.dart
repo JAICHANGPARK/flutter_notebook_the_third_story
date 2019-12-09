@@ -44,54 +44,74 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
-              SizedBox(height: 24,),
+              SizedBox(
+                height: 24,
+              ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
                 child: Column(
                   children: <Widget>[
                     CircleAvatar(
                       radius: 50,
-                      backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                      backgroundImage: NetworkImage(
+                          "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                     ),
-                    SizedBox(height: 20,),
-                    Text("Dreamwalker",style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                      letterSpacing: 1.5
-                    ),),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Dreamwalker",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                          letterSpacing: 1.5),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Container(
                       height: 42,
-                      margin: EdgeInsets.symmetric(horizontal: 8,
-                      vertical: 4),
+                      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       width: MediaQuery.of(context).size.width / 2.4,
                       decoration: BoxDecoration(
-                        color: Colors.teal[200],
-                        borderRadius: BorderRadius.circular(8),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.teal[100],
-                            spreadRadius: 1,
-                            blurRadius: 2
-                          )
-                        ]
-                      ),
+                          color: Colors.teal[200],
+                          borderRadius: BorderRadius.circular(8),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.teal[100],
+                                spreadRadius: 1,
+                                blurRadius: 2)
+                          ]),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Text("Message",style: TextStyle(
+                          Text(
+                            "Message",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Icon(
+                            Icons.chat_bubble_outline,
                             color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),),
-                          SizedBox(width: 12,),
-                          Icon(Icons.chat_bubble_outline, color: Colors.white,
-                          size: 18,),
+                            size: 18,
+                          ),
                         ],
                       ),
-                    )
+                    ),
                   ],
+                ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 8,
+                child: Row(
+                  children: <Widget>[],
                 ),
               )
             ],
@@ -101,6 +121,8 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
+
 
 
 
