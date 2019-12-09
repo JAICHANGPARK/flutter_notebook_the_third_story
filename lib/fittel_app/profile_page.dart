@@ -108,10 +108,53 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
+              SizedBox(height: 16,),
               Container(
-                height: MediaQuery.of(context).size.height / 8,
+                height: MediaQuery.of(context).size.height / 14,
                 child: Row(
-                  children: <Widget>[],
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Expanded(
+                      flex: 1,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text("Programs",style: TextStyle(
+                            color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),),
+                          SizedBox(height: 8,),
+                          Text("Flutter", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                          ),),
+                        ],
+                      ),
+                    ),
+                    VerticalDivider(
+                      thickness: 1,
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text("Episode",style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),),
+                          SizedBox(height: 8,),
+                          Text("295", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
+                          ),),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               )
             ],
