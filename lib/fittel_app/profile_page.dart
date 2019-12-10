@@ -21,16 +21,16 @@ class _ProfilePageState extends State<ProfilePage> {
               Container(
                 height: MediaQuery.of(context).size.height / 1.3,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(32),
-                    bottomLeft: Radius.circular(32),
-                  )
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      bottomRight: Radius.circular(32),
+                      bottomLeft: Radius.circular(32),
+                    )),
                 child: Column(
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(left: 0, right: 24, top: 24),
+                      padding:
+                          const EdgeInsets.only(left: 0, right: 24, top: 24),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
@@ -50,20 +50,18 @@ class _ProfilePageState extends State<ProfilePage> {
                             showBadge: true,
                             badgeContent: Text(
                               "2",
-                              style: TextStyle(color: Colors.white, fontSize: 12),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 12),
                             ),
                           )
                         ],
                       ),
                     ),
                     SizedBox(
-                      height: 24,
+                      height: 8,
                     ),
                     Container(
-                      height: MediaQuery
-                          .of(context)
-                          .size
-                          .height / 3.5,
+                      height: MediaQuery.of(context).size.height / 3.5,
                       child: Column(
                         children: <Widget>[
                           CircleAvatar(
@@ -87,11 +85,9 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                           Container(
                             height: 42,
-                            margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            width: MediaQuery
-                                .of(context)
-                                .size
-                                .width / 2.4,
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 4),
+                            width: MediaQuery.of(context).size.width / 2.4,
                             decoration: BoxDecoration(
                                 color: Colors.teal[200],
                                 borderRadius: BorderRadius.circular(8),
@@ -126,12 +122,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Container(
-                      height: MediaQuery
-                          .of(context)
-                          .size
-                          .height / 14,
+                      height: MediaQuery.of(context).size.height / 14,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -142,15 +137,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                Text("Programs", style: TextStyle(
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),),
-                                SizedBox(height: 8,),
-                                Text("Flutter", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
-                                ),),
+                                Text(
+                                  "Programs",
+                                  style: TextStyle(
+                                      color: Colors.grey,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "Flutter",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                ),
                               ],
                             ),
                           ),
@@ -163,40 +165,64 @@ class _ProfilePageState extends State<ProfilePage> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                Text("Episode", style: TextStyle(
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),),
-                                SizedBox(height: 8,),
-                                Text("295", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
-                                ),),
+                                Text(
+                                  "Episode",
+                                  style: TextStyle(
+                                      color: Colors.grey,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "295",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                ),
                               ],
                             ),
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 24,),
-                    Container(
-                      height: MediaQuery.of(context).size.height / 6,
-                      child: Placeholder(),
+                    SizedBox(
+                      height: 24,
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.height / 20,
+                        height: MediaQuery.of(context).size.height / 5.5,
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              child: Placeholder(),
+                            ),
+                            Expanded(
+                              child: Placeholder(),
+                            ),
+                            Expanded(
+                              child: Placeholder(),
+                            ),
+                            Expanded(
+                              child: Placeholder(),
+                            )
+                          ],
+                        )),
+                    Container(
+                      height: MediaQuery.of(context).size.height / 19,
                       child: Center(
-                        child: Text("VIEW HEALTH",style: TextStyle(
-                          color: Colors.tealAccent,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold
-                        ),),
+                        child: Text(
+                          "VIEW HEALTH",
+                          style: TextStyle(
+                              color: Colors.tealAccent,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
-
             ],
           ),
         ),
@@ -204,26 +230,3 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
