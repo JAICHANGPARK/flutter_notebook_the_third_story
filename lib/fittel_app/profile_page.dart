@@ -177,7 +177,22 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                         ],
                       ),
-                    )
+                    ),
+                    SizedBox(height: 24,),
+                    Container(
+                      height: MediaQuery.of(context).size.height / 6,
+                      child: Placeholder(),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height / 20,
+                      child: Center(
+                        child: Text("VIEW HEALTH",style: TextStyle(
+                          color: Colors.tealAccent,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                        ),),
+                      ),
+                    ),
                   ],
                 ),
               ),
