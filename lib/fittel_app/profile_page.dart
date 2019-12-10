@@ -192,7 +192,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                     Container(
                         padding: EdgeInsets.symmetric(horizontal: 12),
-                        height: MediaQuery.of(context).size.height / 5.5,
+                        height: MediaQuery.of(context).size.height / 6.2,
                         child: Row(
                           children: <Widget>[
                             Expanded(
@@ -203,7 +203,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     borderRadius: BorderRadius.circular(16),
                                     border: Border.all(color: Colors.teal)),
                                 padding: EdgeInsets.only(
-                                    left: 12, top: 24, bottom: 24),
+                                    left: 12, top: 12, bottom: 12),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
@@ -231,27 +231,96 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: Container(
                                 margin: EdgeInsets.all(6),
                                 decoration: BoxDecoration(
-                                    color: Colors.teal[50],
+                                    color: Colors.orange[50],
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.teal)),
+                                    border: Border.all(color: Colors.orange)),
+                                padding: EdgeInsets.only(
+                                    left: 12, top: 12, bottom: 12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Icon(Icons.launch),
+                                    Spacer(),
+                                    Text(
+                                      "Height",
+                                      style: TextStyle(
+                                          color: Colors.grey, fontSize: 11),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "175cm",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             Expanded(
                               child: Container(
                                 margin: EdgeInsets.all(6),
                                 decoration: BoxDecoration(
-                                    color: Colors.teal[50],
+                                    color: Colors.purple[50],
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.teal)),
+                                    border: Border.all(color: Colors.purple)),
+                                padding: EdgeInsets.only(
+                                    left: 12, top: 12, bottom: 12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Icon(Icons.launch),
+                                    Spacer(),
+                                    Text(
+                                      "Body fat",
+                                      style: TextStyle(
+                                          color: Colors.grey, fontSize: 11),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "12.2%",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             Expanded(
                               child: Container(
                                 margin: EdgeInsets.all(6),
                                 decoration: BoxDecoration(
-                                    color: Colors.teal[50],
+                                    color: Colors.red[50],
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.teal)),
+                                    border: Border.all(color: Colors.red)),
+                                padding: EdgeInsets.only(
+                                    left: 12, top: 12, bottom: 12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Icon(Icons.launch),
+                                    Spacer(),
+                                    Text(
+                                      "Blood type",
+                                      style: TextStyle(
+                                          color: Colors.grey, fontSize: 11),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "A",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ],
