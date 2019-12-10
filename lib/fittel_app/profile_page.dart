@@ -48,7 +48,10 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 24,
               ),
               Container(
-                height: MediaQuery.of(context).size.height / 3.5,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 3.5,
                 child: Column(
                   children: <Widget>[
                     CircleAvatar(
@@ -73,7 +76,10 @@ class _ProfilePageState extends State<ProfilePage> {
                     Container(
                       height: 42,
                       margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                      width: MediaQuery.of(context).size.width / 2.4,
+                      width: MediaQuery
+                          .of(context)
+                          .size
+                          .width / 2.4,
                       decoration: BoxDecoration(
                           color: Colors.teal[200],
                           borderRadius: BorderRadius.circular(8),
@@ -110,7 +116,10 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               SizedBox(height: 16,),
               Container(
-                height: MediaQuery.of(context).size.height / 14,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 14,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -121,14 +130,14 @@ class _ProfilePageState extends State<ProfilePage> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text("Programs",style: TextStyle(
-                            color: Colors.grey,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16),),
+                          Text("Programs", style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),),
                           SizedBox(height: 8,),
                           Text("Flutter", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
                           ),),
                         ],
                       ),
@@ -142,7 +151,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text("Episode",style: TextStyle(
+                          Text("Episode", style: TextStyle(
                               color: Colors.grey,
                               fontWeight: FontWeight.bold,
                               fontSize: 16),),
