@@ -191,31 +191,62 @@ class _ProfilePageState extends State<ProfilePage> {
                       height: 24,
                     ),
                     Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12
+                      ),
                         height: MediaQuery.of(context).size.height / 5.5,
                         child: Row(
                           children: <Widget>[
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                margin: EdgeInsets.all(6),
+                                decoration: BoxDecoration(
+                                  color: Colors.teal[50],
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(color: Colors.teal)
+                                ),
+                              ),
                             ),
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                margin: EdgeInsets.all(6),
+                                decoration: BoxDecoration(
+                                    color: Colors.teal[50],
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(color: Colors.teal)
+                                ),
+                              ),
                             ),
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                margin: EdgeInsets.all(6),
+                                decoration: BoxDecoration(
+                                    color: Colors.teal[50],
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(color: Colors.teal)
+                                ),
+                              ),
                             ),
                             Expanded(
-                              child: Placeholder(),
-                            )
+                              child: Container(
+                                margin: EdgeInsets.all(6),
+                                decoration: BoxDecoration(
+                                    color: Colors.teal[50],
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(color: Colors.teal)
+                                ),
+                              ),
+                            ),
                           ],
                         )),
                     Container(
-                      height: MediaQuery.of(context).size.height / 19,
+                      height: MediaQuery.of(context).size.height / 16,
                       child: Center(
                         child: Text(
                           "VIEW HEALTH",
                           style: TextStyle(
-                              color: Colors.tealAccent,
-                              fontSize: 20,
+                              color: Colors.teal[300],
+                              fontSize: 18,
                               fontWeight: FontWeight.bold),
                         ),
                       ),
