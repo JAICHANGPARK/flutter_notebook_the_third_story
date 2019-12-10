@@ -191,9 +191,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       height: 24,
                     ),
                     Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 12
-                      ),
+                        padding: EdgeInsets.symmetric(horizontal: 12),
                         height: MediaQuery.of(context).size.height / 5.5,
                         child: Row(
                           children: <Widget>[
@@ -201,9 +199,31 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: Container(
                                 margin: EdgeInsets.all(6),
                                 decoration: BoxDecoration(
-                                  color: Colors.teal[50],
-                                  borderRadius: BorderRadius.circular(16),
-                                  border: Border.all(color: Colors.teal)
+                                    color: Colors.teal[50],
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(color: Colors.teal)),
+                                padding: EdgeInsets.only(
+                                    left: 12, top: 24, bottom: 24),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Icon(Icons.launch),
+                                    Spacer(),
+                                    Text(
+                                      "Weight",
+                                      style: TextStyle(
+                                          color: Colors.grey, fontSize: 11),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "75kg",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16),
+                                    )
+                                  ],
                                 ),
                               ),
                             ),
@@ -213,8 +233,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 decoration: BoxDecoration(
                                     color: Colors.teal[50],
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.teal)
-                                ),
+                                    border: Border.all(color: Colors.teal)),
                               ),
                             ),
                             Expanded(
@@ -223,8 +242,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 decoration: BoxDecoration(
                                     color: Colors.teal[50],
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.teal)
-                                ),
+                                    border: Border.all(color: Colors.teal)),
                               ),
                             ),
                             Expanded(
@@ -233,8 +251,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 decoration: BoxDecoration(
                                     color: Colors.teal[50],
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.teal)
-                                ),
+                                    border: Border.all(color: Colors.teal)),
                               ),
                             ),
                           ],
