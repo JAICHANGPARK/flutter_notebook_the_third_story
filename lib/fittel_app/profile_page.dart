@@ -340,10 +340,32 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
+              SizedBox(height: 16,),
+              ListView(
+                shrinkWrap: true,
+                children: <Widget>[
+                  Container(
+                    height: MediaQuery.
+                    of(context).size.height/ 5,
+                    child: Placeholder()
+                  ),
+                  Container(
+                      height: MediaQuery.
+                      of(context).size.height/ 8,
+                      margin: EdgeInsets.all(16),
+                      child: Placeholder()
+                  ),
+                  Container(
+                      height: MediaQuery.
+                      of(context).size.height/ 8,
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Placeholder()
+                  )
+                ],
+              )
             ],
           ),
         ),
-
 
 
 
