@@ -362,22 +362,28 @@ class _ProfilePageState extends State<ProfilePage> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   Container(
-                                    height: 58,
-                                    width: 58,
+                                    height: 54,
+                                    width: 54,
                                     decoration: BoxDecoration(
-                                      color: Colors.deepPurpleAccent,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                        color: Colors.deepPurpleAccent,
+                                        borderRadius: BorderRadius.circular(8)),
                                     child: Center(
-                                      child: Icon(Icons.restaurant, color: Colors.white,),
+                                      child: Icon(
+                                        Icons.restaurant,
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
-                                  SizedBox(height: 8,),
-                                  Text("Meal plan", style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),)
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Meal plan",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16),
+                                  )
                                 ],
                               ),
                             ),
@@ -388,6 +394,35 @@ class _ProfilePageState extends State<ProfilePage> {
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12)),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Container(
+                                    height: 54,
+                                    width: 54,
+                                    decoration: BoxDecoration(
+                                        color: Colors.orangeAccent,
+                                        borderRadius: BorderRadius.circular(8)),
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.fitness_center,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Meal plan",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ],
@@ -409,3 +444,20 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
