@@ -347,7 +347,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 shrinkWrap: true,
                 children: <Widget>[
                   Container(
-                      height: MediaQuery.of(context).size.height / 5,
+                      height: MediaQuery.of(context).size.height / 5.5,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
                         children: <Widget>[
@@ -357,6 +357,29 @@ class _ProfilePageState extends State<ProfilePage> {
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12)),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Container(
+                                    height: 58,
+                                    width: 58,
+                                    decoration: BoxDecoration(
+                                      color: Colors.deepPurpleAccent,
+                                      borderRadius: BorderRadius.circular(8)
+                                    ),
+                                    child: Center(
+                                      child: Icon(Icons.restaurant, color: Colors.white,),
+                                    ),
+                                  ),
+                                  SizedBox(height: 8,),
+                                  Text("Meal plan", style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
+                                  ),)
+                                ],
+                              ),
                             ),
                           ),
                           Expanded(
