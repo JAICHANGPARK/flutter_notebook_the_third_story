@@ -347,16 +347,29 @@ class _ProfilePageState extends State<ProfilePage> {
                 shrinkWrap: true,
                 children: <Widget>[
                   Container(
-                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       height: MediaQuery.of(context).size.height / 5,
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+
                       child: Row(
                         children: <Widget>[
                           Expanded(
-                            child: Placeholder(),
+                            child: Container(
+                              margin: EdgeInsets.only(right: 8),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12)
+                              ),
+                            ),
                           ),
                           Expanded(
-                            child: Placeholder(),
-                          )
+                            child: Container(
+                              margin: EdgeInsets.only(left: 8),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(12)
+                              ),
+                            ),
+                          ),
                         ],
                       )),
                   Container(
