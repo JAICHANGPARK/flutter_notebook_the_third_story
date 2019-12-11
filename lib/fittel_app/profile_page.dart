@@ -428,13 +428,97 @@ class _ProfilePageState extends State<ProfilePage> {
                         ],
                       )),
                   Container(
-                      height: MediaQuery.of(context).size.height / 8,
+                      height: MediaQuery.of(context).size.height / 12,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: Placeholder()),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16)),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.history),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Workouts History",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      )),
                   Container(
-                      height: MediaQuery.of(context).size.height / 8,
+                      height: MediaQuery.of(context).size.height / 12,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: Placeholder())
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16)),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.history),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Workouts History",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      )),
+                  Container(
+                      height: MediaQuery.of(context).size.height / 12,
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16)),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.history),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Workouts History",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      )),
+                  Container(
+                      height: MediaQuery.of(context).size.height / 12,
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16)),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.history),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Workouts History",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      )),
                 ],
               )
             ],
@@ -444,20 +528,3 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
