@@ -340,67 +340,29 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               ListView(
                 shrinkWrap: true,
                 children: <Widget>[
                   Container(
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    height: MediaQuery.
-                    of(context).size.height/ 5,
-                    child: Placeholder()
-                  ),
+                      height: MediaQuery.of(context).size.height / 5,
+                      child: Placeholder()),
                   Container(
-                      height: MediaQuery.
-                      of(context).size.height/ 8,
+                      height: MediaQuery.of(context).size.height / 8,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: Placeholder()
-                  ),
+                      child: Placeholder()),
                   Container(
-                      height: MediaQuery.
-                      of(context).size.height/ 8,
+                      height: MediaQuery.of(context).size.height / 8,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: Placeholder()
-                  )
+                      child: Placeholder())
                 ],
               )
             ],
           ),
         ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       ),
     );
   }
