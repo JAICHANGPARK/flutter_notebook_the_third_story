@@ -345,6 +345,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 shrinkWrap: true,
                 children: <Widget>[
                   Container(
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     height: MediaQuery.
                     of(context).size.height/ 5,
                     child: Placeholder()
@@ -352,7 +353,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   Container(
                       height: MediaQuery.
                       of(context).size.height/ 8,
-                      margin: EdgeInsets.all(16),
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Placeholder()
                   ),
                   Container(
