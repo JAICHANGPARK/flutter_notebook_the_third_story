@@ -349,16 +349,14 @@ class _ProfilePageState extends State<ProfilePage> {
                   Container(
                       height: MediaQuery.of(context).size.height / 5,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-
                       child: Row(
                         children: <Widget>[
                           Expanded(
                             child: Container(
                               margin: EdgeInsets.only(right: 8),
                               decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(12)
-                              ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(12)),
                             ),
                           ),
                           Expanded(
@@ -366,8 +364,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               margin: EdgeInsets.only(left: 8),
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(12)
-                              ),
+                                  borderRadius: BorderRadius.circular(12)),
                             ),
                           ),
                         ],
