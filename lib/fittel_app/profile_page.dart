@@ -349,7 +349,16 @@ class _ProfilePageState extends State<ProfilePage> {
                   Container(
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       height: MediaQuery.of(context).size.height / 5,
-                      child: Placeholder()),
+                      child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          )
+                        ],
+                      )),
                   Container(
                       height: MediaQuery.of(context).size.height / 8,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
