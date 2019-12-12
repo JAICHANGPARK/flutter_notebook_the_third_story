@@ -75,16 +75,15 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                           Text(
                             "Dreamwalker",
-                            style: GoogleFonts.oswald(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-
-                            ),
-//                            style: TextStyle(
-//                                color: Colors.black,
-//                                fontWeight: FontWeight.bold,
-//                                fontSize: 24,
-//                                letterSpacing: 1.5),
+//                            style: GoogleFonts.oswald(
+//                              fontSize: 20,
+//                              fontWeight: FontWeight.bold,
+//                            ),
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                letterSpacing: 1.5),
                           ),
                           SizedBox(
                             height: 8,
