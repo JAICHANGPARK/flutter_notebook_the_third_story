@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -74,11 +75,16 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                           Text(
                             "Dreamwalker",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 24,
-                                letterSpacing: 1.5),
+                            style: GoogleFonts.oswald(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+
+                            ),
+//                            style: TextStyle(
+//                                color: Colors.black,
+//                                fontWeight: FontWeight.bold,
+//                                fontSize: 24,
+//                                letterSpacing: 1.5),
                           ),
                           SizedBox(
                             height: 8,
