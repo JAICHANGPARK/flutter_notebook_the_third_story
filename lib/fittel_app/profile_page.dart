@@ -8,8 +8,10 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+
   @override
   Widget build(BuildContext context) {
+    TextTheme textThmem = Theme.of(context).textTheme;
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(
