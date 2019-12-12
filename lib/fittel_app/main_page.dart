@@ -9,7 +9,11 @@ class FittelApp extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return MaterialApp(
       theme: ThemeData(
-        textTheme: GoogleFonts.lakkiReddyTextTheme(textTheme,)
+        textTheme: GoogleFonts.lakkiReddyTextTheme(textTheme,).copyWith(
+         body1: GoogleFonts.oswald(
+           textStyle: textTheme.body1
+         )
+        )
       ),
       home: ProfilePage(),
     );
