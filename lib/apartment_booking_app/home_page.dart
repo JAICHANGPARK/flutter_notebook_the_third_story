@@ -12,11 +12,14 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         leading: Row(
           children: <Widget>[
-            Icon(Icons.keyboard_arrow_left,
-            color: Colors.deepOrange,),
-            Text("Back", style: TextStyle(
-              color: Colors.white54
-            ),)
+            Icon(
+              Icons.keyboard_arrow_left,
+              color: Colors.deepOrange,
+            ),
+            Text(
+              "Back",
+              style: TextStyle(color: Colors.white54),
+            )
           ],
         ),
         centerTitle: true,
