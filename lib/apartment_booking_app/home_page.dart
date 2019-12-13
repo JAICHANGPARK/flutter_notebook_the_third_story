@@ -75,24 +75,27 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-
           Container(
-            height: MediaQuery.of(context).size.height / 2,
+            height: MediaQuery.of(context).size.height / 1.4,
             child: ListView(
               children: <Widget>[
-                      Container(
-                        margin: EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Colors.red
-                        ),
-                        height: MediaQuery.of(context).size.height / 3,
-
-                      )
+                Container(
+                  margin: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.red),
+                  height: MediaQuery.of(context).size.height / 3,
+                ),
+                Container(
+                  margin: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.red),
+                  height: MediaQuery.of(context).size.height / 3,
+                )
               ],
             ),
           )
-
         ],
       ),
       appBar: AppBar(
