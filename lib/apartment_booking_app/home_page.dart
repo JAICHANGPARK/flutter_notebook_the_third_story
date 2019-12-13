@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           Container(
             margin: EdgeInsets.symmetric(horizontal: 12),
-            height: MediaQuery.of(context).size.height / 22,
+            height: MediaQuery.of(context).size.height / 24,
             decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.deepOrange,
@@ -29,11 +29,27 @@ class _HomePageState extends State<HomePage> {
                           topLeft: Radius.circular(8),
                           bottomLeft: Radius.circular(8),
                         )),
+                    child: Center(
+                      child: Text(
+                        "List",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(),
+                    child: Center(
+                      child: Text(
+                        "Map",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 )
               ],
