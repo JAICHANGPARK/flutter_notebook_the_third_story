@@ -55,6 +55,26 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              children: <Widget>[
+                Text("123 apartments found",
+                    style: TextStyle(color: Colors.white, fontSize: 13)),
+                Spacer(),
+                Text(
+                  "Sort",
+                  style: TextStyle(color: Colors.deepOrange, fontSize: 13),
+                ),
+                Icon(
+                  Icons.arrow_downward,
+                  size: 16,
+                  color: Colors.deepOrange,
+                ),
+                Icon(Icons.menu, size: 18, color: Colors.deepOrange)
+              ],
+            ),
+          )
         ],
       ),
       appBar: AppBar(
