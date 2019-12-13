@@ -74,7 +74,25 @@ class _HomePageState extends State<HomePage> {
                 Icon(Icons.menu, size: 18, color: Colors.deepOrange)
               ],
             ),
+          ),
+
+          Container(
+            height: MediaQuery.of(context).size.height / 2,
+            child: ListView(
+              children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.red
+                        ),
+                        height: MediaQuery.of(context).size.height / 3,
+
+                      )
+              ],
+            ),
           )
+
         ],
       ),
       appBar: AppBar(
