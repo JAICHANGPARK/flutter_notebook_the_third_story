@@ -9,6 +9,38 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 12),
+            height: MediaQuery.of(context).size.height / 22,
+            decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.deepOrange,
+                ),
+                borderRadius: BorderRadius.circular(8)),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.deepOrange,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(8),
+                          bottomLeft: Radius.circular(8),
+                        )),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(),
+                  ),
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
       appBar: AppBar(
         leading: Row(
           children: <Widget>[
