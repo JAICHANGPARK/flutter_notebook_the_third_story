@@ -171,7 +171,15 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Expanded(
                         flex: 4,
-                        child: Placeholder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blueGrey,
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(16),
+                              bottomRight:Radius.circular(16)
+                            )
+                          ),
+                        ),
                       ),
                     ],
                   ),
