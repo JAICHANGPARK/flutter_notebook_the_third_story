@@ -85,6 +85,18 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.red),
                   height: MediaQuery.of(context).size.height / 3,
+                  child: Column(
+                    children: <Widget>[
+                      Expanded(
+                        flex: 7,
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        flex: 4,
+                        child: Placeholder(),
+                      ),
+                    ],
+                  ),
                 ),
                 Container(
                   margin: EdgeInsets.all(12),
