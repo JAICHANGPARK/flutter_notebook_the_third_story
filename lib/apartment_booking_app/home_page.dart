@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -192,11 +193,33 @@ class _HomePageState extends State<HomePage> {
                                 child: Container(
                                   width: 100,
                                   decoration: BoxDecoration(
-                                    color: Colors.deepOrange,
-                                    borderRadius: BorderRadius.only(
+                                      color: Colors.deepOrange,
+                                      borderRadius: BorderRadius.only(
                                         bottomRight: Radius.circular(16),
-                                      topLeft:  Radius.circular(16),
-                                    )
+                                        topLeft: Radius.circular(16),
+                                      )),
+                                  padding: EdgeInsets.only(
+                                      left: 16, bottom: 7, top: 8),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "125 \$",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Text(
+                                        "per night",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
                               ),
