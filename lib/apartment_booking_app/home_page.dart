@@ -188,39 +188,56 @@ class _HomePageState extends State<HomePage> {
                               Positioned(
                                 left: 16,
                                 top: 8,
-                                child:Column(
+                                child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
-                                    Text("Sorenga apartments", style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16
-                                    ),),
-                                    SizedBox(height: 8,),
-                                    Text("1.5 km from citycentre", style: TextStyle(
-                                      color: Colors.deepOrange,
-                                      fontSize: 12
-                                    ),),
-                                    SizedBox(height: 8,),
+                                    Text(
+                                      "Sorenga apartments",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "1.5 km from citycentre",
+                                      style: TextStyle(
+                                          color: Colors.deepOrange,
+                                          fontSize: 12),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
                                     Row(
                                       children: <Widget>[
-                                        Icon(Icons.apps,
-                                          color: Colors.white
+                                        Icon(Icons.apps, color: Colors.white),
+                                        SizedBox(
+                                          width: 4,
                                         ),
-                                        SizedBox(width: 4,),
-                                        Text("75m^3", style: TextStyle(
+                                        Text(
+                                          "75m^3",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Icon(
+                                          Icons.hotel,
                                           color: Colors.white,
-                                          fontSize: 12
-                                        ),),
-                                        SizedBox(width: 16,),
-                                        Icon(Icons.hotel, color: Colors.white,),
-                                        SizedBox(width: 4,),
-                                        Text("6",style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12
-                                        ),)
+                                        ),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "6",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12),
+                                        )
                                       ],
                                     )
-
                                   ],
                                 ),
                               )
