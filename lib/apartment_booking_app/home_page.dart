@@ -292,7 +292,412 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.red),
                   height: MediaQuery.of(context).size.height / 3,
-                )
+                  child: Column(
+                    children: <Widget>[
+                      Expanded(
+                        flex: 7,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(16),
+                                topRight: Radius.circular(16),
+                              ),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2014/08/11/21/40/wall-416062__340.jpg"),
+                                  fit: BoxFit.cover)),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                left: 16,
+                                top: 16,
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      height: 18,
+                                      width: 52,
+                                      decoration: BoxDecoration(
+                                          color: Colors.deepOrange,
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                        children: <Widget>[
+                                          Icon(
+                                            Icons.star_border,
+                                            size: 12,
+                                            color: Colors.white,
+                                          ),
+                                          Text(
+                                            "4.75",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Container(
+                                      height: 18,
+                                      width: 52,
+                                      decoration: BoxDecoration(
+                                          color: Colors.pinkAccent,
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                      child: Center(
+                                          child: Text(
+                                            "promo",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                right: 16,
+                                top: 16,
+                                child: Container(
+                                  height: 38,
+                                  width: 38,
+                                  decoration: BoxDecoration(
+                                      color: Colors.deepOrange,
+                                      shape: BoxShape.circle),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.favorite,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 4,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.blueGrey,
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(16),
+                                  bottomRight: Radius.circular(16))),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                right: 0,
+                                bottom: 0,
+                                top: 24,
+                                child: Container(
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                      color: Colors.deepOrange,
+                                      borderRadius: BorderRadius.only(
+                                        bottomRight: Radius.circular(16),
+                                        topLeft: Radius.circular(16),
+                                      )),
+                                  padding: EdgeInsets.only(
+                                      left: 16, bottom: 7, top: 8),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "125 \$",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Text(
+                                        "per night",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                left: 16,
+                                top: 8,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Sorenga apartments",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "1.5 km from citycentre",
+                                      style: TextStyle(
+                                          color: Colors.deepOrange,
+                                          fontSize: 12),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Icon(Icons.apps, color: Colors.white),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "75m^3",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Icon(
+                                          Icons.hotel,
+                                          color: Colors.white,
+                                        ),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "6",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.red),
+                  height: MediaQuery.of(context).size.height / 3,
+                  child: Column(
+                    children: <Widget>[
+                      Expanded(
+                        flex: 7,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(16),
+                                topRight: Radius.circular(16),
+                              ),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2014/08/11/21/40/wall-416062__340.jpg"),
+                                  fit: BoxFit.cover)),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                left: 16,
+                                top: 16,
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      height: 18,
+                                      width: 52,
+                                      decoration: BoxDecoration(
+                                          color: Colors.deepOrange,
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                        children: <Widget>[
+                                          Icon(
+                                            Icons.star_border,
+                                            size: 12,
+                                            color: Colors.white,
+                                          ),
+                                          Text(
+                                            "4.75",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Container(
+                                      height: 18,
+                                      width: 52,
+                                      decoration: BoxDecoration(
+                                          color: Colors.pinkAccent,
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                      child: Center(
+                                          child: Text(
+                                            "promo",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                right: 16,
+                                top: 16,
+                                child: Container(
+                                  height: 38,
+                                  width: 38,
+                                  decoration: BoxDecoration(
+                                      color: Colors.deepOrange,
+                                      shape: BoxShape.circle),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.favorite,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 4,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.blueGrey,
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(16),
+                                  bottomRight: Radius.circular(16))),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                right: 0,
+                                bottom: 0,
+                                top: 24,
+                                child: Container(
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                      color: Colors.deepOrange,
+                                      borderRadius: BorderRadius.only(
+                                        bottomRight: Radius.circular(16),
+                                        topLeft: Radius.circular(16),
+                                      )),
+                                  padding: EdgeInsets.only(
+                                      left: 16, bottom: 7, top: 8),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "125 \$",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Text(
+                                        "per night",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                left: 16,
+                                top: 8,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Sorenga apartments",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "1.5 km from citycentre",
+                                      style: TextStyle(
+                                          color: Colors.deepOrange,
+                                          fontSize: 12),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Icon(Icons.apps, color: Colors.white),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "75m^3",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Icon(
+                                          Icons.hotel,
+                                          color: Colors.white,
+                                        ),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "6",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           )
