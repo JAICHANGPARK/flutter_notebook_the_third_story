@@ -129,21 +129,40 @@ class _HomePageState extends State<HomePage> {
                                         ],
                                       ),
                                     ),
-                                    SizedBox(height: 4,),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Container(
                                       height: 18,
                                       width: 52,
                                       decoration: BoxDecoration(
                                           color: Colors.pinkAccent,
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                       child: Center(
-                                          child: Text("promo", style: TextStyle(
+                                          child: Text(
+                                        "promo",
+                                        style: TextStyle(
                                           color: Colors.white,
-                                        ),)
-                                      ),
+                                        ),
+                                      )),
                                     )
                                   ],
+                                ),
+                              ),
+                              Positioned(
+                                right: 16,
+                                top: 16,
+                                child: Container(
+                                  height: 38,
+                                  width: 38,
+                                  decoration: BoxDecoration(
+                                    color: Colors.deepOrange,
+                                    shape: BoxShape.circle
+                                  ),
+                                  child: Center(
+                                    child: Icon(Icons.favorite, color: Colors.white,),
+                                  ),
                                 ),
                               )
                             ],
