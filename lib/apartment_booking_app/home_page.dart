@@ -183,6 +183,21 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(16),
                                   bottomRight: Radius.circular(16))),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                left: 16,
+                                top: 8,
+                                child:Column(
+                                  children: <Widget>[
+                                    Text("Sorenga apartments"),
+                                    Text("1.5 km from citycentre"),
+
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],
