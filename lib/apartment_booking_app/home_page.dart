@@ -103,7 +103,23 @@ class _HomePageState extends State<HomePage> {
                                 top: 16,
                                 child: Column(
                                   children: <Widget>[
-                                    
+                                    Container(
+                                      height: 19,
+                                      width: 64,
+                                      decoration: BoxDecoration(
+                                        color: Colors.deepOrange,
+                                        borderRadius: BorderRadius.circular(4)
+                                      ),
+                                      child: Row(
+                                        children: <Widget>[
+                                          Icon(Icons.star_border, size: 12,
+                                          color: Colors.white,,),
+                                          Text("4.75", style: TextStyle(
+                                            color: Colors.white,
+                                          ),)
+                                        ],
+                                      ),
+                                    )
                                   ],
                                 ),
                               )
