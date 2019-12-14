@@ -89,7 +89,27 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
                       Expanded(
                         flex: 7,
-                        child: Placeholder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage("https://cdn.pixabay.com/photo/2014/08/11/21/40/wall-416062__340.jpg"),
+                              fit: BoxFit.cover
+                            )
+                          ),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                left: 16,
+                                top: 16,
+                                child: Column(
+                                  children: <Widget>[
+                                    
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                       Expanded(
                         flex: 4,
