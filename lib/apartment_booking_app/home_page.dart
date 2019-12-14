@@ -91,11 +91,10 @@ class _HomePageState extends State<HomePage> {
                         flex: 7,
                         child: Container(
                           decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://cdn.pixabay.com/photo/2014/08/11/21/40/wall-416062__340.jpg"),
-                              fit: BoxFit.cover
-                            )
-                          ),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2014/08/11/21/40/wall-416062__340.jpg"),
+                                  fit: BoxFit.cover)),
                           child: Stack(
                             children: <Widget>[
                               Positioned(
@@ -107,16 +106,26 @@ class _HomePageState extends State<HomePage> {
                                       height: 19,
                                       width: 64,
                                       decoration: BoxDecoration(
-                                        color: Colors.deepOrange,
-                                        borderRadius: BorderRadius.circular(4)
-                                      ),
+                                          color: Colors.deepOrange,
+                                          borderRadius:
+                                              BorderRadius.circular(4)),
                                       child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
                                         children: <Widget>[
-                                          Icon(Icons.star_border, size: 12,
-                                          color: Colors.white,,),
-                                          Text("4.75", style: TextStyle(
+                                          Icon(
+                                            Icons.star_border,
+                                            size: 12,
                                             color: Colors.white,
-                                          ),)
+                                          ),
+                                          Text(
+                                            "4.75",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
                                         ],
                                       ),
                                     )
