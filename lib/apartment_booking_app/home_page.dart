@@ -103,8 +103,8 @@ class _HomePageState extends State<HomePage> {
                                 child: Column(
                                   children: <Widget>[
                                     Container(
-                                      height: 19,
-                                      width: 64,
+                                      height: 18,
+                                      width: 52,
                                       decoration: BoxDecoration(
                                           color: Colors.deepOrange,
                                           borderRadius:
@@ -127,6 +127,20 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                           )
                                         ],
+                                      ),
+                                    ),
+                                    SizedBox(height: 4,),
+                                    Container(
+                                      height: 18,
+                                      width: 52,
+                                      decoration: BoxDecoration(
+                                          color: Colors.pinkAccent,
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                      child: Center(
+                                          child: Text("promo", style: TextStyle(
+                                          color: Colors.white,
+                                        ),)
                                       ),
                                     )
                                   ],
