@@ -91,6 +91,10 @@ class _HomePageState extends State<HomePage> {
                         flex: 7,
                         child: Container(
                           decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(16),
+                                topRight: Radius.circular(16),
+                              ),
                               image: DecorationImage(
                                   image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2014/08/11/21/40/wall-416062__340.jpg"),
@@ -157,11 +161,13 @@ class _HomePageState extends State<HomePage> {
                                   height: 38,
                                   width: 38,
                                   decoration: BoxDecoration(
-                                    color: Colors.deepOrange,
-                                    shape: BoxShape.circle
-                                  ),
+                                      color: Colors.deepOrange,
+                                      shape: BoxShape.circle),
                                   child: Center(
-                                    child: Icon(Icons.favorite, color: Colors.white,),
+                                    child: Icon(
+                                      Icons.favorite,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               )
@@ -173,12 +179,10 @@ class _HomePageState extends State<HomePage> {
                         flex: 4,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.blueGrey,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(16),
-                              bottomRight:Radius.circular(16)
-                            )
-                          ),
+                              color: Colors.blueGrey,
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(16),
+                                  bottomRight: Radius.circular(16))),
                         ),
                       ),
                     ],
