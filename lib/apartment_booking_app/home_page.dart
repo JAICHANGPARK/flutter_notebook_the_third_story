@@ -186,6 +186,21 @@ class _HomePageState extends State<HomePage> {
                           child: Stack(
                             children: <Widget>[
                               Positioned(
+                                right: 0,
+                                bottom: 0,
+                                top: 24,
+                                child: Container(
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    color: Colors.deepOrange,
+                                    borderRadius: BorderRadius.only(
+                                        bottomRight: Radius.circular(16),
+                                      topLeft:  Radius.circular(16),
+                                    )
+                                  ),
+                                ),
+                              ),
+                              Positioned(
                                 left: 16,
                                 top: 8,
                                 child: Column(
