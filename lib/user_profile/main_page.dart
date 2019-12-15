@@ -21,7 +21,12 @@ class _MainPageState extends State<MainPage> {
                   top: 0,
                   child: Container(
                     height: MediaQuery.of(context).size.height / 4.5,
-                    child: Placeholder(),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/02/13/01/winter-1791370__340.jpg"),
+                        fit: BoxFit.cover,
+                      )
+                    ),
                   ),
                 ),
                 Positioned(
@@ -33,6 +38,9 @@ class _MainPageState extends State<MainPage> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.red,
+                      image: DecorationImage(
+                        image: NetworkImage("")
+                      )
                     ),
                   ),
                 ),
@@ -76,6 +84,17 @@ class _MainPageState extends State<MainPage> {
                       )
                     ],
                   ),
+                ),
+                Positioned(
+                  left: 24,
+                  top: MediaQuery.of(context).size.height / 3,
+                  bottom: 0,
+                  right: 0,
+                  child: Container(
+                    decoration: BoxDecoration(),
+                    child: Placeholder(),
+                  ),
+
                 )
               ],
             ),
