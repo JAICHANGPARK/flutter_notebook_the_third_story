@@ -8,6 +8,19 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            flex: 1,
+            child: Placeholder(),
+          ),
+          Expanded(
+            flex: 1,
+            child: Placeholder(),
+          )
+        ],
+      ),
+    );
   }
 }
