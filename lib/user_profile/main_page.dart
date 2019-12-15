@@ -12,12 +12,26 @@ class _MainPageState extends State<MainPage> {
       body: Column(
         children: <Widget>[
           Expanded(
-            flex: 1,
+            flex: 8,
             child: Placeholder(),
           ),
           Expanded(
             flex: 1,
-            child: Placeholder(),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.teal
+              ),
+              child: Center(
+                child: Text(
+                  "Contact Dreamwalker",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+            ),
           )
         ],
       ),
