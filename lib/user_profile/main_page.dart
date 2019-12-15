@@ -13,7 +13,20 @@ class _MainPageState extends State<MainPage> {
         children: <Widget>[
           Expanded(
             flex: 8,
-            child: Placeholder(),
+            child: Stack(
+              children: <Widget>[
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  child: Container(
+                    height: MediaQuery.of(context).size.height / 4.5,
+                    child: Placeholder(),
+                  ),
+                )
+
+              ],
+            ),
           ),
           Expanded(
             flex: 1,
