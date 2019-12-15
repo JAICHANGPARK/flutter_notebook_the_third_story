@@ -319,12 +319,12 @@ class _HomePageState extends State<HomePage> {
                                       decoration: BoxDecoration(
                                           color: Colors.deepOrange,
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.center,
+                                            CrossAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(
                                             Icons.star_border,
@@ -349,14 +349,14 @@ class _HomePageState extends State<HomePage> {
                                       decoration: BoxDecoration(
                                           color: Colors.pinkAccent,
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                       child: Center(
                                           child: Text(
-                                            "promo",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                            ),
-                                          )),
+                                        "promo",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )),
                                     )
                                   ],
                                 ),
@@ -408,9 +408,9 @@ class _HomePageState extends State<HomePage> {
                                       left: 16, bottom: 7, top: 8),
                                   child: Column(
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                        MainAxisAlignment.spaceEvenly,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: <Widget>[
                                       Text(
                                         "125 \$",
@@ -525,12 +525,12 @@ class _HomePageState extends State<HomePage> {
                                       decoration: BoxDecoration(
                                           color: Colors.deepOrange,
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.center,
+                                            CrossAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(
                                             Icons.star_border,
@@ -555,14 +555,14 @@ class _HomePageState extends State<HomePage> {
                                       decoration: BoxDecoration(
                                           color: Colors.pinkAccent,
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                       child: Center(
                                           child: Text(
-                                            "promo",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                            ),
-                                          )),
+                                        "promo",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )),
                                     )
                                   ],
                                 ),
@@ -614,9 +614,9 @@ class _HomePageState extends State<HomePage> {
                                       left: 16, bottom: 7, top: 8),
                                   child: Column(
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                        MainAxisAlignment.spaceEvenly,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: <Widget>[
                                       Text(
                                         "125 \$",
