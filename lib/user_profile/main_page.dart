@@ -39,7 +39,8 @@ class _MainPageState extends State<MainPage> {
                       shape: BoxShape.circle,
                       color: Colors.red,
                       image: DecorationImage(
-                        image: NetworkImage("")
+                        image: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                        fit: BoxFit.cover,
                       )
                     ),
                   ),
@@ -92,7 +93,22 @@ class _MainPageState extends State<MainPage> {
                   right: 0,
                   child: Container(
                     decoration: BoxDecoration(),
-                    child: Placeholder(),
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 2,
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          flex: 3,
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          flex: 8,
+                          child: Placeholder(),
+                        ),
+                      ],
+                    ),
                   ),
 
                 )
