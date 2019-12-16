@@ -118,10 +118,25 @@ class _MainPageState extends State<MainPage> {
                   child: Container(
                     decoration: BoxDecoration(),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Expanded(
                           flex: 2,
-                          child: Placeholder(),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text("Dreamwalker",style: TextStyle(
+                                color: Colors.teal,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22
+                              ),),
+                              SizedBox(height: 4,),
+                              Text("Flutter, Android Developer",style: TextStyle(
+                                color: Colors.teal,
+                                fontSize: 12
+                              ),)
+                            ],
+                          ),
                         ),
                         Expanded(
                           flex: 3,
