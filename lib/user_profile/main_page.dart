@@ -148,7 +148,10 @@ class _MainPageState extends State<MainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Expanded(flex: 1, child: Text("Gallery")),
+                              Expanded(flex: 1, child: Text("Gallery",style: TextStyle(
+                                color: Colors.teal,
+                                
+                              ),)),
                               Expanded(
                                 flex: 4,
                                 child: ListView(
@@ -185,8 +188,21 @@ class _MainPageState extends State<MainPage> {
                                         right: 12,
                                       ),
                                       width: 80,
-                                      decoration:
-                                          BoxDecoration(color: Colors.red),
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2019/12/06/18/47/bavarian-forest-4677982__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -195,8 +211,21 @@ class _MainPageState extends State<MainPage> {
                                         right: 12,
                                       ),
                                       width: 80,
-                                      decoration:
-                                          BoxDecoration(color: Colors.red),
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2014/11/29/16/23/christmas-market-550323__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -205,9 +234,114 @@ class _MainPageState extends State<MainPage> {
                                         right: 12,
                                       ),
                                       width: 80,
-                                      decoration:
-                                          BoxDecoration(color: Colors.red),
-                                    )
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2019/12/11/07/39/winter-4687676__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2019/11/16/21/44/christmas-4631194__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2019/12/06/18/47/bavarian-forest-4677982__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2014/11/29/16/23/christmas-market-550323__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2019/12/11/07/39/winter-4687676__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ],
+                                          borderRadius:
+                                          BorderRadius.circular(4)),
+                                    ),
                                   ],
                                 ),
                               )
