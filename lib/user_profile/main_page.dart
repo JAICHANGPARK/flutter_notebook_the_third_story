@@ -55,6 +55,12 @@ class _MainPageState extends State<MainPage> {
                         width: 32,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
+                        child: Center(
+                          child: Text("F", style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18
+                          ),),
+                        ),
                       ),
                       SizedBox(
                         width: 16,
@@ -64,6 +70,12 @@ class _MainPageState extends State<MainPage> {
                         width: 32,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
+                        child: Center(
+                          child: Text("T", style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),),
+                        ),
                       ),
                       SizedBox(
                         width: 16,
@@ -73,6 +85,12 @@ class _MainPageState extends State<MainPage> {
                         width: 32,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
+                        child: Center(
+                          child: Text("I", style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),),
+                        ),
                       ),
                       SizedBox(
                         width: 16,
@@ -82,6 +100,12 @@ class _MainPageState extends State<MainPage> {
                         width: 32,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
+                        child: Center(
+                          child: Text("Y", style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),),
+                        ),
                       )
                     ],
                   ),
