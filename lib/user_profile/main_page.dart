@@ -56,10 +56,10 @@ class _MainPageState extends State<MainPage> {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
                         child: Center(
-                          child: Text("F", style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18
-                          ),),
+                          child: Text(
+                            "F",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -71,10 +71,10 @@ class _MainPageState extends State<MainPage> {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
                         child: Center(
-                          child: Text("T", style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),),
+                          child: Text(
+                            "T",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -86,10 +86,10 @@ class _MainPageState extends State<MainPage> {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
                         child: Center(
-                          child: Text("I", style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),),
+                          child: Text(
+                            "I",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -101,10 +101,10 @@ class _MainPageState extends State<MainPage> {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Colors.blue),
                         child: Center(
-                          child: Text("Y", style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),),
+                          child: Text(
+                            "Y",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          ),
                         ),
                       )
                     ],
@@ -125,22 +125,89 @@ class _MainPageState extends State<MainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text("Dreamwalker",style: TextStyle(
-                                color: Colors.teal,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22
-                              ),),
-                              SizedBox(height: 4,),
-                              Text("Flutter, Android Developer",style: TextStyle(
-                                color: Colors.teal,
-                                fontSize: 12
-                              ),)
+                              Text(
+                                "Dreamwalker",
+                                style: TextStyle(
+                                    color: Colors.teal,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 22),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "Flutter, Android Developer",
+                                style:
+                                    TextStyle(color: Colors.teal, fontSize: 12),
+                              )
                             ],
                           ),
                         ),
                         Expanded(
                           flex: 3,
-                          child: Placeholder(),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Expanded(flex: 1, child: Text("Gallery")),
+                              Expanded(
+                                flex: 4,
+                                child: ListView(
+                                  shrinkWrap: true,
+                                  scrollDirection: Axis.horizontal,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration:
+                                          BoxDecoration(color: Colors.red,
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Colors.black.withOpacity(0.1),
+                                              blurRadius: 2,
+                                              spreadRadius: 1
+                                            )
+                                          ],
+                                          borderRadius: BorderRadius.circular(4)),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration:
+                                          BoxDecoration(color: Colors.red),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration:
+                                          BoxDecoration(color: Colors.red),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                        top: 8,
+                                        bottom: 8,
+                                        right: 12,
+                                      ),
+                                      width: 80,
+                                      decoration:
+                                          BoxDecoration(color: Colors.red),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Expanded(
                           flex: 8,
