@@ -12,7 +12,7 @@ class _MainPageState extends State<MainPage> {
       body: Column(
         children: <Widget>[
           Expanded(
-            flex: 8,
+            flex: 10,
             child: Stack(
               children: <Widget>[
                 Positioned(
@@ -150,7 +150,7 @@ class _MainPageState extends State<MainPage> {
                             children: <Widget>[
                               Expanded(flex: 1, child: Text("Gallery",style: TextStyle(
                                 color: Colors.teal,
-                                
+
                               ),)),
                               Expanded(
                                 flex: 4,
@@ -348,9 +348,58 @@ class _MainPageState extends State<MainPage> {
                             ],
                           ),
                         ),
+                        SizedBox(height: 8,),
                         Expanded(
                           flex: 8,
-                          child: Placeholder(),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Expanded(
+                                flex: 1,
+                                child: Text("Testimonials",style: TextStyle(
+                                  color: Colors.teal
+                                ),),
+                              ),
+                              Expanded(
+                                flex: 9,
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  shrinkWrap: true,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(right: 12, top: 8, bottom: 0),
+                                      width: MediaQuery.of(context).size.width - 140,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.black.withOpacity(0.2),
+                                            blurRadius: 2,
+                                            spreadRadius: 1
+                                          )
+                                        ]
+                                      ),
+                                      
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(right: 12, top: 8, bottom: 0),
+                                      width: MediaQuery.of(context).size.width - 140,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                      ),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(right: 12, top: 8, bottom: 0),
+                                      width: MediaQuery.of(context).size.width - 140,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     ),
