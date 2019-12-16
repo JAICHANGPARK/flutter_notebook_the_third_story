@@ -430,21 +430,41 @@ class _MainPageState extends State<MainPage> {
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.red,
+                                                  borderRadius: BorderRadius.circular(4),
+                                                  image: DecorationImage(
+                                                    image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                    fit: BoxFit.cover
+                                                  )
                                                 ),
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                    image: DecorationImage(
+                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                        fit: BoxFit.cover
+                                                    )
                                                 ),
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                    image: DecorationImage(
+                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                        fit: BoxFit.cover
+                                                    )
                                                 ),
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                    image: DecorationImage(
+                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                        fit: BoxFit.cover
+                                                    )
                                                 ),
                                               ),
                                             ],)
