@@ -110,14 +110,12 @@ class _MainPageState extends State<MainPage> {
                     ],
                   ),
                 ),
-
                 Positioned(
                   left: 24,
                   top: MediaQuery.of(context).size.height / 3,
                   bottom: 0,
                   right: 0,
                   child: Container(
-
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -149,10 +147,14 @@ class _MainPageState extends State<MainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Expanded(flex: 1, child: Text("Gallery",style: TextStyle(
-                                color: Colors.teal,
-
-                              ),)),
+                              Expanded(
+                                  flex: 1,
+                                  child: Text(
+                                    "Gallery",
+                                    style: TextStyle(
+                                      color: Colors.teal,
+                                    ),
+                                  )),
                               Expanded(
                                 flex: 4,
                                 child: ListView(
@@ -203,7 +205,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -226,7 +228,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -249,7 +251,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -272,7 +274,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -295,7 +297,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -318,7 +320,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
@@ -341,7 +343,7 @@ class _MainPageState extends State<MainPage> {
                                                 spreadRadius: 1)
                                           ],
                                           borderRadius:
-                                          BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                     ),
                                   ],
                                 ),
@@ -349,7 +351,9 @@ class _MainPageState extends State<MainPage> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Expanded(
                           flex: 8,
                           child: Column(
@@ -357,9 +361,10 @@ class _MainPageState extends State<MainPage> {
                             children: <Widget>[
                               Expanded(
                                 flex: 1,
-                                child: Text("Testimonials",style: TextStyle(
-                                  color: Colors.teal
-                                ),),
+                                child: Text(
+                                  "Testimonials",
+                                  style: TextStyle(color: Colors.teal),
+                                ),
                               ),
                               Expanded(
                                 flex: 9,
@@ -368,141 +373,43 @@ class _MainPageState extends State<MainPage> {
                                   shrinkWrap: true,
                                   children: <Widget>[
                                     Container(
-                                      margin: EdgeInsets.only(right: 12, top: 8, bottom: 0),
-                                      width: MediaQuery.of(context).size.width - 140,
+                                      margin: EdgeInsets.only(
+                                          right: 12, top: 8, bottom: 0),
+                                      width: MediaQuery.of(context).size.width -
+                                          140,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        boxShadow: [
-                                          BoxShadow(
-                                            color: Colors.black.withOpacity(0.2),
-                                            blurRadius: 2,
-                                            spreadRadius: 1
-                                          )
-                                        ]
-                                      ),
+                                          color: Colors.white,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.2),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ]),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Expanded(
                                             flex: 1,
-                                            child:Padding(
-                                              padding: const EdgeInsets.only(left: 12, top: 14, right: 12),
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 12, top: 14, right: 12),
                                               child: Row(
                                                 children: <Widget>[
-                                                  Text("Anne & John", style: TextStyle(
-                                                  fontSize: 12
-                                              ),),
+                                                  Text(
+                                                    "Anne & John",
+                                                    style:
+                                                        TextStyle(fontSize: 12),
+                                                  ),
                                                   Spacer(),
-                                                  Text("12st Nov. 2019", style: TextStyle(
+                                                  Text(
+                                                    "12st Nov. 2019",
+                                                    style: TextStyle(
                                                       fontSize: 12,
-                                                    color: Colors.grey,
-                                                  ),)
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            flex: 2,
-                                            child: Padding(
-                                              padding: const EdgeInsets.only(left: 12, top: 7),
-                                              child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh",
-                                              style: TextStyle(
-                                                fontSize: 11,
-                                                color: Colors.black45,
-                                              ),),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            flex: 6,
-                                            child: GridView.count(crossAxisCount: 2,
-                                            padding: EdgeInsets.only(
-                                              left: 12,
-                                              bottom: 12,
-                                              top: 12,
-                                              right: 12
-                                            ),
-                                            shrinkWrap: true,
-                                            childAspectRatio: 7/4,
-                                            mainAxisSpacing: 4,
-                                            crossAxisSpacing: 5,
-                                            children: <Widget>[
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.red,
-                                                  borderRadius: BorderRadius.circular(4),
-                                                  image: DecorationImage(
-                                                    image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                    fit: BoxFit.cover
+                                                      color: Colors.grey,
+                                                    ),
                                                   )
-                                                ),
-                                              ),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.red,
-                                                    borderRadius: BorderRadius.circular(4),
-                                                    image: DecorationImage(
-                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                        fit: BoxFit.cover
-                                                    )
-                                                ),
-                                              ),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.red,
-                                                    borderRadius: BorderRadius.circular(4),
-                                                    image: DecorationImage(
-                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                        fit: BoxFit.cover
-                                                    )
-                                                ),
-                                              ),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.red,
-                                                    borderRadius: BorderRadius.circular(4),
-                                                    image: DecorationImage(
-                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                        fit: BoxFit.cover
-                                                    )
-                                                ),
-                                              ),
-                                            ],)
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    Container(
-                                      margin: EdgeInsets.only(right: 12, top: 8, bottom: 0),
-                                      width: MediaQuery.of(context).size.width - 140,
-                                      decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          boxShadow: [
-                                            BoxShadow(
-                                                color: Colors.black.withOpacity(0.2),
-                                                blurRadius: 2,
-                                                spreadRadius: 1
-                                            )
-                                          ]
-                                      ),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: <Widget>[
-                                          Expanded(
-                                            flex: 1,
-                                            child:Padding(
-                                              padding: const EdgeInsets.only(left: 12, top: 14, right: 12),
-                                              child: Row(
-                                                children: <Widget>[
-                                                  Text("Anne & John", style: TextStyle(
-                                                      fontSize: 12
-                                                  ),),
-                                                  Spacer(),
-                                                  Text("12st Nov. 2019", style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.grey,
-                                                  ),)
                                                 ],
                                               ),
                                             ),
@@ -510,105 +417,120 @@ class _MainPageState extends State<MainPage> {
                                           Expanded(
                                             flex: 2,
                                             child: Padding(
-                                              padding: const EdgeInsets.only(left: 12, top: 7),
-                                              child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh",
+                                              padding: const EdgeInsets.only(
+                                                  left: 12, top: 7),
+                                              child: Text(
+                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh",
                                                 style: TextStyle(
                                                   fontSize: 11,
                                                   color: Colors.black45,
-                                                ),),
+                                                ),
+                                              ),
                                             ),
                                           ),
                                           Expanded(
                                               flex: 6,
-                                              child: GridView.count(crossAxisCount: 2,
+                                              child: GridView.count(
+                                                crossAxisCount: 2,
                                                 padding: EdgeInsets.only(
                                                     left: 12,
                                                     bottom: 12,
                                                     top: 12,
-                                                    right: 12
-                                                ),
+                                                    right: 12),
                                                 shrinkWrap: true,
-                                                childAspectRatio: 7/4,
+                                                childAspectRatio: 7 / 4,
                                                 mainAxisSpacing: 4,
                                                 crossAxisSpacing: 5,
                                                 children: <Widget>[
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
-                                                ],)
-                                          )
+                                                ],
+                                              ))
                                         ],
                                       ),
                                     ),
                                     Container(
-                                      margin: EdgeInsets.only(right: 12, top: 8, bottom: 0),
-                                      width: MediaQuery.of(context).size.width - 140,
+                                      margin: EdgeInsets.only(
+                                          right: 12, top: 8, bottom: 0),
+                                      width: MediaQuery.of(context).size.width -
+                                          140,
                                       decoration: BoxDecoration(
                                           color: Colors.white,
                                           boxShadow: [
                                             BoxShadow(
-                                                color: Colors.black.withOpacity(0.2),
+                                                color: Colors.black
+                                                    .withOpacity(0.2),
                                                 blurRadius: 2,
-                                                spreadRadius: 1
-                                            )
-                                          ]
-                                      ),
+                                                spreadRadius: 1)
+                                          ]),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Expanded(
                                             flex: 1,
-                                            child:Padding(
-                                              padding: const EdgeInsets.only(left: 12, top: 14, right: 12),
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 12, top: 14, right: 12),
                                               child: Row(
                                                 children: <Widget>[
-                                                  Text("Anne & John", style: TextStyle(
-                                                      fontSize: 12
-                                                  ),),
+                                                  Text(
+                                                    "Anne & John",
+                                                    style:
+                                                        TextStyle(fontSize: 12),
+                                                  ),
                                                   Spacer(),
-                                                  Text("12st Nov. 2019", style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.grey,
-                                                  ),)
+                                                  Text(
+                                                    "12st Nov. 2019",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.grey,
+                                                    ),
+                                                  )
                                                 ],
                                               ),
                                             ),
@@ -616,72 +538,200 @@ class _MainPageState extends State<MainPage> {
                                           Expanded(
                                             flex: 2,
                                             child: Padding(
-                                              padding: const EdgeInsets.only(left: 12, top: 7),
-                                              child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh",
+                                              padding: const EdgeInsets.only(
+                                                  left: 12, top: 7),
+                                              child: Text(
+                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh",
                                                 style: TextStyle(
                                                   fontSize: 11,
                                                   color: Colors.black45,
-                                                ),),
+                                                ),
+                                              ),
                                             ),
                                           ),
                                           Expanded(
                                               flex: 6,
-                                              child: GridView.count(crossAxisCount: 2,
+                                              child: GridView.count(
+                                                crossAxisCount: 2,
                                                 padding: EdgeInsets.only(
                                                     left: 12,
                                                     bottom: 12,
                                                     top: 12,
-                                                    right: 12
-                                                ),
+                                                    right: 12),
                                                 shrinkWrap: true,
-                                                childAspectRatio: 7/4,
+                                                childAspectRatio: 7 / 4,
                                                 mainAxisSpacing: 4,
                                                 crossAxisSpacing: 5,
                                                 children: <Widget>[
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         color: Colors.red,
-                                                        borderRadius: BorderRadius.circular(4),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
                                                         image: DecorationImage(
-                                                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
-                                                            fit: BoxFit.cover
-                                                        )
-                                                    ),
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
                                                   ),
-                                                ],)
-                                          )
+                                                ],
+                                              ))
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          right: 12, top: 8, bottom: 0),
+                                      width: MediaQuery.of(context).size.width -
+                                          140,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.2),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
+                                          ]),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Expanded(
+                                            flex: 1,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 12, top: 14, right: 12),
+                                              child: Row(
+                                                children: <Widget>[
+                                                  Text(
+                                                    "Anne & John",
+                                                    style:
+                                                        TextStyle(fontSize: 12),
+                                                  ),
+                                                  Spacer(),
+                                                  Text(
+                                                    "12st Nov. 2019",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.grey,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            flex: 2,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 12, top: 7),
+                                              child: Text(
+                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh",
+                                                style: TextStyle(
+                                                  fontSize: 11,
+                                                  color: Colors.black45,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 6,
+                                              child: GridView.count(
+                                                crossAxisCount: 2,
+                                                padding: EdgeInsets.only(
+                                                    left: 12,
+                                                    bottom: 12,
+                                                    top: 12,
+                                                    right: 12),
+                                                shrinkWrap: true,
+                                                childAspectRatio: 7 / 4,
+                                                mainAxisSpacing: 4,
+                                                crossAxisSpacing: 5,
+                                                children: <Widget>[
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.red,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.red,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.red,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.red,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2019/12/12/13/04/couple-4690635__340.jpg"),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                ],
+                                              ))
                                         ],
                                       ),
                                     ),
@@ -702,16 +752,14 @@ class _MainPageState extends State<MainPage> {
                   right: 0,
                   child: Container(
                     decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: <Color>[
-                          Colors.white.withOpacity(0.1),
-                          Colors.white,
-                        ],
+                        gradient: LinearGradient(
+                            colors: <Color>[
+                              Colors.white.withOpacity(0.1),
+                              Colors.white,
+                            ],
                             begin: Alignment.centerLeft,
                             end: Alignment.centerRight,
-                            stops: [0.5, 1]
-
-                        )
-                    ),
+                            stops: [0.5, 1])),
                   ),
                 ),
               ],
