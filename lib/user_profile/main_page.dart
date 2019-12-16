@@ -162,16 +162,21 @@ class _MainPageState extends State<MainPage> {
                                         right: 12,
                                       ),
                                       width: 80,
-                                      decoration:
-                                          BoxDecoration(color: Colors.red,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2019/11/16/21/44/christmas-4631194__340.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.red,
                                           boxShadow: [
                                             BoxShadow(
-                                              color: Colors.black.withOpacity(0.1),
-                                              blurRadius: 2,
-                                              spreadRadius: 1
-                                            )
+                                                color: Colors.black
+                                                    .withOpacity(0.1),
+                                                blurRadius: 2,
+                                                spreadRadius: 1)
                                           ],
-                                          borderRadius: BorderRadius.circular(4)),
+                                          borderRadius:
+                                              BorderRadius.circular(4)),
                                     ),
                                     Container(
                                       margin: EdgeInsets.only(
