@@ -22,11 +22,11 @@ class _MainPageState extends State<MainPage> {
                   child: Container(
                     height: MediaQuery.of(context).size.height / 4.5,
                     decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/02/13/01/winter-1791370__340.jpg"),
-                        fit: BoxFit.cover,
-                      )
-                    ),
+                        image: DecorationImage(
+                      image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2016/11/02/13/01/winter-1791370__340.jpg"),
+                      fit: BoxFit.cover,
+                    )),
                   ),
                 ),
                 Positioned(
@@ -36,13 +36,13 @@ class _MainPageState extends State<MainPage> {
                     height: 84,
                     width: 84,
                     decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.red,
-                      image: DecorationImage(
-                        image: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
-                        fit: BoxFit.cover,
-                      )
-                    ),
+                        shape: BoxShape.circle,
+                        color: Colors.red,
+                        image: DecorationImage(
+                          image: NetworkImage(
+                              "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                          fit: BoxFit.cover,
+                        )),
                   ),
                 ),
                 Positioned(
@@ -110,7 +110,6 @@ class _MainPageState extends State<MainPage> {
                       ],
                     ),
                   ),
-
                 )
               ],
             ),
