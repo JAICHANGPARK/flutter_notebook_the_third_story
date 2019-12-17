@@ -9,8 +9,44 @@ class _ASMainPageState extends State<ASMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-          children: <Widget>[],
+        body: SafeArea(
+          top: true,
+          left: true,
+          right: true,
+          bottom: true,
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text("Hi, Dreamwalker",style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22
+                      ),),
+                      CircleAvatar(backgroundColor: Colors.red,)
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                flex: 6,
+                child: Placeholder(),
+              ),
+              Expanded(
+                flex: 2,
+                child: Placeholder(),
+              ),
+              Expanded(
+                flex: 10,
+                child: Placeholder(),
+              )
+            ],
+          ),
         ),
         bottomNavigationBar: BottomAppBar(
           elevation: 12,
