@@ -17,7 +17,7 @@ class _ASMainPageState extends State<ASMainPage> {
           child: Column(
             children: <Widget>[
               Expanded(
-                flex: 3,
+                flex: 2,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
@@ -67,11 +67,38 @@ class _ASMainPageState extends State<ASMainPage> {
               ),
               Expanded(
                 flex: 2,
-                child: Placeholder(),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Text("Today's Appointment",style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ),),
+                  ),
+                ),
               ),
               Expanded(
                 flex: 10,
-                child: Placeholder(),
+                child: ListView(
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                      height: MediaQuery.of(context).size.height / 3.5,
+                      decoration: BoxDecoration(
+                        color: Colors.black
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                      height: MediaQuery.of(context).size.height / 3.5,
+                      decoration: BoxDecoration(
+                          color: Colors.black
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
