@@ -17,7 +17,7 @@ class _ASMainPageState extends State<ASMainPage> {
           child: Column(
             children: <Widget>[
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
@@ -35,7 +35,35 @@ class _ASMainPageState extends State<ASMainPage> {
               ),
               Expanded(
                 flex: 6,
-                child: Placeholder(),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left: 0, right: 12, bottom: 16, top: 16),
+                        width: MediaQuery.of(context).size.width - 120,
+                        decoration: BoxDecoration(
+                          color: Colors.blue
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(left: 0, right: 12, bottom: 16, top: 16),
+                        width: MediaQuery.of(context).size.width - 120,
+                        decoration: BoxDecoration(
+                            color: Colors.blue
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(left: 0, right: 12, bottom: 16, top: 16),
+                        width: MediaQuery.of(context).size.width - 120,
+                        decoration: BoxDecoration(
+                            color: Colors.blue
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               Expanded(
                 flex: 2,
