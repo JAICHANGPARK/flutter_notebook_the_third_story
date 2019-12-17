@@ -75,11 +75,13 @@ class _DetailPageState extends State<DetailPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text("GoPro Superior",style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 28
-                            ),),
+                            Text(
+                              "GoPro Superior",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 28),
+                            ),
                             Icon(
                               Icons.favorite,
                               color: Colors.red,
@@ -89,11 +91,13 @@ class _DetailPageState extends State<DetailPage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("GoPro rose to prominence",style: TextStyle(
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16
-                        ),),
+                        Text(
+                          "GoPro rose to prominence",
+                          style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),
+                        ),
                         SizedBox(
                           height: 16,
                         ),
@@ -106,40 +110,44 @@ class _DetailPageState extends State<DetailPage> {
                             fit: BoxFit.fitHeight,
                           )),
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                           Container(
+                            Container(
                               height: 32,
                               width: 80,
                               decoration: BoxDecoration(
-                                color: Colors.blueGrey[50],
-                                borderRadius: BorderRadius.circular(15)
-                              ),
+                                  color: Colors.blueGrey[50],
+                                  borderRadius: BorderRadius.circular(15)),
                               child: Center(
-                                child: Text("White",style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                ),),
+                                child: Text(
+                                  "White",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                             ),
-                            SizedBox(width: 12,
+                            SizedBox(
+                              width: 12,
                             ),
                             Container(
                               height: 32,
                               width: 80,
                               decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(16)
-                              ),
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(16)),
                               child: Center(
-                                child: Text("Black", style: TextStyle(
-                                  color: Colors.white
-                                ),),
+                                child: Text(
+                                  "Black",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
-
                           ],
                         )
                       ],
