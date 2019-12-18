@@ -291,16 +291,26 @@ class _ASMainPageState extends State<ASMainPage> {
                 flex: 10,
                 child: ListView(
                   children: <Widget>[
-                    Container(
+                    Card(
                       margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
-                      height: MediaQuery.of(context).size.height / 3.5,
-                      decoration: BoxDecoration(color: Colors.black),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height / 3.5,
+                      ),
+                      elevation: 1.5,
                     ),
-                    Container(
+                    Card(
                       margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
-                      height: MediaQuery.of(context).size.height / 3.5,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
+                      child: Container(
+                        height: MediaQuery.of(context).size.height / 3.5,
+                      ),
+                      elevation: 40,
+                    ),
+                    Card(
+                      margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height / 3.5,
+                      ),
+                    ),
                   ],
                 ),
               )
