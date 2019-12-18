@@ -48,17 +48,15 @@ class _ASMainPageState extends State<ASMainPage> {
                         margin: EdgeInsets.only(
                             left: 0, right: 12, bottom: 16, top: 16),
                         width: MediaQuery.of(context).size.width - 120,
-                        decoration: BoxDecoration(color: Colors.blue,
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.blue[200],
-                            blurRadius: 2,
-                            spreadRadius: 2
-                          )
-                        ]
-
-                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.blue[200],
+                                  blurRadius: 2,
+                                  spreadRadius: 2)
+                            ]),
                         child: Stack(
                           children: <Widget>[
                             Positioned(
@@ -66,20 +64,22 @@ class _ASMainPageState extends State<ASMainPage> {
                               right: 24,
                               child: Container(
                                 height: 42,
-                                width:42,
+                                width: 42,
                                 decoration: BoxDecoration(
-                                  color: Colors.blue[300],
-                                  shape: BoxShape.circle,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(.1),
-                                      blurRadius: 1,
-                                      spreadRadius: 1
-                                    )
-                                  ]
-                                ),
+                                    color: Colors.blue[300],
+                                    shape: BoxShape.circle,
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.black.withOpacity(.1),
+                                          blurRadius: 1,
+                                          spreadRadius: 1)
+                                    ]),
                                 child: Center(
-                                  child: Icon(Icons.calendar_today,size: 20, color: Colors.white,),
+                                  child: Icon(
+                                    Icons.calendar_today,
+                                    size: 20,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
