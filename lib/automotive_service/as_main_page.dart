@@ -296,8 +296,9 @@ class _ASMainPageState extends State<ASMainPage> {
                       margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                       child: Container(
                         padding: EdgeInsets.only(left: 24, top: 24, right: 24, bottom: 24),
-                        height: MediaQuery.of(context).size.height / 3.5,
+                        height: MediaQuery.of(context).size.height / 3.8,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: <Widget>[
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -324,6 +325,9 @@ class _ASMainPageState extends State<ASMainPage> {
                                       )
                                     ]
                                   ),
+                                  child: Center(
+                                    child: Icon(Icons.location_searching, color: Colors.blue,size: 18,),
+                                  ),
                                 )
                                 ,
                                 SizedBox(width: 8,),
@@ -339,7 +343,17 @@ class _ASMainPageState extends State<ASMainPage> {
                                         )
                                       ]
                                   ),
+                                  child: Center(
+                                    child: Icon(Icons.add_location, color: Colors.blue,size: 18,),
+                                  ),
                                 )
+                              ],
+                            ),
+                            Text("Correct the low beam problem in the car and conduct a general inspection"),
+                            Row(
+                              children: <Widget>[
+                                Icon(Icons.access_time),
+                                Text("23 March, 12:00 PM~4:00PM")
                               ],
                             )
                           ],
@@ -348,17 +362,144 @@ class _ASMainPageState extends State<ASMainPage> {
                       elevation: 1.5,
                     ),
                     Card(
+
                       margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                       child: Container(
-                        height: MediaQuery.of(context).size.height / 3.5,
+                        padding: EdgeInsets.only(left: 24, top: 24, right: 24, bottom: 24),
+                        height: MediaQuery.of(context).size.height / 3.8,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(),
+                                SizedBox(width: 16,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text("Timothy Davidson"),
+                                    Text("Maryland")
+                                  ],
+                                ),
+                                Spacer(),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.black.withOpacity(0.6)
+                                        )
+                                      ]
+                                  ),
+                                  child: Center(
+                                    child: Icon(Icons.location_searching, color: Colors.blue,size: 18,),
+                                  ),
+                                )
+                                ,
+                                SizedBox(width: 8,),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.black.withOpacity(0.6)
+                                        )
+                                      ]
+                                  ),
+                                  child: Center(
+                                    child: Icon(Icons.add_location, color: Colors.blue,size: 18,),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Text("Correct the low beam problem in the car and conduct a general inspection"),
+                            Row(
+                              children: <Widget>[
+                                Icon(Icons.access_time),
+                                Text("23 March, 12:00 PM~4:00PM")
+                              ],
+                            )
+                          ],
+                        ),
                       ),
-                      elevation: 40,
+                      elevation: 1.5,
                     ),
                     Card(
+
                       margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                       child: Container(
-                        height: MediaQuery.of(context).size.height / 3.5,
+                        padding: EdgeInsets.only(left: 24, top: 24, right: 24, bottom: 24),
+                        height: MediaQuery.of(context).size.height / 3.8,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(),
+                                SizedBox(width: 16,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text("Timothy Davidson"),
+                                    Text("Maryland")
+                                  ],
+                                ),
+                                Spacer(),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.black.withOpacity(0.6)
+                                        )
+                                      ]
+                                  ),
+                                  child: Center(
+                                    child: Icon(Icons.location_searching, color: Colors.blue,size: 18,),
+                                  ),
+                                )
+                                ,
+                                SizedBox(width: 8,),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.black.withOpacity(0.6)
+                                        )
+                                      ]
+                                  ),
+                                  child: Center(
+                                    child: Icon(Icons.add_location, color: Colors.blue,size: 18,),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Text("Correct the low beam problem in the car and conduct a general inspection"),
+                            Row(
+                              children: <Widget>[
+                                Icon(Icons.access_time),
+                                Text("23 March, 12:00 PM~4:00PM")
+                              ],
+                            )
+                          ],
+                        ),
                       ),
+                      elevation: 1.5,
                     ),
                   ],
                 ),
