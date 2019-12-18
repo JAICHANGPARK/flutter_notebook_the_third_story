@@ -78,6 +78,9 @@ class _ASMainPageState extends State<ASMainPage> {
                                     )
                                   ]
                                 ),
+                                child: Center(
+                                  child: Icon(Icons.calendar_today,size: 20, color: Colors.white,),
+                                ),
                               ),
                             ),
                             Positioned(
