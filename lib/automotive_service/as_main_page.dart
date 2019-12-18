@@ -292,9 +292,58 @@ class _ASMainPageState extends State<ASMainPage> {
                 child: ListView(
                   children: <Widget>[
                     Card(
+
                       margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                       child: Container(
+                        padding: EdgeInsets.only(left: 24, top: 24, right: 24, bottom: 24),
                         height: MediaQuery.of(context).size.height / 3.5,
+                        child: Column(
+                          children: <Widget>[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(),
+                                SizedBox(width: 16,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text("Timothy Davidson"),
+                                    Text("Maryland")
+                                  ],
+                                ),
+                                Spacer(),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.6)
+                                      )
+                                    ]
+                                  ),
+                                )
+                                ,
+                                SizedBox(width: 8,),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.black.withOpacity(0.6)
+                                        )
+                                      ]
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                       elevation: 1.5,
                     ),
