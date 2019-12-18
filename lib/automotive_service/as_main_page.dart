@@ -48,7 +48,72 @@ class _ASMainPageState extends State<ASMainPage> {
                         margin: EdgeInsets.only(
                             left: 0, right: 12, bottom: 16, top: 16),
                         width: MediaQuery.of(context).size.width - 120,
-                        decoration: BoxDecoration(color: Colors.blue),
+                        decoration: BoxDecoration(color: Colors.blue,
+                        borderRadius: BorderRadius.circular(12),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.blue[200],
+                            blurRadius: 2,
+                            spreadRadius: 2
+                          )
+                        ]
+
+                        ),
+                        child: Stack(
+                          children: <Widget>[
+                            Positioned(
+                              top: 24,
+                              right: 24,
+                              child: Container(
+                                height: 42,
+                                width:42,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue[300],
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(.1),
+                                      blurRadius: 1,
+                                      spreadRadius: 1
+                                    )
+                                  ]
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 24,
+                              top: 24,
+                              bottom: 25,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "04",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 38),
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "Assigned",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 19),
+                                  ),
+                                  SizedBox(
+                                    height: 9,
+                                  ),
+                                  Text(
+                                    "Based on last one week",
+                                    style: TextStyle(
+                                        color: Colors.white.withOpacity(0.4),
+                                        fontSize: 12),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Container(
                         margin: EdgeInsets.only(
