@@ -10,14 +10,15 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            SafeArea(
-              top: true,
-              left: true,
-              right: true,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 24, right: 16),
+        child: Padding(
+          padding: const EdgeInsets.only(left: 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              SafeArea(
+                top: true,
+                left: true,
+                right: true,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -48,8 +49,32 @@ class _MainPageState extends State<MainPage> {
                   ],
                 ),
               ),
-            )
-          ],
+              SizedBox(
+                height: 24,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "Hi Mike",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  Text(
+                    "Good afternoon",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 28),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
