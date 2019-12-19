@@ -73,6 +73,42 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ],
               ),
+              SizedBox(height: 32,),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text("Suggestion for you now"),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 4.5,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                          width: MediaQuery.of(context).size.width / 2.3,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                          width: MediaQuery.of(context).size.width / 2.3,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                          width: MediaQuery.of(context).size.width / 2.3,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
@@ -80,3 +116,26 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
