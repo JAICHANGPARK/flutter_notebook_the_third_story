@@ -73,11 +73,22 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ],
               ),
-              SizedBox(height: 32,),
+              SizedBox(
+                height: 32,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("Suggestion for you now"),
+                  Text(
+                    "Suggestion for you now",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Container(
                     height: MediaQuery.of(context).size.height / 4.5,
                     child: ListView(
@@ -88,6 +99,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 2.3,
                           decoration: BoxDecoration(
                             color: Colors.red,
+                            borderRadius: BorderRadius.circular(8)
                           ),
                         ),
                         Container(
@@ -95,6 +107,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 2.3,
                           decoration: BoxDecoration(
                             color: Colors.red,
+                              borderRadius: BorderRadius.circular(8)
                           ),
                         ),
                         Container(
@@ -102,8 +115,47 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 2.3,
                           decoration: BoxDecoration(
                             color: Colors.red,
+                              borderRadius: BorderRadius.circular(8)
                           ),
+
                         ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "Top 10 home chef of this month",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 12),
+                    height: MediaQuery.of(context).size.height / 4.5,
+                    decoration: BoxDecoration(color: Colors.grey[200],
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      bottomLeft: Radius.circular(12),
+                    )),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Container(
+                          width: MediaQuery.of(context).size.width / 3.5,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        )
+
                       ],
                     ),
                   )
@@ -116,8 +168,6 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
 
 
 
