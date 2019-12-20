@@ -195,6 +195,17 @@ class _MainPageState extends State<MainPage> {
                     ),
                   )
                 ],
+              ),
+              SizedBox(height: 16,),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text("Top Food Reviews"),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 3,
+                    child: Placeholder(),
+                  )
+                ],
               )
             ],
           ),
@@ -203,3 +214,22 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
