@@ -196,13 +196,18 @@ class _MainPageState extends State<MainPage> {
                   )
                 ],
               ),
-              SizedBox(height: 16,),
+              SizedBox(height: 32,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("Top Food Reviews"),
+                  Text("Top Food Reviews", style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16
+                  ),),
                   Container(
-                    height: MediaQuery.of(context).size.height / 3,
+                    margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
+                    height: MediaQuery.of(context).size.height / 7,
                     child: Placeholder(),
                   )
                 ],
