@@ -99,6 +99,13 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 2.3,
                           decoration: BoxDecoration(
                               color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 3
+                                )
+                              ],
                               borderRadius: BorderRadius.circular(8)),
                           child: Column(
                             children: <Widget>[
@@ -181,15 +188,181 @@ class _MainPageState extends State<MainPage> {
                           margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
                           width: MediaQuery.of(context).size.width / 2.3,
                           decoration: BoxDecoration(
-                              color: Colors.red,
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(.1),
+                                    spreadRadius: 2,
+                                    blurRadius: 3
+                                )
+                              ],
                               borderRadius: BorderRadius.circular(8)),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/01/16/17/45/pancake-1984716__340.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(8),
+                                          topRight: Radius.circular(8))),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 4,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 16, right: 16, top: 7, bottom: 4),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Align(
+                                        alignment: Alignment.topCenter,
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text(
+                                            "Chicken pasta",
+                                            style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                          Row(
+                                            children: <Widget>[
+                                              Text(
+                                                "by",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 12),
+                                              ),
+                                              Text(
+                                                "Jack Mike",
+                                                style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.green),
+                                              )
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Text(
+                                            "3k recommended",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
                           width: MediaQuery.of(context).size.width / 2.3,
                           decoration: BoxDecoration(
-                              color: Colors.red,
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(.1),
+                                    spreadRadius: 2,
+                                    blurRadius: 3
+                                )
+                              ],
                               borderRadius: BorderRadius.circular(8)),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/01/16/17/45/pancake-1984716__340.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(8),
+                                          topRight: Radius.circular(8))),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 4,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 16, right: 16, top: 7, bottom: 4),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Align(
+                                        alignment: Alignment.topCenter,
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text(
+                                            "Chicken pasta",
+                                            style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                          Row(
+                                            children: <Widget>[
+                                              Text(
+                                                "by",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 12),
+                                              ),
+                                              Text(
+                                                "Jack Mike",
+                                                style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.green),
+                                              )
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Text(
+                                            "3k recommended",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     ),
