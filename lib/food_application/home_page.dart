@@ -148,7 +148,9 @@ class _MainPageState extends State<MainPage> {
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
                         Container(
-                          margin: EdgeInsets.only(right: 16,),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
                             color: Colors.blue,
