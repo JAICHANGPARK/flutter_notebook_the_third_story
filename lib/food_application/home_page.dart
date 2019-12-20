@@ -100,6 +100,62 @@ class _MainPageState extends State<MainPage> {
                           decoration: BoxDecoration(
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(8)),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/01/16/17/45/pancake-1984716__340.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(8),
+                                      topRight: Radius.circular(8)
+                                    )
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 4,
+                                child: Row(
+                                  children: <Widget>[
+                                    CircleAvatar(
+                                      radius: 16,
+                                    ),
+                                    Column(
+                                      children: <Widget>[
+                                        Text("Chicken pasta", style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold
+                                        ),),
+                                        Row(
+                                          children: <Widget>[
+                                            Text("by",style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 12
+                                            ),),
+                                            Text("Jack Mike", style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.green
+                                            ),)
+                                          ],
+                                        ),
+                                        Text("3k recommended", style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                        ),)
+
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
