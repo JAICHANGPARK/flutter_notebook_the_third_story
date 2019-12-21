@@ -780,6 +780,7 @@ class _MainPageState extends State<MainPage> {
                     height: MediaQuery.of(context).size.height / 7,
                     padding: EdgeInsets.only(top: 16, bottom: 16),
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Expanded(
                           flex: 3,
@@ -813,7 +814,12 @@ class _MainPageState extends State<MainPage> {
                         ,
                         Expanded(
                           flex: 2,
-                          child: Placeholder(),
+                          child: Row(
+                            children: <Widget>[
+                              Text("3k"),
+                              Icon(Icons.favorite, color: Colors.red,)
+                            ],
+                          ),
                         )
                       ],
                     ),
