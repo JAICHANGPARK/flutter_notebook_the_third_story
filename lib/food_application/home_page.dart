@@ -778,7 +778,45 @@ class _MainPageState extends State<MainPage> {
                   Container(
                     margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
                     height: MediaQuery.of(context).size.height / 7,
-                    child: Placeholder(),
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 3,
+                          child: CircleAvatar(
+                            radius: 32,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 8,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Mix Salad"),
+                                Text("30 Review"),
+                                Row(
+                                  children: <Widget>[
+                                    Icon(Icons.star, color: Colors.orange, size: 20,),
+                                    Icon(Icons.star, color: Colors.orange,size: 20,),
+                                    Icon(Icons.star, color: Colors.orange,size: 20,),
+                                    Icon(Icons.star, color: Colors.orange[100],size: 20,),
+                                    Icon(Icons.star, color: Colors.orange[100],size: 20,)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                        ,
+                        Expanded(
+                          flex: 2,
+                          child: Placeholder(),
+                        )
+                      ],
+                    ),
                   )
                 ],
               )
@@ -789,3 +827,15 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
