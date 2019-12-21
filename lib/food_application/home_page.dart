@@ -399,7 +399,25 @@ class _MainPageState extends State<MainPage> {
                           ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.red,
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 42,
+                              ),
+                              Text("Rose Rain"),
+                              Text("873 Sold"),
+                              Row(
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                         Container(
