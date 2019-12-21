@@ -401,46 +401,52 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
 //                            color: Colors.red,
-                          ),
-                          padding: EdgeInsets.only(
-                            bottom: 8,
-                            top: 8
-                          ),
+                              ),
+                          padding: EdgeInsets.only(bottom: 8, top: 8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
                               CircleAvatar(
                                 radius: 42,
-                                backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                backgroundImage: NetworkImage(
+                                    "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                               ),
-                              Text("Rose Rain"),
-                              Text("873 Sold"),
+                              Text(
+                                "Rose Rain",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "873 Sold",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Icon(
                                     Icons.star,
-                                    color: Colors.yellow,
+                                    color: Colors.orangeAccent,
                                     size: 18,
                                   ),
                                   Icon(
                                     Icons.star,
-                                    color: Colors.yellow,
+                                    color: Colors.orangeAccent,
                                     size: 18,
                                   ),
                                   Icon(
                                     Icons.star,
-                                    color: Colors.yellow,
+                                    color: Colors.orangeAccent,
                                     size: 18,
                                   ),
                                   Icon(
                                     Icons.star,
-                                    color: Colors.yellow,
+                                    color: Colors.orangeAccent,
                                     size: 18,
                                   ),
                                   Icon(
                                     Icons.star,
-                                    color: Colors.yellow,
+                                    color: Colors.orangeAccent,
                                     size: 18,
                                   )
                                 ],
