@@ -101,10 +101,9 @@ class _MainPageState extends State<MainPage> {
                               color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black.withOpacity(.1),
-                                  spreadRadius: 2,
-                                  blurRadius: 3
-                                )
+                                    color: Colors.black.withOpacity(.1),
+                                    spreadRadius: 2,
+                                    blurRadius: 3)
                               ],
                               borderRadius: BorderRadius.circular(8)),
                           child: Column(
@@ -193,8 +192,7 @@ class _MainPageState extends State<MainPage> {
                                 BoxShadow(
                                     color: Colors.black.withOpacity(.1),
                                     spreadRadius: 2,
-                                    blurRadius: 3
-                                )
+                                    blurRadius: 3)
                               ],
                               borderRadius: BorderRadius.circular(8)),
                           child: Column(
@@ -231,7 +229,7 @@ class _MainPageState extends State<MainPage> {
                                       ),
                                       Column(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "Chicken pasta",
@@ -283,8 +281,7 @@ class _MainPageState extends State<MainPage> {
                                 BoxShadow(
                                     color: Colors.black.withOpacity(.1),
                                     spreadRadius: 2,
-                                    blurRadius: 3
-                                )
+                                    blurRadius: 3)
                               ],
                               borderRadius: BorderRadius.circular(8)),
                           child: Column(
@@ -321,7 +318,7 @@ class _MainPageState extends State<MainPage> {
                                       ),
                                       Column(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "Chicken pasta",
