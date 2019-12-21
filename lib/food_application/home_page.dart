@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -399,17 +400,44 @@ class _MainPageState extends State<MainPage> {
                           ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.red,
+//                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.only(
+                            bottom: 8,
+                            top: 8
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
                               CircleAvatar(
                                 radius: 42,
+                                backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                               ),
                               Text("Rose Rain"),
                               Text("873 Sold"),
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 18,
+                                  ),
                                   Icon(
                                     Icons.star,
                                     color: Colors.yellow,
