@@ -134,6 +134,7 @@ class _MainPageState extends State<MainPage> {
                                         alignment: Alignment.topCenter,
                                         child: CircleAvatar(
                                           radius: 16,
+                                          backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                                         ),
                                       ),
                                       SizedBox(
@@ -223,6 +224,7 @@ class _MainPageState extends State<MainPage> {
                                         alignment: Alignment.topCenter,
                                         child: CircleAvatar(
                                           radius: 16,
+                                          backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                                         ),
                                       ),
                                       SizedBox(
@@ -230,7 +232,7 @@ class _MainPageState extends State<MainPage> {
                                       ),
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "Chicken pasta",
@@ -312,6 +314,7 @@ class _MainPageState extends State<MainPage> {
                                         alignment: Alignment.topCenter,
                                         child: CircleAvatar(
                                           radius: 16,
+                                          backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                                         ),
                                       ),
                                       SizedBox(
@@ -319,7 +322,7 @@ class _MainPageState extends State<MainPage> {
                                       ),
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "Chicken pasta",
@@ -455,38 +458,303 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+//                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.only(bottom: 8, top: 8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                              ),
+                              Text(
+                                "Rose Rain",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "873 Sold",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+//                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.only(bottom: 8, top: 8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                              ),
+                              Text(
+                                "Rose Rain",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "873 Sold",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+//                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.only(bottom: 8, top: 8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                              ),
+                              Text(
+                                "Rose Rain",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "873 Sold",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+//                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.only(bottom: 8, top: 8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                              ),
+                              Text(
+                                "Rose Rain",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "873 Sold",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+//                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.only(bottom: 8, top: 8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                              ),
+                              Text(
+                                "Rose Rain",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "873 Sold",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                       ],
