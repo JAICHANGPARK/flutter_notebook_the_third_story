@@ -786,6 +786,105 @@ class _MainPageState extends State<MainPage> {
                           flex: 3,
                           child: CircleAvatar(
                             radius: 32,
+                            backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2016/03/10/18/44/top-view-1248955__340.jpg",),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 8,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Mix Salad"),
+                                Text("30 Review"),
+                                Row(
+                                  children: <Widget>[
+                                    Icon(Icons.star, color: Colors.orange, size: 20,),
+                                    Icon(Icons.star, color: Colors.orange,size: 20,),
+                                    Icon(Icons.star, color: Colors.orange,size: 20,),
+                                    Icon(Icons.star, color: Colors.orange[100],size: 20,),
+                                    Icon(Icons.star, color: Colors.orange[100],size: 20,)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                        ,
+                        Expanded(
+                          flex: 2,
+                          child: Row(
+                            children: <Widget>[
+                              Text("3k"),
+                              Icon(Icons.favorite, color: Colors.red,)
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
+                    height: MediaQuery.of(context).size.height / 7,
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Expanded(
+                          flex: 3,
+                          child: CircleAvatar(
+                            radius: 32,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 8,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Mix Salad"),
+                                Text("30 Review"),
+                                Row(
+                                  children: <Widget>[
+                                    Icon(Icons.star, color: Colors.orange, size: 20,),
+                                    Icon(Icons.star, color: Colors.orange,size: 20,),
+                                    Icon(Icons.star, color: Colors.orange,size: 20,),
+                                    Icon(Icons.star, color: Colors.orange[100],size: 20,),
+                                    Icon(Icons.star, color: Colors.orange[100],size: 20,)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                        ,
+                        Expanded(
+                          flex: 2,
+                          child: Row(
+                            children: <Widget>[
+                              Text("3k"),
+                              Icon(Icons.favorite, color: Colors.red,)
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
+                    height: MediaQuery.of(context).size.height / 7,
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Expanded(
+                          flex: 3,
+                          child: CircleAvatar(
+                            radius: 32,
                           ),
                         ),
                         Expanded(
@@ -825,7 +924,8 @@ class _MainPageState extends State<MainPage> {
                     ),
                   )
                 ],
-              )
+              ),
+
             ],
           ),
         ),
