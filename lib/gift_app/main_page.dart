@@ -23,9 +23,38 @@ class _MainPageState extends State<ShopMainPage> {
                   image: DecorationImage(
                       image: NetworkImage(
                           "https://cdn.pixabay.com/photo/2019/12/14/20/03/christmas-balls-4695657_960_720.jpg"),
-                      fit: BoxFit.cover)),
-              child: ListView(
-                children: <Widget>[],
+                      fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken)),
+              ),
+              child: SingleChildScrollView(
+               child: Column(
+                 children: <Widget>[
+                   Container(
+                     height: MediaQuery.of(context).size.height / 7,
+                     child: Placeholder(
+                       color: Colors.white,
+                     ),
+                   ),
+                   Container(
+                     height: MediaQuery.of(context).size.height / 8,
+                     child: Placeholder(
+                       color: Colors.white,
+                     ),
+                   ),
+                   Container(
+                     height: MediaQuery.of(context).size.height / 2.3,
+                     child: Placeholder(
+                       color: Colors.white,
+                     ),
+                   ),
+                   Container(
+                     height: MediaQuery.of(context).size.height / 2.3,
+                     child: Placeholder(
+                       color: Colors.white,
+                     ),
+                   ),
+                 ],
+               ),
               ),
             ),
           )
