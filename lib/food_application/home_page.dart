@@ -134,7 +134,8 @@ class _MainPageState extends State<MainPage> {
                                         alignment: Alignment.topCenter,
                                         child: CircleAvatar(
                                           radius: 16,
-                                          backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                          backgroundImage: NetworkImage(
+                                              "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                                         ),
                                       ),
                                       SizedBox(
@@ -224,7 +225,8 @@ class _MainPageState extends State<MainPage> {
                                         alignment: Alignment.topCenter,
                                         child: CircleAvatar(
                                           radius: 16,
-                                          backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                          backgroundImage: NetworkImage(
+                                              "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                                         ),
                                       ),
                                       SizedBox(
@@ -232,7 +234,7 @@ class _MainPageState extends State<MainPage> {
                                       ),
                                       Column(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "Chicken pasta",
@@ -314,7 +316,8 @@ class _MainPageState extends State<MainPage> {
                                         alignment: Alignment.topCenter,
                                         child: CircleAvatar(
                                           radius: 16,
-                                          backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
+                                          backgroundImage: NetworkImage(
+                                              "https://avatars2.githubusercontent.com/u/19484515?s=460&v=4"),
                                         ),
                                       ),
                                       SizedBox(
@@ -322,7 +325,7 @@ class _MainPageState extends State<MainPage> {
                                       ),
                                       Column(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "Chicken pasta",
@@ -464,7 +467,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
 //                            color: Colors.red,
-                          ),
+                              ),
                           padding: EdgeInsets.only(bottom: 8, top: 8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -524,7 +527,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
 //                            color: Colors.red,
-                          ),
+                              ),
                           padding: EdgeInsets.only(bottom: 8, top: 8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -584,7 +587,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
 //                            color: Colors.red,
-                          ),
+                              ),
                           padding: EdgeInsets.only(bottom: 8, top: 8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -644,7 +647,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
 //                            color: Colors.red,
-                          ),
+                              ),
                           padding: EdgeInsets.only(bottom: 8, top: 8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -704,7 +707,7 @@ class _MainPageState extends State<MainPage> {
                           width: MediaQuery.of(context).size.width / 3.5,
                           decoration: BoxDecoration(
 //                            color: Colors.red,
-                          ),
+                              ),
                           padding: EdgeInsets.only(bottom: 8, top: 8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -786,13 +789,16 @@ class _MainPageState extends State<MainPage> {
                           flex: 3,
                           child: CircleAvatar(
                             radius: 32,
-                            backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2016/03/10/18/44/top-view-1248955__340.jpg",),
+                            backgroundImage: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2016/03/10/18/44/top-view-1248955__340.jpg",
+                            ),
                           ),
                         ),
                         Expanded(
                           flex: 8,
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                            padding: const EdgeInsets.only(
+                                left: 16, top: 4, bottom: 4),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -801,24 +807,46 @@ class _MainPageState extends State<MainPage> {
                                 Text("30 Review"),
                                 Row(
                                   children: <Widget>[
-                                    Icon(Icons.star, color: Colors.orange, size: 20,),
-                                    Icon(Icons.star, color: Colors.orange,size: 20,),
-                                    Icon(Icons.star, color: Colors.orange,size: 20,),
-                                    Icon(Icons.star, color: Colors.orange[100],size: 20,),
-                                    Icon(Icons.star, color: Colors.orange[100],size: 20,)
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange[100],
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange[100],
+                                      size: 20,
+                                    )
                                   ],
                                 )
                               ],
                             ),
                           ),
-                        )
-                        ,
+                        ),
                         Expanded(
                           flex: 2,
                           child: Row(
                             children: <Widget>[
                               Text("3k"),
-                              Icon(Icons.favorite, color: Colors.red,)
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              )
                             ],
                           ),
                         )
@@ -841,7 +869,8 @@ class _MainPageState extends State<MainPage> {
                         Expanded(
                           flex: 8,
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                            padding: const EdgeInsets.only(
+                                left: 16, top: 4, bottom: 4),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -850,24 +879,46 @@ class _MainPageState extends State<MainPage> {
                                 Text("30 Review"),
                                 Row(
                                   children: <Widget>[
-                                    Icon(Icons.star, color: Colors.orange, size: 20,),
-                                    Icon(Icons.star, color: Colors.orange,size: 20,),
-                                    Icon(Icons.star, color: Colors.orange,size: 20,),
-                                    Icon(Icons.star, color: Colors.orange[100],size: 20,),
-                                    Icon(Icons.star, color: Colors.orange[100],size: 20,)
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange[100],
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange[100],
+                                      size: 20,
+                                    )
                                   ],
                                 )
                               ],
                             ),
                           ),
-                        )
-                        ,
+                        ),
                         Expanded(
                           flex: 2,
                           child: Row(
                             children: <Widget>[
                               Text("3k"),
-                              Icon(Icons.favorite, color: Colors.red,)
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              )
                             ],
                           ),
                         )
@@ -890,7 +941,8 @@ class _MainPageState extends State<MainPage> {
                         Expanded(
                           flex: 8,
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                            padding: const EdgeInsets.only(
+                                left: 16, top: 4, bottom: 4),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -899,24 +951,46 @@ class _MainPageState extends State<MainPage> {
                                 Text("30 Review"),
                                 Row(
                                   children: <Widget>[
-                                    Icon(Icons.star, color: Colors.orange, size: 20,),
-                                    Icon(Icons.star, color: Colors.orange,size: 20,),
-                                    Icon(Icons.star, color: Colors.orange,size: 20,),
-                                    Icon(Icons.star, color: Colors.orange[100],size: 20,),
-                                    Icon(Icons.star, color: Colors.orange[100],size: 20,)
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange[100],
+                                      size: 20,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange[100],
+                                      size: 20,
+                                    )
                                   ],
                                 )
                               ],
                             ),
                           ),
-                        )
-                        ,
+                        ),
                         Expanded(
                           flex: 2,
                           child: Row(
                             children: <Widget>[
                               Text("3k"),
-                              Icon(Icons.favorite, color: Colors.red,)
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              )
                             ],
                           ),
                         )
@@ -925,7 +999,6 @@ class _MainPageState extends State<MainPage> {
                   )
                 ],
               ),
-
             ],
           ),
         ),
@@ -933,15 +1006,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
