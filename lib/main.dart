@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/gift_app/home_page.dart';
 
-import 'package:notebook_the_third_story/food_application/main_page.dart';
-
-void main() => runApp(FoodApplication());
+void main() => runApp(GiftShopApp());
 
