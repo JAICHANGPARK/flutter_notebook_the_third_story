@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/gift_app/main_cart_page.dart';
+import 'package:notebook_the_third_story/gift_app/main_home_page.dart';
 
 class ShopMainPage extends StatefulWidget {
   @override
@@ -8,117 +10,17 @@ class ShopMainPage extends StatefulWidget {
 class _MainPageState extends State<ShopMainPage> {
   int pageIndex = 0;
 
-  Widget pageGenerator(int pageIndex){
-    return null;
-  }
-  static Widget _buildHomePage(BuildContext context){
-    return  Stack(
-      children: <Widget>[
-        Positioned(
-          left: 0,
-          right: 0,
-          top: 0,
-          bottom: 0,
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage(
-                      "https://cdn.pixabay.com/photo/2019/12/14/20/03/christmas-balls-4695657_960_720.jpg"),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken)),
-            ),
-            child: SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    height: MediaQuery.of(context).size.height / 7,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height / 8,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height / 2.3,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height / 2.3,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        )
-      ],
-    );
-  }
-
-  List<Widget> pageWidget = [
-    _buildHomePage(context),
+  final _page = [
+    MainHomePage(),
+    MainCartPage(),
   ];
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          Positioned(
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0,
-            child: Container(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: NetworkImage(
-                          "https://cdn.pixabay.com/photo/2019/12/14/20/03/christmas-balls-4695657_960_720.jpg"),
-                      fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken)),
-              ),
-              child: SingleChildScrollView(
-               child: Column(
-                 children: <Widget>[
-                   Container(
-                     height: MediaQuery.of(context).size.height / 7,
-                     child: Placeholder(
-                       color: Colors.white,
-                     ),
-                   ),
-                   Container(
-                     height: MediaQuery.of(context).size.height / 8,
-                     child: Placeholder(
-                       color: Colors.white,
-                     ),
-                   ),
-                   Container(
-                     height: MediaQuery.of(context).size.height / 2.3,
-                     child: Placeholder(
-                       color: Colors.white,
-                     ),
-                   ),
-                   Container(
-                     height: MediaQuery.of(context).size.height / 2.3,
-                     child: Placeholder(
-                       color: Colors.white,
-                     ),
-                   ),
-                 ],
-               ),
-              ),
-            ),
-          )
-        ],
+      body: IndexedStack(
+        index: pageIndex,
+        children: _page,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageIndex,
