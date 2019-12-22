@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ShopMainPage extends StatefulWidget {
   @override
   _MainPageState createState() => _MainPageState();
@@ -8,6 +7,7 @@ class ShopMainPage extends StatefulWidget {
 
 class _MainPageState extends State<ShopMainPage> {
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,14 @@ class _MainPageState extends State<ShopMainPage> {
             top: 0,
             bottom: 0,
             child: Container(
-              color: Colors.teal,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2019/12/14/20/03/christmas-balls-4695657_960_720.jpg"),
+                      fit: BoxFit.cover)),
+              child: ListView(
+                children: <Widget>[],
+              ),
             ),
           )
         ],
@@ -29,24 +36,36 @@ class _MainPageState extends State<ShopMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        onTap: (newValue){
+        onTap: (newValue) {
           setState(() {
             pageIndex = newValue;
           });
         },
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home,),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
             title: Text("Home"),
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.add_shopping_cart,),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.add_shopping_cart,
+            ),
             title: Text("Cart"),
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.archive,),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.archive,
+            ),
             title: Text("Archive"),
-          ),  BottomNavigationBarItem(icon: Icon(Icons.share,),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.share,
+            ),
             title: Text("Share"),
           )
-
         ],
       ),
     );
