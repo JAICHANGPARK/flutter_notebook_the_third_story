@@ -43,19 +43,63 @@ class MainHomePage extends StatelessWidget {
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
-                          TopBarItem(isSelected: true,),
-                          TopBarItem(isSelected: false,),
-                          TopBarItem(isSelected: false,),
-                          TopBarItem(isSelected: false,),
-                          TopBarItem(isSelected: false,),
+                          TopBarItem(
+                            isSelected: true,
+                          ),
+                          TopBarItem(
+                            isSelected: false,
+                          ),
+                          TopBarItem(
+                            isSelected: false,
+                          ),
+                          TopBarItem(
+                            isSelected: false,
+                          ),
+                          TopBarItem(
+                            isSelected: false,
+                          ),
                         ],
                       )),
                   Container(
-                    height: MediaQuery.of(context).size.height / 2.3,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
+                      padding: EdgeInsets.only(left: 24, top: 24),
+                      height: MediaQuery.of(context).size.height / 2.3,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Mom Gifts",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                "Filters:",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 22,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 9,
+                              ),
+                              Text(
+                                "Soup; Cream; Cleanser;",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      )),
                   Container(
                     height: MediaQuery.of(context).size.height / 2.3,
                     child: Placeholder(
