@@ -45,41 +45,87 @@ class MainHomePage extends StatelessWidget {
                             margin: EdgeInsets.only(
                               right: 12,
                             ),
-                            width: MediaQuery.of(context).size.width / 4,
+                            width: MediaQuery.of(context).size.width / 4.3,
+                            padding: EdgeInsets.all(4),
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                              border: Border.all(color: Colors.white,width: 3),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[50],
+                                borderRadius: BorderRadius.circular(8,)
+                              ),
                             ),
                           ),
                           Container(
                             margin: EdgeInsets.only(
                               right: 12,
                             ),
-                            width: MediaQuery.of(context).size.width / 4,
+                            width: MediaQuery.of(context).size.width / 4.3,
+                            padding: EdgeInsets.all(4),
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                              border: Border.all(color: Colors.white,width: 3),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.grey[50],
+                                  borderRadius: BorderRadius.circular(8,)
+                              ),
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 12,),
-                            width: MediaQuery.of(context).size.width / 4,
+                            margin: EdgeInsets.only(
+                              right: 12,
+                            ),
+                            width: MediaQuery.of(context).size.width / 4.3,
+                            padding: EdgeInsets.all(4),
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                              border: Border.all(color: Colors.white,width: 3),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.grey[50],
+                                  borderRadius: BorderRadius.circular(8,)
+                              ),
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 12,),
-                            width: MediaQuery.of(context).size.width / 4,
+                            margin: EdgeInsets.only(
+                              right: 12,
+                            ),
+                            width: MediaQuery.of(context).size.width / 4.3,
+                            padding: EdgeInsets.all(4),
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                              border: Border.all(color: Colors.white,width: 3),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.grey[50],
+                                  borderRadius: BorderRadius.circular(8,)
+                              ),
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 12,),
-                            width: MediaQuery.of(context).size.width / 4,
-                            decoration: BoxDecoration(
-                              color: Colors.red,
+                            margin: EdgeInsets.only(
+                              right: 12,
                             ),
-                          )
+                            width: MediaQuery.of(context).size.width / 4.3,
+                            padding: EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white,width: 3),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.grey[50],
+                                  borderRadius: BorderRadius.circular(8,)
+                              ),
+                            ),
+                          ),
                         ],
                       )),
                   Container(
