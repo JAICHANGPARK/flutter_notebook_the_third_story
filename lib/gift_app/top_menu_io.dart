@@ -12,7 +12,7 @@ class TopBarItem extends StatelessWidget {
         right: 12,
       ),
       width: MediaQuery.of(context).size.width / 4.3,
-      padding: isSelected ? EdgeInsets.all(4) : EdgeInsets.zero,
+      padding: isSelected ? EdgeInsets.all(4) : EdgeInsets.all(2),
       decoration: BoxDecoration(
         border: isSelected ? Border.all(color: Colors.white, width: 2.5) : null,
         borderRadius: BorderRadius.circular(12),
