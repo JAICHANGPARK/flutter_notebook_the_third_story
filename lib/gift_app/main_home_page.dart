@@ -37,6 +37,7 @@ class MainHomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
+                    padding: EdgeInsets.only(left: 24),
                       height: MediaQuery.of(context).size.height / 8,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
@@ -48,13 +49,25 @@ class MainHomePage extends StatelessWidget {
                             width: MediaQuery.of(context).size.width / 4.3,
                             padding: EdgeInsets.all(4),
                             decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white,width: 3),
+                              border: Border.all(color: Colors.white,width: 2.5),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Container(
+                              padding: EdgeInsets.only(left:0,top: 4),
                               decoration: BoxDecoration(
                                 color: Colors.grey[50],
-                                borderRadius: BorderRadius.circular(8,)
+                                borderRadius: BorderRadius.circular(8,),
+                                image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2014/11/27/22/44/gift-548290__340.jpg"),
+                                fit: BoxFit.cover,)
+                              ),
+                              child: Column(
+                                children: <Widget>[
+                                  Text("For Family",style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 14
+                                  ),),
+                                ],
                               ),
                             ),
                           ),
