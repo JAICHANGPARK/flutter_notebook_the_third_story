@@ -12,18 +12,16 @@ class TopBarItem extends StatelessWidget {
         right: 12,
       ),
       width: MediaQuery.of(context).size.width / 4.3,
-      padding: EdgeInsets.all(4),
+      padding: isSelected ? EdgeInsets.all(4) : EdgeInsets.zero,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.white, width: 2.5),
+        border: isSelected ? Border.all(color: Colors.white, width: 2.5) : null,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Container(
         padding: EdgeInsets.only(left: 0, top: 4),
         decoration: BoxDecoration(
             color: Colors.grey[50],
-            borderRadius: BorderRadius.circular(
-              8,
-            ),
+            borderRadius: BorderRadius.circular(8),
             image: DecorationImage(
               image: NetworkImage(
                   "https://cdn.pixabay.com/photo/2014/11/27/22/44/gift-548290__340.jpg"),

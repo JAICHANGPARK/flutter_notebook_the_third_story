@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/gift_app/top_menu_io.dart';
 
 class MainHomePage extends StatelessWidget {
   @override
@@ -42,114 +43,11 @@ class MainHomePage extends StatelessWidget {
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
-                          Container(
-                            margin: EdgeInsets.only(
-                              right: 12,
-                            ),
-                            width: MediaQuery.of(context).size.width / 4.3,
-                            padding: EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              border:
-                                  Border.all(color: Colors.white, width: 2.5),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Container(
-                              padding: EdgeInsets.only(left: 0, top: 4),
-                              decoration: BoxDecoration(
-                                  color: Colors.grey[50],
-                                  borderRadius: BorderRadius.circular(
-                                    8,
-                                  ),
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2014/11/27/22/44/gift-548290__340.jpg"),
-                                    fit: BoxFit.cover,
-                                  )),
-                              child: Column(
-                                children: <Widget>[
-                                  Text(
-                                    "For Family",
-                                    style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 14),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(
-                              right: 12,
-                            ),
-                            width: MediaQuery.of(context).size.width / 4.3,
-                            padding: EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 3),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey[50],
-                                  borderRadius: BorderRadius.circular(
-                                    8,
-                                  )),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(
-                              right: 12,
-                            ),
-                            width: MediaQuery.of(context).size.width / 4.3,
-                            padding: EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 3),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey[50],
-                                  borderRadius: BorderRadius.circular(
-                                    8,
-                                  )),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(
-                              right: 12,
-                            ),
-                            width: MediaQuery.of(context).size.width / 4.3,
-                            padding: EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 3),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey[50],
-                                  borderRadius: BorderRadius.circular(
-                                    8,
-                                  )),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(
-                              right: 12,
-                            ),
-                            width: MediaQuery.of(context).size.width / 4.3,
-                            padding: EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 3),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey[50],
-                                  borderRadius: BorderRadius.circular(
-                                    8,
-                                  )),
-                            ),
-                          ),
+                          TopBarItem(isSelected: true,),
+                          TopBarItem(isSelected: false,),
+                          TopBarItem(isSelected: false,),
+                          TopBarItem(isSelected: false,),
+                          TopBarItem(isSelected: false,),
                         ],
                       )),
                   Container(
