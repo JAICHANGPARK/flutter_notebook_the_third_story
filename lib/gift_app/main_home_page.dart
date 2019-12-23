@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainHomePage extends StatelessWidget {
@@ -36,11 +37,51 @@ class MainHomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: MediaQuery.of(context).size.height / 8,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
+                      height: MediaQuery.of(context).size.height / 8,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.only(
+                              right: 12,
+                            ),
+                            width: MediaQuery.of(context).size.width / 4,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(
+                              right: 12,
+                            ),
+                            width: MediaQuery.of(context).size.width / 4,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 12,),
+                            width: MediaQuery.of(context).size.width / 4,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 12,),
+                            width: MediaQuery.of(context).size.width / 4,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 12,),
+                            width: MediaQuery.of(context).size.width / 4,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          )
+                        ],
+                      )),
                   Container(
                     height: MediaQuery.of(context).size.height / 2.3,
                     child: Placeholder(
