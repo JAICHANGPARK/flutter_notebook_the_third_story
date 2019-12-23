@@ -63,7 +63,7 @@ class MainHomePage extends StatelessWidget {
                       )),
                   Container(
                       padding: EdgeInsets.only(left: 24, top: 24),
-                      height: MediaQuery.of(context).size.height / 2.3,
+                      height: MediaQuery.of(context).size.height / 2.1,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -105,11 +105,37 @@ class MainHomePage extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            height: MediaQuery.of(context).size.height / 3.4,
-                            child: Placeholder(
-                              color: Colors.white,
-                            ),
-                          )
+                              padding: EdgeInsets.only(top: 6),
+                              height: MediaQuery.of(context).size.height / 3,
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  Container(
+                                    margin: EdgeInsets.only(right: 12, top: 4),
+                                    width:
+                                        MediaQuery.of(context).size.width / 2.5,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.only(right: 12, top: 4),
+                                    width:
+                                        MediaQuery.of(context).size.width / 2.5,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.only(right: 12, top: 4),
+                                    width:
+                                        MediaQuery.of(context).size.width / 2.5,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                    ),
+                                  )
+                                ],
+                              ))
                         ],
                       )),
                   Container(
