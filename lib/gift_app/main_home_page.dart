@@ -77,27 +77,47 @@ class MainHomePage extends StatelessWidget {
                           SizedBox(
                             height: 12,
                           ),
-                          Row(
-                            children: <Widget>[
-                              Text(
-                                "Filters:",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 22,
+                          Padding(
+                            padding: const EdgeInsets.only(right: 24),
+                            child: Row(
+                              children: <Widget>[
+                                Text(
+                                  "Filters:",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 22,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(
-                                width: 9,
-                              ),
-                              Text(
-                                "Soup; Cream; Cleanser;",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.white,
+                                SizedBox(
+                                  width: 9,
                                 ),
-                              )
-                            ],
-                          )
+                                Text(
+                                  "Soup; Cream; Cleanser;",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Spacer(),
+                                Container(
+                                  height: 34,
+                                  width: 34,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.white,width: 1.5),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  padding: EdgeInsets.all(2),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(4)
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+
                         ],
                       )),
                   Container(
