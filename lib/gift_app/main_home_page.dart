@@ -63,7 +63,7 @@ class MainHomePage extends StatelessWidget {
                       )),
                   Container(
                       padding: EdgeInsets.only(left: 24, top: 24),
-                      height: MediaQuery.of(context).size.height / 2.1,
+                      height: MediaQuery.of(context).size.height / 2,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -106,7 +106,7 @@ class MainHomePage extends StatelessWidget {
                           ),
                           Container(
                               padding: EdgeInsets.only(top: 6),
-                              height: MediaQuery.of(context).size.height / 3,
+                              height: MediaQuery.of(context).size.height / 2.7,
                               child: ListView(
                                 scrollDirection: Axis.horizontal,
                                 children: <Widget>[
@@ -116,6 +116,56 @@ class MainHomePage extends StatelessWidget {
                                         MediaQuery.of(context).size.width / 2.5,
                                     decoration: BoxDecoration(
                                       color: Colors.red,
+                                    ),
+                                    child: Column(
+                                      children: <Widget>[
+                                        Expanded(
+                                          flex: 9,
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(12),
+                                              image: DecorationImage(
+                                                image: NetworkImage("https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg"),
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          flex: 3,
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: <Widget>[
+                                              Row(
+                                                children: <Widget>[
+                                                  Text("Soap",style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 18
+                                                  ),),
+                                                  Spacer(),
+                                                  Text("\$23.50",style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 18
+                                                  ),),
+                                                ],
+                                              ),
+                                              Row(
+                                                children: <Widget>[
+                                                  Text("Discover More",style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 18
+                                                  ),),
+                                                  Spacer(),
+                                                  Icon(Icons.arrow_forward, color: Colors.white,),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
                                     ),
                                   ),
                                   Container(
