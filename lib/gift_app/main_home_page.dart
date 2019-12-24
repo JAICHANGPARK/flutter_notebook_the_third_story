@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/gift_app/filter_icon.dart';
+import 'package:notebook_the_third_story/gift_app/moms_gift_card.dart';
 import 'package:notebook_the_third_story/gift_app/top_menu_io.dart';
 
 class MainHomePage extends StatelessWidget {
@@ -110,218 +111,17 @@ class MainHomePage extends StatelessWidget {
                               child: ListView(
                                 scrollDirection: Axis.horizontal,
                                 children: <Widget>[
-                                  Container(
-                                    margin: EdgeInsets.only(right: 12, top: 4),
-                                    width:
-                                        MediaQuery.of(context).size.width / 2.5,
-                                    decoration: BoxDecoration(
-
-                                    ),
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          flex: 9,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              borderRadius:
-                                                  BorderRadius.circular(12),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg"),
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          flex: 3,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Row(
-                                                children: <Widget>[
-                                                  Text(
-                                                    "Soap",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                  Spacer(),
-                                                  Text(
-                                                    "\$23.50",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                ],
-                                              ),
-                                              Row(
-                                                children: <Widget>[
-                                                  Text(
-                                                    "Discover More",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                  Spacer(),
-                                                  Icon(
-                                                    Icons.arrow_forward,
-                                                    color: Colors.white,
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                  MomsGiftCard(
+                                    title: "Soup",
+                                    price: "23.54",
                                   ),
-                                  Container(
-                                    margin: EdgeInsets.only(right: 12, top: 4),
-                                    width:
-                                    MediaQuery.of(context).size.width / 2.5,
-                                    decoration: BoxDecoration(
-
-                                    ),
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          flex: 9,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              borderRadius:
-                                              BorderRadius.circular(12),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg"),
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          flex: 3,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Row(
-                                                children: <Widget>[
-                                                  Text(
-                                                    "Soap",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                  Spacer(),
-                                                  Text(
-                                                    "\$23.50",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                ],
-                                              ),
-                                              Row(
-                                                children: <Widget>[
-                                                  Text(
-                                                    "Discover More",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                  Spacer(),
-                                                  Icon(
-                                                    Icons.arrow_forward,
-                                                    color: Colors.white,
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                  MomsGiftCard(
+                                    title: "Cleanser",
+                                    price: "43.90",
                                   ),
-                                  Container(
-                                    margin: EdgeInsets.only(right: 12, top: 4),
-                                    width:
-                                    MediaQuery.of(context).size.width / 2.5,
-                                    decoration: BoxDecoration(
-
-                                    ),
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          flex: 9,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              borderRadius:
-                                              BorderRadius.circular(12),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg"),
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          flex: 3,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Row(
-                                                children: <Widget>[
-                                                  Text(
-                                                    "Soap",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                  Spacer(),
-                                                  Text(
-                                                    "\$23.50",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                ],
-                                              ),
-                                              Row(
-                                                children: <Widget>[
-                                                  Text(
-                                                    "Discover More",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 18),
-                                                  ),
-                                                  Spacer(),
-                                                  Icon(
-                                                    Icons.arrow_forward,
-                                                    color: Colors.white,
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                  MomsGiftCard(
+                                    title: "Shower?",
+                                    price: "99.99",
                                   ),
                                 ],
                               ))

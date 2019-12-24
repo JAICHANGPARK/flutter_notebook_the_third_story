@@ -10,7 +10,7 @@ class MomsGiftCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(right: 12, top: 4),
-      width: MediaQuery.of(context).size.width / 2.5,
+      width: MediaQuery.of(context).size.width / 2.7,
       decoration: BoxDecoration(),
       child: Column(
         children: <Widget>[
