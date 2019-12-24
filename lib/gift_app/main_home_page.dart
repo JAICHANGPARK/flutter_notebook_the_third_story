@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/gift_app/dad_gift_card.dart';
 import 'package:notebook_the_third_story/gift_app/filter_icon.dart';
 import 'package:notebook_the_third_story/gift_app/moms_gift_card.dart';
 import 'package:notebook_the_third_story/gift_app/top_menu_io.dart';
@@ -128,11 +129,73 @@ class MainHomePage extends StatelessWidget {
                         ],
                       )),
                   Container(
-                    height: MediaQuery.of(context).size.height / 2.3,
-                    child: Placeholder(
-                      color: Colors.white,
-                    ),
-                  ),
+                      padding: EdgeInsets.only(left: 24, top: 24),
+                      height: MediaQuery.of(context).size.height / 2,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Dad Gifts",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 24),
+                            child: Row(
+                              children: <Widget>[
+                                Text(
+                                  "Filters:",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 22,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 9,
+                                ),
+                                Text(
+                                  "Sweater; Hoodie; Gel; Hat;",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Spacer(),
+                                FilterIcons(),
+                              ],
+                            ),
+                          ),
+                          Container(
+                              padding: EdgeInsets.only(top: 6),
+                              height: MediaQuery.of(context).size.height / 2.7,
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  DadGiftCard(
+                                    title: "Sweater",
+                                    price: "23.54",
+                                    imgPath: "https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863__340.jpg",
+                                  ),
+                                  DadGiftCard(
+                                    title: "Hoodie",
+                                    price: "43.90",
+                                    imgPath: "https://cdn.pixabay.com/photo/2015/03/26/10/10/surfer-691031__340.jpg",
+                                  ),
+                                  DadGiftCard(
+                                    title: "Gel",
+                                    price: "99.99",
+                                    imgPath: "https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863__340.jpg",
+                                  ),
+                                ],
+                              ))
+                        ],
+                      )),
                 ],
               ),
             ),
