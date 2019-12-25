@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/gift_app/product_detail_page.dart';
 
 class MomsGiftCard extends StatelessWidget {
   MomsGiftCard({this.title, this.price});
@@ -57,7 +58,11 @@ class MomsGiftCard extends StatelessWidget {
                     Spacer(),
                     InkWell(
                       onTap: (){
-
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context){
+                          return ProductDetailPage();
+                        }
+                      ));
                       },
                       child: Icon(
                         Icons.arrow_forward,
