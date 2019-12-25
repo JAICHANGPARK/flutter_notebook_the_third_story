@@ -27,28 +27,62 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/16/07/41/winter-4698763__340.jpg",
-                  ),
-                  colorFilter: ColorFilter.mode(
-                    Colors.black.withOpacity(0.65),
-                    BlendMode.darken,
-                  ),
-                  fit: BoxFit.cover,
-                )
-              ),
+                  image: DecorationImage(
+                image: NetworkImage(
+                  "https://cdn.pixabay.com/photo/2019/12/16/07/41/winter-4698763__340.jpg",
+                ),
+                colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.65),
+                  BlendMode.darken,
+                ),
+                fit: BoxFit.cover,
+              )),
             ),
           ),
           Positioned(
             left: 0,
             right: 0,
             bottom: 0,
-            top: 0,
+            top: 32,
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-
-                  
+                  Container(
+                    height: MediaQuery.of(context).size.height / 8,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          widget.title,
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 48),
+                          child: Row(
+                            children: <Widget>[
+                              IconButton(
+                                icon: Icon(Icons.arrow_back),
+                                color: Colors.white,
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                              Spacer(),
+                              Text(
+                                "Gel Description",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Spacer()
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
