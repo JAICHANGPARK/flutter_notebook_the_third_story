@@ -18,6 +18,29 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/16/07/41/winter-4698763__340.jpg",
+                  ),
+                  colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(0.65),
+                    BlendMode.darken,
+                  ),
+                  fit: BoxFit.cover,
+                )
+              ),
+            ),
+          )
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageIndex,
         type: BottomNavigationBarType.fixed,

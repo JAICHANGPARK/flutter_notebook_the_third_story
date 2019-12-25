@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/gift_app/product_detail_page.dart';
 
 class MomsGiftCard extends StatelessWidget {
-  MomsGiftCard({this.title, this.price});
+  MomsGiftCard({this.title, this.price, this.imgPath});
 
   final String title;
   final String price;
+  final String imgPath;
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +23,8 @@ class MomsGiftCard extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
                 image: DecorationImage(
-                  image: NetworkImage(
-                      "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg"),
+                  //https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg
+                  image: NetworkImage(imgPath),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -57,12 +58,16 @@ class MomsGiftCard extends StatelessWidget {
                     ),
                     Spacer(),
                     InkWell(
-                      onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context){
-                          return ProductDetailPage();
-                        }
-                      ));
+                      onTap: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return ProductDetailPage(
+                            title: "Mom Gift",
+                            imgPath: imgPath,
+                            price: price,
+                            product: title,
+                          );
+                        }));
                       },
                       child: Icon(
                         Icons.arrow_forward,

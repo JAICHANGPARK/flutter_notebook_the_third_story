@@ -115,14 +115,17 @@ class MainHomePage extends StatelessWidget {
                                   MomsGiftCard(
                                     title: "Soup",
                                     price: "23.54",
+                                    imgPath: "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg",
                                   ),
                                   MomsGiftCard(
                                     title: "Cleanser",
                                     price: "43.90",
+                                    imgPath: "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg",
                                   ),
                                   MomsGiftCard(
                                     title: "Shower?",
                                     price: "99.99",
+                                    imgPath: "https://cdn.pixabay.com/photo/2016/02/19/10/40/soap-1209344__340.jpg",
                                   ),
                                 ],
                               ))
