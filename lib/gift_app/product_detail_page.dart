@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 
 class ProductDetailPage extends StatefulWidget {
+  final String title;
+  final String product;
+  final String price;
+  final String imgPath;
+
+  ProductDetailPage({this.title, this.product, this.price, this.imgPath});
+
   @override
   _ProductDetailPageState createState() => _ProductDetailPageState();
 }
 
 class _ProductDetailPageState extends State<ProductDetailPage> {
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      bottomNavigationBar: BottomNavigationBar
-        (
+      bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageIndex,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.black,
