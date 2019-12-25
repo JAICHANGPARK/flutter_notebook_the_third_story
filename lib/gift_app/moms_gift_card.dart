@@ -55,9 +55,14 @@ class MomsGiftCard extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     Spacer(),
-                    Icon(
-                      Icons.arrow_forward,
-                      color: Colors.white,
+                    InkWell(
+                      onTap: (){
+
+                      },
+                      child: Icon(
+                        Icons.arrow_forward,
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),
