@@ -86,7 +86,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 24),
-                    height: MediaQuery.of(context).size.height / 2.5,
+                    height: MediaQuery.of(context).size.height / 2.7,
                     child: Column(
                       children: <Widget>[
                         Expanded(
@@ -254,7 +254,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 24, top: 8),
-                    height: MediaQuery.of(context).size.height / 2.9,
+                    height: MediaQuery.of(context).size.height / 2.5,
                     width: MediaQuery.of(context).size.width,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -265,7 +265,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           style: TextStyle(color: Colors.white, fontSize: 22),
                         ),
                         Container(
-                          height: MediaQuery.of(context).size.height / 3.5,
+                          height: MediaQuery.of(context).size.height / 3,
                           margin: EdgeInsets.only(top: 8),
                           child: ListView(
                             scrollDirection: Axis.horizontal,
