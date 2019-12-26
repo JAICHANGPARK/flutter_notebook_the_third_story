@@ -142,6 +142,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                                             Expanded(
                                               flex: 1,
                                               child: Container(
+                                                height: 38,
                                                 margin: EdgeInsets.only(right: 16),
                                                 padding: EdgeInsets.all(3),
                                                 decoration: BoxDecoration(
@@ -168,12 +169,28 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                                             Expanded(
                                               flex: 1,
                                               child: Container(
+                                                height: 38,
+                                                margin: EdgeInsets.only(right: 16),
+                                                padding: EdgeInsets.all(3),
                                                 decoration: BoxDecoration(
                                                     borderRadius: BorderRadius.circular(12),
                                                     border: Border.all(color: Colors.white,)
                                                 ),
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(8)
+                                                  ),
+                                                  padding: EdgeInsets.all(4),
+                                                  child: Center(
+                                                    child:
+                                                    Text("Wish List",style: TextStyle(
+                                                      fontWeight: FontWeight.bold
+                                                    ),),
+                                                  )
+                                                ),
                                               ),
-                                            )
+                                            ),
                                           ],
                                         ),
                                       )
