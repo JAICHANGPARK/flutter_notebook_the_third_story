@@ -253,44 +253,47 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.only(left: 24, top: 16),
+                    padding: EdgeInsets.only(left: 24, top: 8),
                     height: MediaQuery.of(context).size.height / 2.9,
                     width: MediaQuery.of(context).size.width,
-                   
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.max,
                       children: <Widget>[
-                        Text("Compatible with:",style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 22
-                        ),),
+                        Text(
+                          "Compatible with:",
+                          style: TextStyle(color: Colors.white, fontSize: 22),
+                        ),
                         Container(
                           height: MediaQuery.of(context).size.height / 3.5,
-                          decoration: BoxDecoration(
-                            color: Colors.deepOrange
-                          ),
+                          margin: EdgeInsets.only(top: 8),
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: <Widget>[
-                              DadGiftCard(title: "Towel",
-                              price: "11.45",
-                              imgPath: "https://cdn.pixabay.com/photo/2018/01/07/04/21/lavender-3066531__340.jpg",),
-                              DadGiftCard(title: "Cream",
-                                price: "68.80",
-                                imgPath: "https://cdn.pixabay.com/photo/2018/06/25/13/00/cream-3496778__340.jpg",),
-                              DadGiftCard(title: "Balm",
+                              DadGiftCard(
+                                title: "Towel",
                                 price: "11.45",
-                                imgPath: "https://cdn.pixabay.com/photo/2018/01/07/04/21/lavender-3066531__340.jpg",),
-
+                                imgPath:
+                                    "https://cdn.pixabay.com/photo/2018/01/07/04/21/lavender-3066531__340.jpg",
+                              ),
+                              DadGiftCard(
+                                title: "Cream",
+                                price: "68.80",
+                                imgPath:
+                                    "https://cdn.pixabay.com/photo/2018/06/25/13/00/cream-3496778__340.jpg",
+                              ),
+                              DadGiftCard(
+                                title: "Balm",
+                                price: "11.45",
+                                imgPath:
+                                    "https://cdn.pixabay.com/photo/2018/01/07/04/21/lavender-3066531__340.jpg",
+                              ),
                             ],
                           ),
                         )
-
                       ],
                     ),
                   )
-
                 ],
               ),
             ),
