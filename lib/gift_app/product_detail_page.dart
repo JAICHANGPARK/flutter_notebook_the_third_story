@@ -85,66 +85,69 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                   Container(
                       margin: EdgeInsets.symmetric(horizontal: 24),
-                    height: MediaQuery.of(context).size.height / 2.5,
-                    child: Column(
-                      children: <Widget>[
-                        Expanded(
-                          flex: 10,
-                          child: Row(
-                            children: <Widget>[
-                              Expanded(
-                                flex: 4,
-                                child: Container(
-                                  margin: EdgeInsets.only(right: 12, bottom: 12),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    image: DecorationImage(
-                                      image: NetworkImage(widget.imgPath),
-                                      fit: BoxFit.cover,
-                                    )
+                      height: MediaQuery.of(context).size.height / 2.5,
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 10,
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin:
+                                        EdgeInsets.only(right: 12, bottom: 12),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: DecorationImage(
+                                          image: NetworkImage(widget.imgPath),
+                                          fit: BoxFit.cover,
+                                        )),
                                   ),
                                 ),
-                              ),
-                              Expanded(
-                                flex: 5,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text("Honest Beauty",style: TextStyle(
-                                      color: Colors.white
-                                    ),),
-                                    Text(widget.product,style: TextStyle(
-                                        color: Colors.white
-                                    ),),
-                                    Text("A unique cleansing gel that removes impurities and ",style: TextStyle(
-                                        color: Colors.white
-                                    ),)
-                                  ],
+                                Expanded(
+                                  flex: 5,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        "Honest Beauty",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      Text(
+                                        widget.product,
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      Text(
+                                        "A unique cleansing gel that removes impurities and ",
+                                        style: TextStyle(color: Colors.white),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: Container(
+                              margin: EdgeInsets.symmetric(vertical: 8),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(16)),
+                              child: Center(
+                                child: Text(
+                                  "Purchase for \$${widget.price}",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500),
                                 ),
                               ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          flex: 3,
-                          child: Container(
-                            margin: EdgeInsets.symmetric(vertical: 8),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(16)
-                            ),
-                            child: Center(
-                              child: Text("Purchase for \$${widget.price}",style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w500
-
-                              ),),
                             ),
                           ),
-                        ),
-                      ],
-                    )
-                  )
+                        ],
+                      ))
                 ],
               ),
             ),
