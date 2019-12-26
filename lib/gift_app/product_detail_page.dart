@@ -84,176 +84,173 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     ),
                   ),
                   Container(
-                      margin: EdgeInsets.symmetric(horizontal: 24),
-                      height: MediaQuery.of(context).size.height / 2.5,
-                      child: Column(
-                        children: <Widget>[
-                          Expanded(
-                            flex: 10,
-                            child: Row(
-                              children: <Widget>[
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    margin:
-                                        EdgeInsets.only(right: 12, bottom: 12),
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(16),
-                                        image: DecorationImage(
-                                          image: NetworkImage(widget.imgPath),
-                                          fit: BoxFit.cover,
-                                        )),
-                                  ),
+                    margin: EdgeInsets.symmetric(horizontal: 24),
+                    height: MediaQuery.of(context).size.height / 2.5,
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 10,
+                          child: Row(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 4,
+                                child: Container(
+                                  margin:
+                                      EdgeInsets.only(right: 12, bottom: 12),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(widget.imgPath),
+                                        fit: BoxFit.cover,
+                                      )),
                                 ),
-                                Expanded(
-                                  flex: 5,
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      Text(
-                                        "Honest Beauty",
+                              ),
+                              Expanded(
+                                flex: 5,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Honest Beauty",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      widget.product,
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 16),
+                                      child: Text(
+                                        "A unique cleansing gel that removes impurities and unclogs pores for a brighter skin appearance",
                                         style: TextStyle(
-                                            color: Colors.white, fontSize: 16),
+                                            color:
+                                                Colors.white.withOpacity(0.8),
+                                            letterSpacing: 1.5,
+                                            fontWeight: FontWeight.w300,
+                                            fontSize: 13,
+                                            wordSpacing: 1),
                                       ),
-                                      SizedBox(
-                                        height: 8,
-                                      ),
-                                      Text(
-                                        widget.product,
-                                        style: TextStyle(
-                                            color: Colors.white, fontSize: 20),
-                                      ),
-                                      SizedBox(
-                                        height: 16,
-                                      ),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(right: 16),
-                                        child: Text(
-                                          "A unique cleansing gel that removes impurities and unclogs pores for a brighter skin appearance",
-                                          style: TextStyle(
-                                              color:
-                                                  Colors.white.withOpacity(0.8),
-                                              letterSpacing: 1.5,
-                                              fontWeight: FontWeight.w300,
-                                              fontSize: 13,
-                                              wordSpacing: 1),
-                                        ),
-                                      ),
-                                      Spacer(),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(bottom: 16),
-                                        child: Row(
-                                          children: <Widget>[
-                                            Expanded(
-                                              flex: 1,
+                                    ),
+                                    Spacer(),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(bottom: 16),
+                                      child: Row(
+                                        children: <Widget>[
+                                          Expanded(
+                                            flex: 1,
+                                            child: Container(
+                                              height: 38,
+                                              margin:
+                                                  EdgeInsets.only(right: 16),
+                                              padding: EdgeInsets.all(3),
+                                              decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(12),
+                                                  border: Border.all(
+                                                    color: Colors.white,
+                                                  )),
                                               child: Container(
-                                                height: 38,
-                                                margin:
-                                                    EdgeInsets.only(right: 16),
-                                                padding: EdgeInsets.all(3),
                                                 decoration: BoxDecoration(
+                                                    color: Colors.white,
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            12),
-                                                    border: Border.all(
-                                                      color: Colors.white,
-                                                    )),
-                                                child: Container(
+                                                            8)),
+                                                padding: EdgeInsets.all(4),
+                                                child: Row(
+                                                  children: <Widget>[
+                                                    Text(
+                                                      "QTY",
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                    Spacer(),
+                                                    Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                    Icon(
+                                                      Icons.keyboard_arrow_down,
+                                                      size: 14,
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            flex: 1,
+                                            child: Container(
+                                              height: 38,
+                                              margin:
+                                                  EdgeInsets.only(right: 16),
+                                              padding: EdgeInsets.all(3),
+                                              decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(12),
+                                                  border: Border.all(
+                                                    color: Colors.white,
+                                                  )),
+                                              child: Container(
                                                   decoration: BoxDecoration(
                                                       color: Colors.white,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               8)),
                                                   padding: EdgeInsets.all(4),
-                                                  child: Row(
-                                                    children: <Widget>[
-                                                      Text(
-                                                        "QTY",
-                                                        style: TextStyle(
-                                                          color: Colors.black,
+                                                  child: Center(
+                                                    child: Text(
+                                                      "Wish List",
+                                                      style: TextStyle(
                                                           fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                                      ),
-                                                      Spacer(),
-                                                      Text(
-                                                        "1",
-                                                        style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                                      ),
-                                                      Icon(Icons
-                                                          .keyboard_arrow_down, size: 14,)
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
+                                                              FontWeight.bold),
+                                                    ),
+                                                  )),
                                             ),
-                                            Expanded(
-                                              flex: 1,
-                                              child: Container(
-                                                height: 38,
-                                                margin:
-                                                    EdgeInsets.only(right: 16),
-                                                padding: EdgeInsets.all(3),
-                                                decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            12),
-                                                    border: Border.all(
-                                                      color: Colors.white,
-                                                    )),
-                                                child: Container(
-                                                    decoration: BoxDecoration(
-                                                        color: Colors.white,
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8)),
-                                                    padding: EdgeInsets.all(4),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "Wish List",
-                                                        style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .bold),
-                                                      ),
-                                                    )),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  ),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.symmetric(vertical: 8),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(16)),
-                              child: Center(
-                                child: Text(
-                                  "Purchase for \$${widget.price}",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w500),
-                                ),
+                        ),
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            margin: EdgeInsets.symmetric(vertical: 8),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16)),
+                            child: Center(
+                              child: Text(
+                                "Purchase for \$${widget.price}",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w500),
                               ),
                             ),
                           ),
-                        ],
-                      ))
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
