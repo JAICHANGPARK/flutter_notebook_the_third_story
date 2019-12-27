@@ -89,9 +89,13 @@ class DoctorDetailPage extends StatelessWidget {
                                     margin: EdgeInsets.only(
                                         right: 12, top: 8, bottom:8),
                                     decoration: BoxDecoration(
-                                        color: Colors.red,
+                                        color: Colors.red[100],
                                         borderRadius:
                                             BorderRadius.circular(16)),
+                                    child: Center(
+                                      child: Icon(Icons.call,
+                                      color: Colors.red,),
+                                    ),
                                   ),
                                 ),
                                 Expanded(
@@ -99,9 +103,13 @@ class DoctorDetailPage extends StatelessWidget {
                                     margin: EdgeInsets.only(
                                         right: 12, top: 8, bottom:8),
                                     decoration: BoxDecoration(
-                                        color: Colors.red,
+                                        color: Colors.blueGrey[100],
                                         borderRadius:
                                             BorderRadius.circular(16)),
+                                    child: Center(
+                                      child: Icon(Icons.camera_enhance,
+                                        color: Colors.grey,),
+                                    ),
                                   ),
                                 )
                               ],
