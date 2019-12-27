@@ -17,7 +17,28 @@ class DoctorDetailPage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: Container(),
+            flex: 5,
+            child: Container(
+              color: Colors.blue,
+            ),
+          ),
+          Expanded(
+            flex: 4,
+            child: Container(
+              color: Colors.green,
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: Container(
+              color: Colors.yellow,
+            ),
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              color: Colors.red,
+            ),
           )
         ],
       ),
