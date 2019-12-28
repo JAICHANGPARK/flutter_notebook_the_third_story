@@ -27,13 +27,12 @@ class DoctorDetailPage extends StatelessWidget {
                     flex: 5,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.orange,
-                        borderRadius: BorderRadius.circular(24),
-                        image: DecorationImage(
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/06/13/40/anesthesia-4677401_960_720.jpg"),
-                          fit: BoxFit.cover
-                        )
-                      ),
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(24),
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2019/12/06/13/40/anesthesia-4677401_960_720.jpg"),
+                              fit: BoxFit.cover)),
                     ),
                   ),
                   Expanded(
@@ -73,42 +72,48 @@ class DoctorDetailPage extends StatelessWidget {
                                 Expanded(
                                   child: Container(
                                     margin: EdgeInsets.only(
-                                        right: 12, top: 8, bottom:8),
+                                        right: 12, top: 8, bottom: 8),
                                     decoration: BoxDecoration(
                                         color: Colors.orange[100],
                                         borderRadius:
                                             BorderRadius.circular(16)),
                                     child: Center(
-                                      child: Icon(Icons.alternate_email,
-                                      color: Colors.orange,),
+                                      child: Icon(
+                                        Icons.alternate_email,
+                                        color: Colors.orange,
+                                      ),
                                     ),
                                   ),
                                 ),
                                 Expanded(
                                   child: Container(
                                     margin: EdgeInsets.only(
-                                        right: 12, top: 8, bottom:8),
+                                        right: 12, top: 8, bottom: 8),
                                     decoration: BoxDecoration(
                                         color: Colors.red[100],
                                         borderRadius:
                                             BorderRadius.circular(16)),
                                     child: Center(
-                                      child: Icon(Icons.call,
-                                      color: Colors.red,),
+                                      child: Icon(
+                                        Icons.call,
+                                        color: Colors.red,
+                                      ),
                                     ),
                                   ),
                                 ),
                                 Expanded(
                                   child: Container(
                                     margin: EdgeInsets.only(
-                                        right: 12, top: 8, bottom:8),
+                                        right: 12, top: 8, bottom: 8),
                                     decoration: BoxDecoration(
                                         color: Colors.blueGrey[100],
                                         borderRadius:
                                             BorderRadius.circular(16)),
                                     child: Center(
-                                      child: Icon(Icons.camera_enhance,
-                                        color: Colors.grey,),
+                                      child: Icon(
+                                        Icons.camera_enhance,
+                                        color: Colors.grey,
+                                      ),
                                     ),
                                   ),
                                 )
