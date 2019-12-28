@@ -290,53 +290,76 @@ class DoctorDetailPage extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 5,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: <Widget>[
-                        Expanded(
-                          child: Container(
-                          
-                            decoration: BoxDecoration(
-                              color: Colors.orange[200],
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: <Widget>[
-                                Container(
-                                  height: 32,
-                                  width: 32,
-                                  decoration: BoxDecoration(
-                                    color: Colors.orange[100],
-                                    shape: BoxShape.circle,
+                    child: Container(
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: <Widget>[
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 12, bottom: 8),
+                              height: double.infinity,
+                              decoration: BoxDecoration(
+                                  color: Colors.orange[200],
+                                  borderRadius: BorderRadius.circular(16)),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: <Widget>[
+                                  Container(
+                                    height: 38,
+                                    width: 38,
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange[100],
+                                      shape: BoxShape.circle,
+                                    ),
                                   ),
-                                ),
-                                Text("List Of\nSchedule")
-                              ],
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Text(
+                                    "List Of\nSchedule",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[500],
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: <Widget>[
-                                Container(
-                                  height: 32,
-                                  width: 32,
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[300],
-                                    shape: BoxShape.circle,
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 12, bottom: 8),
+                              height: double.infinity,
+                              decoration: BoxDecoration(
+                                  color: Colors.grey[500],
+                                  borderRadius: BorderRadius.circular(16)),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: <Widget>[
+                                  Container(
+                                    height: 32,
+                                    width: 32,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      shape: BoxShape.circle,
+                                    ),
                                   ),
-                                ),
-                                Text("List Of\nSchedule")
-                              ],
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Text(
+                                    "Doctor's\nDaily Post",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
-                        )
-                      ],
+                        ],
+                      ),
                     ),
                   )
                 ],
