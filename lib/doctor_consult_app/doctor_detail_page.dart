@@ -159,7 +159,6 @@ class DoctorDetailPage extends StatelessWidget {
           Expanded(
             flex: 5,
             child: Container(
-              padding: EdgeInsets.only(left: 16),
               child: Row(
                 children: <Widget>[
                   Expanded(
@@ -205,22 +204,42 @@ class DoctorDetailPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: Row(
-                            children: <Widget>[
-                              Expanded(child: Icon(Icons.location_on)),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text("Address"),
-                                    Text(
-                                        "House # 2, Road # 5, Green Road Dhanmondi, Dhaka"),
-                                  ],
-                                ),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.only(top: 8,),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Expanded(
+                                    flex: 2,
+                                    child: Align(
+                                        alignment: Alignment.topCenter,
+                                        child: Icon(Icons.timer,
+                                          color: Colors.grey,))),
+                                Expanded(
+                                  flex: 8,
+
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Daily Practict",style: TextStyle(
+                                          fontSize: 20,
+                                          color: Colors.black54
+
+                                      ),),
+                                      SizedBox(height: 8,),
+                                      Text(
+                                        "Monday - Friday\nOpen till 7pm",
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 13
+                                        ),),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
