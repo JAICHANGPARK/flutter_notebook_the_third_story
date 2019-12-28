@@ -133,28 +133,109 @@ class DoctorDetailPage extends StatelessWidget {
             flex: 4,
             child: Container(
               padding: EdgeInsets.only(left: 16, top: 16, right: 16),
-             child: Column(
-               crossAxisAlignment: CrossAxisAlignment.start,
-               children: <Widget>[
-                 Text("About",style: TextStyle(
-                   color: Colors.black,
-                   fontWeight: FontWeight.bold,
-                   fontSize: 24,
-                 ),),
-                 SizedBox(height: 8,),
-                 Text(lipsum,style: TextStyle(
-                   fontSize: 12,
-                   color: Colors.grey,
-                   letterSpacing: 1.2
-                 ),),
-               ],
-             ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "About",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Text(
+                    lipsum,
+                    style: TextStyle(
+                        fontSize: 12, color: Colors.grey, letterSpacing: 1.2),
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
             flex: 5,
             child: Container(
-              color: Colors.yellow,
+              padding: EdgeInsets.only(left: 16),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    flex: 6,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.only(top: 16,),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 2,
+                                    child: Align(
+                                        alignment: Alignment.topCenter,
+                                        child: Icon(Icons.location_on,
+                                        color: Colors.grey,))),
+                                Expanded(
+                                flex: 8,
+
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Address",style: TextStyle(
+                                        fontSize: 20,
+                                        color: Colors.black54
+
+                                      ),),
+                                      SizedBox(height: 8,),
+                                      Text(
+                                          "House # 2, Road # 5, Green Road Dhanmondi, Dhaka",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 13
+                                      ),),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Row(
+                            children: <Widget>[
+                              Expanded(child: Icon(Icons.location_on)),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text("Address"),
+                                    Text(
+                                        "House # 2, Road # 5, Green Road Dhanmondi, Dhaka"),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                      margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Expanded(
