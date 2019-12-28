@@ -136,8 +136,17 @@ class DoctorDetailPage extends StatelessWidget {
              child: Column(
                crossAxisAlignment: CrossAxisAlignment.start,
                children: <Widget>[
-                 Text("About"),
-                 Text(lipsum),
+                 Text("About",style: TextStyle(
+                   color: Colors.black,
+                   fontWeight: FontWeight.bold,
+                   fontSize: 24,
+                 ),),
+                 SizedBox(height: 8,),
+                 Text(lipsum,style: TextStyle(
+                   fontSize: 12,
+                   color: Colors.grey,
+                   letterSpacing: 1.2
+                 ),),
                ],
              ),
             ),
