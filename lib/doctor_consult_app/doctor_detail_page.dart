@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/note_utils.dart';
 
 class DoctorDetailPage extends StatelessWidget {
   @override
@@ -131,7 +132,14 @@ class DoctorDetailPage extends StatelessWidget {
           Expanded(
             flex: 4,
             child: Container(
-              color: Colors.green,
+              padding: EdgeInsets.only(left: 16, top: 16, right: 16),
+             child: Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+               children: <Widget>[
+                 Text("About"),
+                 Text(lipsum),
+               ],
+             ),
             ),
           ),
           Expanded(
