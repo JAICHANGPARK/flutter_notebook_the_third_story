@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
 
@@ -168,34 +169,40 @@ class DoctorDetailPage extends StatelessWidget {
                       children: <Widget>[
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsets.only(top: 16,),
+                            padding: EdgeInsets.only(
+                              top: 16,
+                            ),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Expanded(
-                                  flex: 2,
+                                    flex: 2,
                                     child: Align(
                                         alignment: Alignment.topCenter,
-                                        child: Icon(Icons.location_on,
-                                        color: Colors.grey,))),
+                                        child: Icon(
+                                          Icons.location_on,
+                                          color: Colors.grey,
+                                        ))),
                                 Expanded(
-                                flex: 8,
-
+                                  flex: 8,
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: <Widget>[
-                                      Text("Address",style: TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.black54
-
-                                      ),),
-                                      SizedBox(height: 8,),
                                       Text(
-                                          "House # 2, Road # 5, Green Road Dhanmondi, Dhaka",
-                                      style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 13
-                                      ),),
+                                        "Address",
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            color: Colors.black54),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "House # 2, Road # 5, Green Road Dhanmondi, Dhaka",
+                                        style: TextStyle(
+                                            color: Colors.grey, fontSize: 13),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -205,7 +212,9 @@ class DoctorDetailPage extends StatelessWidget {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsets.only(top: 8,),
+                            padding: EdgeInsets.only(
+                              top: 8,
+                            ),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
@@ -213,26 +222,30 @@ class DoctorDetailPage extends StatelessWidget {
                                     flex: 2,
                                     child: Align(
                                         alignment: Alignment.topCenter,
-                                        child: Icon(Icons.timer,
-                                          color: Colors.grey,))),
+                                        child: Icon(
+                                          Icons.timer,
+                                          color: Colors.grey,
+                                        ))),
                                 Expanded(
                                   flex: 8,
-
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: <Widget>[
-                                      Text("Daily Practict",style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.black54
-
-                                      ),),
-                                      SizedBox(height: 8,),
+                                      Text(
+                                        "Daily Practict",
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            color: Colors.black54),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
                                       Text(
                                         "Monday - Friday\nOpen till 7pm",
                                         style: TextStyle(
-                                            color: Colors.grey,
-                                            fontSize: 13
-                                        ),),
+                                            color: Colors.grey, fontSize: 13),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -260,7 +273,74 @@ class DoctorDetailPage extends StatelessWidget {
           Expanded(
             flex: 3,
             child: Container(
-              color: Colors.red,
+              padding: EdgeInsets.only(left: 16),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      "Activity",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 5,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: <Widget>[
+                        Expanded(
+                          child: Container(
+                          
+                            decoration: BoxDecoration(
+                              color: Colors.orange[200],
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: <Widget>[
+                                Container(
+                                  height: 32,
+                                  width: 32,
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange[100],
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                Text("List Of\nSchedule")
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[500],
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: <Widget>[
+                                Container(
+                                  height: 32,
+                                  width: 32,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[300],
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                Text("List Of\nSchedule")
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
