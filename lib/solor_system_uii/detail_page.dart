@@ -35,7 +35,33 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                     ),
                   ),
-                  
+                  Positioned(
+                    left: 8,
+                    top: 24,
+                    bottom: 16,
+                    child: Container(
+                      width: MediaQuery.of(context).size.width / 2,
+                      color: Colors.blueGrey,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            height: 32,
+                            width: 32,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              shape: BoxShape.circle,
+                            ),
+                            child: Center(
+                              child: Icon(Icons.remo,),
+                            ),
+
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+
                 ],
               ),
             )
@@ -45,3 +71,15 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
