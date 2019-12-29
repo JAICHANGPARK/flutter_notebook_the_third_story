@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class DetailPage extends StatefulWidget {
   final String name;
+
   DetailPage(this.name);
 
   @override
@@ -13,7 +14,7 @@ class _DetailPageState extends State<DetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
@@ -27,12 +28,11 @@ class _DetailPageState extends State<DetailPage> {
                     bottom: 0,
                     child: Container(
                       width: MediaQuery.of(context).size.height / 2.5,
-                      decoration:BoxDecoration(
-                        image: DecorationImage(
-                          image: NetworkImage("https://ian.macky.net/pat/map/globes/venus-skin-256-fast.gif"),
-                          fit: BoxFit.contain
-                        )
-                      ),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://ian.macky.net/pat/map/globes/venus-skin-256-fast.gif"),
+                              fit: BoxFit.contain)),
                     ),
                   ),
                   Positioned(
@@ -46,22 +46,36 @@ class _DetailPageState extends State<DetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Container(
-                            height: 32,
-                            width: 32,
+                            height: 26,
+                            width: 26,
                             decoration: BoxDecoration(
                               color: Colors.grey,
                               shape: BoxShape.circle,
                             ),
                             child: Center(
-                              child: Icon(Icons.remo,),
+                              child: Icon(
+                                Icons.clear,
+                                size: 20,
+                              ),
                             ),
-
+                          ),
+                          SizedBox(
+                            height: 32,
+                          ),
+                          Text(
+                            "Distance from sun",
+                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                          ),
+                          Text(
+                            "148,377,282 MI KM",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           )
                         ],
                       ),
                     ),
                   )
-
                 ],
               ),
             )
@@ -71,15 +85,3 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
