@@ -185,6 +185,7 @@ class _DetailPageState extends State<DetailPage> {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             Container(
               height: MediaQuery.of(context).size.height / 4,
               width: MediaQuery.of(context).size.width,
@@ -195,7 +196,7 @@ class _DetailPageState extends State<DetailPage> {
                     flex: 1,
                     child: Padding(
                       padding: const EdgeInsets.only(
-                        left: 16,
+                        left: 8,
                       ),
                       child: Text(
                         "Gallery",
@@ -211,24 +212,37 @@ class _DetailPageState extends State<DetailPage> {
                       children: <Widget>[
                         Container(
                           margin: EdgeInsets.only(
-                              right: 8, left: 8, bottom: 16, top: 16),
+                              right: 8,  bottom: 16, top: 16),
                           width: 130,
                           decoration: BoxDecoration(color: Colors.white,
-                          borderRadius: BorderRadius.circular(12)),
+                          borderRadius: BorderRadius.circular(12),
+                          image: DecorationImage(
+                            image: NetworkImage("https://cdn.pixabay.com/photo/2012/11/28/09/08/mars-67522__340.jpg"),
+                            fit: BoxFit.cover
+                          )),
                         ),
                         Container(
                           margin: EdgeInsets.only(
                               right: 8, left: 8, bottom: 16, top: 16),
                           width: 130,
                           decoration: BoxDecoration(color: Colors.white,
-                              borderRadius: BorderRadius.circular(12)),
+                              borderRadius: BorderRadius.circular(12),
+                              image: DecorationImage(
+                                  image: NetworkImage("https://cdn.pixabay.com/photo/2014/12/17/20/43/red-planet-571902__340.jpg"),
+                                  fit: BoxFit.cover
+                              ),
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(
                               right: 8, left: 8, bottom: 16, top: 16),
                           width: 130,
                           decoration: BoxDecoration(color: Colors.white,
-                              borderRadius: BorderRadius.circular(12)),
+                              borderRadius: BorderRadius.circular(12),
+                              image: DecorationImage(
+                                  image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/15/20/43/mission-to-mars-2645472__340.jpg"),
+                                  fit: BoxFit.cover
+                              )),
                         ),
                       ],
                     ),
