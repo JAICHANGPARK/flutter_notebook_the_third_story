@@ -187,7 +187,6 @@ class _DetailPageState extends State<DetailPage> {
             ),
             Container(
               height: MediaQuery.of(context).size.height / 4,
-              decoration: BoxDecoration(color: Colors.teal),
               width: MediaQuery.of(context).size.width,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -214,13 +213,22 @@ class _DetailPageState extends State<DetailPage> {
                           margin: EdgeInsets.only(
                               right: 8, left: 8, bottom: 16, top: 16),
                           width: 130,
-                          decoration: BoxDecoration(color: Colors.white),
+                          decoration: BoxDecoration(color: Colors.white,
+                          borderRadius: BorderRadius.circular(12)),
                         ),
                         Container(
                           margin: EdgeInsets.only(
                               right: 8, left: 8, bottom: 16, top: 16),
                           width: 130,
-                          decoration: BoxDecoration(color: Colors.white),
+                          decoration: BoxDecoration(color: Colors.white,
+                              borderRadius: BorderRadius.circular(12)),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                              right: 8, left: 8, bottom: 16, top: 16),
+                          width: 130,
+                          decoration: BoxDecoration(color: Colors.white,
+                              borderRadius: BorderRadius.circular(12)),
                         ),
                       ],
                     ),
