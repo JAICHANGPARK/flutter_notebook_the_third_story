@@ -1,6 +1,6 @@
 # Flutter notebook 3 story
 
-A new Flutter application.
+Flutter Notebooks 
 
 ## Getting Started
 
