@@ -1,7 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
-
 class UserProfilePage extends StatefulWidget {
   @override
   _UserProfilePageState createState() => _UserProfilePageState();
@@ -33,7 +32,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
           Positioned(
             left: 0,
             right: 0,
-            top:  MediaQuery.of(context).size.height / 1.55,
+            top: MediaQuery.of(context).size.height / 1.55,
             bottom: 0,
             child: Placeholder(),
           ),
@@ -43,43 +42,58 @@ class _UserProfilePageState extends State<UserProfilePage> {
             bottom: 0,
             child: Container(
               height: 80,
-
               padding: EdgeInsets.only(left: 16, right: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   FloatingActionButton(
-                    child: Icon(Icons.add,color: Colors.black,
-                    size: 28,),
+                    child: Icon(
+                      Icons.add,
+                      color: Colors.black,
+                      size: 28,
+                    ),
                     backgroundColor: appAccentColor,
                     onPressed: () {},
                   ),
                   Container(
                     height: 52,
                     width: MediaQuery.of(context).size.width - 120,
-                    padding: EdgeInsets.only(right: 24,left: 24),
+                    padding: EdgeInsets.only(right: 24, left: 24),
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Badge(
-                          child: Icon(Icons.home,color: Colors.white,),
+                          child: Icon(
+                            Icons.home,
+                            color: Colors.white,
+                          ),
                           showBadge: false,
                         ),
                         Badge(
-                          child: Icon(Icons.search,color: Colors.white,),
+                          child: Icon(
+                            Icons.search,
+                            color: Colors.white,
+                          ),
                           showBadge: false,
                         ),
                         Badge(
-                          child: Icon(Icons.favorite_border,color: Colors.white,),
+                          child: Icon(
+                            Icons.favorite_border,
+                            color: Colors.white,
+                          ),
                           showBadge: true,
                           badgeColor: appAccentColor,
                           badgeContent: Text("2"),
                         ),
                         Badge(
-                          child: Icon(Icons.mail_outline,color: Colors.white,),
+                          child: Icon(
+                            Icons.mail_outline,
+                            color: Colors.white,
+                          ),
                           showBadge: true,
                           badgeColor: appAccentColor,
                           badgeContent: Text("3"),
@@ -96,15 +110,3 @@ class _UserProfilePageState extends State<UserProfilePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
