@@ -42,12 +42,13 @@ class _UserProfilePageState extends State<UserProfilePage> {
                 top: true,
                 left: true,
                 right: true,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Container(
@@ -75,52 +76,97 @@ class _UserProfilePageState extends State<UserProfilePage> {
                           )
                         ],
                       ),
-                    ),
-                    Spacer(),
-                    Text(
-                      "Pro Player",
-                      style: GoogleFonts.anton(
-                          textStyle: TextStyle(
-                        color: appAccentColor,
-                      )),
-                    ),
-                    Text("Dream",
-                        style: GoogleFonts.anton(
+                      Spacer(),
+                      Text(
+                        "Pro Player",
+                        style: GoogleFonts.righteous(
                             textStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 32,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 2))),
-                    Row(
-                      children: <Widget>[
-                        Text("Walker",
-                            style: GoogleFonts.anton(
-                                textStyle: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32,
-                                    letterSpacing: 2))),
-                        SizedBox(
-                          width: 8,
-                        ),
-                        Container(
-                          height: 24,
-                          width: 24,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Color(0xff4b6afe), // 75 106 254 6b6afe
+                          color: appAccentColor,
+                        )),
+                      ),
+                      Text("Dream",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 2))),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Text("Walker",
+                              style: GoogleFonts.righteous(
+                                  textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 32,
+                                      letterSpacing: 2))),
+                          SizedBox(
+                            width: 8,
                           ),
-                          child: Center(
-                            child: Icon(
-                              Icons.check,
-                              color: Colors.white,
-                              size: 16,
+                          Container(
+                            height: 24,
+                            width: 24,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xff4b6afe), // 75 106 254 6b6afe
+                            ),
+                            child: Center(
+                              child: Icon(
+                                Icons.check,
+                                color: Colors.white,
+                                size: 16,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 16,),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            height: 38,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: appAccentColor,
+                              borderRadius: BorderRadius.circular(24)
+                            ),
+                            child: Center(
+                              child: Text("Follow",style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                              ),),
                             ),
                           ),
-                        )
-                      ],
-                    )
-                  ],
+                          SizedBox(width: 8,),
+                          Container(
+                            height: 38,width: 38,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white),
+                              shape: BoxShape.circle,
+                              color: Colors.black,
+                            ),
+                            child: Center(
+                              child: Icon(Icons.more_vert, color: appAccentColor,),
+                            ),
+                          ),
+                          Spacer(),
+                          Container(height: 6,width: 6,decoration: BoxDecoration(
+                            color: appAccentColor,shape: BoxShape.circle,
+                          ),),
+                          SizedBox(width: 8,),
+                          Container(height: 6,width: 6,decoration: BoxDecoration(
+                            color: Colors.grey,shape: BoxShape.circle,
+                          ),),
+                          SizedBox(width: 8,),
+                          Container(height: 6,width: 6,decoration: BoxDecoration(
+                            color: Colors.grey,shape: BoxShape.circle,
+                          ),)
+                        ],
+                      ),
+                      SizedBox(height: 32,),
+                    ],
+                  ),
                 ),
               ),
             ),
