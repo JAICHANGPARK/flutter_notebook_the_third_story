@@ -89,6 +89,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                             textStyle: TextStyle(
                                 color: Colors.white,
                                 fontSize: 32,
+                                fontWeight: FontWeight.bold,
                                 letterSpacing: 1.4))),
                     Row(
                       children: <Widget>[
@@ -96,6 +97,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                             style: GoogleFonts.anton(
                                 textStyle: TextStyle(
                                     color: Colors.white,
+                                    fontWeight: FontWeight.bold,
                                     fontSize: 32,
                                     letterSpacing: 1.4))),
                         Container(
