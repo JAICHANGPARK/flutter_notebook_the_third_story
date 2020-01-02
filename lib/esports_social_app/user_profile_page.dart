@@ -36,21 +36,30 @@ class _UserProfilePageState extends State<UserProfilePage> {
                       fit: BoxFit.cover,
                       colorFilter: ColorFilter.mode(
                           Colors.black.withOpacity(0.2), BlendMode.darken))),
-              child: Column(
-                children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Container(
-                        height: 32,
-                        width: 32,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          shape: BoxShape.circle
-                        ),
-                      )
-                    ],
-                  )
-                ],
+              child: SafeArea(
+                top: true,
+                left: true,
+                right: true,
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            shape: BoxShape.circle
+                          ),
+                          child: Center(
+                            child: Icon(Icons.keyboard_arrow_left,
+                            color: appAccentColor,),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
