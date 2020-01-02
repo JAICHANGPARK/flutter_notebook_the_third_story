@@ -20,7 +20,39 @@ class _UserProfilePageState extends State<UserProfilePage> {
             right: 0,
             top: 0,
             bottom: MediaQuery.of(context).size.height / 2,
-            child: Placeholder(),
+            child: Container(
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: [
+                        Colors.black.withOpacity(0.8),
+                        Colors.black.withOpacity(0.4),
+                      ],
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      stops: [0, 1]),
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2017/07/31/22/04/people-2561506__340.jpg"),
+                      fit: BoxFit.cover,
+                      colorFilter: ColorFilter.mode(
+                          Colors.black.withOpacity(0.2), BlendMode.darken))),
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        height: 32,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          shape: BoxShape.circle
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
           ),
           Positioned(
             left: 0,
