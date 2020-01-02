@@ -77,12 +77,33 @@ class _UserProfilePageState extends State<UserProfilePage> {
                       ),
                     ),
                     Spacer(),
-                    Text("Pro Player",style: GoogleFonts.anton(
-                      textStyle: TextStyle(
+                    Text(
+                      "Pro Player",
+                      style: GoogleFonts.anton(
+                          textStyle: TextStyle(
                         color: appAccentColor,
-                      )
-                    )),
-                    
+                      )),
+                    ),
+                    Text("Dream",
+                        style: GoogleFonts.anton(
+                            textStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 32,
+                                letterSpacing: 1.4))),
+                    Row(
+                      children: <Widget>[
+                        Text("Walker",
+                            style: GoogleFonts.anton(
+                                textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 32,
+                                    letterSpacing: 1.4))),
+                        Container(
+                          height: 24,
+                          width: 24,
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
