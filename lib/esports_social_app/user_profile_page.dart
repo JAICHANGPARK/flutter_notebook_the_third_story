@@ -90,7 +90,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                                 color: Colors.white,
                                 fontSize: 32,
                                 fontWeight: FontWeight.bold,
-                                letterSpacing: 1.4))),
+                                letterSpacing: 2))),
                     Row(
                       children: <Widget>[
                         Text("Walker",
@@ -99,10 +99,24 @@ class _UserProfilePageState extends State<UserProfilePage> {
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 32,
-                                    letterSpacing: 1.4))),
+                                    letterSpacing: 2))),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Container(
                           height: 24,
                           width: 24,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color(0xff4b6afe), // 75 106 254 6b6afe
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.check,
+                              color: Colors.white,
+                              size: 16,
+                            ),
+                          ),
                         )
                       ],
                     )
