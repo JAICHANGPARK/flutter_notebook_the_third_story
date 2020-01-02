@@ -1,5 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:notebook_the_third_story/note_utils.dart';
 
 class UserProfilePage extends StatefulWidget {
   @override
@@ -41,23 +43,46 @@ class _UserProfilePageState extends State<UserProfilePage> {
                 left: true,
                 right: true,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        Container(
-                          height: 32,
-                          width: 32,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            shape: BoxShape.circle
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Container(
+                            height: 32,
+                            width: 32,
+                            decoration: BoxDecoration(
+                                color: Colors.black, shape: BoxShape.circle),
+                            child: Center(
+                              child: Icon(
+                                Icons.keyboard_arrow_left,
+                                color: appAccentColor,
+                              ),
+                            ),
                           ),
-                          child: Center(
-                            child: Icon(Icons.keyboard_arrow_left,
-                            color: appAccentColor,),
+                          Text(
+                            "Dreamwalker",
+                            style: Theme.of(context)
+                                .textTheme
+                                .body1
+                                .copyWith(color: Colors.white),
                           ),
-                        )
-                      ],
-                    )
+                          CircleAvatar(
+                            backgroundImage: NetworkImage(dreamwalkerImg),
+                            radius: 16,
+                          )
+                        ],
+                      ),
+                    ),
+                    Spacer(),
+                    Text("Pro Player",style: GoogleFonts.anton(
+                      textStyle: TextStyle(
+                        color: appAccentColor,
+                      )
+                    )),
+                    
                   ],
                 ),
               ),
