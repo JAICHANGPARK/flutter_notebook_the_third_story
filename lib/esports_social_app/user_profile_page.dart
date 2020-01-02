@@ -142,7 +142,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                           Container(
                             height: 38,width: 38,
                             decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white),
+                              border: Border.all(color: Colors.grey),
                               shape: BoxShape.circle,
                               color: Colors.black,
                             ),
