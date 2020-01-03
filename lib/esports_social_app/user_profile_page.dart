@@ -8,9 +8,16 @@ class UserProfilePage extends StatefulWidget {
   _UserProfilePageState createState() => _UserProfilePageState();
 }
 
-class _UserProfilePageState extends State<UserProfilePage> {
+class _UserProfilePageState extends State<UserProfilePage> with SingleTickerProviderStateMixin{
+  TabController _tabController;
   Color appAccentColor = Color(0xff68FE9A); // 104 254 154 68 fe 9a
   Color bgColor = Color(0xFF24272C); // 36 39 44 24 27 2c
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 5, vsync: this);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -205,69 +212,72 @@ class _UserProfilePageState extends State<UserProfilePage> {
             right: 0,
             top: MediaQuery.of(context).size.height / 2,
             bottom: MediaQuery.of(context).size.height / 2.8,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text("543 978",
-                          style: GoogleFonts.righteous(
-                              textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 21,
-                                  letterSpacing: 2))),
-                      Text("Followers",
-                          style: GoogleFonts.righteous(
-                              textStyle: TextStyle(
-                                  color: appAccentColor,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                  letterSpacing: 2)))
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text("842",
-                          style: GoogleFonts.righteous(
-                              textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 21,
-                                  letterSpacing: 2))),
-                      Text("Following",
-                          style: GoogleFonts.righteous(
-                              textStyle: TextStyle(
-                                  color: appAccentColor,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                  letterSpacing: 2)))
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text("173",
-                          style: GoogleFonts.righteous(
-                              textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 21,
-                                  letterSpacing: 2))),
-                      Text("Posts",
-                          style: GoogleFonts.righteous(
-                              textStyle: TextStyle(
-                                  color: appAccentColor,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                  letterSpacing: 2)))
-                    ],
-                  )
-                ],
+            child: Container(
+              color: Colors.black,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("543 978",
+                            style: GoogleFonts.righteous(
+                                textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 21,
+                                    letterSpacing: 2))),
+                        Text("Followers",
+                            style: GoogleFonts.righteous(
+                                textStyle: TextStyle(
+                                    color: appAccentColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    letterSpacing: 2)))
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("842",
+                            style: GoogleFonts.righteous(
+                                textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 21,
+                                    letterSpacing: 2))),
+                        Text("Following",
+                            style: GoogleFonts.righteous(
+                                textStyle: TextStyle(
+                                    color: appAccentColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    letterSpacing: 2)))
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("173",
+                            style: GoogleFonts.righteous(
+                                textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 21,
+                                    letterSpacing: 2))),
+                        Text("Posts",
+                            style: GoogleFonts.righteous(
+                                textStyle: TextStyle(
+                                    color: appAccentColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    letterSpacing: 2)))
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
@@ -276,7 +286,45 @@ class _UserProfilePageState extends State<UserProfilePage> {
             right: 0,
             top: MediaQuery.of(context).size.height / 1.55,
             bottom: 0,
-            child: Placeholder(),
+            child: Column(
+              children: <Widget>[
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    color: Colors.black, // 28 31 36
+                    child: TabBar(
+                      controller: _tabController,
+                      indicatorColor: appAccentColor,
+                      indicatorSize: TabBarIndicatorSize.label,
+                      indicatorWeight: 1,
+                      tabs: <Widget>[
+                        Tab(
+                          text: "Posts",
+                        ),
+                        Tab(
+                          text: "Videos",
+                        ),
+                        Tab(
+                          text: "About",
+                        ),
+                        Tab(
+                          text: "Stats",
+                        ),
+                        Tab(
+                          text: "Links",
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 8,
+                  child: Container(
+                    color: Colors.transparent,
+                  ),
+                )
+              ],
+            ),
           ),
           Positioned(
             left: 0,
