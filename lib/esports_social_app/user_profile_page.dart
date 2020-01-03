@@ -64,10 +64,9 @@ class _UserProfilePageState extends State<UserProfilePage> {
                           ),
                           Text(
                             "Dreamwalker",
-                            style: Theme.of(context)
-                                .textTheme
-                                .body1
-                                .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+                            style: Theme.of(context).textTheme.body1.copyWith(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
                           ),
                           CircleAvatar(
                             backgroundImage: NetworkImage(dreamwalkerImg),
@@ -206,7 +205,6 @@ class _UserProfilePageState extends State<UserProfilePage> {
             right: 0,
             top: MediaQuery.of(context).size.height / 2,
             bottom: MediaQuery.of(context).size.height / 2.8,
-
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -215,52 +213,58 @@ class _UserProfilePageState extends State<UserProfilePage> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("543 978",  style: GoogleFonts.righteous(
-                          textStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 21,
-                              letterSpacing: 2))),
-                      Text("Followers",   style: GoogleFonts.righteous(
-                          textStyle: TextStyle(
-                              color: appAccentColor,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              letterSpacing: 2)))
+                      Text("543 978",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 21,
+                                  letterSpacing: 2))),
+                      Text("Followers",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: appAccentColor,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  letterSpacing: 2)))
                     ],
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("842",  style: GoogleFonts.righteous(
-                          textStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 21,
-                              letterSpacing: 2))),
-                      Text("Following",   style: GoogleFonts.righteous(
-                          textStyle: TextStyle(
-                              color: appAccentColor,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              letterSpacing: 2)))
+                      Text("842",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 21,
+                                  letterSpacing: 2))),
+                      Text("Following",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: appAccentColor,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  letterSpacing: 2)))
                     ],
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("173",  style: GoogleFonts.righteous(
-                          textStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 21,
-                              letterSpacing: 2))),
-                      Text("Posts",   style: GoogleFonts.righteous(
-                          textStyle: TextStyle(
-                              color: appAccentColor,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              letterSpacing: 2)))
+                      Text("173",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 21,
+                                  letterSpacing: 2))),
+                      Text("Posts",
+                          style: GoogleFonts.righteous(
+                              textStyle: TextStyle(
+                                  color: appAccentColor,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  letterSpacing: 2)))
                     ],
                   )
                 ],
