@@ -45,7 +45,6 @@ class _UserProfilePageState extends State<UserProfilePage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
-
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Row(
@@ -121,50 +120,81 @@ class _UserProfilePageState extends State<UserProfilePage> {
                           )
                         ],
                       ),
-                      SizedBox(height: 16,),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Row(
                         children: <Widget>[
                           Container(
                             height: 38,
                             width: 160,
                             decoration: BoxDecoration(
-                              color: appAccentColor,
-                              borderRadius: BorderRadius.circular(24)
-                            ),
+                                color: appAccentColor,
+                                borderRadius: BorderRadius.circular(24)),
                             child: Center(
-                              child: Text("Follow",style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                              ),),
+                              child: Text(
+                                "Follow",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Container(
-                            height: 38,width: 38,
+                            height: 38,
+                            width: 38,
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
                               shape: BoxShape.circle,
                               color: Colors.black,
                             ),
                             child: Center(
-                              child: Icon(Icons.more_vert, color: appAccentColor,),
+                              child: Icon(
+                                Icons.more_vert,
+                                color: appAccentColor,
+                              ),
                             ),
                           ),
                           Spacer(),
-                          Container(height: 6,width: 6,decoration: BoxDecoration(
-                            color: appAccentColor,shape: BoxShape.circle,
-                          ),),
-                          SizedBox(width: 8,),
-                          Container(height: 6,width: 6,decoration: BoxDecoration(
-                            color: Colors.grey,shape: BoxShape.circle,
-                          ),),
-                          SizedBox(width: 8,),
-                          Container(height: 6,width: 6,decoration: BoxDecoration(
-                            color: Colors.grey,shape: BoxShape.circle,
-                          ),)
+                          Container(
+                            height: 6,
+                            width: 6,
+                            decoration: BoxDecoration(
+                              color: appAccentColor,
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Container(
+                            height: 6,
+                            width: 6,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Container(
+                            height: 6,
+                            width: 6,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              shape: BoxShape.circle,
+                            ),
+                          )
                         ],
                       ),
-                      SizedBox(height: 32,),
+                      SizedBox(
+                        height: 32,
+                      ),
                     ],
                   ),
                 ),
