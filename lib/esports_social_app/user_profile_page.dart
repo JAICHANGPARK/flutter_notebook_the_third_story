@@ -326,69 +326,65 @@ class _UserProfilePageState extends State<UserProfilePage>
                       controller: _tabController,
                       children: <Widget>[
                         GridView.count(
-                          padding: EdgeInsets.only(left: 16,right: 16, top: 16),
+                          padding:
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
                           children: <Widget>[
                             Container(
                               decoration: BoxDecoration(
-                                color: appAccentColor,
-                                image: DecorationImage(
-                                  image: NetworkImage("https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
-                                  fit: BoxFit.cover
-                                )
-                              ),
+                                  color: appAccentColor,
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ],
                         ),
                         GridView.count(
-                          padding: EdgeInsets.only(left: 16,right: 16, top: 16),
+                          padding:
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -397,60 +393,55 @@ class _UserProfilePageState extends State<UserProfilePage>
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ],
                         ),
                         GridView.count(
-                          padding: EdgeInsets.only(left: 16,right: 16, top: 16),
+                          padding:
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -459,60 +450,55 @@ class _UserProfilePageState extends State<UserProfilePage>
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ],
                         ),
                         GridView.count(
-                          padding: EdgeInsets.only(left: 16,right: 16, top: 16),
+                          padding:
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -521,60 +507,55 @@ class _UserProfilePageState extends State<UserProfilePage>
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ],
                         ),
                         GridView.count(
-                          padding: EdgeInsets.only(left: 16,right: 16, top: 16),
+                          padding:
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -583,55 +564,49 @@ class _UserProfilePageState extends State<UserProfilePage>
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/04/13/13/37/dj-720589__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                   color: appAccentColor,
                                   image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                      fit: BoxFit.cover
-                                  )
-                              ),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ],
                         ),
