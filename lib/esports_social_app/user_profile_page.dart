@@ -8,7 +8,8 @@ class UserProfilePage extends StatefulWidget {
   _UserProfilePageState createState() => _UserProfilePageState();
 }
 
-class _UserProfilePageState extends State<UserProfilePage> with SingleTickerProviderStateMixin{
+class _UserProfilePageState extends State<UserProfilePage>
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
   Color appAccentColor = Color(0xff68FE9A); // 104 254 154 68 fe 9a
   Color bgColor = Color(0xFF24272C); // 36 39 44 24 27 2c
@@ -18,6 +19,7 @@ class _UserProfilePageState extends State<UserProfilePage> with SingleTickerProv
     super.initState();
     _tabController = TabController(length: 5, vsync: this);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -291,7 +293,7 @@ class _UserProfilePageState extends State<UserProfilePage> with SingleTickerProv
                 Expanded(
                   flex: 3,
                   child: Container(
-                    color: Colors.black, // 28 31 36
+                    color: Color(0xff1c1f24), // 28 31 36  1c 1f 24
                     child: TabBar(
                       controller: _tabController,
                       indicatorColor: appAccentColor,
@@ -318,7 +320,7 @@ class _UserProfilePageState extends State<UserProfilePage> with SingleTickerProv
                   ),
                 ),
                 Expanded(
-                  flex: 8,
+                  flex: 9,
                   child: Container(
                     color: Colors.transparent,
                   ),
