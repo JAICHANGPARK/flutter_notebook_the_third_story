@@ -30,7 +30,10 @@ class _UserProfilePageState extends State<UserProfilePage>
             left: 0,
             right: 0,
             top: 0,
-            bottom: MediaQuery.of(context).size.height / 2,
+            bottom: MediaQuery
+                .of(context)
+                .size
+                .height / 2,
             child: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -73,7 +76,11 @@ class _UserProfilePageState extends State<UserProfilePage>
                           ),
                           Text(
                             "Dreamwalker",
-                            style: Theme.of(context).textTheme.body1.copyWith(
+                            style: Theme
+                                .of(context)
+                                .textTheme
+                                .body1
+                                .copyWith(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -88,8 +95,8 @@ class _UserProfilePageState extends State<UserProfilePage>
                         "Pro Player",
                         style: GoogleFonts.righteous(
                             textStyle: TextStyle(
-                          color: appAccentColor,
-                        )),
+                              color: appAccentColor,
+                            )),
                       ),
                       Text("Dream",
                           style: GoogleFonts.righteous(
@@ -212,8 +219,14 @@ class _UserProfilePageState extends State<UserProfilePage>
           Positioned(
             left: 0,
             right: 0,
-            top: MediaQuery.of(context).size.height / 2,
-            bottom: MediaQuery.of(context).size.height / 2.8,
+            top: MediaQuery
+                .of(context)
+                .size
+                .height / 2,
+            bottom: MediaQuery
+                .of(context)
+                .size
+                .height / 2.8,
             child: Container(
               color: Colors.black,
               child: Padding(
@@ -286,7 +299,10 @@ class _UserProfilePageState extends State<UserProfilePage>
           Positioned(
             left: 0,
             right: 0,
-            top: MediaQuery.of(context).size.height / 1.55,
+            top: MediaQuery
+                .of(context)
+                .size
+                .height / 1.55,
             bottom: 0,
             child: Column(
               children: <Widget>[
@@ -327,7 +343,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                       children: <Widget>[
                         GridView.count(
                           padding:
-                              EdgeInsets.only(left: 16, right: 16, top: 16),
+                          EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -384,7 +400,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                              EdgeInsets.only(left: 16, right: 16, top: 16),
+                          EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -441,7 +457,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                              EdgeInsets.only(left: 16, right: 16, top: 16),
+                          EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -498,7 +514,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                              EdgeInsets.only(left: 16, right: 16, top: 16),
+                          EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -555,7 +571,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                              EdgeInsets.only(left: 16, right: 16, top: 16),
+                          EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -594,19 +610,19 @@ class _UserProfilePageState extends State<UserProfilePage>
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                  color: appAccentColor,
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                      fit: BoxFit.cover)),
+                                color: appAccentColor,
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                    fit: BoxFit.cover),),
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                  color: appAccentColor,
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                      fit: BoxFit.cover)),
+                                color: appAccentColor,
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                                    fit: BoxFit.cover),),
                             ),
                           ],
                         ),
@@ -640,7 +656,10 @@ class _UserProfilePageState extends State<UserProfilePage>
                   ),
                   Container(
                     height: 52,
-                    width: MediaQuery.of(context).size.width - 120,
+                    width: MediaQuery
+                        .of(context)
+                        .size
+                        .width - 120,
                     padding: EdgeInsets.only(right: 24, left: 24),
                     decoration: BoxDecoration(
                       color: Colors.black,
