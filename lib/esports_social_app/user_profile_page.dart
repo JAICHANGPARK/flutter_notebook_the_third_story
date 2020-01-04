@@ -1,6 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:notebook_the_third_story/esports_social_app/home_page.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
 
 class UserProfilePage extends StatefulWidget {
@@ -30,10 +31,7 @@ class _UserProfilePageState extends State<UserProfilePage>
             left: 0,
             right: 0,
             top: 0,
-            bottom: MediaQuery
-                .of(context)
-                .size
-                .height / 2,
+            bottom: MediaQuery.of(context).size.height / 2,
             child: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -76,11 +74,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                           ),
                           Text(
                             "Dreamwalker",
-                            style: Theme
-                                .of(context)
-                                .textTheme
-                                .body1
-                                .copyWith(
+                            style: Theme.of(context).textTheme.body1.copyWith(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -95,8 +89,8 @@ class _UserProfilePageState extends State<UserProfilePage>
                         "Pro Player",
                         style: GoogleFonts.righteous(
                             textStyle: TextStyle(
-                              color: appAccentColor,
-                            )),
+                          color: appAccentColor,
+                        )),
                       ),
                       Text("Dream",
                           style: GoogleFonts.righteous(
@@ -219,14 +213,8 @@ class _UserProfilePageState extends State<UserProfilePage>
           Positioned(
             left: 0,
             right: 0,
-            top: MediaQuery
-                .of(context)
-                .size
-                .height / 2,
-            bottom: MediaQuery
-                .of(context)
-                .size
-                .height / 2.8,
+            top: MediaQuery.of(context).size.height / 2,
+            bottom: MediaQuery.of(context).size.height / 2.8,
             child: Container(
               color: Colors.black,
               child: Padding(
@@ -299,10 +287,7 @@ class _UserProfilePageState extends State<UserProfilePage>
           Positioned(
             left: 0,
             right: 0,
-            top: MediaQuery
-                .of(context)
-                .size
-                .height / 1.55,
+            top: MediaQuery.of(context).size.height / 1.55,
             bottom: 0,
             child: Column(
               children: <Widget>[
@@ -343,7 +328,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                       children: <Widget>[
                         GridView.count(
                           padding:
-                          EdgeInsets.only(left: 16, right: 16, top: 16),
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -400,7 +385,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                          EdgeInsets.only(left: 16, right: 16, top: 16),
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -457,7 +442,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                          EdgeInsets.only(left: 16, right: 16, top: 16),
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -514,7 +499,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                          EdgeInsets.only(left: 16, right: 16, top: 16),
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -571,7 +556,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                         ),
                         GridView.count(
                           padding:
-                          EdgeInsets.only(left: 16, right: 16, top: 16),
+                              EdgeInsets.only(left: 16, right: 16, top: 16),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                           crossAxisCount: 3,
@@ -614,7 +599,8 @@ class _UserProfilePageState extends State<UserProfilePage>
                                 image: DecorationImage(
                                     image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                                    fit: BoxFit.cover),),
+                                    fit: BoxFit.cover),
+                              ),
                             ),
                             Container(
                               decoration: BoxDecoration(
@@ -622,7 +608,8 @@ class _UserProfilePageState extends State<UserProfilePage>
                                 image: DecorationImage(
                                     image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                                    fit: BoxFit.cover),),
+                                    fit: BoxFit.cover),
+                              ),
                             ),
                           ],
                         ),
@@ -656,10 +643,7 @@ class _UserProfilePageState extends State<UserProfilePage>
                   ),
                   Container(
                     height: 52,
-                    width: MediaQuery
-                        .of(context)
-                        .size
-                        .width - 120,
+                    width: MediaQuery.of(context).size.width - 120,
                     padding: EdgeInsets.only(right: 24, left: 24),
                     decoration: BoxDecoration(
                       color: Colors.black,
@@ -668,12 +652,19 @@ class _UserProfilePageState extends State<UserProfilePage>
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Badge(
-                          child: Icon(
-                            Icons.home,
-                            color: Colors.white,
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) => ESportMainPage()));
+                          },
+                          child: Badge(
+                            child: Icon(
+                              Icons.home,
+                              color: Colors.white,
+                            ),
+                            showBadge: false,
                           ),
-                          showBadge: false,
                         ),
                         Badge(
                           child: Icon(
