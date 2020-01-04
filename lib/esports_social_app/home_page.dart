@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
@@ -25,7 +26,6 @@ class _ESportMainPageState extends State<ESportMainPage>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bgColor,
-
       body: Stack(
         overflow: Overflow.visible,
         children: <Widget>[
@@ -39,48 +39,46 @@ class _ESportMainPageState extends State<ESportMainPage>
               right: true,
               child: Container(
                 padding: EdgeInsets.only(left: 16, right: 16, bottom: 32),
-                height: MediaQuery.of(context).size.height / 8,
+                height: MediaQuery.of(context).size.height / 9,
                 decoration: BoxDecoration(color: Colors.black),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Container(
                           height: 2,
                           width: 42,
-                          decoration: BoxDecoration(
-                            color: Colors.white
-                          ),
+                          decoration: BoxDecoration(color: Colors.white),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Container(
                           height: 2,
                           width: 42,
-                          decoration: BoxDecoration(
-                              color: Colors.white
-                          ),
+                          decoration: BoxDecoration(color: Colors.white),
                         )
                       ],
                     ),
                     RichText(
-                      text: TextSpan(
-                        children: [
-                          TextSpan(text: "e",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: appAccentColor,
-                            fontSize: 16
-                          )),
-                          TextSpan(text: "Sport",style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold
-                          ))
-                        ]
-                      ),
+                      text: TextSpan(children: [
+                        TextSpan(
+                            text: "e",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: appAccentColor,
+                                fontSize: 16)),
+                        TextSpan(
+                            text: "Sport",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold))
+                      ]),
                     ),
                     CircleAvatar(
                       backgroundColor: appAccentColor,
@@ -95,10 +93,79 @@ class _ESportMainPageState extends State<ESportMainPage>
           Positioned(
             left: 0,
             right: 0,
-            top: MediaQuery.of(context).size.height / 8 + 26,
+            top: MediaQuery.of(context).size.height / 8 + 16,
             child: Container(
-              height: MediaQuery.of(context).size.height / 8,
+              height: MediaQuery.of(context).size.height / 7,
               decoration: BoxDecoration(color: Colors.black),
+              padding: EdgeInsets.only(bottom: 24, top: 24, left: 24),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  DottedBorder(
+                    padding: EdgeInsets.all(8),
+                    dashPattern: [6],
+                    borderType: BorderType.Circle,
+                    color: appAccentColor,
+                    child: Container(
+                      width: 48,
+                      child: Center(
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Container(
+                    width: 58,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: appAccentColor, width: 2.5),
+                        image: DecorationImage(
+                            image: NetworkImage(dreamwalkerImg))),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Container(
+                    width: 58,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+//                        border: Border.all(color: appAccentColor, width: 2.5),
+                        image: DecorationImage(
+                            image: NetworkImage(dreamwalkerImg))),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Container(
+                    width: 58,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: appAccentColor, width: 2.5),
+                        image: DecorationImage(
+                            image: NetworkImage(dreamwalkerImg))),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Container(
+                    width: 58,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: appAccentColor, width: 2.5),
+                        image: DecorationImage(
+                            image: NetworkImage(dreamwalkerImg))),
+                  )
+                ],
+              ),
             ),
           ),
 
