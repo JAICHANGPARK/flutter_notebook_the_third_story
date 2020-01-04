@@ -176,7 +176,22 @@ class _ESportMainPageState extends State<ESportMainPage>
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 8,
-              decoration: BoxDecoration(color: Colors.blue),
+              child: Column(
+                children: <Widget>[
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      color: Colors.red,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 18,
+                    child: Container(
+                      color: Colors.blue,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
 
