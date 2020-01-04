@@ -1,13 +1,15 @@
 import 'package:badges/badges.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:notebook_the_third_story/note_utils.dart';
 
 class ESportMainPage extends StatefulWidget {
   @override
   _ESportMainPageState createState() => _ESportMainPageState();
 }
 
-class _ESportMainPageState extends State<ESportMainPage> with SingleTickerProviderStateMixin{
+class _ESportMainPageState extends State<ESportMainPage>
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
   Color appAccentColor = Color(0xff68FE9A); // 104 254 154 68 fe 9a
   Color bgColor = Color(0xFF24272C); // 36 39 44 24 27 2c
@@ -17,14 +19,100 @@ class _ESportMainPageState extends State<ESportMainPage> with SingleTickerProvid
     super.initState();
 
     _tabController = TabController(vsync: this, length: 5);
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bgColor,
+
       body: Stack(
+        overflow: Overflow.visible,
         children: <Widget>[
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 0,
+            child: SafeArea(
+              left: true,
+              top: true,
+              right: true,
+              child: Container(
+                padding: EdgeInsets.only(left: 16, right: 16, bottom: 32),
+                height: MediaQuery.of(context).size.height / 8,
+                decoration: BoxDecoration(color: Colors.black),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          height: 2,
+                          width: 42,
+                          decoration: BoxDecoration(
+                            color: Colors.white
+                          ),
+                        ),
+                        SizedBox(height: 8,),
+                        Container(
+                          height: 2,
+                          width: 42,
+                          decoration: BoxDecoration(
+                              color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                    RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(text: "e",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: appAccentColor,
+                            fontSize: 16
+                          )),
+                          TextSpan(text: "Sport",style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold
+                          ))
+                        ]
+                      ),
+                    ),
+                    CircleAvatar(
+                      backgroundColor: appAccentColor,
+                      backgroundImage: NetworkImage(dreamwalkerImg),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Positioned(
+            left: 0,
+            right: 0,
+            top: MediaQuery.of(context).size.height / 8 + 26,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 8,
+              decoration: BoxDecoration(color: Colors.black),
+            ),
+          ),
+
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 2 * (MediaQuery.of(context).size.height / 8) + 26,
+            bottom: 0,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 8,
+              decoration: BoxDecoration(color: Colors.blue),
+            ),
+          ),
+
           //Bottom Navigation Bar
           Positioned(
             left: 0,
@@ -65,7 +153,7 @@ class _ESportMainPageState extends State<ESportMainPage> with SingleTickerProvid
                           child: Badge(
                             child: Icon(
                               Icons.home,
-                              color: Colors.white,
+                              color: appAccentColor,
                             ),
                             showBadge: false,
                           ),
