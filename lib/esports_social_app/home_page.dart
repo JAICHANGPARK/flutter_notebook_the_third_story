@@ -179,13 +179,37 @@ class _ESportMainPageState extends State<ESportMainPage>
               child: Column(
                 children: <Widget>[
                   Expanded(
-                    flex: 3,
+                    flex: 2,
                     child: Container(
-                      color: Colors.red,
+                      color: Color(0xff1c1f24), // 28 31 36  1c 1f 24
+                      child: TabBar(
+                        isScrollable: true,
+                        indicatorWeight: 1.5,
+                        indicatorSize: TabBarIndicatorSize.label,
+                        indicatorColor: appAccentColor,
+                        controller: _tabController,
+                        tabs: <Widget>[
+                          Tab(
+                            text: "All games",
+                          ),
+                          Tab(
+                            text: "Counter Strike",
+                          ),
+                          Tab(
+                            text: "League of Legends",
+                          ),
+                          Tab(
+                            text: "Dota",
+                          ),
+                          Tab(
+                            text: "",
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
-                    flex: 18,
+                    flex: 15,
                     child: Container(
                       color: Colors.blue,
                     ),
