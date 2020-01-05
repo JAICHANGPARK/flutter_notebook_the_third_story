@@ -211,7 +211,12 @@ class _ESportMainPageState extends State<ESportMainPage>
                   Expanded(
                     flex: 15,
                     child: Container(
-                      color: Colors.blue,
+                      child: TabBarView(
+                        controller: _tabController,
+                        children: <Widget>[
+
+                        ],
+                      ),
                     ),
                   )
                 ],
