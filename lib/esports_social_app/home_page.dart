@@ -242,6 +242,28 @@ class _ESportMainPageState extends State<ESportMainPage>
                                                   "https://cdn.pixabay.com/photo/2018/02/18/20/59/portrait-3163518__340.jpg"),
                                               fit: BoxFit.cover,
                                             )),
+                                        child: Stack(
+                                          children: <Widget>[
+                                            Positioned(
+                                              right: 16,
+                                              top: 16,
+                                              child: Container(
+                                                height: 34,
+                                                width: 34,
+                                                decoration: BoxDecoration(
+                                                  color: appAccentColor,
+                                                  shape: BoxShape.circle,
+                                                ),
+                                                child: Center(
+                                                  child: Icon(
+                                                    Icons.play_arrow,
+                                                    size: 18,
+                                                  ),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Positioned(
