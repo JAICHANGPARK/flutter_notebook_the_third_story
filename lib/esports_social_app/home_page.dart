@@ -217,23 +217,24 @@ class _ESportMainPageState extends State<ESportMainPage>
                           ListView(
                             children: <Widget>[
                               Container(
-                                height: MediaQuery.of(context).size.height / 2.5,
-                                margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                                height:
+                                    MediaQuery.of(context).size.height / 2.4,
+                                margin: EdgeInsets.only(
+                                    left: 16, right: 16, bottom: 16),
                                 child: Stack(
                                   overflow: Overflow.visible,
                                   children: <Widget>[
-
                                     Positioned(
-                                      top: 42
-                                      ,
+                                      top: 42,
                                       left: 0,
                                       right: 0,
                                       bottom: 32,
                                       child: Container(
-                                        height: MediaQuery.of(context).size.height / 3,
-                                        decoration: BoxDecoration(
-                                          color: Colors.black
-                                        ),
+                                        height:
+                                            MediaQuery.of(context).size.height /
+                                                3,
+                                        decoration:
+                                            BoxDecoration(color: Colors.black),
                                       ),
                                     ),
                                     Positioned(
@@ -245,14 +246,15 @@ class _ESportMainPageState extends State<ESportMainPage>
                                         decoration: BoxDecoration(
                                             color: bgColor,
                                             shape: BoxShape.circle,
-                                            border: Border.all(color: appAccentColor, width: 1.5),
+                                            border: Border.all(
+                                                color: appAccentColor,
+                                                width: 1.5),
                                             image: DecorationImage(
                                               image: NetworkImage(
                                                 dreamwalkerImg,
                                               ),
                                               fit: BoxFit.cover,
-                                            )
-                                        ),
+                                            )),
                                       ),
                                     ),
                                     Positioned(
@@ -260,27 +262,57 @@ class _ESportMainPageState extends State<ESportMainPage>
                                       right: 0,
                                       bottom: 0,
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
-                                          Text("What was that?! Watch this my friends!..",style: TextStyle(
-                                            color: Colors.white
-                                          ),),
+                                          Text(
+                                            "What was that?! Watch this my friends!..",
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           Row(
                                             children: <Widget>[
-                                              Icon(Icons.favorite_border, color: appAccentColor,
-                                              size: 16,),
-                                              SizedBox(width: 8,),
-                                              Text("12 445", style: TextStyle(
+                                              Icon(
+                                                Icons.favorite_border,
                                                 color: appAccentColor,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 12
-                                              ),),
-                                              SizedBox(width: 16,),
-                                              Icon(Icons.chat_bubble_outline, color: Colors.white,),
-                                              SizedBox(width: 8,),
-                                              Text("344"),
+                                                size: 16,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text(
+                                                "12 445",
+                                                style: TextStyle(
+                                                    color: appAccentColor,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 12),
+                                              ),
+                                              SizedBox(
+                                                width: 16,
+                                              ),
+                                              Icon(
+                                                Icons.chat_bubble_outline,
+                                                color: Colors.white,
+                                                size: 16,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text(
+                                                "344",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               Spacer(),
-                                              Text("3 hours ago",)
+                                              Text(
+                                                "3 hours ago",
+                                              )
                                             ],
                                           )
                                         ],
@@ -289,30 +321,20 @@ class _ESportMainPageState extends State<ESportMainPage>
                                   ],
                                 ),
                               )
-
                             ],
                           ),
                           ListView(
-                            children: <Widget>[
-
-                            ],
+                            children: <Widget>[],
                           ),
                           ListView(
-                            children: <Widget>[
-
-                            ],
+                            children: <Widget>[],
                           ),
                           ListView(
-                            children: <Widget>[
-
-                            ],
+                            children: <Widget>[],
                           ),
                           ListView(
-                            children: <Widget>[
-
-                            ],
+                            children: <Widget>[],
                           )
-
                         ],
                       ),
                     ),
