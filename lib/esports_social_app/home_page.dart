@@ -214,6 +214,37 @@ class _ESportMainPageState extends State<ESportMainPage>
                       child: TabBarView(
                         controller: _tabController,
                         children: <Widget>[
+                          ListView(
+                            children: <Widget>[
+                              Container(
+                                height: MediaQuery.of(context).size.height / 3,
+                                decoration: BoxDecoration(
+                                  color: Colors.red
+                                ),
+                              )
+
+                            ],
+                          ),
+                          ListView(
+                            children: <Widget>[
+
+                            ],
+                          ),
+                          ListView(
+                            children: <Widget>[
+
+                            ],
+                          ),
+                          ListView(
+                            children: <Widget>[
+
+                            ],
+                          ),
+                          ListView(
+                            children: <Widget>[
+
+                            ],
+                          )
 
                         ],
                       ),
