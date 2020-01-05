@@ -225,16 +225,23 @@ class _ESportMainPageState extends State<ESportMainPage>
                                   overflow: Overflow.visible,
                                   children: <Widget>[
                                     Positioned(
-                                      top: 42,
+                                      top: 44,
                                       left: 0,
                                       right: 0,
-                                      bottom: 32,
+                                      bottom: 48,
                                       child: Container(
                                         height:
                                             MediaQuery.of(context).size.height /
                                                 3,
-                                        decoration:
-                                            BoxDecoration(color: Colors.black),
+                                        decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2018/02/18/20/59/portrait-3163518__340.jpg"),
+                                              fit: BoxFit.cover,
+                                            )),
                                       ),
                                     ),
                                     Positioned(
@@ -312,6 +319,12 @@ class _ESportMainPageState extends State<ESportMainPage>
                                               Spacer(),
                                               Text(
                                                 "3 hours ago",
+                                                style: TextStyle(
+                                                    color: Colors.white
+                                                        .withOpacity(0.2),
+                                                    fontSize: 12,
+                                                    fontWeight:
+                                                        FontWeight.bold),
                                               )
                                             ],
                                           )
