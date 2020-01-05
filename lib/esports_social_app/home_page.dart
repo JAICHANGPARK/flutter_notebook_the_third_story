@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/esports_social_app/user_profile_page.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
 
 class ESportMainPage extends StatefulWidget {
@@ -313,21 +314,30 @@ class _ESportMainPageState extends State<ESportMainPage>
                                     Positioned(
                                       left: 0,
                                       top: 0,
-                                      child: Container(
-                                        height: 52,
-                                        width: 52,
-                                        decoration: BoxDecoration(
-                                            color: bgColor,
-                                            shape: BoxShape.circle,
-                                            border: Border.all(
-                                                color: appAccentColor,
-                                                width: 1.5),
-                                            image: DecorationImage(
-                                              image: NetworkImage(
-                                                dreamwalkerImg,
-                                              ),
-                                              fit: BoxFit.cover,
-                                            )),
+                                      child: InkWell(
+                                        onTap: (){
+                                          Navigator.of(context).push(MaterialPageRoute(
+                                            builder: (context){
+                                              return UserProfilePage();
+                                            }
+                                          ));
+                                        },
+                                        child: Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                              color: bgColor,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                  color: appAccentColor,
+                                                  width: 1.5),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                  dreamwalkerImg,
+                                                ),
+                                                fit: BoxFit.cover,
+                                              )),
+                                        ),
                                       ),
                                     ),
                                     Positioned(
