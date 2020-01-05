@@ -232,21 +232,29 @@ class _ESportMainPageState extends State<ESportMainPage>
                                       child: Row(
                                         children: <Widget>[
                                           Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
-                                              Text("Dreamwalker",style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 14
-                                              ),),
-                                              Text("Flutter Developer",style: TextStyle(
-                                                  color: Colors.white.withOpacity(0.4),
-                                                  fontSize: 12
-                                              ),),
+                                              Text(
+                                                "Dreamwalker",
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 14),
+                                              ),
+                                              Text(
+                                                "Flutter Developer",
+                                                style: TextStyle(
+                                                    color: Colors.white
+                                                        .withOpacity(0.4),
+                                                    fontSize: 12),
+                                              ),
                                             ],
                                           ),
-                                          Spacer(
-                                          ),
-                                          Icon(Icons.more_vert,color: Colors.white,)
+                                          Spacer(),
+                                          Icon(
+                                            Icons.more_vert,
+                                            color: Colors.white,
+                                          )
                                         ],
                                       ),
                                     ),
@@ -295,15 +303,19 @@ class _ESportMainPageState extends State<ESportMainPage>
                                                 height: 24,
                                                 width: 42,
                                                 decoration: BoxDecoration(
-                                                  color: Colors.black,
-                                                  borderRadius: BorderRadius.circular(24)
-                                                ),
+                                                    color: Colors.black,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            24)),
                                                 child: Center(
-                                                  child: Text("1:18",style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 10
-                                                  ),),
+                                                  child: Text(
+                                                    "1:18",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 10),
+                                                  ),
                                                 ),
                                               ),
                                             )
@@ -315,12 +327,12 @@ class _ESportMainPageState extends State<ESportMainPage>
                                       left: 0,
                                       top: 0,
                                       child: InkWell(
-                                        onTap: (){
-                                          Navigator.of(context).push(MaterialPageRoute(
-                                            builder: (context){
-                                              return UserProfilePage();
-                                            }
-                                          ));
+                                        onTap: () {
+                                          Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                  builder: (context) {
+                                            return UserProfilePage();
+                                          }));
                                         },
                                         child: Container(
                                           height: 52,
@@ -410,10 +422,12 @@ class _ESportMainPageState extends State<ESportMainPage>
                                   ],
                                 ),
                               ),
-                              SizedBox(height: 16,),
+                              SizedBox(
+                                height: 16,
+                              ),
                               Container(
                                 height:
-                                MediaQuery.of(context).size.height / 2.4,
+                                    MediaQuery.of(context).size.height / 2.4,
                                 margin: EdgeInsets.only(
                                     left: 16, right: 16, bottom: 16),
                                 child: Stack(
@@ -426,21 +440,29 @@ class _ESportMainPageState extends State<ESportMainPage>
                                       child: Row(
                                         children: <Widget>[
                                           Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
-                                              Text("Dreamwalker",style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 14
-                                              ),),
-                                              Text("Flutter Developer",style: TextStyle(
-                                                  color: Colors.white.withOpacity(0.4),
-                                                  fontSize: 12
-                                              ),),
+                                              Text(
+                                                "Dreamwalker",
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 14),
+                                              ),
+                                              Text(
+                                                "Flutter Developer",
+                                                style: TextStyle(
+                                                    color: Colors.white
+                                                        .withOpacity(0.4),
+                                                    fontSize: 12),
+                                              ),
                                             ],
                                           ),
-                                          Spacer(
-                                          ),
-                                          Icon(Icons.more_vert,color: Colors.white,)
+                                          Spacer(),
+                                          Icon(
+                                            Icons.more_vert,
+                                            color: Colors.white,
+                                          )
                                         ],
                                       ),
                                     ),
@@ -451,12 +473,12 @@ class _ESportMainPageState extends State<ESportMainPage>
                                       bottom: 48,
                                       child: Container(
                                         height:
-                                        MediaQuery.of(context).size.height /
-                                            3,
+                                            MediaQuery.of(context).size.height /
+                                                3,
                                         decoration: BoxDecoration(
                                             color: Colors.black,
                                             borderRadius:
-                                            BorderRadius.circular(12),
+                                                BorderRadius.circular(12),
                                             image: DecorationImage(
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2018/02/18/20/59/portrait-3163518__340.jpg"),
@@ -490,14 +512,18 @@ class _ESportMainPageState extends State<ESportMainPage>
                                                 width: 42,
                                                 decoration: BoxDecoration(
                                                     color: Colors.black,
-                                                    borderRadius: BorderRadius.circular(24)
-                                                ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            24)),
                                                 child: Center(
-                                                  child: Text("1:18",style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontWeight: FontWeight.bold,
-                                                      fontSize: 10
-                                                  ),),
+                                                  child: Text(
+                                                    "1:18",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 10),
+                                                  ),
                                                 ),
                                               ),
                                             )
@@ -531,12 +557,12 @@ class _ESportMainPageState extends State<ESportMainPage>
                                       bottom: 0,
                                       child: Column(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
                                             "What was that?! Watch this my friends!..",
                                             style:
-                                            TextStyle(color: Colors.white),
+                                                TextStyle(color: Colors.white),
                                           ),
                                           SizedBox(
                                             height: 8,
@@ -585,7 +611,7 @@ class _ESportMainPageState extends State<ESportMainPage>
                                                         .withOpacity(0.2),
                                                     fontSize: 12,
                                                     fontWeight:
-                                                    FontWeight.bold),
+                                                        FontWeight.bold),
                                               )
                                             ],
                                           )
