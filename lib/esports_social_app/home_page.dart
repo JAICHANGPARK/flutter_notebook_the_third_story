@@ -225,7 +225,32 @@ class _ESportMainPageState extends State<ESportMainPage>
                                   overflow: Overflow.visible,
                                   children: <Widget>[
                                     Positioned(
-                                      top: 44,
+                                      left: 64,
+                                      top: 0,
+                                      right: 0,
+                                      child: Row(
+                                        children: <Widget>[
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: <Widget>[
+                                              Text("Dreamwalker",style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 14
+                                              ),),
+                                              Text("Flutter Developer",style: TextStyle(
+                                                  color: Colors.white.withOpacity(0.4),
+                                                  fontSize: 12
+                                              ),),
+                                            ],
+                                          ),
+                                          Spacer(
+                                          ),
+                                          Icon(Icons.more_vert,color: Colors.white,)
+                                        ],
+                                      ),
+                                    ),
+                                    Positioned(
+                                      top: 40,
                                       left: 0,
                                       right: 0,
                                       bottom: 48,
@@ -259,6 +284,25 @@ class _ESportMainPageState extends State<ESportMainPage>
                                                     Icons.play_arrow,
                                                     size: 18,
                                                   ),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 16,
+                                              bottom: 16,
+                                              child: Container(
+                                                height: 24,
+                                                width: 42,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black,
+                                                  borderRadius: BorderRadius.circular(24)
+                                                ),
+                                                child: Center(
+                                                  child: Text("1:18",style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 10
+                                                  ),),
                                                 ),
                                               ),
                                             )
@@ -347,6 +391,191 @@ class _ESportMainPageState extends State<ESportMainPage>
                                                     fontSize: 12,
                                                     fontWeight:
                                                         FontWeight.bold),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              SizedBox(height: 16,),
+                              Container(
+                                height:
+                                MediaQuery.of(context).size.height / 2.4,
+                                margin: EdgeInsets.only(
+                                    left: 16, right: 16, bottom: 16),
+                                child: Stack(
+                                  overflow: Overflow.visible,
+                                  children: <Widget>[
+                                    Positioned(
+                                      left: 64,
+                                      top: 0,
+                                      right: 0,
+                                      child: Row(
+                                        children: <Widget>[
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: <Widget>[
+                                              Text("Dreamwalker",style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 14
+                                              ),),
+                                              Text("Flutter Developer",style: TextStyle(
+                                                  color: Colors.white.withOpacity(0.4),
+                                                  fontSize: 12
+                                              ),),
+                                            ],
+                                          ),
+                                          Spacer(
+                                          ),
+                                          Icon(Icons.more_vert,color: Colors.white,)
+                                        ],
+                                      ),
+                                    ),
+                                    Positioned(
+                                      top: 40,
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 48,
+                                      child: Container(
+                                        height:
+                                        MediaQuery.of(context).size.height /
+                                            3,
+                                        decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius:
+                                            BorderRadius.circular(12),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2018/02/18/20/59/portrait-3163518__340.jpg"),
+                                              fit: BoxFit.cover,
+                                            )),
+                                        child: Stack(
+                                          children: <Widget>[
+                                            Positioned(
+                                              right: 16,
+                                              top: 16,
+                                              child: Container(
+                                                height: 34,
+                                                width: 34,
+                                                decoration: BoxDecoration(
+                                                  color: appAccentColor,
+                                                  shape: BoxShape.circle,
+                                                ),
+                                                child: Center(
+                                                  child: Icon(
+                                                    Icons.play_arrow,
+                                                    size: 18,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 16,
+                                              bottom: 16,
+                                              child: Container(
+                                                height: 24,
+                                                width: 42,
+                                                decoration: BoxDecoration(
+                                                    color: Colors.black,
+                                                    borderRadius: BorderRadius.circular(24)
+                                                ),
+                                                child: Center(
+                                                  child: Text("1:18",style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 10
+                                                  ),),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      top: 0,
+                                      child: Container(
+                                        height: 52,
+                                        width: 52,
+                                        decoration: BoxDecoration(
+                                            color: bgColor,
+                                            shape: BoxShape.circle,
+                                            border: Border.all(
+                                                color: appAccentColor,
+                                                width: 1.5),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                dreamwalkerImg,
+                                              ),
+                                              fit: BoxFit.cover,
+                                            )),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      child: Column(
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text(
+                                            "What was that?! Watch this my friends!..",
+                                            style:
+                                            TextStyle(color: Colors.white),
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Row(
+                                            children: <Widget>[
+                                              Icon(
+                                                Icons.favorite_border,
+                                                color: appAccentColor,
+                                                size: 16,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text(
+                                                "12 445",
+                                                style: TextStyle(
+                                                    color: appAccentColor,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 12),
+                                              ),
+                                              SizedBox(
+                                                width: 16,
+                                              ),
+                                              Icon(
+                                                Icons.chat_bubble_outline,
+                                                color: Colors.white,
+                                                size: 16,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text(
+                                                "344",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Spacer(),
+                                              Text(
+                                                "3 hours ago",
+                                                style: TextStyle(
+                                                    color: Colors.white
+                                                        .withOpacity(0.2),
+                                                    fontSize: 12,
+                                                    fontWeight:
+                                                    FontWeight.bold),
                                               )
                                             ],
                                           )
