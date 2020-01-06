@@ -88,7 +88,7 @@ class _MainPageState extends State<MainPage> {
             top: 0,
             child: Container(
               padding: EdgeInsets.only(top: 24),
-              height: MediaQuery.of(context).size.height / 4.5,
+              height: MediaQuery.of(context).size.height / 6,
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.9),
               ),
