@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notebook_the_third_story/esports_social_app/page_importer.dart';
+import 'package:notebook_the_third_story/news_feed/main_page.dart';
 
-void main() => runApp(EsportSocialMediaApp());
+void main() => runApp(NewsFeedApp());
 
