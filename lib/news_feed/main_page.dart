@@ -22,7 +22,12 @@ class _MainPageState extends State<MainPage> {
       body: Stack(
 
       ),
-      floatingActionButton: FloatingActionButton(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.view_carousel,
+        color: Colors.white,),
+        backgroundColor: Colors.black,
+
+      ),
     );
   }
 }
