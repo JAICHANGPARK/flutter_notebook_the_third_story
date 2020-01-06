@@ -88,7 +88,6 @@ class _MainPageState extends State<MainPage> {
             top: 0,
             child: Container(
               padding: EdgeInsets.only(top: 24, bottom: 16, left: 16),
-
               height: MediaQuery.of(context).size.height / 6,
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.9),
@@ -112,25 +111,25 @@ class _MainPageState extends State<MainPage> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
-                        Container(height: 28,
-                        width: 68,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(32),
-                          gradient: LinearGradient(
-                            colors: [
-                              Colors.blue,
-                              Colors.blue[200]
-                            ],
-                            begin: Alignment.topRight,
-                            end: Alignment.bottomLeft,
-                          )
-                        ),
-                        child: Center(child: Text("LASTEST",style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12
-                        ),)),)
+                        Container(
+                          height: 28,
+                          width: 68,
+                          decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(32),
+                              gradient: LinearGradient(
+                                colors: [Colors.blue, Colors.blue[200]],
+                                begin: Alignment.topRight,
+                                end: Alignment.bottomLeft,
+                              )),
+                          child: Center(
+                              child: Text("LASTEST",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12),
+                          )),
+                        )
                       ],
                     ),
                   )
