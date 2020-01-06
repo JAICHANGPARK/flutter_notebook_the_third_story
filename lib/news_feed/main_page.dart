@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
                   child: ListView(
                     children: List.generate(10, (index){
                       return Container(
-                        margin: EdgeInsets.symmetric(vertical: 8),
+                        margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                         height: MediaQuery.of(context).size.height / 3,
                         decoration: BoxDecoration(
                           color: Colors.blue
@@ -50,13 +50,48 @@ class _MainPageState extends State<MainPage> {
                 Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width /2.3,
-                  color: Colors.grey,
+                  child: ListView(
+                      children: List.generate(10, (index){
+                        return Container(
+                          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                          height: MediaQuery.of(context).size.height / 3.5,
+                          decoration: BoxDecoration(
+                              color: Colors.red
+                          ),
+                        );
+                      }).toList()
+                  ),
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width /2.3,
-                  color: Colors.green,
-                )
+                  child: ListView(
+                      children: List.generate(10, (index){
+                        return Container(
+                          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                          height: MediaQuery.of(context).size.height / 4,
+                          decoration: BoxDecoration(
+                              color: Colors.green
+                          ),
+                        );
+                      }).toList()
+                  ),
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width /2.3,
+                  child: ListView(
+                      children: List.generate(10, (index){
+                        return Container(
+                          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                          height: MediaQuery.of(context).size.height / 4,
+                          decoration: BoxDecoration(
+                              color: Colors.yellow
+                          ),
+                        );
+                      }).toList()
+                  ),
+                ),
               ],
             ),
           ),
