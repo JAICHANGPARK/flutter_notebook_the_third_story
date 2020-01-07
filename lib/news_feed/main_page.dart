@@ -1,5 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:notebook_the_third_story/news_feed/news_model.dart';
+
+
+Future<News> getNews(String apiKey){
+
+}
 
 class NewsFeedApp extends StatelessWidget {
   @override
