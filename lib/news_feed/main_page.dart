@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:notebook_the_third_story/news_feed/news_model.dart';
+import 'dart:convert';
 
 Future<News> getNews(String apiKey) async {
   var url =
@@ -9,6 +10,9 @@ Future<News> getNews(String apiKey) async {
   var response = await http.get(url);
   if (response.statusCode == 200) {
     print(response.body);
+    return News.fromJson(jsonDecode(response.body));
+  }else{
+    return null;
   }
 }
 
@@ -34,8 +38,9 @@ class _MainPageState extends State<MainPage> {
     // TODO: implement initState
     super.initState();
     getNews("9aeb6d37abda43b09835508555278aec").then((n) {
+
       setState(() {
-        _articles = n.articles;
+        _articles = n.articles.toList();
       });
     });
   }
@@ -64,7 +69,34 @@ class _MainPageState extends State<MainPage> {
                           margin:
                               EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                           height: MediaQuery.of(context).size.height / 3.5,
-                          color: Colors.blue,
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 4,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.blue,
+                                    image: DecorationImage(
+                                      image: NetworkImage(_articles[index].urlToImage),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Text(_articles[index].title,style: TextStyle(),),),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.red
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         );
                       },
                       itemCount: _articles.length,
