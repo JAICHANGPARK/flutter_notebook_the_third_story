@@ -11,7 +11,7 @@ Future<News> getNews(String apiKey) async {
   if (response.statusCode == 200) {
     print(response.body);
     return News.fromJson(jsonDecode(response.body));
-  }else{
+  } else {
     return null;
   }
 }
@@ -38,7 +38,6 @@ class _MainPageState extends State<MainPage> {
     // TODO: implement initState
     super.initState();
     getNews("9aeb6d37abda43b09835508555278aec").then((n) {
-
       setState(() {
         _articles = n.articles.toList();
       });
@@ -74,25 +73,31 @@ class _MainPageState extends State<MainPage> {
                               Expanded(
                                 flex: 4,
                                 child: Container(
+                                  padding: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
-                                    color: Colors.blue,
                                     image: DecorationImage(
-                                      image: NetworkImage(_articles[index].urlToImage),
+                                      image: NetworkImage(
+                                          _articles[index].urlToImage),
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                   child: Align(
-                                      alignment: Alignment.bottomCenter,
-                                      child: Text(_articles[index].title,style: TextStyle(),),),
+                                    alignment: Alignment.bottomCenter,
+                                    child: Text(
+                                      _articles[index].title,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ),
                               Expanded(
                                 flex: 2,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.red
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.red),
                                 ),
                               )
                             ],
