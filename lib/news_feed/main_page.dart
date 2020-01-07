@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:notebook_the_third_story/news_feed/news_model.dart';
 
-
-Future<News> getNews(String apiKey){
-
+Future<News> getNews(String apiKey) async {
+  var url =
+      "https://newsapi.org/v2/everything?q=bitcoin&from=2019-12-07&sortBy=publishedAt&apiKey=${apiKey}";
+  var response = await http.get(url);
+  if (response.statusCode == 200) {
+    print(response.body);
+  }
 }
 
 class NewsFeedApp extends StatelessWidget {
@@ -23,6 +27,19 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  List<Articles> _articles = List();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getNews("9aeb6d37abda43b09835508555278aec").then((n) {
+      setState(() {
+        _articles = n.articles;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,17 +56,19 @@ class _MainPageState extends State<MainPage> {
               scrollDirection: Axis.horizontal,
               children: <Widget>[
                 Container(
-                  height: MediaQuery.of(context).size.height,
-                  width: MediaQuery.of(context).size.width / 2.3,
-                  child: ListView(
-                      children: List.generate(10, (index) {
-                    return Container(
-                      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                      height: MediaQuery.of(context).size.height / 3,
-                      decoration: BoxDecoration(color: Colors.blue),
-                    );
-                  }).toList()),
-                ),
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width / 2.3,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin:
+                              EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                          height: MediaQuery.of(context).size.height / 3.5,
+                          color: Colors.blue,
+                        );
+                      },
+                      itemCount: _articles.length,
+                    )),
                 Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width / 2.3,
@@ -130,7 +149,8 @@ class _MainPageState extends State<MainPage> {
                                 end: Alignment.bottomLeft,
                               )),
                           child: Center(
-                              child: Text("LASTEST",
+                              child: Text(
+                            "LASTEST",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
