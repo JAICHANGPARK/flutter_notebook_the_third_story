@@ -392,10 +392,12 @@ class _MainPageState extends State<MainPage> {
         elevation: 0,
         child: Container(
           height: 80,
+          padding: EdgeInsets.symmetric(horizontal: 24),
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.5),
           ),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               IconButton(
                 icon: Icon(Icons.home),
