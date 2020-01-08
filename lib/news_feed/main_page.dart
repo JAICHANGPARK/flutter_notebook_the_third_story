@@ -99,16 +99,23 @@ class _MainPageState extends State<MainPage> {
                                 child: Container(
                                   margin: EdgeInsets.only(top: 8),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: <Widget>[
-                                      Text(_articles[index].source.name, style: TextStyle(
-                                        color: Colors.grey
-                                      ),),
-                                      SizedBox(height: 4,),
-                                      Text(_articles[index].description.substring(0, 50),style: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 12
-                                      ),)
+                                      Text(
+                                        _articles[index].source.name,
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        _articles[index]
+                                            .description
+                                            .substring(0, 50),
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 12),
+                                      )
                                     ],
                                   ),
                                 ),
