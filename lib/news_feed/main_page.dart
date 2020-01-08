@@ -395,6 +395,22 @@ class _MainPageState extends State<MainPage> {
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.5),
           ),
+          child: Row(
+            children: <Widget>[
+              IconButton(
+                icon: Icon(Icons.home),
+                onPressed: (){},
+              ),
+              IconButton(
+                icon: Icon(Icons.bookmark_border),
+                onPressed: (){},
+              ),
+              IconButton(
+                icon: Icon(Icons.settings),
+                onPressed: (){},
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
