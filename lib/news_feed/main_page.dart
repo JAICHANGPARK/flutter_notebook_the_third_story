@@ -5,8 +5,7 @@ import 'package:notebook_the_third_story/news_feed/news_model.dart';
 import 'dart:convert';
 
 Future<News> getNews(String u, String apiKey) async {
-  var url =
-      "$u&apiKey=${apiKey}";
+  var url = "$u&apiKey=${apiKey}";
   var response = await http.get(url);
   if (response.statusCode == 200) {
     print(response.body);
@@ -15,7 +14,6 @@ Future<News> getNews(String u, String apiKey) async {
     return null;
   }
 }
-
 
 class NewsFeedApp extends StatelessWidget {
   @override
@@ -34,21 +32,31 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   List<Articles> _articles = List();
   List<Articles> _articles2 = List();
+  List<Articles> _articles3 = List();
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    getNews("https://newsapi.org/v2/top-headlines?country=us&category=business"
-        ,"84e69911b50e403489da71fa64b2da5c").then((n) {
+    getNews("https://newsapi.org/v2/top-headlines?country=us&category=business",
+            "84e69911b50e403489da71fa64b2da5c")
+        .then((n) {
       setState(() {
         _articles = n.articles.toList();
       });
     });
-    getNews("https://newsapi.org/v2/everything?q=apple&from=2020-01-07&to=2020-01-07&sortBy=popularity"
-        ,"84e69911b50e403489da71fa64b2da5c").then((n) {
+    getNews("https://newsapi.org/v2/everything?q=apple&from=2020-01-07&to=2020-01-07&sortBy=popularity",
+            "84e69911b50e403489da71fa64b2da5c")
+        .then((n) {
       setState(() {
         _articles2 = n.articles.toList();
+      });
+    });
+    getNews("https://newsapi.org/v2/top-headlines?sources=techcrunch",
+            "84e69911b50e403489da71fa64b2da5c")
+        .then((n) {
+      setState(() {
+        _articles3 = n.articles.toList();
       });
     });
   }
@@ -136,29 +144,139 @@ class _MainPageState extends State<MainPage> {
                       itemCount: _articles.length,
                     )),
                 Container(
-                  height: MediaQuery.of(context).size.height,
-                  width: MediaQuery.of(context).size.width / 2.3,
-                  child: ListView(
-                      children: List.generate(10, (index) {
-                    return Container(
-                      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                      height: MediaQuery.of(context).size.height / 3.5,
-                      decoration: BoxDecoration(color: Colors.red),
-                    );
-                  }).toList()),
-                ),
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width / 2.3,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin:
+                              EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                          height: MediaQuery.of(context).size.height / 3.2,
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 4,
+                                child: Container(
+                                  padding: EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          _articles2[index].urlToImage),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Align(
+                                    alignment: Alignment.bottomCenter,
+                                    child: Text(
+                                      _articles2[index].title,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 8),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        _articles2[index].source.name,
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        _articles2[index]
+                                            .description
+                                            .substring(0, 50),
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 12),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                      itemCount: _articles2.length,
+                    )),
                 Container(
-                  height: MediaQuery.of(context).size.height,
-                  width: MediaQuery.of(context).size.width / 2.3,
-                  child: ListView(
-                      children: List.generate(10, (index) {
-                    return Container(
-                      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                      height: MediaQuery.of(context).size.height / 4,
-                      decoration: BoxDecoration(color: Colors.green),
-                    );
-                  }).toList()),
-                ),
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width / 2.3,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin:
+                              EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                          height: MediaQuery.of(context).size.height / 3.4,
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 4,
+                                child: Container(
+                                  padding: EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          _articles3[index].urlToImage),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Align(
+                                    alignment: Alignment.bottomCenter,
+                                    child: Text(
+                                      _articles3[index].title,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 8),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        _articles3[index].source.name,
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        _articles3[index]
+                                            .description
+                                            .substring(0, 50),
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 12),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                      itemCount: _articles3.length,
+                    )),
                 Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width / 2.3,
@@ -221,6 +339,25 @@ class _MainPageState extends State<MainPage> {
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12),
+                          )),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Container(
+                          height: 28,
+                          width: 150,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[300],
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          child: Center(
+                              child: Text(
+                            "DESIGN & INSPIRATION",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 11),
                           )),
                         )
                       ],
