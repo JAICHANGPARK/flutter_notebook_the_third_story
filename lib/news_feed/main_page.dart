@@ -4,9 +4,9 @@ import 'package:http/http.dart' as http;
 import 'package:notebook_the_third_story/news_feed/news_model.dart';
 import 'dart:convert';
 
-Future<News> getNews(String apiKey) async {
+Future<News> getNews(String u, String apiKey) async {
   var url =
-      "https://newsapi.org/v2/everything?q=bitcoin&from=2019-12-07&sortBy=publishedAt&apiKey=${apiKey}";
+      "$u&apiKey=${apiKey}";
   var response = await http.get(url);
   if (response.statusCode == 200) {
     print(response.body);
@@ -15,6 +15,7 @@ Future<News> getNews(String apiKey) async {
     return null;
   }
 }
+
 
 class NewsFeedApp extends StatelessWidget {
   @override
@@ -32,14 +33,22 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   List<Articles> _articles = List();
+  List<Articles> _articles2 = List();
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    getNews("9aeb6d37abda43b09835508555278aec").then((n) {
+    getNews("https://newsapi.org/v2/top-headlines?country=us&category=business"
+        ,"84e69911b50e403489da71fa64b2da5c").then((n) {
       setState(() {
         _articles = n.articles.toList();
+      });
+    });
+    getNews("https://newsapi.org/v2/everything?q=apple&from=2020-01-07&to=2020-01-07&sortBy=popularity"
+        ,"84e69911b50e403489da71fa64b2da5c").then((n) {
+      setState(() {
+        _articles2 = n.articles.toList();
       });
     });
   }
