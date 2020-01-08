@@ -372,12 +372,12 @@ class _MainPageState extends State<MainPage> {
                           ),
                           child: Center(
                               child: Text(
-                                "TECH & CODE",
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 11),
-                              )),
+                            "TECH & CODE",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 11),
+                          )),
                         )
                       ],
                     ),
@@ -387,6 +387,15 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 0,
+        child: Container(
+          height: 80,
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.5),
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(
