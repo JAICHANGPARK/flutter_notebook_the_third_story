@@ -359,6 +359,25 @@ class _MainPageState extends State<MainPage> {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 11),
                           )),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Container(
+                          height: 28,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[300],
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          child: Center(
+                              child: Text(
+                                "TECH & CODE",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 11),
+                              )),
                         )
                       ],
                     ),
