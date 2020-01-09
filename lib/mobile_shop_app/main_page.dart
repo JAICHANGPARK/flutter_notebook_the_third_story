@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/note_utils.dart';
 
 class MobileShopApp extends StatelessWidget {
   @override
@@ -20,7 +21,8 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
-        child: Container(height: 80,
+        child: Container(
+          height: 90,
           padding: EdgeInsets.only(left: 16, right: 16),
           child: Column(
             children: <Widget>[
@@ -38,14 +40,15 @@ class _MainPageState extends State<MainPage> {
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(
-                            color: Colors.grey,
-                            shape: BoxShape.circle
-                          ),
+                              color: Colors.grey[300], shape: BoxShape.circle),
                           child: Center(
                             child: Icon(Icons.card_travel),
                           ),
                         ),
-                        Text("Shop")
+                        Text("Shop", style: TextStyle(
+                            color: Colors.black,
+                          fontWeight: FontWeight.bold
+                        ),)
                       ],
                     ),
                     Column(
@@ -57,13 +60,18 @@ class _MainPageState extends State<MainPage> {
                           width: 38,
                           decoration: BoxDecoration(
                               color: Colors.transparent,
-                              shape: BoxShape.circle
-                          ),
+                              shape: BoxShape.circle),
                           child: Center(
-                            child: Icon(Icons.search, size: 32,),
+                            child: Icon(
+                              Icons.search,
+                              size: 32,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                        Text("Search")
+                        Text("Search", style: TextStyle(
+                            color: Colors.grey
+                        ),)
                       ],
                     ),
                     Column(
@@ -75,13 +83,17 @@ class _MainPageState extends State<MainPage> {
                           width: 38,
                           decoration: BoxDecoration(
                               color: Colors.transparent,
-                              shape: BoxShape.circle
-                          ),
+                              shape: BoxShape.circle),
                           child: Center(
-                            child: Icon(Icons.search),
+                            child: Icon(
+                              Icons.location_searching,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                        Text("Shop")
+                        Text("Discover", style: TextStyle(
+                            color: Colors.grey
+                        ),)
                       ],
                     ),
                     Column(
@@ -93,13 +105,17 @@ class _MainPageState extends State<MainPage> {
                           width: 38,
                           decoration: BoxDecoration(
                               color: Colors.transparent,
-                              shape: BoxShape.circle
-                          ),
+                              shape: BoxShape.circle),
                           child: Center(
-                            child: Icon(Icons.search),
+                            child: Icon(
+                              Icons.favorite_border,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                        Text("Shop")
+                        Text("Wishlist", style: TextStyle(
+                          color: Colors.grey
+                        ),)
                       ],
                     ),
                     Column(
@@ -107,32 +123,36 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          height: 38,
-                          width: 38,
+                          height: 42,
+                          width: 42,
+                          padding: EdgeInsets.all(2),
                           decoration: BoxDecoration(
-                              color: Colors.transparent,
-                              shape: BoxShape.circle
-                          ),
+                              border: Border.all(
+                                color: Colors.grey,
+                                width: 2
+                              ),
+                              shape: BoxShape.circle),
                           child: Center(
-                            child: Icon(Icons.search),
+                            child: CircleAvatar(
+                              backgroundImage: NetworkImage(dreamwalkerImg),
+                            ),
                           ),
                         ),
-                        Text("Shop")
+
                       ],
                     )
                   ],
                 ),
               ),
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: Center(
                   child: Container(
-                    width: 180,
-                    margin: EdgeInsets.only(top: 5, bottom: 5),
+                    width: 150,
+                    margin: EdgeInsets.only(top: 17, bottom: 8),
                     decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(8)),
                   ),
                 ),
               )
@@ -142,7 +162,6 @@ class _MainPageState extends State<MainPage> {
       ),
       body: SingleChildScrollView(
         child: SafeArea(
-
           child: Column(
             children: <Widget>[
               Container(
@@ -150,10 +169,8 @@ class _MainPageState extends State<MainPage> {
                 height: MediaQuery.of(context).size.height / 2,
                 decoration: BoxDecoration(
                   color: Colors.brown,
-                  
                 ),
               )
-
             ],
           ),
         ),
@@ -161,21 +178,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
