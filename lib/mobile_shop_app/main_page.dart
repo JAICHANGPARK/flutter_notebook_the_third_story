@@ -147,12 +147,17 @@ class _MainPageState extends State<MainPage> {
               Expanded(
                 flex: 2,
                 child: Center(
-                  child: Container(
-                    width: 150,
-                    margin: EdgeInsets.only(top: 17, bottom: 8),
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8)),
+                  child: GestureDetector(
+                    onTap: (){
+                      print("Home Button Clicked");
+                    },
+                    child: Container(
+                      width: 150,
+                      margin: EdgeInsets.only(top: 17, bottom: 8),
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8)),
+                    ),
                   ),
                 ),
               )
