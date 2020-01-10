@@ -383,10 +383,78 @@ class _MainPageState extends State<MainPage> {
 
               ),
               Container(
-                margin: EdgeInsets.all(16),
-                height: MediaQuery.of(context).size.height / 4.2,
+                margin: EdgeInsets.only(left: 16, top: 16, ),
+                height: MediaQuery.of(context).size.height / 7,
                 decoration: BoxDecoration(
-                    color: Colors.red
+
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Expanded(
+                      flex: 2,
+                      child: Text("Featured Brands",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),),
+                    ),
+                    Expanded(
+                      flex: 6,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery.of(context).size.width / 5,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[400],
+                              borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery.of(context).size.width / 5,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[400],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery.of(context).size.width / 5,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[400],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery.of(context).size.width / 5,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[400],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery.of(context).size.width / 5,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[400],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery.of(context).size.width / 5,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[400],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    )
+                  ],
                 ),
               )
             ],
@@ -396,3 +464,19 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
