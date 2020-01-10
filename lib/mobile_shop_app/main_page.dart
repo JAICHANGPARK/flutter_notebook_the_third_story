@@ -171,7 +171,7 @@ class _MainPageState extends State<MainPage> {
             children: <Widget>[
               Container(
                 margin: EdgeInsets.all(16),
-                height: MediaQuery.of(context).size.height / 2.2,
+                height: MediaQuery.of(context).size.height / 2.1,
                 decoration: BoxDecoration(
                   color: Colors.brown,
                   borderRadius: BorderRadius.circular(8),
@@ -205,10 +205,10 @@ class _MainPageState extends State<MainPage> {
               ),
               Container(
                 margin: EdgeInsets.only(top: 12, left: 16),
-                height: MediaQuery.of(context).size.height / 3.8,
-                decoration: BoxDecoration(
-                  color: Colors.red
-                ),
+                height: MediaQuery.of(context).size.height / 3.6,
+//                decoration: BoxDecoration(
+//                  color: Colors.red
+//                ),
                 child: Column(
                   children: <Widget>[
                     Expanded(
@@ -234,12 +234,39 @@ class _MainPageState extends State<MainPage> {
                             child: Column(
                               children: <Widget>[
                                 Expanded(
-                                  flex: 5,
-                                  child: Placeholder(),
+                                  flex: 6,
+                                  child: Row(
+                                    children: <Widget>[
+                                      Expanded(
+                                        flex: 1,
+                                        child: Container(
+                                          color: Colors.orange,
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: Container(
+                                          color: Colors.green,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                                 Expanded(
-                                  flex: 2,
-                                  child: Placeholder(),
+                                  flex: 3,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Fleece Clothing"),
+                                      Row(
+                                        children: <Widget>[
+                                          CircleAvatar(radius: 13, backgroundImage:
+                                            NetworkImage(dreamwalkerImg),),
+                                          Text("Dreamwalker")
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
