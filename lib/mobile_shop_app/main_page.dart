@@ -171,14 +171,41 @@ class _MainPageState extends State<MainPage> {
             children: <Widget>[
               Container(
                 margin: EdgeInsets.all(16),
-                height: MediaQuery.of(context).size.height / 2,
+                height: MediaQuery.of(context).size.height / 2.2,
                 decoration: BoxDecoration(
                   color: Colors.brown,
+                  borderRadius: BorderRadius.circular(8),
+                  image: DecorationImage(
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2014/12/03/17/51/girls-555657_960_720.jpg"),
+                    fit: BoxFit.cover,
+                  )
+                ),
+                child: Stack(
+                  children: <Widget>[
+                    Positioned(
+                      left: 24,
+                      top: 24,
+                      right: 32,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Special Release", style: TextStyle(
+                            color: Colors.white,
+                          ),),
+                          Text("adidas Originals x Fiorucci", style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                        ],
+                      ),
+                    )
+                  ],
                 ),
               ),
               Container(
                 margin: EdgeInsets.only(top: 12, left: 16),
-                height: MediaQuery.of(context).size.height / 4.2,
+                height: MediaQuery.of(context).size.height / 3.8,
                 decoration: BoxDecoration(
                   color: Colors.red
                 ),
@@ -203,6 +230,18 @@ class _MainPageState extends State<MainPage> {
                             width: MediaQuery.of(context).size.width / 2,
                             decoration: BoxDecoration(
                               color: Colors.blue
+                            ),
+                            child: Column(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 5,
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
+                                  flex: 2,
+                                  child: Placeholder(),
+                                ),
+                              ],
                             ),
                           ),
                           Container(
