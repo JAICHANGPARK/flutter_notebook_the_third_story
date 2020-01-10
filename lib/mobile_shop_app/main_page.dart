@@ -175,6 +175,21 @@ class _MainPageState extends State<MainPage> {
                 decoration: BoxDecoration(
                   color: Colors.brown,
                 ),
+              ),
+              Container(
+                margin: EdgeInsets.all(16),
+                height: MediaQuery.of(context).size.height / 4.2,
+                decoration: BoxDecoration(
+                  color: Colors.red
+                ),
+                
+              ),
+              Container(
+                margin: EdgeInsets.all(16),
+                height: MediaQuery.of(context).size.height / 4.2,
+                decoration: BoxDecoration(
+                    color: Colors.red
+                ),
               )
             ],
           ),
