@@ -228,9 +228,7 @@ class _MainPageState extends State<MainPage> {
                           Container(
                             margin: EdgeInsets.only(top: 4, right: 12),
                             width: MediaQuery.of(context).size.width / 2,
-                            decoration: BoxDecoration(
-                              color: Colors.blue
-                            ),
+
                             child: Column(
                               children: <Widget>[
                                 Expanded(
@@ -240,8 +238,22 @@ class _MainPageState extends State<MainPage> {
                                       Expanded(
                                         flex: 1,
                                         child: Container(
-                                          color: Colors.orange,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(8),
+                                              bottomLeft: Radius.circular(8),
+                                            ),
+                                            image: DecorationImage(
+                                              image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/21/16/01/attractive-1846127__340.jpg"),
+                                              fit: BoxFit.cover
+                                            )
+                                          ),
                                         ),
+                                      ),
+                                      VerticalDivider(
+                                        color: Colors.white,
+                                        width: 2,
+                                        thickness: 2,
                                       ),
                                       Expanded(
                                         flex: 1,
@@ -255,14 +267,23 @@ class _MainPageState extends State<MainPage> {
                                 Expanded(
                                   flex: 3,
                                   child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: <Widget>[
-                                      Text("Fleece Clothing"),
+                                      Text("Fleece Clothing", style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold
+                                      ),),
+                                      SizedBox(height: 4,),
                                       Row(
                                         children: <Widget>[
                                           CircleAvatar(radius: 13, backgroundImage:
                                             NetworkImage(dreamwalkerImg),),
-                                          Text("Dreamwalker")
+                                          SizedBox(width: 4,),
+                                          Text("Dreamwalker",style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 10
+                                          ),)
                                         ],
                                       )
                                     ],
