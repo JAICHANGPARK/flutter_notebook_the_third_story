@@ -177,12 +177,47 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(16),
+                margin: EdgeInsets.only(top: 12, left: 16),
                 height: MediaQuery.of(context).size.height / 4.2,
                 decoration: BoxDecoration(
                   color: Colors.red
                 ),
-                
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 1,
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text("Top Trends", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 6,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.only(top: 4, right: 12),
+                            width: MediaQuery.of(context).size.width / 2,
+                            decoration: BoxDecoration(
+                              color: Colors.blue
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 4, right: 12),
+                            width: MediaQuery.of(context).size.width / 2,
+                            decoration: BoxDecoration(
+                                color: Colors.blue
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+
               ),
               Container(
                 margin: EdgeInsets.all(16),
