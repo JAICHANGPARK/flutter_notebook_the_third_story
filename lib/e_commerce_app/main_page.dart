@@ -18,9 +18,41 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: Stack(
-        children: <Widget>[],
+        children: <Widget>[
+          Positioned(
+            left: 24,
+            right: 24,
+            bottom: 16,
+
+            child: Container(
+              height: MediaQuery.of(context).size.height / 8,
+              decoration: BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.circular(64)
+              ),
+            ),
+          )
+
+        ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
