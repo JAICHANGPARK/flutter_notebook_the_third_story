@@ -23,6 +23,17 @@ class _CartPageState extends State<CartPage> {
       body: Stack(
         children: <Widget>[
           Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: MediaQuery.of(context).size.height / 3.6,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white
+              ),
+            ),
+          ),
+          Positioned(
             left: 24,
             right: 24,
             bottom: 16,
@@ -42,8 +53,8 @@ class _CartPageState extends State<CartPage> {
                         fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 72,
+                    width: 72,
                     decoration: BoxDecoration(
                         color: Colors.red[500].withOpacity(0.4),
                         shape: BoxShape.circle),
