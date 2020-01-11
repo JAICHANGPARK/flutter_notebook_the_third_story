@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class EcommerceApp extends StatelessWidget {
@@ -25,34 +26,53 @@ class _CartPageState extends State<CartPage> {
             left: 24,
             right: 24,
             bottom: 16,
-
             child: Container(
               height: MediaQuery.of(context).size.height / 8,
               decoration: BoxDecoration(
-                color: Colors.indigo,
-                borderRadius: BorderRadius.circular(64)
+                  color: Color(0xff0F2739),
+                  borderRadius: BorderRadius.circular(64)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text(
+                    "Cancel",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                        color: Colors.red[500].withOpacity(0.4),
+                        shape: BoxShape.circle),
+                    margin: EdgeInsets.all(4),
+                    padding: EdgeInsets.all(6),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.red,
+                      child: Text(
+                        "\$",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 21),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    "Pay Now",
+                    style: TextStyle(
+                        color: Colors.orangeAccent,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  )
+                ],
               ),
             ),
           )
-
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
