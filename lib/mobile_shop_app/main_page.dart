@@ -47,7 +47,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         Text("Shop", style: TextStyle(
                             color: Colors.black,
-                          fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold
                         ),)
                       ],
                     ),
@@ -114,7 +114,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ),
                         Text("Wishlist", style: TextStyle(
-                          color: Colors.grey
+                            color: Colors.grey
                         ),)
                       ],
                     ),
@@ -128,8 +128,8 @@ class _MainPageState extends State<MainPage> {
                           padding: EdgeInsets.all(2),
                           decoration: BoxDecoration(
                               border: Border.all(
-                                color: Colors.grey,
-                                width: 2
+                                  color: Colors.grey,
+                                  width: 2
                               ),
                               shape: BoxShape.circle),
                           child: Center(
@@ -148,7 +148,7 @@ class _MainPageState extends State<MainPage> {
                 flex: 2,
                 child: Center(
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       print("Home Button Clicked");
                     },
                     child: Container(
@@ -171,14 +171,18 @@ class _MainPageState extends State<MainPage> {
             children: <Widget>[
               Container(
                 margin: EdgeInsets.all(16),
-                height: MediaQuery.of(context).size.height / 2.1,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 2.1,
                 decoration: BoxDecoration(
-                  color: Colors.brown,
-                  borderRadius: BorderRadius.circular(8),
-                  image: DecorationImage(
-                    image: NetworkImage("https://cdn.pixabay.com/photo/2014/12/03/17/51/girls-555657_960_720.jpg"),
-                    fit: BoxFit.cover,
-                  )
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(8),
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2014/12/03/17/51/girls-555657_960_720.jpg"),
+                      fit: BoxFit.cover,
+                    )
                 ),
                 child: Stack(
                   children: <Widget>[
@@ -205,7 +209,10 @@ class _MainPageState extends State<MainPage> {
               ),
               Container(
                 margin: EdgeInsets.only(top: 12, left: 16),
-                height: MediaQuery.of(context).size.height / 3.6,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 3.6,
 //                decoration: BoxDecoration(
 //                  color: Colors.red
 //                ),
@@ -227,82 +234,10 @@ class _MainPageState extends State<MainPage> {
                         children: <Widget>[
                           Container(
                             margin: EdgeInsets.only(top: 4, right: 12),
-                            width: MediaQuery.of(context).size.width / 2,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  flex: 6,
-                                  child: Row(
-                                    children: <Widget>[
-                                      Expanded(
-                                        flex: 1,
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(8),
-                                              bottomLeft: Radius.circular(8),
-                                            ),
-                                            image: DecorationImage(
-                                              image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/21/16/01/attractive-1846127__340.jpg"),
-                                              fit: BoxFit.cover
-                                            )
-                                          ),
-                                        ),
-                                      ),
-                                      VerticalDivider(
-                                        color: Colors.white,
-                                        width: 2,
-                                        thickness: 2,
-                                      ),
-                                      Expanded(
-                                        flex: 1,
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.only(
-                                              topRight: Radius.circular(8),
-                                              bottomRight: Radius.circular(8),
-                                            ),
-                                            image: DecorationImage(
-                                              image: NetworkImage("https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028__340.jpg"),
-                                              fit: BoxFit.cover,
-                                            )
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                                Expanded(
-                                  flex: 3,
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      Text("Fleece Clothing", style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold
-                                      ),),
-                                      SizedBox(height: 4,),
-                                      Row(
-                                        children: <Widget>[
-                                          CircleAvatar(radius: 13, backgroundImage:
-                                            NetworkImage(dreamwalkerImg),),
-                                          SizedBox(width: 4,),
-                                          Text("Dreamwalker",style: TextStyle(
-                                            color: Colors.grey,
-                                            fontSize: 10
-                                          ),)
-                                        ],
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(top: 4, right: 12),
-                            width: MediaQuery.of(context).size.width / 2,
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 2,
                             child: Column(
                               children: <Widget>[
                                 Expanded(
@@ -318,7 +253,8 @@ class _MainPageState extends State<MainPage> {
                                                 bottomLeft: Radius.circular(8),
                                               ),
                                               image: DecorationImage(
-                                                  image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/21/16/01/attractive-1846127__340.jpg"),
+                                                  image: NetworkImage(
+                                                      "https://cdn.pixabay.com/photo/2016/11/21/16/01/attractive-1846127__340.jpg"),
                                                   fit: BoxFit.cover
                                               )
                                           ),
@@ -338,7 +274,8 @@ class _MainPageState extends State<MainPage> {
                                                 bottomRight: Radius.circular(8),
                                               ),
                                               image: DecorationImage(
-                                                image: NetworkImage("https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028__340.jpg"),
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028__340.jpg"),
                                                 fit: BoxFit.cover,
                                               )
                                           ),
@@ -351,7 +288,8 @@ class _MainPageState extends State<MainPage> {
                                   flex: 3,
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment
+                                        .start,
                                     children: <Widget>[
                                       Text("Fleece Clothing", style: TextStyle(
                                           color: Colors.black,
@@ -360,10 +298,93 @@ class _MainPageState extends State<MainPage> {
                                       SizedBox(height: 4,),
                                       Row(
                                         children: <Widget>[
-                                          CircleAvatar(radius: 13, backgroundImage:
+                                          CircleAvatar(
+                                            radius: 13, backgroundImage:
                                           NetworkImage(dreamwalkerImg),),
                                           SizedBox(width: 4,),
-                                          Text("Dreamwalker",style: TextStyle(
+                                          Text("Dreamwalker", style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 10
+                                          ),)
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 4, right: 12),
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 2,
+                            child: Column(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 6,
+                                  child: Row(
+                                    children: <Widget>[
+                                      Expanded(
+                                        flex: 1,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(8),
+                                                bottomLeft: Radius.circular(8),
+                                              ),
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      "https://cdn.pixabay.com/photo/2016/11/21/16/01/attractive-1846127__340.jpg"),
+                                                  fit: BoxFit.cover
+                                              )
+                                          ),
+                                        ),
+                                      ),
+                                      VerticalDivider(
+                                        color: Colors.white,
+                                        width: 2,
+                                        thickness: 2,
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.only(
+                                                topRight: Radius.circular(8),
+                                                bottomRight: Radius.circular(8),
+                                              ),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028__340.jpg"),
+                                                fit: BoxFit.cover,
+                                              )
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 3,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment
+                                        .start,
+                                    children: <Widget>[
+                                      Text("Fleece Clothing", style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold
+                                      ),),
+                                      SizedBox(height: 4,),
+                                      Row(
+                                        children: <Widget>[
+                                          CircleAvatar(
+                                            radius: 13, backgroundImage:
+                                          NetworkImage(dreamwalkerImg),),
+                                          SizedBox(width: 4,),
+                                          Text("Dreamwalker", style: TextStyle(
                                               color: Colors.grey,
                                               fontSize: 10
                                           ),)
@@ -383,8 +404,11 @@ class _MainPageState extends State<MainPage> {
 
               ),
               Container(
-                margin: EdgeInsets.only(left: 16, top: 16, ),
-                height: MediaQuery.of(context).size.height / 7,
+                margin: EdgeInsets.only(left: 16, top: 16,),
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 7,
                 decoration: BoxDecoration(
 
                 ),
@@ -393,7 +417,7 @@ class _MainPageState extends State<MainPage> {
                   children: <Widget>[
                     Expanded(
                       flex: 2,
-                      child: Text("Featured Brands",style: TextStyle(
+                      child: Text("Featured Brands", style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),),
                     ),
@@ -404,15 +428,10 @@ class _MainPageState extends State<MainPage> {
                         children: <Widget>[
                           Container(
                             margin: EdgeInsets.only(right: 8),
-                            width: MediaQuery.of(context).size.width / 5,
-                            decoration: BoxDecoration(
-                              color: Colors.grey[400],
-                              borderRadius: BorderRadius.circular(4)
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(right: 8),
-                            width: MediaQuery.of(context).size.width / 5,
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 5,
                             decoration: BoxDecoration(
                                 color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(4)
@@ -420,7 +439,10 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Container(
                             margin: EdgeInsets.only(right: 8),
-                            width: MediaQuery.of(context).size.width / 5,
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 5,
                             decoration: BoxDecoration(
                                 color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(4)
@@ -428,7 +450,10 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Container(
                             margin: EdgeInsets.only(right: 8),
-                            width: MediaQuery.of(context).size.width / 5,
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 5,
                             decoration: BoxDecoration(
                                 color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(4)
@@ -436,7 +461,10 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Container(
                             margin: EdgeInsets.only(right: 8),
-                            width: MediaQuery.of(context).size.width / 5,
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 5,
                             decoration: BoxDecoration(
                                 color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(4)
@@ -444,7 +472,21 @@ class _MainPageState extends State<MainPage> {
                           ),
                           Container(
                             margin: EdgeInsets.only(right: 8),
-                            width: MediaQuery.of(context).size.width / 5,
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 5,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[400],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width / 5,
                             decoration: BoxDecoration(
                                 color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(4)
