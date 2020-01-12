@@ -84,9 +84,23 @@ class _CartPageState extends State<CartPage> {
                           Expanded(
                             flex: 1,
                             child: Container(
+
                               margin: EdgeInsets.only(
                                   right: 8, top: 32, bottom: 32),
-                              decoration: BoxDecoration(color: Colors.white),
+                              decoration: BoxDecoration(color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: EdgeInsets.only(left: 16),
+                              child: Center(
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: <Widget>[
+                                    Icon(Icons.tune),
+                                    SizedBox(width: 12),
+                                    Text("Sort by")
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                           Expanded(
@@ -95,6 +109,7 @@ class _CartPageState extends State<CartPage> {
                               margin: EdgeInsets.only(
                                   left: 8, top: 32, bottom: 32),
                               decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
                                 color: const Color(0xff0F2739),
                               ),
                             ),
