@@ -29,12 +29,10 @@ class _CartPageState extends State<CartPage> {
             top: MediaQuery.of(context).size.height / 3.6,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(32),
-                  topRight: Radius.circular(32)
-                )
-              ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(32),
+                      topRight: Radius.circular(32))),
             ),
           ),
           Positioned(
