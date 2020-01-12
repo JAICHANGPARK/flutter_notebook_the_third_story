@@ -84,11 +84,11 @@ class _CartPageState extends State<CartPage> {
                           Expanded(
                             flex: 1,
                             child: Container(
-
                               margin: EdgeInsets.only(
-                                  right: 8, top: 32, bottom: 32),
-                              decoration: BoxDecoration(color: Colors.white,
-                              borderRadius: BorderRadius.circular(12),
+                                  right: 8, top: 32, bottom: 38),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
                               ),
                               padding: EdgeInsets.only(left: 16),
                               child: Center(
@@ -97,7 +97,12 @@ class _CartPageState extends State<CartPage> {
                                   children: <Widget>[
                                     Icon(Icons.tune),
                                     SizedBox(width: 12),
-                                    Text("Sort by")
+                                    Text(
+                                      "Sort by",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16),
+                                    )
                                   ],
                                 ),
                               ),
@@ -107,7 +112,7 @@ class _CartPageState extends State<CartPage> {
                             flex: 1,
                             child: Container(
                               margin: EdgeInsets.only(
-                                  left: 8, top: 32, bottom: 32),
+                                  right: 8, top: 32, bottom: 38),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
                                 color: const Color(0xff0F2739),
