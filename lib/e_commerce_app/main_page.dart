@@ -28,7 +28,7 @@ class _CartPageState extends State<CartPage> {
               left: 0,
               right: 0,
               bottom: 0,
-              top: MediaQuery.of(context).size.height / 3.6,
+              top: MediaQuery.of(context).size.height / 3.75,
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -44,7 +44,7 @@ class _CartPageState extends State<CartPage> {
               right: 0,
               child: Container(
                 padding: EdgeInsets.only(left: 24, right: 24),
-                height: MediaQuery.of(context).size.height / 3,
+                height: MediaQuery.of(context).size.height / 3.1,
                 child: Column(
                   children: <Widget>[
                     Expanded(
@@ -124,7 +124,26 @@ class _CartPageState extends State<CartPage> {
                     ),
                     Expanded(
                       flex: 2,
-                      child: Placeholder(),
+                      child: Center(
+                        child: Container(
+                          height: 54,
+                          width: 54,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.red[300],
+                                blurRadius: 3,
+                                spreadRadius: 1
+                              )
+                            ]
+                          ),
+                          child: Center(
+                            child: Icon(Icons.arrow_downward, color: Colors.white,size: 32,),
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),
