@@ -112,10 +112,29 @@ class _CartPageState extends State<CartPage> {
                             flex: 1,
                             child: Container(
                               margin: EdgeInsets.only(
-                                  right: 8, top: 32, bottom: 38),
+                                  left: 8, top: 32, bottom: 38),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
                                 color: const Color(0xff0F2739),
+                              ),
+                              padding: EdgeInsets.only(left: 16, right: 16),
+                              child: Center(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text("Filter",style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),),
+                                    CircleAvatar(
+                                      radius: 13,
+                                      child: Text("4", style: TextStyle(
+                                        color: Colors.white,
+                                      ),),
+                                      backgroundColor: Colors.red,
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
