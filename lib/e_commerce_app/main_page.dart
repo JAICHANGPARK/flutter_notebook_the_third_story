@@ -93,7 +93,7 @@ class _CartPageState extends State<CartPage> {
                             flex: 1,
                             child: Container(
                               margin: EdgeInsets.only(
-                                  right: 8, top: 32, bottom: 32),
+                                  left: 8, top: 32, bottom: 32),
                               decoration: BoxDecoration(
                                 color: const Color(0xff0F2739),
                               ),
