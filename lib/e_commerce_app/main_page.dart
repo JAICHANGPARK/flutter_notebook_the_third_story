@@ -111,8 +111,8 @@ class _CartPageState extends State<CartPage> {
                           Expanded(
                             flex: 1,
                             child: Container(
-                              margin: EdgeInsets.only(
-                                  left: 8, top: 32, bottom: 38),
+                              margin:
+                                  EdgeInsets.only(left: 8, top: 32, bottom: 38),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
                                 color: const Color(0xff0F2739),
@@ -120,17 +120,24 @@ class _CartPageState extends State<CartPage> {
                               padding: EdgeInsets.only(left: 16, right: 16),
                               child: Center(
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
-                                    Text("Filter",style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),),
+                                    Text(
+                                      "Filter",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     CircleAvatar(
                                       radius: 13,
-                                      child: Text("4", style: TextStyle(
-                                        color: Colors.white,
-                                      ),),
+                                      child: Text(
+                                        "4",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                       backgroundColor: Colors.red,
                                     )
                                   ],
@@ -148,18 +155,20 @@ class _CartPageState extends State<CartPage> {
                           height: 54,
                           width: 54,
                           decoration: BoxDecoration(
-                            color: Colors.red,
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.red[300],
-                                blurRadius: 3,
-                                spreadRadius: 1
-                              )
-                            ]
-                          ),
+                              color: Colors.red,
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.red[300],
+                                    blurRadius: 3,
+                                    spreadRadius: 1)
+                              ]),
                           child: Center(
-                            child: Icon(Icons.arrow_downward, color: Colors.white,size: 32,),
+                            child: Icon(
+                              Icons.arrow_downward,
+                              color: Colors.white,
+                              size: 32,
+                            ),
                           ),
                         ),
                       ),
