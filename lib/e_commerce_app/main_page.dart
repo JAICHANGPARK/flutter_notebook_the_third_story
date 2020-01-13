@@ -30,11 +30,36 @@ class _CartPageState extends State<CartPage> {
               bottom: 0,
               top: MediaQuery.of(context).size.height / 3.75,
               child: Container(
+                padding: EdgeInsets.only(bottom: 120, top: 42, left: 24, right: 24),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(32),
                       topRight: Radius.circular(32)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Expanded(
+                      flex: 1,
+                      child: Text("Selected",style: TextStyle(
+                        fontSize: 21,
+                        fontWeight: FontWeight.bold,
+
+                      ),),
+                    ),
+                    Expanded(
+                      flex: 6,
+                      child: Placeholder(),
+                    ),
+                    Divider(
+                      thickness: 2,
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Placeholder(),
+                    )
+                  ],
                 ),
               ),
             ),
