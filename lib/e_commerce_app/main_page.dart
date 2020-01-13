@@ -78,49 +78,55 @@ class _CartPageState extends State<CartPage> {
                                 ),
                                 Expanded(
                                   flex: 6,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      Text("Slim Fit Jackets"),
-                                      Container(
-                                        height: 42,
-                                        child: Row(
-                                          children: <Widget>[
-                                            Expanded(
-                                              child: Container(
-                                                margin: EdgeInsets.all(1),
-                                                decoration: BoxDecoration(
-                                                  color: Colors.grey[200],
-                                                  borderRadius: BorderRadius.circular(4)
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Container(
-                                                margin: EdgeInsets.all(1),
-                                                decoration: BoxDecoration(
-                                                    color: Colors.orangeAccent,
-                                                    borderRadius: BorderRadius.circular(4)
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Container(
-                                                margin: EdgeInsets.all(1),
-                                                decoration: BoxDecoration(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text("Slim Fit Jackets",style:TextStyle(
+                                          fontWeight: FontWeight.bold
+                                        ),),
+                                        Container(
+                                          height: 42,
+                                          child: Row(
+                                            children: <Widget>[
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
                                                     color: Colors.grey[200],
                                                     borderRadius: BorderRadius.circular(4)
+                                                  ),
                                                 ),
                                               ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.orangeAccent,
+                                                      borderRadius: BorderRadius.circular(4)
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius: BorderRadius.circular(4)
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Expanded(
-                                  flex: 3,
+                                  flex: 4,
                                   child: Placeholder(),
                                 )
                               ],
