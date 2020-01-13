@@ -30,7 +30,8 @@ class _CartPageState extends State<CartPage> {
               bottom: 0,
               top: MediaQuery.of(context).size.height / 3.75,
               child: Container(
-                padding: EdgeInsets.only(bottom: 120, top: 42, left: 24, right: 24),
+                padding:
+                    EdgeInsets.only(bottom: 120, top: 42, left: 24, right: 24),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -42,14 +43,71 @@ class _CartPageState extends State<CartPage> {
                   children: <Widget>[
                     Expanded(
                       flex: 1,
-                      child: Text("Selected",style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),),
+                      child: Text(
+                        "Selected",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                     Expanded(
                       flex: 6,
-                      child: Placeholder(),
+                      child: ListView(
+                        children: <Widget>[
+                          Container(
+                            height: MediaQuery.of(context).size.height / 7,
+                            decoration: BoxDecoration(),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Center(
+                                    child: Icon(Icons.clear),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius:
+                                            BorderRadius.circular(12)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 6,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("Slim Fit Jackets"),
+                                      Container(
+                                        height: 42,
+                                        child: Row(
+                                          children: <Widget>[
+                                            Expanded(
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey[200]
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 3,
+                                  child: Placeholder(),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Divider(
                       thickness: 2,
@@ -59,14 +117,16 @@ class _CartPageState extends State<CartPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text("Total",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24
-                          ),),
-                          Text("\$370.50",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24
-                          ),)
+                          Text(
+                            "Total",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 24),
+                          ),
+                          Text(
+                            "\$370.50",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 24),
+                          )
                         ],
                       ),
                     )
