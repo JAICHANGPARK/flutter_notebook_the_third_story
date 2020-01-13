@@ -88,8 +88,28 @@ class _CartPageState extends State<CartPage> {
                                           children: <Widget>[
                                             Expanded(
                                               child: Container(
+                                                margin: EdgeInsets.all(1),
                                                 decoration: BoxDecoration(
-                                                  color: Colors.grey[200]
+                                                  color: Colors.grey[200],
+                                                  borderRadius: BorderRadius.circular(4)
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                margin: EdgeInsets.all(1),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.orangeAccent,
+                                                    borderRadius: BorderRadius.circular(4)
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                margin: EdgeInsets.all(1),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[200],
+                                                    borderRadius: BorderRadius.circular(4)
                                                 ),
                                               ),
                                             )
