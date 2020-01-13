@@ -56,7 +56,7 @@ class _CartPageState extends State<CartPage> {
                       child: ListView(
                         children: <Widget>[
                           Container(
-                            height: MediaQuery.of(context).size.height / 7,
+                            height: MediaQuery.of(context).size.height / 8,
                             decoration: BoxDecoration(),
                             child: Row(
                               children: <Widget>[
@@ -81,12 +81,16 @@ class _CartPageState extends State<CartPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: <Widget>[
-                                        Text("Slim Fit Jackets",style:TextStyle(
-                                          fontWeight: FontWeight.bold
-                                        ),),
+                                        Text(
+                                          "Slim Fit Jackets",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
                                         Container(
                                           height: 42,
                                           child: Row(
@@ -95,8 +99,12 @@ class _CartPageState extends State<CartPage> {
                                                 child: Container(
                                                   margin: EdgeInsets.all(1),
                                                   decoration: BoxDecoration(
-                                                    color: Colors.grey[200],
-                                                    borderRadius: BorderRadius.circular(4)
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.remove),
                                                   ),
                                                 ),
                                               ),
@@ -104,8 +112,18 @@ class _CartPageState extends State<CartPage> {
                                                 child: Container(
                                                   margin: EdgeInsets.all(1),
                                                   decoration: BoxDecoration(
-                                                      color: Colors.orangeAccent,
-                                                      borderRadius: BorderRadius.circular(4)
+                                                      color:
+                                                          Colors.orangeAccent,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              4)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -114,7 +132,11 @@ class _CartPageState extends State<CartPage> {
                                                   margin: EdgeInsets.all(1),
                                                   decoration: BoxDecoration(
                                                       color: Colors.grey[200],
-                                                      borderRadius: BorderRadius.circular(4)
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.add),
                                                   ),
                                                 ),
                                               )
@@ -127,7 +149,38 @@ class _CartPageState extends State<CartPage> {
                                 ),
                                 Expanded(
                                   flex: 4,
-                                  child: Placeholder(),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8, bottom: 16),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        Text(
+                                          "Size : M",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400]),
+                                        ),
+                                        Text(
+                                          "\$90.40",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red),
+                                        ),
+                                        Text(
+                                          "\$ 20",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400],
+                                              decoration:
+                                                  TextDecoration.lineThrough),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
