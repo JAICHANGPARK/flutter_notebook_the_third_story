@@ -184,7 +184,658 @@ class _CartPageState extends State<CartPage> {
                                 )
                               ],
                             ),
+                          ),
+                          Container(
+                            height: MediaQuery.of(context).size.height / 8,
+                            decoration: BoxDecoration(),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Center(
+                                    child: Icon(Icons.clear),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius:
+                                        BorderRadius.circular(12)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 6,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Slim Fit Jackets",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          child: Row(
+                                            children: <Widget>[
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.remove),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color:
+                                                      Colors.orangeAccent,
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.add),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8, bottom: 16),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        Text(
+                                          "Size : M",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400]),
+                                        ),
+                                        Text(
+                                          "\$90.40",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red),
+                                        ),
+                                        Text(
+                                          "\$ 20",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400],
+                                              decoration:
+                                              TextDecoration.lineThrough),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: MediaQuery.of(context).size.height / 8,
+                            decoration: BoxDecoration(),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Center(
+                                    child: Icon(Icons.clear),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius:
+                                        BorderRadius.circular(12)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 6,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Slim Fit Jackets",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          child: Row(
+                                            children: <Widget>[
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.remove),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color:
+                                                      Colors.orangeAccent,
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.add),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8, bottom: 16),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        Text(
+                                          "Size : M",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400]),
+                                        ),
+                                        Text(
+                                          "\$90.40",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red),
+                                        ),
+                                        Text(
+                                          "\$ 20",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400],
+                                              decoration:
+                                              TextDecoration.lineThrough),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: MediaQuery.of(context).size.height / 8,
+                            decoration: BoxDecoration(),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Center(
+                                    child: Icon(Icons.clear),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius:
+                                        BorderRadius.circular(12)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 6,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Slim Fit Jackets",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          child: Row(
+                                            children: <Widget>[
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.remove),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color:
+                                                      Colors.orangeAccent,
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.add),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8, bottom: 16),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        Text(
+                                          "Size : M",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400]),
+                                        ),
+                                        Text(
+                                          "\$90.40",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red),
+                                        ),
+                                        Text(
+                                          "\$ 20",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400],
+                                              decoration:
+                                              TextDecoration.lineThrough),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: MediaQuery.of(context).size.height / 8,
+                            decoration: BoxDecoration(),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Center(
+                                    child: Icon(Icons.clear),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius:
+                                        BorderRadius.circular(12)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 6,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Slim Fit Jackets",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          child: Row(
+                                            children: <Widget>[
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.remove),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color:
+                                                      Colors.orangeAccent,
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.add),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8, bottom: 16),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        Text(
+                                          "Size : M",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400]),
+                                        ),
+                                        Text(
+                                          "\$90.40",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red),
+                                        ),
+                                        Text(
+                                          "\$ 20",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400],
+                                              decoration:
+                                              TextDecoration.lineThrough),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: MediaQuery.of(context).size.height / 8,
+                            decoration: BoxDecoration(),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 1,
+                                  child: Center(
+                                    child: Icon(Icons.clear),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius:
+                                        BorderRadius.circular(12)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 6,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Slim Fit Jackets",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          child: Row(
+                                            children: <Widget>[
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.remove),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color:
+                                                      Colors.orangeAccent,
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  margin: EdgeInsets.all(1),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          4)),
+                                                  child: Center(
+                                                    child: Icon(Icons.add),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8, bottom: 16),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        Text(
+                                          "Size : M",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400]),
+                                        ),
+                                        Text(
+                                          "\$90.40",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red),
+                                        ),
+                                        Text(
+                                          "\$ 20",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blueGrey[400],
+                                              decoration:
+                                              TextDecoration.lineThrough),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           )
+
                         ],
                       ),
                     ),
