@@ -43,9 +43,8 @@ class _CartPageState extends State<CartPage> {
                     Expanded(
                       flex: 1,
                       child: Text("Selected",style: TextStyle(
-                        fontSize: 21,
+                        fontSize: 24,
                         fontWeight: FontWeight.bold,
-
                       ),),
                     ),
                     Expanded(
@@ -57,7 +56,19 @@ class _CartPageState extends State<CartPage> {
                     ),
                     Expanded(
                       flex: 1,
-                      child: Placeholder(),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text("Total",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24
+                          ),),
+                          Text("\$370.50",style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24
+                          ),)
+                        ],
+                      ),
                     )
                   ],
                 ),
