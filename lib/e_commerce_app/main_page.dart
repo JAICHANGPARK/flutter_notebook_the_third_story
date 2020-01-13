@@ -202,12 +202,15 @@ class _CartPageState extends State<CartPage> {
                                 Expanded(
                                   flex: 4,
                                   child: Container(
+                                    padding: EdgeInsets.all(8),
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                         borderRadius:
                                         BorderRadius.circular(12)),
+                                    child: Image.network("http://www.pngall.com/wp-content/uploads/4/Leather-Jacket-PNG-File.png"),
                                   ),
+
                                 ),
                                 Expanded(
                                   flex: 6,
@@ -332,12 +335,15 @@ class _CartPageState extends State<CartPage> {
                                 Expanded(
                                   flex: 4,
                                   child: Container(
+                                    padding: EdgeInsets.all(8),
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                         borderRadius:
                                         BorderRadius.circular(12)),
+                                    child: Image.network("http://www.pngall.com/wp-content/uploads/4/Leather-Jacket-PNG-File.png"),
                                   ),
+
                                 ),
                                 Expanded(
                                   flex: 6,
@@ -462,12 +468,15 @@ class _CartPageState extends State<CartPage> {
                                 Expanded(
                                   flex: 4,
                                   child: Container(
+                                    padding: EdgeInsets.all(8),
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                         borderRadius:
                                         BorderRadius.circular(12)),
+                                    child: Image.network("http://www.pngall.com/wp-content/uploads/4/Leather-Jacket-PNG-File.png"),
                                   ),
+
                                 ),
                                 Expanded(
                                   flex: 6,
@@ -592,12 +601,15 @@ class _CartPageState extends State<CartPage> {
                                 Expanded(
                                   flex: 4,
                                   child: Container(
+                                    padding: EdgeInsets.all(8),
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                         borderRadius:
                                         BorderRadius.circular(12)),
+                                    child: Image.network("http://www.pngall.com/wp-content/uploads/4/Leather-Jacket-PNG-File.png"),
                                   ),
+
                                 ),
                                 Expanded(
                                   flex: 6,
@@ -722,12 +734,15 @@ class _CartPageState extends State<CartPage> {
                                 Expanded(
                                   flex: 4,
                                   child: Container(
+                                    padding: EdgeInsets.all(8),
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                         borderRadius:
                                         BorderRadius.circular(12)),
+                                    child: Image.network("http://www.pngall.com/wp-content/uploads/4/Leather-Jacket-PNG-File.png"),
                                   ),
+
                                 ),
                                 Expanded(
                                   flex: 6,
@@ -837,7 +852,7 @@ class _CartPageState extends State<CartPage> {
                                 )
                               ],
                             ),
-                          )
+                          ),
 
                         ],
                       ),
