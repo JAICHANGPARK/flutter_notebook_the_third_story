@@ -18,7 +18,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               right: 0,
               top: 0,
               child: Container(
-                height: MediaQuery.of(context).size.height / 5.5,
+                height: MediaQuery.of(context).size.height / 5,
                 decoration: BoxDecoration(
                     color: Colors.brown[100],
                     image: DecorationImage(
@@ -48,7 +48,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height / 7,
+              top: MediaQuery.of(context).size.height / 6,
               bottom: 0,
               left: 0,
               right: 0,
