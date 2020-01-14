@@ -8,6 +8,14 @@ class AirtimeMainPage extends StatefulWidget {
 class _AirtimeMainPageState extends State<AirtimeMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: <Widget>[
+            Positioned()
+          ],
+        ),
+      ),
+    );
   }
 }
