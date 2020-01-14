@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AirtimeMainPage extends StatefulWidget {
@@ -19,7 +20,30 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               child: Container(
                 height: MediaQuery.of(context).size.height / 5.5,
                 decoration: BoxDecoration(
-                  color: Colors.brown[100],
+                    color: Colors.brown[100],
+                    image: DecorationImage(
+                        image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2015/06/01/00/20/woman-792818__340.jpg"),
+                        fit: BoxFit.cover)),
+                child: Stack(
+                  children: <Widget>[
+                    Positioned(
+                      left: 16,
+                      top: 16,
+                      child: Container(
+                        height: 24,
+                        width: 24,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          Icons.keyboard_arrow_left,
+                          size: 20,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),
