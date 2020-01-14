@@ -12,10 +12,44 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
       body: SafeArea(
         child: Stack(
           children: <Widget>[
-            Positioned()
+            Positioned(
+              left: 0,
+              right: 0,
+              top: 0,
+              child: Container(
+                height: MediaQuery.of(context).size.height / 5.5,
+                decoration: BoxDecoration(
+                  color: Colors.brown[100],
+                ),
+              ),
+            ),
+            Positioned(
+              top:  MediaQuery.of(context).size.height / 5.5,
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white
+                ),
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
