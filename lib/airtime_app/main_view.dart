@@ -50,6 +50,17 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               ),
             ),
             Positioned(
+              left: 16,
+              top: 100,
+              child: Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                ),
+              ),
+            ),
+            Positioned(
               top: MediaQuery.of(context).size.height / 5.5,
               bottom: MediaQuery.of(context).size.height / 6,
               left: 0,
@@ -135,7 +146,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                             Text(
                               "Android / Flutter Developer, Tokyo Japan,",
                               style:
-                              TextStyle(color: Colors.black, fontSize: 12),
+                                  TextStyle(color: Colors.black, fontSize: 12),
                             ),
                             SizedBox(
                               height: 8,
@@ -154,8 +165,17 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                               child: Row(
                                 children: <Widget>[
                                   CircleAvatar(
-                                    backgroundImage: NetworkImage(dreamwalkerImg),
+                                    backgroundImage:
+                                        NetworkImage(dreamwalkerImg),
                                   ),
+                                  SizedBox(
+                                    width: 12,
+                                  ),
+                                  Flexible(
+                                      child: Text(
+                                    "6 mutual friends, including Sophia Smith and Josh Martin",
+                                    style: TextStyle(fontSize: 12),
+                                  ))
 
 //                                  Stack(
 //                                    children: <Widget>[
