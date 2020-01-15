@@ -62,16 +62,18 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                 child: Column(
                   children: <Widget>[
                     Expanded(
+                      flex: 1,
                       child: Placeholder(),
                     ),
                     Expanded(
+                      flex: 4,
                       child: Placeholder(),
                     ),
                     Divider(),
                     Expanded(
+                      flex: 3,
                       child: Placeholder(),
                     ),
-
                   ],
                 ),
               ),
