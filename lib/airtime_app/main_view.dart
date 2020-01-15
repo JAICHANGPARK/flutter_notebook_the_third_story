@@ -49,17 +49,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                 ),
               ),
             ),
-            Positioned(
-              left: 16,
-              top: 100,
-              child: Container(
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                ),
-              ),
-            ),
+
             Positioned(
               top: MediaQuery.of(context).size.height / 5.5,
               bottom: MediaQuery.of(context).size.height / 6,
@@ -204,10 +194,53 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                   ],
                 ),
               ),
-            )
+            ),
+            Positioned(
+              left: 16,
+              top: 84,
+              child: Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  shape: BoxShape.circle,
+                  border: Border.all(width: 4, color: Colors.white,),
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      dreamwalkerImg
+                    )
+                  )
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
