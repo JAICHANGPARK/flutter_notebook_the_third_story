@@ -60,6 +60,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Expanded(
                       flex: 1,
@@ -72,22 +73,25 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                               height: 28,
                               width: 100,
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.grey),
-                                borderRadius: BorderRadius.circular(32)
-                              ),
+                                  border: Border.all(color: Colors.grey),
+                                  borderRadius: BorderRadius.circular(32)),
                               child: Center(
                                 child: Text("Requested"),
                               ),
                             ),
-                            SizedBox(width: 16,),
+                            SizedBox(
+                              width: 16,
+                            ),
                             Container(
                               height: 28,
                               width: 28,
                               decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey)
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey)),
+                              child: Icon(
+                                Icons.more_horiz,
+                                size: 18,
                               ),
-                              child: Icon(Icons.more_horiz, size: 18,),
                             )
                           ],
                         ),
@@ -95,11 +99,45 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                     ),
                     Expanded(
                       flex: 4,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "Dreamwalker",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 22),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "@dreamwalker",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Text(
+                              "Android / Flutter Developer, Tokyo Japan,",
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "23 friends    32 favorites",
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 12),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     Divider(),
