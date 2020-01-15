@@ -10,6 +10,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: Stack(
           children: <Widget>[
@@ -18,7 +19,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               right: 0,
               top: 0,
               child: Container(
-                height: MediaQuery.of(context).size.height / 5,
+                height: MediaQuery.of(context).size.height / 4.5,
                 decoration: BoxDecoration(
                     color: Colors.brown[100],
                     image: DecorationImage(
@@ -48,8 +49,8 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height / 6,
-              bottom: 0,
+              top: MediaQuery.of(context).size.height / 5.5,
+              bottom: MediaQuery.of(context).size.height / 6,
               left: 0,
               right: 0,
               child: Container(
@@ -58,6 +59,21 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(24),
                         topLeft: Radius.circular(24))),
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+                    Divider(),
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+
+                  ],
+                ),
               ),
             )
           ],
