@@ -57,17 +57,50 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(24),
-                        topLeft: Radius.circular(24))),
+                        topRight: Radius.circular(20),
+                        topLeft: Radius.circular(20))),
                 child: Column(
                   children: <Widget>[
                     Expanded(
                       flex: 1,
-                      child: Placeholder(),
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Spacer(),
+                            Container(
+                              height: 28,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey),
+                                borderRadius: BorderRadius.circular(32)
+                              ),
+                              child: Center(
+                                child: Text("Requested"),
+                              ),
+                            ),
+                            SizedBox(width: 16,),
+                            Container(
+                              height: 28,
+                              width: 28,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey)
+                              ),
+                              child: Icon(Icons.more_horiz, size: 18,),
+                            )
+                          ],
+                        ),
+                      ),
                     ),
                     Expanded(
                       flex: 4,
-                      child: Placeholder(),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+
+                        ],
+                      ),
                     ),
                     Divider(),
                     Expanded(
