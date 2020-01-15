@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/note_utils.dart';
 
 class AirtimeMainPage extends StatefulWidget {
   @override
@@ -100,7 +101,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                     Expanded(
                       flex: 4,
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 16),
+                        padding: const EdgeInsets.only(left: 16, top: 16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -129,6 +130,14 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                                   TextStyle(color: Colors.black, fontSize: 12),
                             ),
                             SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "Android / Flutter Developer, Tokyo Japan,",
+                              style:
+                              TextStyle(color: Colors.black, fontSize: 12),
+                            ),
+                            SizedBox(
                               height: 8,
                             ),
                             Text(
@@ -136,6 +145,33 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                               style:
                                   TextStyle(color: Colors.black, fontSize: 12),
                             ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              height: 64,
+                              width: MediaQuery.of(context).size.width,
+                              child: Row(
+                                children: <Widget>[
+                                  CircleAvatar(
+                                    backgroundImage: NetworkImage(dreamwalkerImg),
+                                  ),
+
+//                                  Stack(
+//                                    children: <Widget>[
+//                                      Positioned(
+//                                        left: 0,
+//                                        top: 0,
+//                                        bottom: 0,
+//                                        child: Container(
+//                                          width: 64,
+//                                        ),
+//                                      )
+//                                    ],
+//                                  )
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       ),
