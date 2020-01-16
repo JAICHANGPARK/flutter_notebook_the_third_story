@@ -51,7 +51,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
             ),
             Positioned(
               top: MediaQuery.of(context).size.height / 5.5,
-              bottom: MediaQuery.of(context).size.height / 5.5,
+              bottom: MediaQuery.of(context).size.height / 5.3,
               left: 0,
               right: 0,
               child: Container(
@@ -213,7 +213,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                                 return   Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: CircleAvatar(
-                                    radius: 42,
+                                    radius: 38,
                                   ),
                                 );
                               },
@@ -245,7 +245,72 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
               ),
             ),
             Positioned(
+              left: 16,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 120,
+                decoration: BoxDecoration(
 
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 1,
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.account_circle),
+                          Text("Friends"),
+                          Spacer(),
+                          Text("23"),
+                          Spacer(),
+                          Text("See All")
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      flex: 6,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            height: 120,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            height: 120,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            height: 120,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            height: 120,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
