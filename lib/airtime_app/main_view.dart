@@ -49,7 +49,6 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                 ),
               ),
             ),
-
             Positioned(
               top: MediaQuery.of(context).size.height / 5.5,
               bottom: MediaQuery.of(context).size.height / 6,
@@ -189,7 +188,21 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                     Divider(),
                     Expanded(
                       flex: 3,
-                      child: Placeholder(),
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            child: Row(
+                              children: <Widget>[
+
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -202,15 +215,14 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                 height: 100,
                 width: 100,
                 decoration: BoxDecoration(
-                  color: Colors.green,
-                  shape: BoxShape.circle,
-                  border: Border.all(width: 4, color: Colors.white,),
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      dreamwalkerImg
-                    )
-                  )
-                ),
+                    color: Colors.green,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      width: 4,
+                      color: Colors.white,
+                    ),
+                    image:
+                        DecorationImage(image: NetworkImage(dreamwalkerImg))),
               ),
             ),
           ],
@@ -219,28 +231,3 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
