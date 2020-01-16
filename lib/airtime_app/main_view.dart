@@ -188,20 +188,31 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                     Divider(),
                     Expanded(
                       flex: 3,
-                      child: Column(
-                        children: <Widget>[
-                          Expanded(
-                            child: Row(
-                              children: <Widget>[
-
-                              ],
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                          left: 16,
+                          right: 16,
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Row(
+                                children: <Widget>[
+                                  Icon(Icons.markunread_mailbox),
+                                  SizedBox(width: 8,),
+                                  Text("Achievements"),
+                                  Spacer(),
+                                  Text("See All"),
+                                ],
+                              ),
                             ),
-                          ),
-                          Expanded(
-                            
-                            child: Placeholder(),
-                          )
-                        ],
+                            Expanded(
+                              flex: 5,
+                              child: Placeholder(),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ],
