@@ -198,9 +198,13 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                                 children: <Widget>[
                                   Icon(Icons.markunread_mailbox),
                                   SizedBox(width: 8,),
-                                  Text("Achievements"),
+                                  Text("Achievements",style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
                                   Spacer(),
-                                  Text("See All"),
+                                  Text("See All",style: TextStyle(
+                                    color: Colors.grey,
+                                  ),),
                                 ],
                               ),
                             ),
@@ -264,7 +268,9 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                           Spacer(),
                           Text("23"),
                           Spacer(),
-                          Text("See All")
+                          Text("See All",style: TextStyle(
+                            color: Colors.grey,
+                          ),)
                         ],
                       ),
                     ),
@@ -274,35 +280,39 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Container(
-                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            margin: EdgeInsets.only(right: 16, top: 12,),
                             height: 120,
                             width: 160,
                             decoration: BoxDecoration(
                               color: Colors.red,
+                              borderRadius: BorderRadius.circular(12)
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            margin: EdgeInsets.only(right: 16, top: 12,),
                             height: 120,
                             width: 160,
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(12)
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            margin: EdgeInsets.only(right: 16, top: 12,),
                             height: 120,
                             width: 160,
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(12)
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 16, top: 8,),
+                            margin: EdgeInsets.only(right: 16, top: 12,),
                             height: 120,
                             width: 160,
                             decoration: BoxDecoration(
-                              color: Colors.red,
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(12)
                             ),
                           ),
                         ],
