@@ -51,7 +51,7 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
             ),
             Positioned(
               top: MediaQuery.of(context).size.height / 5.5,
-              bottom: MediaQuery.of(context).size.height / 6,
+              bottom: MediaQuery.of(context).size.height / 5.5,
               left: 0,
               right: 0,
               child: Container(
@@ -188,15 +188,12 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                     Divider(),
                     Expanded(
                       flex: 3,
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                          left: 16,
-                          right: 16,
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Expanded(
-                              flex: 2,
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 2,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
                               child: Row(
                                 children: <Widget>[
                                   Icon(Icons.markunread_mailbox),
@@ -207,12 +204,23 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                                 ],
                               ),
                             ),
-                            Expanded(
-                              flex: 5,
-                              child: Placeholder(),
-                            )
-                          ],
-                        ),
+                          ),
+                          Expanded(
+                            flex: 5,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (BuildContext context, int index) {
+                                return   Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: CircleAvatar(
+                                    radius: 42,
+                                  ),
+                                );
+                              },
+                              itemCount: 16,
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ],
@@ -236,9 +244,33 @@ class _AirtimeMainPageState extends State<AirtimeMainPage> {
                         DecorationImage(image: NetworkImage(dreamwalkerImg))),
               ),
             ),
+            Positioned(
+
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
