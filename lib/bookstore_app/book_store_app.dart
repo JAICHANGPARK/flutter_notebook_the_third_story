@@ -38,10 +38,39 @@ class _MainPageState extends State<MainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              //Biblic Globe
               Container(
-                height: deviceHeight / 7,
+                height: deviceHeight / 9,
                 decoration: BoxDecoration(color: Colors.red),
-              )
+              ),
+              //Search Bar
+              Container(
+                height: deviceHeight / 11,
+                decoration: BoxDecoration(color: Colors.black),
+              ),
+
+              //Best Seller , New items
+              Container(
+                height: deviceHeight / 7.5,
+                decoration: BoxDecoration(color: Colors.brown),
+              ),
+              // literature, classic, fantasy
+              Container(
+                height: deviceHeight / 11,
+                decoration: BoxDecoration(color: Colors.green),
+              ),
+              Container(
+                height: deviceHeight / 3,
+                decoration: BoxDecoration(color: Colors.blue),
+              ),
+              Container(
+                height: deviceHeight / 11,
+                decoration: BoxDecoration(color: Colors.green),
+              ),
+              Container(
+                height: deviceHeight / 3,
+                decoration: BoxDecoration(color: Colors.blue),
+              ),
             ],
           ),
         ),
@@ -49,3 +78,19 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
