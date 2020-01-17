@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class BookStoreApp extends StatelessWidget {
   @override
@@ -17,7 +18,59 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        elevation: 16,
+        child: Container(
+          decoration: BoxDecoration(
+              color: Colors.grey[200],
+            border: Border(
+              top: BorderSide(
+                color: Colors.grey[500],
+              )
+            )
+          ),
+          height: 72,
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+
+          ],
+        ),
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
