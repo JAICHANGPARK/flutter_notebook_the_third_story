@@ -31,6 +31,13 @@ class _MainPageState extends State<MainPage> {
                 color: Colors.grey[500],
               ))),
           height: 72,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              
+            ],
+          ),
         ),
       ),
       body: SingleChildScrollView(
