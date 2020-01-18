@@ -72,9 +72,9 @@ class _MainPageState extends State<MainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.add_shopping_cart, size: 30,),
+                  Icon(Icons.add_shopping_cart, size: 30,color: Colors.grey,),
                   Text("My Cart",style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 12,color: Colors.grey,
                   ),)
                 ],
               )
@@ -89,8 +89,24 @@ class _MainPageState extends State<MainPage> {
             children: <Widget>[
               //Biblic Globe
               Container(
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 height: deviceHeight / 9,
-                decoration: BoxDecoration(color: Colors.red),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.bookmark_border, size: 40,
+                    color: Colors.red,),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8),
+                      child: Text("Biblic Globe", style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24
+                      ),),
+                    ),
+                    Spacer(),
+                    Icon(Icons.more_horiz, size: 40,)
+                  ],
+                ),
               ),
               //Search Bar
               Container(
