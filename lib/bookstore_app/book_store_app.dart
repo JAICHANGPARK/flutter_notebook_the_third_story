@@ -40,42 +40,67 @@ class _MainPageState extends State<MainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.home, size: 30,),
-                  Text("Home",style: TextStyle(
-                    fontSize: 12,
-                  ),)
+                  Icon(
+                    Icons.home,
+                    size: 30,
+                  ),
+                  Text(
+                    "Home",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  )
                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.book, size: 30,
-                  color: Colors.grey,),
-                  Text("Bookmark",style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.grey
-                  ),)
+                  Icon(
+                    Icons.book,
+                    size: 30,
+                    color: Colors.grey,
+                  ),
+                  Text(
+                    "Bookmark",
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  )
                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.favorite, size: 30,color: Colors.grey,),
-                  Text("Favorite",style: TextStyle(
-                    fontSize: 12,color: Colors.grey,
-                  ),)
+                  Icon(
+                    Icons.favorite,
+                    size: 30,
+                    color: Colors.grey,
+                  ),
+                  Text(
+                    "Favorite",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  )
                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.add_shopping_cart, size: 30,color: Colors.grey,),
-                  Text("My Cart",style: TextStyle(
-                    fontSize: 12,color: Colors.grey,
-                  ),)
+                  Icon(
+                    Icons.add_shopping_cart,
+                    size: 30,
+                    color: Colors.grey,
+                  ),
+                  Text(
+                    "My Cart",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  )
                 ],
               )
             ],
@@ -93,18 +118,26 @@ class _MainPageState extends State<MainPage> {
                 height: deviceHeight / 9,
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.bookmark_border, size: 40,
-                    color: Colors.red,),
+                    Icon(
+                      Icons.bookmark_border,
+                      size: 40,
+                      color: Colors.red,
+                    ),
                     Padding(
                       padding: const EdgeInsets.only(left: 8),
-                      child: Text("Biblic Globe", style: TextStyle(
-                        color: Colors.red,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
-                      ),),
+                      child: Text(
+                        "Biblic Globe",
+                        style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24),
+                      ),
                     ),
                     Spacer(),
-                    Icon(Icons.more_horiz, size: 40,)
+                    Icon(
+                      Icons.more_horiz,
+                      size: 40,
+                    )
                   ],
                 ),
               ),
