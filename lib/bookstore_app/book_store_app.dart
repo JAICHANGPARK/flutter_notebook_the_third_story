@@ -191,9 +191,22 @@ class _MainPageState extends State<MainPage> {
                     Container(
                       width: 160,
                       height: double.infinity,
+                      padding: EdgeInsets.only(left: 8),
                       decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(10)
+                      ),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.notifications_none,
+                            color: Colors.red,
+                            size: 34,),
+                          SizedBox(width: 8,),
+                          Text("New items", style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),)
+                        ],
                       ),
                     )
                   ],
