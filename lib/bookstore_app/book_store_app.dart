@@ -144,8 +144,8 @@ class _MainPageState extends State<MainPage> {
               ),
               //Search Bar
               Container(
-                height: deviceHeight / 11,
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                height: deviceHeight / 12,
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Container(
                   padding: EdgeInsets.only(left: 8),
                   decoration: BoxDecoration(
@@ -163,15 +163,37 @@ class _MainPageState extends State<MainPage> {
               //Best Seller , New items
               Container(
                 padding: EdgeInsets.only(left: 24, top: 12, bottom: 12),
-                height: deviceHeight / 7.5,
-
+                height: deviceHeight / 9,
                 child: Row(
                   children: <Widget>[
                     Container(
                       width: 160,
+                      height: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(10)
+                      ),
+                      padding: EdgeInsets.only(left: 4),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.whatshot,
+                          color: Colors.red,
+                          size: 42,),
+                          SizedBox(width: 8,),
+                          Text("Best Seller", style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),)
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 16,),
+                    Container(
+                      width: 160,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(10)
                       ),
                     )
                   ],
