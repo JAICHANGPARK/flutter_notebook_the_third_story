@@ -173,12 +173,12 @@ class _MainPageState extends State<MainPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      padding: EdgeInsets.only(left: 4),
+                      padding: EdgeInsets.only(left: 8),
                       child: Row(
                         children: <Widget>[
                           Icon(Icons.whatshot,
                           color: Colors.red,
-                          size: 42,),
+                            size: 34,),
                           SizedBox(width: 8,),
                           Text("Best Seller", style: TextStyle(
                             color: Colors.black,
