@@ -146,13 +146,18 @@ class _MainPageState extends State<MainPage> {
               Container(
                 height: deviceHeight / 11,
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-               
+
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: TextField(),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      
+                    ),
+                  ),
                 ),
 
               ),
