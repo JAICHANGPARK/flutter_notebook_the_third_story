@@ -164,13 +164,13 @@ class _MainPageState extends State<MainPage> {
               Container(
                 padding: EdgeInsets.only(left: 24, top: 12, bottom: 12),
                 height: deviceHeight / 7.5,
-                decoration: BoxDecoration(color: Colors.brown),
+
                 child: Row(
                   children: <Widget>[
                     Container(
                       width: 160,
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(10)
                       ),
                     )
