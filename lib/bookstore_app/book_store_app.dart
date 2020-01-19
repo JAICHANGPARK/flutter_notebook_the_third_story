@@ -146,26 +146,36 @@ class _MainPageState extends State<MainPage> {
               Container(
                 height: deviceHeight / 11,
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-
                 child: Container(
+                  padding: EdgeInsets.only(left: 8),
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: TextField(
                     decoration: InputDecoration(
-                      border: InputBorder.none,
-                      
-                    ),
+                        border: InputBorder.none,
+                        hintText: "Search",
+                        icon: Icon(Icons.search)),
                   ),
                 ),
-
               ),
-
               //Best Seller , New items
               Container(
+                padding: EdgeInsets.only(left: 24, top: 12, bottom: 12),
                 height: deviceHeight / 7.5,
                 decoration: BoxDecoration(color: Colors.brown),
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      width: 160,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10)
+                      ),
+                    )
+                  ],
+                ),
               ),
               // literature, classic, fantasy
               Container(
