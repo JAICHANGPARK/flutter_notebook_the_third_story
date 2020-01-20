@@ -253,6 +253,7 @@ class _MainPageState extends State<MainPage>
                       width: 160,
                       child: Card(
                         elevation: 6,
+                       semanticContainer: false,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12)),
                       ),
