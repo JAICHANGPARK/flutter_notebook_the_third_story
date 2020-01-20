@@ -16,98 +16,20 @@ class MainPage extends StatefulWidget {
   _MainPageState createState() => _MainPageState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin{
+  TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController= TabController(vsync: this, length: 3);
+  }
+
   @override
   Widget build(BuildContext context) {
     var deviceHeight = MediaQuery.of(context).size.height;
     var deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        elevation: 16,
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 24),
-          decoration: BoxDecoration(
-              color: Colors.grey[200],
-              border: Border(
-                  top: BorderSide(
-                color: Colors.grey[500],
-              ))),
-          height: 72,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Icon(
-                    Icons.home,
-                    size: 30,
-                  ),
-                  Text(
-                    "Home",
-                    style: TextStyle(
-                      fontSize: 12,
-                    ),
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Icon(
-                    Icons.book,
-                    size: 30,
-                    color: Colors.grey,
-                  ),
-                  Text(
-                    "Bookmark",
-                    style: TextStyle(fontSize: 12, color: Colors.grey),
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Icon(
-                    Icons.favorite,
-                    size: 30,
-                    color: Colors.grey,
-                  ),
-                  Text(
-                    "Favorite",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey,
-                    ),
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Icon(
-                    Icons.add_shopping_cart,
-                    size: 30,
-                    color: Colors.grey,
-                  ),
-                  Text(
-                    "My Cart",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey,
-                    ),
-                  )
-                ],
-              )
-            ],
-          ),
-        ),
-      ),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
@@ -247,6 +169,112 @@ class _MainPageState extends State<MainPage> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 16,
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 24),
+          decoration: BoxDecoration(
+              color: Colors.grey[200],
+              border: Border(
+                  top: BorderSide(
+                    color: Colors.grey[500],
+                  ))),
+          height: 72,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.home,
+                    size: 30,
+                  ),
+                  Text(
+                    "Home",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.book,
+                    size: 30,
+                    color: Colors.grey,
+                  ),
+                  Text(
+                    "Bookmark",
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.favorite,
+                    size: 30,
+                    color: Colors.grey,
+                  ),
+                  Text(
+                    "Favorite",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.add_shopping_cart,
+                    size: 30,
+                    color: Colors.grey,
+                  ),
+                  Text(
+                    "My Cart",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
