@@ -151,7 +151,6 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               // literature, classic, fantasy
               Container(
                 height: deviceHeight / 14,
-                decoration: BoxDecoration(color: Colors.green),
                 child: Row(
                   children: <Widget>[
                     Expanded(
