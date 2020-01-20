@@ -245,7 +245,7 @@ class _MainPageState extends State<MainPage>
               ),
               Container(
                 height: deviceHeight / 3,
-                padding: EdgeInsets.only(left: 16),
+                padding: EdgeInsets.only(left: 16, bottom: 16),
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
@@ -253,9 +253,75 @@ class _MainPageState extends State<MainPage>
                       width: 160,
                       child: Card(
                         elevation: 6,
-                       semanticContainer: false,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: 8,
+                                          left: 16,
+                                          bottom: 8,
+                                          right: 4),
+                                      width: 92,
+                                      color: Colors.yellow,
+                                      child: Center(
+                                        child: FlutterLogo(size: 60),
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                      size: 20,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Flutter Sample Books",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text("\$ 300"),
+                                      Icon(Icons.shopping_basket),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     Container(
@@ -263,7 +329,74 @@ class _MainPageState extends State<MainPage>
                       child: Card(
                         elevation: 6,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: 8,
+                                          left: 16,
+                                          bottom: 8,
+                                          right: 4),
+                                      width: 92,
+                                      color: Colors.yellow,
+                                      child: Center(
+                                        child: FlutterLogo(size: 60),
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                      size: 20,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Flutter Sample Books",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text("\$ 300"),
+                                      Icon(Icons.shopping_basket),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     Container(
@@ -271,9 +404,76 @@ class _MainPageState extends State<MainPage>
                       child: Card(
                         elevation: 6,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: 8,
+                                          left: 16,
+                                          bottom: 8,
+                                          right: 4),
+                                      width: 92,
+                                      color: Colors.yellow,
+                                      child: Center(
+                                        child: FlutterLogo(size: 60),
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                      size: 20,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Flutter Sample Books",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text("\$ 300"),
+                                      Icon(Icons.shopping_basket),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
