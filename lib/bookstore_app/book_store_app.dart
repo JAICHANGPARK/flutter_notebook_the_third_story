@@ -232,7 +232,27 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               ),
               Container(
                 height: deviceHeight / 3,
-                decoration: BoxDecoration(color: Colors.blue),
+                padding: EdgeInsets.only(left: 16),
+
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 160,
+                      child: Card(
+                        elevation: 6,
+                      ),
+                    ),
+                    Container(
+                      width: 160,
+                      child: Card(   elevation: 6,),
+                    ),
+                    Container(
+                      width: 160,
+                      child: Card(   elevation: 6,),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: deviceHeight / 11,
