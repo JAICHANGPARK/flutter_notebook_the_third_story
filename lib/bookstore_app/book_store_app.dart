@@ -150,8 +150,86 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               ),
               // literature, classic, fantasy
               Container(
-                height: deviceHeight / 11,
+                height: deviceHeight / 14,
                 decoration: BoxDecoration(color: Colors.green),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 4,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 24),
+                        child: Text("Literature"),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 10,
+                      child: ListView(
+                        padding: EdgeInsets.zero,
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.symmetric( vertical: 10),
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(24)
+                            ),
+                            width: 92,
+                            child: Center(
+                              child: Text("Classic",style: TextStyle(
+                                color: Colors.white,
+                                 fontWeight: FontWeight.bold
+                              ),),
+                            ),
+                          ),
+                          SizedBox(width: 12,),
+                          Container(
+                            margin: EdgeInsets.symmetric( vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)
+                            ),
+                            width: 92,
+                            child: Center(
+                              child: Text("Fantasy",style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                            ),
+                          ),  SizedBox(width: 12,),
+                          Container(
+                            margin: EdgeInsets.symmetric( vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)
+                            ),
+                            width: 92,
+                            child: Center(
+                              child: Text("Fantasy",style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                            ),
+                          ),  SizedBox(width: 12,),
+                          Container(
+                            margin: EdgeInsets.symmetric( vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)
+                            ),
+                            width: 92,
+                            child: Center(
+                              child: Text("Fantasy",style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: deviceHeight / 3,
