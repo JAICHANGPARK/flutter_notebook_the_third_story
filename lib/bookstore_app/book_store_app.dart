@@ -170,42 +170,56 @@ class _MainPageState extends State<MainPage> {
                       width: 160,
                       height: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(10)
-                      ),
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(10)),
                       padding: EdgeInsets.only(left: 8),
                       child: Row(
                         children: <Widget>[
-                          Icon(Icons.whatshot,
-                          color: Colors.red,
-                            size: 34,),
-                          SizedBox(width: 8,),
-                          Text("Best Seller", style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                          ),)
+                          Icon(
+                            Icons.whatshot,
+                            color: Colors.red,
+                            size: 34,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Best Seller",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                     ),
-                    SizedBox(width: 16,),
+                    SizedBox(
+                      width: 16,
+                    ),
                     Container(
                       width: 160,
                       height: double.infinity,
                       padding: EdgeInsets.only(left: 8),
                       decoration: BoxDecoration(
                           color: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(10)
-                      ),
+                          borderRadius: BorderRadius.circular(10)),
                       child: Row(
                         children: <Widget>[
-                          Icon(Icons.notifications_none,
+                          Icon(
+                            Icons.notifications_none,
                             color: Colors.red,
-                            size: 34,),
-                          SizedBox(width: 8,),
-                          Text("New items", style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                          ),)
+                            size: 34,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "New items",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                     )
