@@ -16,13 +16,15 @@ class MainPage extends StatefulWidget {
   _MainPageState createState() => _MainPageState();
 }
 
-class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin{
+class _MainPageState extends State<MainPage>
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabController= TabController(vsync: this, length: 3);
+    _tabController = TabController(vsync: this, length: 3);
   }
 
   @override
@@ -167,63 +169,74 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Container(
-                            margin: EdgeInsets.symmetric( vertical: 10),
+                            margin: EdgeInsets.symmetric(vertical: 10),
                             decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.circular(24)
-                            ),
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(24)),
                             width: 92,
                             child: Center(
-                              child: Text("Classic",style: TextStyle(
-                                color: Colors.white,
-                                 fontWeight: FontWeight.bold
-                              ),),
+                              child: Text(
+                                "Classic",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
-                          SizedBox(width: 12,),
+                          SizedBox(
+                            width: 12,
+                          ),
                           Container(
-                            margin: EdgeInsets.symmetric( vertical: 10),
+                            margin: EdgeInsets.symmetric(vertical: 10),
                             decoration: BoxDecoration(
                                 color: Colors.grey[200],
-                                borderRadius: BorderRadius.circular(24)
-                            ),
+                                borderRadius: BorderRadius.circular(24)),
                             width: 92,
                             child: Center(
-                              child: Text("Fantasy",style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                            ),
-                          ),  SizedBox(width: 12,),
-                          Container(
-                            margin: EdgeInsets.symmetric( vertical: 10),
-                            decoration: BoxDecoration(
-                                color: Colors.grey[200],
-                                borderRadius: BorderRadius.circular(24)
-                            ),
-                            width: 92,
-                            child: Center(
-                              child: Text("Fantasy",style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                            ),
-                          ),  SizedBox(width: 12,),
-                          Container(
-                            margin: EdgeInsets.symmetric( vertical: 10),
-                            decoration: BoxDecoration(
-                                color: Colors.grey[200],
-                                borderRadius: BorderRadius.circular(24)
-                            ),
-                            width: 92,
-                            child: Center(
-                              child: Text("Fantasy",style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),),
+                              child: Text(
+                                "Fantasy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
-
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)),
+                            width: 92,
+                            child: Center(
+                              child: Text(
+                                "Fantasy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)),
+                            width: 92,
+                            child: Center(
+                              child: Text(
+                                "Fantasy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     )
@@ -233,7 +246,6 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               Container(
                 height: deviceHeight / 3,
                 padding: EdgeInsets.only(left: 16),
-
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
@@ -241,15 +253,25 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                       width: 160,
                       child: Card(
                         elevation: 6,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)),
                       ),
                     ),
                     Container(
                       width: 160,
-                      child: Card(   elevation: 6,),
+                      child: Card(
+                        elevation: 6,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                      ),
                     ),
                     Container(
                       width: 160,
-                      child: Card(   elevation: 6,),
+                      child: Card(
+                        elevation: 6,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                      ),
                     )
                   ],
                 ),
@@ -274,8 +296,8 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               color: Colors.grey[200],
               border: Border(
                   top: BorderSide(
-                    color: Colors.grey[500],
-                  ))),
+                color: Colors.grey[500],
+              ))),
           height: 72,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -355,23 +377,3 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
