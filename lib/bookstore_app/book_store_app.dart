@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:notebook_the_third_story/bookstore_app/detail_page.dart';
 
 class BookStoreApp extends StatelessWidget {
   @override
@@ -575,77 +576,89 @@ class _MainPageState extends State<MainPage>
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    Container(
-                      width: 160,
-                      child: Card(
-                        elevation: 6,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.only(bottom: 8),
-                          child: Column(
-                            children: <Widget>[
-                              Expanded(
-                                flex: 6,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[
-                                    Container(
-                                      margin: EdgeInsets.only(
-                                          top: 8,
-                                          left: 16,
-                                          bottom: 8,
-                                          right: 4),
-                                      width: 92,
-                                      color: Colors.yellow,
-                                      child: Center(
-                                        child: FlutterLogo(size: 60),
-                                      ),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context){
+                            return DetailPage();
+                          }
+                        ));
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: "img",
+                          child: Card(
+                            elevation: 6,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.only(bottom: 8),
+                              child: Column(
+                                children: <Widget>[
+                                  Expanded(
+                                    flex: 6,
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Container(
+                                          margin: EdgeInsets.only(
+                                              top: 8,
+                                              left: 16,
+                                              bottom: 8,
+                                              right: 4),
+                                          width: 92,
+                                          color: Colors.yellow,
+                                          child: Center(
+                                            child: FlutterLogo(size: 60),
+                                          ),
+                                        ),
+                                        Icon(
+                                          Icons.favorite,
+                                          color: Colors.red,
+                                          size: 20,
+                                        )
+                                      ],
                                     ),
-                                    Icon(
-                                      Icons.favorite,
-                                      color: Colors.red,
-                                      size: 20,
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                flex: 3,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      "Flutter Sample Books",
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    Text(
-                                      "Dreamwalker",
-                                      style: TextStyle(fontSize: 10),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                flex: 2,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: <Widget>[
-                                      Text("\$ 300"),
-                                      Icon(Icons.shopping_basket),
-                                    ],
                                   ),
-                                ),
-                              )
-                            ],
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Flutter Sample Books",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(fontSize: 10),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: <Widget>[
+                                          Text("\$ 300"),
+                                          Icon(Icons.shopping_basket),
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
                         ),
                       ),
