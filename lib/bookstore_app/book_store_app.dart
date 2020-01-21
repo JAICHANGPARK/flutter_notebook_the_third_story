@@ -478,12 +478,330 @@ class _MainPageState extends State<MainPage>
                 ),
               ),
               Container(
-                height: deviceHeight / 11,
-                decoration: BoxDecoration(color: Colors.green),
+                height: deviceHeight / 14,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 4,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 24),
+                        child: Text("Literature"),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 10,
+                      child: ListView(
+                        padding: EdgeInsets.zero,
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)),
+                            width: 92,
+                            child: Center(
+                              child: Text(
+                                "Classic",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)),
+                            width: 92,
+                            child: Center(
+                              child: Text(
+                                "Fantasy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)),
+                            width: 92,
+                            child: Center(
+                              child: Text(
+                                "Fantasy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)),
+                            width: 92,
+                            child: Center(
+                              child: Text(
+                                "Fantasy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: deviceHeight / 3,
-                decoration: BoxDecoration(color: Colors.blue),
+                padding: EdgeInsets.only(left: 16, bottom: 16),
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 160,
+                      child: Card(
+                        elevation: 6,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: 8,
+                                          left: 16,
+                                          bottom: 8,
+                                          right: 4),
+                                      width: 92,
+                                      color: Colors.yellow,
+                                      child: Center(
+                                        child: FlutterLogo(size: 60),
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                      size: 20,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Flutter Sample Books",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text("\$ 300"),
+                                      Icon(Icons.shopping_basket),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 160,
+                      child: Card(
+                        elevation: 6,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: 8,
+                                          left: 16,
+                                          bottom: 8,
+                                          right: 4),
+                                      width: 92,
+                                      color: Colors.yellow,
+                                      child: Center(
+                                        child: FlutterLogo(size: 60),
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                      size: 20,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Flutter Sample Books",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text("\$ 300"),
+                                      Icon(Icons.shopping_basket),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 160,
+                      child: Card(
+                        elevation: 6,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 6,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: 8,
+                                          left: 16,
+                                          bottom: 8,
+                                          right: 4),
+                                      width: 92,
+                                      color: Colors.yellow,
+                                      child: Center(
+                                        child: FlutterLogo(size: 60),
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                      size: 20,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Flutter Sample Books",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text("\$ 300"),
+                                      Icon(Icons.shopping_basket),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
