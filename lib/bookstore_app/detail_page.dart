@@ -17,13 +17,37 @@ class _DetailPageState extends State<DetailPage> {
             left: 0,
             right: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height / 4,
+              height: MediaQuery.of(context).size.height / 2.5,
               child: Hero(
                 tag: "img",
-                child: null,
+                child: Container(
+                  color: Colors.yellow,
+                  child: Center(
+                    child: FlutterLogo(size: 240,
+                      style: FlutterLogoStyle.horizontal,
+                    ),
+                  ),
+                ),
               ),
             ),
-          )
+          ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         ],
       ),
     );
