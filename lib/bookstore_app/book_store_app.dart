@@ -386,7 +386,7 @@ class _MainPageState extends State<MainPage>
                                   padding: const EdgeInsets.all(8.0),
                                   child: Row(
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                        MainAxisAlignment.spaceBetween,
                                     children: <Widget>[
                                       Text("\$ 300"),
                                       Icon(Icons.shopping_basket),
@@ -461,7 +461,7 @@ class _MainPageState extends State<MainPage>
                                   padding: const EdgeInsets.all(8.0),
                                   child: Row(
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                        MainAxisAlignment.spaceBetween,
                                     children: <Widget>[
                                       Text("\$ 300"),
                                       Icon(Icons.shopping_basket),
