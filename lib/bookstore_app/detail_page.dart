@@ -45,7 +45,7 @@ class _DetailPageState extends State<DetailPage> {
                 ),),SizedBox(height: 8),
                 Text("Dreamwalker", style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 22
+                    fontSize: 16
                 ),),
                 SizedBox(height: 16),
                 Row(
