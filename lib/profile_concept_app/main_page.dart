@@ -16,7 +16,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          
+
         ],
       ),
     );
