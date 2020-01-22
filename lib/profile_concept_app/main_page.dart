@@ -36,19 +36,22 @@ class MainPage extends StatelessWidget {
                         children: <Widget>[
                           Positioned(
                             left: 16,
-                            top: 24,
+                            top: 28,
                             child: Container(
                               height: 38,
                               width: 38,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Center(
+                                child:
+                                Icon(Icons.arrow_back),
                               ),
                             ),
                           )
                         ],
                       ),
-
                     ),
                   ),
                   Expanded(
