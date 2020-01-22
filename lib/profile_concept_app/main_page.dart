@@ -78,12 +78,27 @@ class MainPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(18)),
             ),
           ),
+          Positioned(
+            left: 16,
+            right: 0,
+            bottom: 0,
+            top: MediaQuery.of(context).size.height / 2.1,
+            child: Column(
+              children: <Widget>[
+                Expanded(
+                  child: Placeholder(),
+                ),
+                Expanded(
+                  child: Placeholder(),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
   }
 }
-
 
 
 
