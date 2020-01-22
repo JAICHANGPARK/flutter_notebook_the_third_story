@@ -25,12 +25,30 @@ class MainPage extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: Container(
+                      height: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.orangeAccent,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24),
                         ),
                       ),
+                      child: Stack(
+                        children: <Widget>[
+                          Positioned(
+                            left: 16,
+                            top: 24,
+                            child: Container(
+                              height: 38,
+                              width: 38,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+
                     ),
                   ),
                   Expanded(
