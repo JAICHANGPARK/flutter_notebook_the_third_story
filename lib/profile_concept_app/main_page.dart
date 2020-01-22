@@ -45,8 +45,7 @@ class MainPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Center(
-                                child:
-                                Icon(Icons.arrow_back),
+                                child: Icon(Icons.arrow_back),
                               ),
                             ),
                           )
@@ -68,9 +67,39 @@ class MainPage extends StatelessWidget {
               ),
             ),
           ),
-          
+          Positioned(
+            left: 16,
+            top: MediaQuery.of(context).size.height / 8,
+            right: 16,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 3.3,
+              decoration: BoxDecoration(
+                  color: Colors.deepPurpleAccent,
+                  borderRadius: BorderRadius.circular(18)),
+            ),
+          ),
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
