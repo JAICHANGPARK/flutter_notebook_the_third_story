@@ -82,7 +82,7 @@ class MainPage extends StatelessWidget {
             left: 16,
             right: 0,
             bottom: 0,
-            top: MediaQuery.of(context).size.height / 2.1,
+            top: MediaQuery.of(context).size.height / 2.2,
             child: Column(
               children: <Widget>[
                 Expanded(
@@ -101,7 +101,12 @@ class MainPage extends StatelessWidget {
                       ),
                       Expanded(
                         flex: 10,
-                        child: Placeholder(),
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container();
+                          },
+                          itemCount: 3,
+                        ),
                       )
                     ],
                   ),
