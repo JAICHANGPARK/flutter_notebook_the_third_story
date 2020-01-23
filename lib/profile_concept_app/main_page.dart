@@ -86,7 +86,25 @@ class MainPage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Expanded(
-                  child: Placeholder(),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Expanded(
+                        flex: 2,
+                        child: Text(
+                          "Popular Uploads",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 10,
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
                 ),
                 Expanded(
                   child: Placeholder(),
