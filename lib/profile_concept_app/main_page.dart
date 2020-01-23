@@ -120,8 +120,42 @@ class MainPage extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  child: Placeholder(),
-                )
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Expanded(
+                          flex: 2,
+                          child: Text(
+                            "Playlists",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 10,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                margin: EdgeInsets.only(top: 8, bottom: 8, right: 16),
+                                width: MediaQuery.of(context).size.width / 2.6,
+                                decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(16)
+                                ),
+                              );
+                            },
+                            itemCount: 10,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           )
