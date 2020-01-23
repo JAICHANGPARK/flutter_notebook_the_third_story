@@ -102,8 +102,16 @@ class MainPage extends StatelessWidget {
                       Expanded(
                         flex: 10,
                         child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return Container();
+                            return Container(
+                              margin: EdgeInsets.only(top: 8, bottom: 8, right: 16),
+                              width: MediaQuery.of(context).size.width / 1.5,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(16)
+                              ),
+                            );
                           },
                           itemCount: 3,
                         ),
