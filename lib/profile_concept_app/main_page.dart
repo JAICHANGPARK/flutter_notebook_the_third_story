@@ -122,6 +122,7 @@ class MainPage extends StatelessWidget {
                           flex: 2,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
                               Text(
                                 "Dreamwalker",
@@ -145,8 +146,26 @@ class MainPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 3,
-                          child: Placeholder(),
+                          flex: 2,
+                          child: Row(
+                            children: <Widget>[
+                              Expanded(
+                                child: Container(
+                                  margin: EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(margin: EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.white,)
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
