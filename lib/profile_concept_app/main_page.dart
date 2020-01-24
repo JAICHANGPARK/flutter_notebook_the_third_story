@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
 
@@ -14,6 +15,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: Stack(
         children: <Widget>[
           Positioned(
@@ -231,8 +233,49 @@ class MainPage extends StatelessWidget {
                                   EdgeInsets.only(top: 8, bottom: 8, right: 16),
                               width: MediaQuery.of(context).size.width / 1.5,
                               decoration: BoxDecoration(
-                                  color: Colors.red,
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.1),
+                                      blurRadius: 5,
+                                      spreadRadius: 2
+                                    )
+                                  ],
                                   borderRadius: BorderRadius.circular(16)),
+                              child: Column(
+                                children: <Widget>[
+                                  Expanded(
+                                    flex: 6,
+                                    child: Container(
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.yellow,
+                                        borderRadius: BorderRadius.circular(18)
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(left: 16, right: 16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: <Widget>[
+                                              Text("Dadi'ji Swag"),
+                                              Icon(Icons.more_horiz),
+                                            ],
+                                          ),
+                                          Text("2.2M Views 2 months ago"),
+
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             );
                           },
                           itemCount: 3,
