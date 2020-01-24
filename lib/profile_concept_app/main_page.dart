@@ -105,12 +105,12 @@ class MainPage extends StatelessWidget {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Container(
-                              margin: EdgeInsets.only(top: 8, bottom: 8, right: 16),
+                              margin:
+                                  EdgeInsets.only(top: 8, bottom: 8, right: 16),
                               width: MediaQuery.of(context).size.width / 1.5,
                               decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(16)
-                              ),
+                                  color: Colors.red,
+                                  borderRadius: BorderRadius.circular(16)),
                             );
                           },
                           itemCount: 3,
@@ -141,12 +141,12 @@ class MainPage extends StatelessWidget {
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
-                                margin: EdgeInsets.only(top: 8, bottom: 8, right: 16),
+                                margin: EdgeInsets.only(
+                                    top: 8, bottom: 8, right: 16),
                                 width: MediaQuery.of(context).size.width / 2.6,
                                 decoration: BoxDecoration(
                                     color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(16)
-                                ),
+                                    borderRadius: BorderRadius.circular(16)),
                               );
                             },
                             itemCount: 10,
