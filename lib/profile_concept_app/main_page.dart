@@ -97,7 +97,7 @@ class MainPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Expanded(
-                          flex: 3,
+                          flex: 4,
                           child: Center(
                             child: Container(
                               height: 68,
@@ -119,7 +119,7 @@ class MainPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 2,
+                          flex: 3,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -146,25 +146,41 @@ class MainPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 2,
-                          child: Row(
-                            children: <Widget>[
-                              Expanded(
-                                child: Container(
-                                  margin: EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
+                          flex: 3,
+                          child: Padding(
+                            padding: const EdgeInsets.only(bottom: 8),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  child: Container(
+                                    margin: EdgeInsets.all(8),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16)
+                                    ),
+                                    child: Center(
+                                      child: Text("Follow", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16
+                                      ),),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Expanded(
-                                child: Container(margin: EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.white,)
+                                Expanded(
+                                  child: Container(margin: EdgeInsets.all(8),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.white,),
+                                        borderRadius: BorderRadius.circular(16)
+                                    ),child: Center(
+                                      child: Text("Message", style: TextStyle(
+                                          fontSize: 16,
+                                        color: Colors.white
+                                      ),),
+                                    ),
                                   ),
-                                ),
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
