@@ -157,27 +157,34 @@ class MainPage extends StatelessWidget {
                                   child: Container(
                                     margin: EdgeInsets.all(8),
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(16)
-                                    ),
+                                        color: Colors.white,
+                                        borderRadius:
+                                            BorderRadius.circular(16)),
                                     child: Center(
-                                      child: Text("Follow", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16
-                                      ),),
+                                      child: Text(
+                                        "Follow",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16),
+                                      ),
                                     ),
                                   ),
                                 ),
                                 Expanded(
-                                  child: Container(margin: EdgeInsets.all(8),
+                                  child: Container(
+                                    margin: EdgeInsets.all(8),
                                     decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.white,),
-                                        borderRadius: BorderRadius.circular(16)
-                                    ),child: Center(
-                                      child: Text("Message", style: TextStyle(
-                                          fontSize: 16,
-                                        color: Colors.white
-                                      ),),
+                                        border: Border.all(
+                                          color: Colors.white,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(16)),
+                                    child: Center(
+                                      child: Text(
+                                        "Message",
+                                        style: TextStyle(
+                                            fontSize: 16, color: Colors.white),
+                                      ),
                                     ),
                                   ),
                                 )
@@ -236,10 +243,9 @@ class MainPage extends StatelessWidget {
                                   color: Colors.white,
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Colors.black.withOpacity(0.1),
-                                      blurRadius: 5,
-                                      spreadRadius: 2
-                                    )
+                                        color: Colors.black.withOpacity(0.1),
+                                        blurRadius: 5,
+                                        spreadRadius: 2)
                                   ],
                                   borderRadius: BorderRadius.circular(16)),
                               child: Column(
@@ -249,27 +255,33 @@ class MainPage extends StatelessWidget {
                                     child: Container(
                                       margin: EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: Colors.yellow,
-                                        borderRadius: BorderRadius.circular(18)
-                                      ),
+                                          color: Colors.yellow,
+                                          borderRadius:
+                                              BorderRadius.circular(18),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2020/01/15/17/38/fireworks-4768501__340.jpg"),
+                                              fit: BoxFit.cover)),
                                     ),
                                   ),
                                   Expanded(
                                     flex: 3,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(left: 16, right: 16),
+                                      padding: const EdgeInsets.only(
+                                          left: 16, right: 16),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
                                             children: <Widget>[
                                               Text("Dadi'ji Swag"),
                                               Icon(Icons.more_horiz),
                                             ],
                                           ),
                                           Text("2.2M Views 2 months ago"),
-
                                         ],
                                       ),
                                     ),
@@ -308,10 +320,50 @@ class MainPage extends StatelessWidget {
                               return Container(
                                 margin: EdgeInsets.only(
                                     top: 8, bottom: 8, right: 16),
-                                width: MediaQuery.of(context).size.width / 2.6,
+                                width: MediaQuery.of(context).size.width / 2.25,
                                 decoration: BoxDecoration(
-                                    color: Colors.blue,
+                                    color: Colors.white,
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.black.withOpacity(0.1),
+                                          blurRadius: 5,
+                                          spreadRadius: 2)
+                                    ],
                                     borderRadius: BorderRadius.circular(16)),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Expanded(
+                                      flex: 6,
+                                      child: Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius:
+                                                BorderRadius.circular(18),
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2020/01/10/11/39/girl-4755130__340.jpg"),
+                                                fit: BoxFit.cover)),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 3,
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 16, right: 16),
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Text("Makeup Hacks"),
+                                            Text("10 Videos"),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               );
                             },
                             itemCount: 10,
