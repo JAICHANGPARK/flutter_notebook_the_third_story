@@ -29,27 +29,96 @@ class _MainPageState extends State<MainPage> {
               children: <Widget>[
                 Expanded(
                   flex: 1,
-                  child: Placeholder(),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Center(
-                    child: Text("Flutter Web"),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.brown,
+                    ),
                   ),
                 ),
                 Expanded(
                   flex: 1,
-                  child: Placeholder(),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2019/09/04/00/16/koala-4450420_960_720.jpg"),
+                            fit: BoxFit.cover)),
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    padding: EdgeInsets.only(left: 48),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          "Welcome, let's",
+                          style: TextStyle(
+                              fontSize: 40, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "watch some cool",
+                          style: TextStyle(
+                              fontSize: 40, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Koalas",
+                          style: TextStyle(
+                              fontSize: 40, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        TextField(
+                          decoration: InputDecoration(
+                            labelText: "Email",
+                            labelStyle: TextStyle(
+                              color: Colors.black,
+                            ),
+                            hoverColor: Colors.black
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        TextField(),
+                        Container(
+                          width: 120,
+                          height: 64,
+                          decoration: BoxDecoration(color: Colors.brown[300]),
+                        ),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text("Don't have an accout?",
+                              style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w300
+                            ),),
+                            Text("Sign Up", style: TextStyle(
+                              color: Colors.grey
+                            ),)
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                 )
               ],
             ),
-
           )
         ],
       ),
     );
   }
 }
-
-
-
