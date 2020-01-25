@@ -22,6 +22,7 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(
 
       ),
+      drawer: Drawer(),
     );
   }
 }
