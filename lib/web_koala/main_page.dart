@@ -48,7 +48,7 @@ class _MainPageState extends State<MainPage> {
                 Expanded(
                   flex: 1,
                   child: Container(
-                    padding: EdgeInsets.only(left: 48),
+                    padding: EdgeInsets.only(left: 48, right: 48),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -89,21 +89,36 @@ class _MainPageState extends State<MainPage> {
                         SizedBox(
                           height: 8,
                         ),
-                        TextField(),
-                        Container(
-                          width: 120,
-                          height: 64,
-                          decoration: BoxDecoration(color: Colors.brown[300]),
+                        TextField(
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            labelText: "Password",
+                          ),
                         ),
                         SizedBox(
                           height: 24,
+                        ),
+                        Container(
+                          width: 160,
+                          height: 58,
+                          decoration: BoxDecoration(color: Colors.brown[300]),
+                          child: Center(
+                            child: Text("LOGIN", style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 32,
                         ),
                         Row(
                           children: <Widget>[
                             Text("Don't have an accout?",
                               style: TextStyle(
+                                letterSpacing: 1.2,
                               color: Colors.black,
-                              fontWeight: FontWeight.w300
+                              fontWeight: FontWeight.w500
                             ),),
                             Text("Sign Up", style: TextStyle(
                               color: Colors.grey
