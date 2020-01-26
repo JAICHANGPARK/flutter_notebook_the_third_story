@@ -152,9 +152,9 @@ class _MainPageState extends State<MainPage> {
                   Text(
                     "Join Us",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   ),
                   SizedBox(
                     width: 64,
@@ -162,7 +162,9 @@ class _MainPageState extends State<MainPage> {
                   Text(
                     "Discover",
                     style: TextStyle(
-                        color: Colors.brown[200], fontWeight: FontWeight.bold),
+                        color: Colors.brown[200],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   ),
                   SizedBox(
                     width: 64,
@@ -170,7 +172,9 @@ class _MainPageState extends State<MainPage> {
                   Text(
                     "Explore",
                     style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   ),
                   SizedBox(
                     width: 64,
@@ -178,7 +182,9 @@ class _MainPageState extends State<MainPage> {
                   Text(
                     "Watch",
                     style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   ),
                 ],
               ),
