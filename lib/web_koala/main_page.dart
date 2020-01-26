@@ -149,10 +149,30 @@ class _MainPageState extends State<MainPage> {
                     fontWeight: FontWeight.bold,
                   ),),
                   Text("Discover",
-                  style: TextStyle(),),
-                  Text("Explore"),
-                  Text("Watch"),
+                  style: TextStyle(
+                    color: Colors.brown[200],
+                    fontWeight: FontWeight.bold
+                  ),),
+                  Text("Explore", style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                  ),),
+                  Text("Watch", style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                  ),),
                 ],
+              ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            bottom: 0,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 4,
+              width: MediaQuery.of(context).size.width / 4 ,
+              decoration: BoxDecoration(
+                color: Colors.red
               ),
             ),
           )
