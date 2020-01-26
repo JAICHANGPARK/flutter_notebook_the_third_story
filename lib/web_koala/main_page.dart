@@ -131,9 +131,59 @@ class _MainPageState extends State<MainPage> {
                 )
               ],
             ),
+          ),
+          Positioned(
+            left: 0,
+            bottom: 0,
+            right: MediaQuery.of(context).size.width / 3 - 64,
+            child: Container(
+              height: 120,
+              decoration: BoxDecoration(
+                color: Colors.black
+              ),
+              child: Row(
+                children: <Widget>[
+                  Spacer(),
+                  Text("Join Us",style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),),
+                  Text("Discover",
+                  style: TextStyle(),),
+                  Text("Explore"),
+                  Text("Watch"),
+                ],
+              ),
+            ),
           )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
