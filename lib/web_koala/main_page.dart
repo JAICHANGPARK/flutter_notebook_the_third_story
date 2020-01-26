@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class KoalaWebApp extends StatelessWidget {
   @override
@@ -141,22 +142,25 @@ class _MainPageState extends State<MainPage> {
               decoration: BoxDecoration(
                 color: Colors.black
               ),
+              padding: EdgeInsets.only(right: 64),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Spacer(),
                   Text("Join Us",style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),),
+                  SizedBox(width: 64,),
                   Text("Discover",
                   style: TextStyle(
                     color: Colors.brown[200],
                     fontWeight: FontWeight.bold
-                  ),),
+                  ),),SizedBox(width: 64,),
                   Text("Explore", style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold
-                  ),),
+                  ),),SizedBox(width: 64,),
                   Text("Watch", style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold
@@ -170,7 +174,7 @@ class _MainPageState extends State<MainPage> {
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 4,
-              width: MediaQuery.of(context).size.width / 4 ,
+              width: MediaQuery.of(context).size.width / 3.5 ,
               decoration: BoxDecoration(
                 color: Colors.red
               ),
