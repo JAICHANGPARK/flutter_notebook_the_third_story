@@ -101,7 +101,15 @@ class _MainPageState extends State<MainPage> {
                         Container(
                           width: 160,
                           height: 58,
-                          decoration: BoxDecoration(color: Colors.brown[300]),
+                          decoration: BoxDecoration(
+                              color: Colors.brown[300],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.brown[100],
+                                  blurRadius: 2,
+                                  spreadRadius: 3,
+                                )
+                              ]),
                           child: Center(
                             child: Text(
                               "LOGIN",
