@@ -48,11 +48,13 @@ class _MainPageState extends State<MainPage> {
                                   color: Colors.white,
                                   size: 38,
                                 ),
-                                Text("Koala", style: TextStyle(
-                                  fontSize: 48,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                                ),)
+                                Text(
+                                  "Koala",
+                                  style: TextStyle(
+                                      fontSize: 48,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                )
                               ],
                             ),
                           ),
@@ -69,10 +71,10 @@ class _MainPageState extends State<MainPage> {
                                       .textTheme
                                       .headline2
                                       .copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 72,
-                                    color: Colors.brown[300],
-                                  ),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 72,
+                                        color: Colors.brown[300],
+                                      ),
                                 )
                               ],
                             ),
@@ -80,9 +82,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         Expanded(
                           flex: 2,
-                          child: Container(
-
-                          ),
+                          child: Container(),
                         )
                       ],
                     ),
@@ -264,14 +264,20 @@ class _MainPageState extends State<MainPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    Text("WATCH NOW!", style: TextStyle(
+                    Text(
+                      "WATCH NOW!",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24),
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Icon(
+                      Icons.play_circle_outline,
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24
-                    ),),
-                    SizedBox(width: 8,),
-                    Icon(Icons.play_circle_outline,
-                    color: Colors.white,)
+                    )
                   ],
                 ),
               ),
