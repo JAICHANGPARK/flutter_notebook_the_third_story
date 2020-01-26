@@ -80,12 +80,11 @@ class _MainPageState extends State<MainPage> {
                         ),
                         TextField(
                           decoration: InputDecoration(
-                            labelText: "Email",
-                            labelStyle: TextStyle(
-                              color: Colors.black,
-                            ),
-                            hoverColor: Colors.black
-                          ),
+                              labelText: "Email",
+                              labelStyle: TextStyle(
+                                color: Colors.black,
+                              ),
+                              hoverColor: Colors.black),
                         ),
                         SizedBox(
                           height: 8,
@@ -104,10 +103,13 @@ class _MainPageState extends State<MainPage> {
                           height: 58,
                           decoration: BoxDecoration(color: Colors.brown[300]),
                           child: Center(
-                            child: Text("LOGIN", style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),),
+                            child: Text(
+                              "LOGIN",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                         SizedBox(
@@ -115,15 +117,17 @@ class _MainPageState extends State<MainPage> {
                         ),
                         Row(
                           children: <Widget>[
-                            Text("Don't have an accout?",
+                            Text(
+                              "Don't have an accout?",
                               style: TextStyle(
-                                letterSpacing: 1.2,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w500
-                            ),),
-                            Text("Sign Up", style: TextStyle(
-                              color: Colors.grey
-                            ),)
+                                  letterSpacing: 1.2,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                            Text(
+                              "Sign Up",
+                              style: TextStyle(color: Colors.grey),
+                            )
                           ],
                         )
                       ],
@@ -139,32 +143,43 @@ class _MainPageState extends State<MainPage> {
             right: MediaQuery.of(context).size.width / 3 - 64,
             child: Container(
               height: 120,
-              decoration: BoxDecoration(
-                color: Colors.black
-              ),
+              decoration: BoxDecoration(color: Colors.black),
               padding: EdgeInsets.only(right: 64),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Spacer(),
-                  Text("Join Us",style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),),
-                  SizedBox(width: 64,),
-                  Text("Discover",
-                  style: TextStyle(
-                    color: Colors.brown[200],
-                    fontWeight: FontWeight.bold
-                  ),),SizedBox(width: 64,),
-                  Text("Explore", style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold
-                  ),),SizedBox(width: 64,),
-                  Text("Watch", style: TextStyle(
+                  Text(
+                    "Join Us",
+                    style: TextStyle(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold
-                  ),),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 64,
+                  ),
+                  Text(
+                    "Discover",
+                    style: TextStyle(
+                        color: Colors.brown[200], fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    width: 64,
+                  ),
+                  Text(
+                    "Explore",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    width: 64,
+                  ),
+                  Text(
+                    "Watch",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -174,10 +189,8 @@ class _MainPageState extends State<MainPage> {
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 4,
-              width: MediaQuery.of(context).size.width / 3.5 ,
-              decoration: BoxDecoration(
-                color: Colors.red
-              ),
+              width: MediaQuery.of(context).size.width / 3.5,
+              decoration: BoxDecoration(color: Colors.red),
             ),
           )
         ],
@@ -185,29 +198,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
