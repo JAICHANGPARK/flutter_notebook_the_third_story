@@ -34,6 +34,58 @@ class _MainPageState extends State<MainPage> {
                     decoration: BoxDecoration(
                       color: Colors.brown,
                     ),
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                Icon(
+                                  Icons.face,
+                                  color: Colors.white,
+                                  size: 38,
+                                ),
+                                Text("Koala", style: TextStyle(
+                                  fontSize: 48,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold
+                                ),)
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 5,
+                          child: Container(
+                            padding: EdgeInsets.only(left: 84),
+                            child: Column(
+                              children: <Widget>[
+                                Text(
+                                  "Get into Koala's beautiful world!",
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headline2
+                                      .copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 72,
+                                    color: Colors.brown[300],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -204,7 +256,25 @@ class _MainPageState extends State<MainPage> {
             child: Container(
               height: MediaQuery.of(context).size.height / 4,
               width: MediaQuery.of(context).size.width / 3.5,
-              decoration: BoxDecoration(color: Colors.red),
+              decoration: BoxDecoration(
+                color: Colors.grey,
+              ),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text("WATCH NOW!", style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24
+                    ),),
+                    SizedBox(width: 8,),
+                    Icon(Icons.play_circle_outline,
+                    color: Colors.white,)
+                  ],
+                ),
+              ),
             ),
           )
         ],
