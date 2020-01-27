@@ -27,12 +27,13 @@ class _MainPageState extends State<MainPage> {
               flex: 1,
               child: Placeholder(),
             ),
+            Divider(),
             Expanded(
               flex: 3,
               child: Placeholder(),
             ),
             Expanded(
-              flex: 10,
+              flex: 15,
               child: ListView.builder(
                   itemCount: 10,
                   scrollDirection: Axis.horizontal,
