@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -19,29 +20,60 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            flex: 1,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 3,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 10,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 4,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 1,
-            child: Placeholder(),
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 3,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 10,
+              child: ListView.builder(
+                  itemCount: 10,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index){
+                return Container(
+                  margin: EdgeInsets.only(right: 16),
+                  width: MediaQuery.of(context).size.width - 80,
+                  decoration: BoxDecoration(
+                    color: Colors.red
+                  ),
+                );
+
+              }),
+            ),
+            Expanded(
+              flex: 4,
+              child: Stack(
+                children: <Widget>[
+                  Positioned(
+                    top: 16,
+                    left: 16,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text("TOKYO FRENSH"),
+                        Text("HOODIE"),
+                        Text("\$149.00")
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Center(
+                child: Text("バルセロナ／東京"),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
