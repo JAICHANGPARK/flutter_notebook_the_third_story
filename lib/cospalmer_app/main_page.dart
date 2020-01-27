@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 class OnlineShopApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,10 +37,7 @@ class _MainPageState extends State<MainPage> {
                     Text("Menu"),
                     Spacer(),
                     Row(
-                      children: <Widget>[
-                        Text("COSPALMER"),
-                        Text("バルセロナ")
-                      ],
+                      children: <Widget>[Text("COSPALMER"), Text("バルセロナ")],
                     ),
                     Spacer(),
                     Icon(Icons.card_giftcard),
@@ -55,16 +51,13 @@ class _MainPageState extends State<MainPage> {
               child: ListView.builder(
                   itemCount: 10,
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index){
-                return Container(
-                  margin: EdgeInsets.only(right: 16),
-                  width: MediaQuery.of(context).size.width - 80,
-                  decoration: BoxDecoration(
-                    color: Colors.red
-                  ),
-                );
-
-              }),
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.only(right: 16),
+                      width: MediaQuery.of(context).size.width - 80,
+                      decoration: BoxDecoration(color: Colors.red),
+                    );
+                  }),
             ),
             Expanded(
               flex: 4,
@@ -88,8 +81,10 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               flex: 1,
               child: Center(
-                child: Text("バルセロナ／東京",style: TextStyle(
-                  fontSize: 12),),
+                child: Text(
+                  "バルセロナ／東京",
+                  style: TextStyle(fontSize: 12),
+                ),
               ),
             )
           ],
@@ -98,35 +93,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
