@@ -27,10 +27,28 @@ class _MainPageState extends State<MainPage> {
               flex: 1,
               child: Placeholder(),
             ),
-            Divider(),
+            Divider(
+              color: Colors.grey,
+            ),
             Expanded(
-              flex: 3,
-              child: Placeholder(),
+              flex: 2,
+              child: Container(
+                child: Row(
+                  children: <Widget>[
+                    Text("Menu"),
+                    Spacer(),
+                    Row(
+                      children: <Widget>[
+                        Text("COSPALMER"),
+                        Text("バルセロナ")
+                      ],
+                    ),
+                    Spacer(),
+                    Icon(Icons.card_giftcard),
+                    Text("(0)")
+                  ],
+                ),
+              ),
             ),
             Expanded(
               flex: 15,
@@ -70,7 +88,8 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               flex: 1,
               child: Center(
-                child: Text("バルセロナ／東京"),
+                child: Text("バルセロナ／東京",style: TextStyle(
+                  fontSize: 12),),
               ),
             )
           ],
