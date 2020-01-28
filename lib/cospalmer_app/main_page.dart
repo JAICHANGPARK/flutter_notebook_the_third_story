@@ -16,7 +16,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  Widget _buildMainWidget(){
+  Widget _buildMainWidget() {
     return SafeArea(
       child: Column(
         children: <Widget>[
@@ -69,9 +69,11 @@ class _MainPageState extends State<MainPage> {
                   return Container(
                     margin: EdgeInsets.only(right: 16),
                     width: MediaQuery.of(context).size.width - 80,
-                    decoration: BoxDecoration(color: Colors.red,
+                    decoration: BoxDecoration(
+                        color: Colors.red,
                         image: DecorationImage(
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247_960_720.jpg"),
+                          image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247_960_720.jpg"),
                           fit: BoxFit.cover,
                         )),
                   );
@@ -123,13 +125,14 @@ class _MainPageState extends State<MainPage> {
                         height: 32,
                         width: 92,
                         decoration: BoxDecoration(
-                            border:
-                            Border.all(color: Colors.black, width: 2)),
+                            border: Border.all(color: Colors.black, width: 2)),
                         child: Center(
-                          child: Text("BUY", style: TextStyle(
-                            color: Colors.black,
-
-                          ),),
+                          child: Text(
+                            "BUY",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
                       )
                     ],
@@ -151,6 +154,7 @@ class _MainPageState extends State<MainPage> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -158,20 +162,19 @@ class _MainPageState extends State<MainPage> {
         scrollDirection: Axis.vertical,
         children: <Widget>[
           _buildMainWidget(),
-          Placeholder(),
+          Column(
+            children: <Widget>[
+              Text("THE cospalmer peach sweet hoodie is a one"
+                      "of a kind piece(only 10 units) is handmade. wear it up with pride"
+                  .toUpperCase()),
+            ],
+          )
         ],
       ),
 //      body: _buildMainWidget(),
     );
   }
 }
-
-
-
-
-
-
-
 
 
 
