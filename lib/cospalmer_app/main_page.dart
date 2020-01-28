@@ -24,7 +24,7 @@ class _MainPageState extends State<MainPage> {
           children: <Widget>[
             Expanded(
               flex: 1,
-              child: Placeholder(),
+              child: Container(),
             ),
             Divider(
               color: Colors.grey,
@@ -32,6 +32,10 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               flex: 2,
               child: Container(
+                padding: EdgeInsets.only(
+                  left: 16,
+                  right: 16
+                ),
                 child: Row(
                   children: <Widget>[
                     Text("Menu"),
