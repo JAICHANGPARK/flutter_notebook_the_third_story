@@ -162,12 +162,28 @@ class _MainPageState extends State<MainPage> {
         scrollDirection: Axis.vertical,
         children: <Widget>[
           _buildMainWidget(),
-          Column(
-            children: <Widget>[
-              Text("THE cospalmer peach sweet hoodie is a one"
-                      "of a kind piece(only 10 units) is handmade. wear it up with pride"
-                  .toUpperCase()),
-            ],
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SafeArea(
+              child: Column(
+                children: <Widget>[
+                  Text("THE cospalmer peach sweet hoodie is a one"
+                          "of a kind piece(only 10 units) is handmade. wear it up with pride"
+                      .toUpperCase(),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),),
+                  SizedBox(height: 72,),
+                  Text("Use a promocode".toUpperCase(), style: TextStyle(
+                    fontSize: 10,
+                  ),),
+                  Text("To win more".toUpperCase(), style: TextStyle(
+                    fontSize: 10,
+                  ),), SizedBox(height: 72,),
+                ],
+              ),
+            ),
           )
         ],
       ),
