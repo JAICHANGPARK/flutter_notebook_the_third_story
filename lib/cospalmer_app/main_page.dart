@@ -37,11 +37,22 @@ class _MainPageState extends State<MainPage> {
                   right: 16
                 ),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    Text("Menu"),
+                    Text("Menu", style: TextStyle(
+                      fontSize: 18
+                    ),),
                     Spacer(),
-                    Row(
-                      children: <Widget>[Text("COSPALMER"), Text("バルセロナ")],
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("COSPALMER", style: TextStyle(
+                          fontSize: 24, fontWeight: FontWeight.bold
+                        ),),
+                        Text("バルセロナ",style: TextStyle(
+                          fontSize: 12
+                        ),),
+                      ],
                     ),
                     Spacer(),
                     Icon(Icons.card_giftcard),
