@@ -163,24 +163,52 @@ class _MainPageState extends State<MainPage> {
         children: <Widget>[
           _buildMainWidget(),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(16.0),
             child: SafeArea(
               child: Column(
                 children: <Widget>[
-                  Text("THE cospalmer peach sweet hoodie is a one"
-                          "of a kind piece(only 10 units) is handmade. wear it up with pride"
-                      .toUpperCase(),
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16,
+                  Text(
+                    "THE cospalmer peach sweet hoodie is a one"
+                            "of a kind piece(only 10 units) is handmade. wear it up with pride"
+                        .toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 72,
+                  ),
+                  Text(
+                    "Use a promocode".toUpperCase(),
+                    style: TextStyle(
+                      fontSize: 10,
+                    ),
+                  ),
+                  Text(
+                    "To win more".toUpperCase(),
+                    style: TextStyle(
+                      fontSize: 10,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 72,
+                  ),
+                  Text("INFO",style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800
                   ),),
-                  SizedBox(height: 72,),
-                  Text("Use a promocode".toUpperCase(), style: TextStyle(
-                    fontSize: 10,
+                  Divider(color: Colors.black, thickness: 1.5,height: 50,),
+                  Text("SIZE CHART",style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800
                   ),),
-                  Text("To win more".toUpperCase(), style: TextStyle(
-                    fontSize: 10,
-                  ),), SizedBox(height: 72,),
+                  Divider(color: Colors.black, thickness: 1.5,height: 50,),
+                  Text("SHIPPING",style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800
+                  ),),
+                  Divider(color: Colors.black, thickness: 1.5,height: 50,)
                 ],
               ),
             ),
@@ -191,6 +219,11 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
+
+
+
+
 
 
 
