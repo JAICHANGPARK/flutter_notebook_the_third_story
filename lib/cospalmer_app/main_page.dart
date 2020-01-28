@@ -154,8 +154,36 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          _buildMainWidget(),
+          Placeholder(),
+        ],
+      ),
 //      body: _buildMainWidget(),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
