@@ -32,26 +32,27 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               flex: 2,
               child: Container(
-                padding: EdgeInsets.only(
-                  left: 16,
-                  right: 16
-                ),
+                padding: EdgeInsets.only(left: 16, right: 16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    Text("Menu", style: TextStyle(
-                      fontSize: 18
-                    ),),
+                    Text(
+                      "Menu",
+                      style: TextStyle(fontSize: 18),
+                    ),
                     Spacer(),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text("COSPALMER", style: TextStyle(
-                          fontSize: 24, fontWeight: FontWeight.bold
-                        ),),
-                        Text("バルセロナ",style: TextStyle(
-                          fontSize: 12
-                        ),),
+                        Text(
+                          "COSPALMER",
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "バルセロナ",
+                          style: TextStyle(fontSize: 12),
+                        ),
                       ],
                     ),
                     Spacer(),
@@ -84,16 +85,18 @@ class _MainPageState extends State<MainPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text("TOKYO FRENSH",style: TextStyle(
-                          fontSize: 16
-                        ),),
-                        Text("HOODIE",style: TextStyle(
-                          fontSize: 16
-                        ),),
-                        Text("\$149.00", style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 16
-                        ),)
+                        Text(
+                          "TOKYO FRENSH",
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        Text(
+                          "HOODIE",
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        Text(
+                          "\$149.00",
+                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                        )
                       ],
                     ),
                   ),
@@ -103,17 +106,23 @@ class _MainPageState extends State<MainPage> {
                     child: Row(
                       children: <Widget>[
                         Text("S"),
-                        SizedBox(width: 24,),
-                        Text("M"),SizedBox(width: 24,),
-                        Text("L"),SizedBox(width: 24,),
+                        SizedBox(
+                          width: 24,
+                        ),
+                        Text("M"),
+                        SizedBox(
+                          width: 24,
+                        ),
+                        Text("L"),
+                        SizedBox(
+                          width: 24,
+                        ),
                         Container(
                           height: 32,
                           width: 92,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black,
-                            width: 2)
-                          ),
-                          
+                              border:
+                                  Border.all(color: Colors.black, width: 2)),
                         )
                       ],
                     ),
