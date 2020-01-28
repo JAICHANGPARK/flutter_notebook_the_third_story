@@ -194,21 +194,33 @@ class _MainPageState extends State<MainPage> {
                   SizedBox(
                     height: 72,
                   ),
-                  Text("INFO",style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800
-                  ),),
-                  Divider(color: Colors.black, thickness: 1.5,height: 50,),
-                  Text("SIZE CHART",style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w800
-                  ),),
-                  Divider(color: Colors.black, thickness: 1.5,height: 50,),
-                  Text("SHIPPING",style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w800
-                  ),),
-                  Divider(color: Colors.black, thickness: 1.5,height: 50,)
+                  Text(
+                    "INFO",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    thickness: 1.5,
+                    height: 50,
+                  ),
+                  Text(
+                    "SIZE CHART",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    thickness: 1.5,
+                    height: 50,
+                  ),
+                  Text(
+                    "SHIPPING",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    thickness: 1.5,
+                    height: 50,
+                  )
                 ],
               ),
             ),
@@ -219,23 +231,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
