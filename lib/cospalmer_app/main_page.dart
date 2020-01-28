@@ -84,9 +84,37 @@ class _MainPageState extends State<MainPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text("TOKYO FRENSH"),
-                        Text("HOODIE"),
-                        Text("\$149.00")
+                        Text("TOKYO FRENSH",style: TextStyle(
+                          fontSize: 16
+                        ),),
+                        Text("HOODIE",style: TextStyle(
+                          fontSize: 16
+                        ),),
+                        Text("\$149.00", style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16
+                        ),)
+                      ],
+                    ),
+                  ),
+                  Positioned(
+                    right: 16,
+                    bottom: 24,
+                    child: Row(
+                      children: <Widget>[
+                        Text("S"),
+                        SizedBox(width: 24,),
+                        Text("M"),SizedBox(width: 24,),
+                        Text("L"),SizedBox(width: 24,),
+                        Container(
+                          height: 32,
+                          width: 92,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black,
+                            width: 2)
+                          ),
+                          
+                        )
                       ],
                     ),
                   )
