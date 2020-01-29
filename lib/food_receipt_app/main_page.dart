@@ -6,6 +6,7 @@ class FoodReceiptsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: FoodMainPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
