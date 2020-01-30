@@ -164,13 +164,44 @@ class _FoodMainPageState extends State<FoodMainPage> {
                         child: Row(
                           children: <Widget>[
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                margin: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      fit: BoxFit.cover,
+
+                                    )
+                                ),
+
+
+                              ),
                             ),
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                margin: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      fit: BoxFit.cover,
+
+                                    )
+                                ),
+                              ),
                             ),
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                margin: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      fit: BoxFit.cover,
+                                    )
+                                ),
+                              ),
                             )
                           ],
                         ),
