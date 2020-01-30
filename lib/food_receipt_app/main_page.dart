@@ -101,7 +101,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 Container(
                   height: 280,
                   decoration: BoxDecoration(
-                    color: Colors.yellow,
+                
                   ),
                   child: Column(
                     children: <Widget>[
@@ -115,7 +115,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                 children: <Widget>[
                                   Expanded(
                                     child: Container(
-                                      margin: EdgeInsets.all(4),
+                                      margin: const EdgeInsets.all(4),
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
@@ -127,7 +127,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                   ),
                                   Expanded(
                                     child: Container(
-                                      margin: EdgeInsets.all(4),
+                                      margin: const EdgeInsets.all(4),
                                       decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(8),
                                           image: DecorationImage(
@@ -142,7 +142,19 @@ class _FoodMainPageState extends State<FoodMainPage> {
                             ),
                             Expanded(
                               flex: 2,
-                              child: Placeholder(),
+                              child: Container(
+                                margin: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                    fit: BoxFit.cover,
+                                    
+                                  )
+                                ),
+
+
+                              ),
                             ),
                           ],
                         ),
