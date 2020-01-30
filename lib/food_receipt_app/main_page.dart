@@ -228,9 +228,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                               itemCount: 100,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 80,
+                                  width: 100,
                                   margin: EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
                                       image: DecorationImage(
                                           image: NetworkImage("https://cdn.pixabay.com/photo/2014/09/22/14/49/fried-eggs-456351__340.jpg"),
                                       fit: BoxFit.cover)),
