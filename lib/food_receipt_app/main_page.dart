@@ -154,16 +154,17 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Your special", style: TextStyle(
-                      fontSize: 18
-                    ),),
-                    Text("recommendations", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16
-                    ),)
+                    Text(
+                      "Your special",
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    Text(
+                      "recommendations",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    )
                   ],
                 ),
-
               ],
             ),
           ),
@@ -172,22 +173,3 @@ class _FoodMainPageState extends State<FoodMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
