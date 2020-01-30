@@ -114,10 +114,28 @@ class _FoodMainPageState extends State<FoodMainPage> {
                               child: Column(
                                 children: <Widget>[
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Container(
+                                      margin: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                          image: NetworkImage("https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg"),
+                                          fit: BoxFit.cover,
+                                        )
+                                      ),
+                                    ),
                                   ),
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Container(
+                                      margin: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: DecorationImage(
+                                            image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305__340.jpg"),
+                                            fit: BoxFit.cover,
+                                          )
+                                      ),
+                                    ),
                                   )
                                 ],
                               ),
