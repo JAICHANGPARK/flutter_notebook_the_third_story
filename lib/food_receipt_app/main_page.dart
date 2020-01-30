@@ -100,9 +100,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 ),
                 Container(
                   height: 280,
-                  decoration: BoxDecoration(
-                
-                  ),
+                  decoration: BoxDecoration(),
                   child: Column(
                     children: <Widget>[
                       Expanded(
@@ -117,24 +115,26 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                     child: Container(
                                       margin: const EdgeInsets.all(4),
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(8),
-                                        image: DecorationImage(
-                                          image: NetworkImage("https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg"),
-                                          fit: BoxFit.cover,
-                                        )
-                                      ),
+                                          borderRadius:
+                                              BorderRadius.circular(8),
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg"),
+                                            fit: BoxFit.cover,
+                                          )),
                                     ),
                                   ),
                                   Expanded(
                                     child: Container(
                                       margin: const EdgeInsets.all(4),
                                       decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(8),
+                                          borderRadius:
+                                              BorderRadius.circular(8),
                                           image: DecorationImage(
-                                            image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305__340.jpg"),
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305__340.jpg"),
                                             fit: BoxFit.cover,
-                                          )
-                                      ),
+                                          )),
                                     ),
                                   )
                                 ],
@@ -145,15 +145,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                               child: Container(
                                 margin: const EdgeInsets.all(4),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                    image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
-                                    fit: BoxFit.cover,
-                                    
-                                  )
-                                ),
-
-
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      fit: BoxFit.cover,
+                                    )),
                               ),
                             ),
                           ],
@@ -169,13 +166,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/12/08/00/26/food-1081707__340.jpg"),
                                       fit: BoxFit.cover,
-
-                                    )
-                                ),
-
-
+                                    )),
                               ),
                             ),
                             Expanded(
@@ -184,11 +178,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2014/05/05/19/52/jause-338498__340.jpg"),
                                       fit: BoxFit.cover,
-
-                                    )
-                                ),
+                                    )),
                               ),
                             ),
                             Expanded(
@@ -197,10 +190,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523__340.jpg"),
                                       fit: BoxFit.cover,
-                                    )
-                                ),
+                                    )),
                               ),
                             )
                           ],
@@ -223,6 +216,15 @@ class _FoodMainPageState extends State<FoodMainPage> {
                       "recommendations",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 16),
+                      child: SizedBox(
+                        height: 100,
+                        child: Container(
+                          color: Colors.red,
+                        ),
+                      ),
                     )
                   ],
                 ),
