@@ -223,6 +223,19 @@ class _FoodMainPageState extends State<FoodMainPage> {
                         height: 100,
                         child: Container(
                           color: Colors.red,
+                          child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 100,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 80,
+                                  margin: EdgeInsets.only(right: 16),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: NetworkImage("https://cdn.pixabay.com/photo/2014/09/22/14/49/fried-eggs-456351__340.jpg"),
+                                      fit: BoxFit.cover)),
+                                );
+                              }),
                         ),
                       ),
                     )
