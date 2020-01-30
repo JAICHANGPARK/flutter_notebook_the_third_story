@@ -1,6 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:notebook_the_third_story/food_receipt_app/food_info_page.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
 
 class FoodReceiptsApp extends StatelessWidget {
@@ -142,15 +143,22 @@ class _FoodMainPageState extends State<FoodMainPage> {
                             ),
                             Expanded(
                               flex: 2,
-                              child: Container(
-                                margin: const EdgeInsets.all(4),
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
-                                      fit: BoxFit.cover,
-                                    )),
+                              child: InkWell(
+                                onTap: (){
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => FoodInfoPage()
+                                  ));
+                                },
+                                child: Container(
+                                  margin: const EdgeInsets.all(4),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__340.jpg"),
+                                        fit: BoxFit.cover,
+                                      )),
+                                ),
                               ),
                             ),
                           ],
@@ -222,7 +230,6 @@ class _FoodMainPageState extends State<FoodMainPage> {
                       child: SizedBox(
                         height: 100,
                         child: Container(
-                          color: Colors.red,
                           child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 100,
