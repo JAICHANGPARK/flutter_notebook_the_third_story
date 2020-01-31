@@ -49,11 +49,33 @@ class _FoodInfoPageState extends State<FoodInfoPage> {
             Positioned(
               left: 24,
               right: 24,
-              top: 320,
+              top: 120,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("The best"),
-                  Text("chicken tinga tacos")
+                  Text("The best", style: Theme.of(context).textTheme.headline5.copyWith(
+                    color: Colors.white,
+                  ),),
+                  Text("chicken tinga tacos", style: Theme.of(context).textTheme.headline5.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(Icons.star, color: Colors.yellow,size: 16,),
+                        Icon(Icons.star, color: Colors.yellow,size: 16,),
+                        Icon(Icons.star, color: Colors.yellow,size: 16,),
+                        Icon(Icons.star, color: Colors.yellow,size: 16,),
+                        Icon(Icons.star_border , color: Colors.yellow,size: 16,),
+                        SizedBox(width: 4,),
+                        Text("8 reviews", style: TextStyle(
+                          color: Colors.grey
+                        ),)
+                      ],
+                    ),
+                  )
                 ],
               ),
             )
