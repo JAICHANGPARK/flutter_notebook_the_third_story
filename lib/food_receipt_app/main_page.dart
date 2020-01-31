@@ -2,13 +2,14 @@ import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notebook_the_third_story/food_receipt_app/food_info_page.dart';
+import 'package:notebook_the_third_story/food_receipt_app/start_page.dart';
 import 'package:notebook_the_third_story/note_utils.dart';
 
 class FoodReceiptsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: FoodMainPage(),
+      home: StartPage(),
       debugShowCheckedModeBanner: false,
     );
   }
