@@ -38,19 +38,24 @@ class SMContainer extends StatelessWidget {
   }
 }
 
-class SMContainerV2 extends StatelessWidget {
+class SMContainerV2 extends StatefulWidget {
   final Widget child;
   final Color color;
 
   SMContainerV2({Key key, this.child, this.color}) : super(key: key);
 
   @override
+  _SMContainerV2State createState() => _SMContainerV2State();
+}
+
+class _SMContainerV2State extends State<SMContainerV2> {
+  @override
   Widget build(BuildContext context) {
-    final color = this.color ?? Theme.of(context).backgroundColor;
+    final color = this.widget.color ?? Theme.of(context).backgroundColor;
     return Container(
       padding: EdgeInsets.all(24),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(16),
           color: Colors.grey.shade200,
           gradient: LinearGradient(
               begin: Alignment.topLeft,
@@ -77,7 +82,7 @@ class SMContainerV2 extends StatelessWidget {
                 offset: Offset(5, 5),
                 color: color.mix(Colors.black, 0.3))
           ]),
-      child: child,
+      child: widget.child,
     );
   }
 }
