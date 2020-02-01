@@ -51,19 +51,28 @@ final Color color;
   Widget build(BuildContext context) {
     final color = this.color ?? Theme.of(context).backgroundColor;
     return Container(
+      padding: EdgeInsets.all(24),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(2),
+          borderRadius: BorderRadius.circular(10),
           color: Colors.grey.shade200,
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end:  Alignment.bottomRight,
+            colors: [
+              color.mix(Colors.white, 0.2),
+              color.mix(Colors.white, 0.1),
+            ]
+          ),
           boxShadow: [
             BoxShadow(
               blurRadius: 10.0,
               offset: Offset(-5, -5),
-              color: Colors.white,
+              color: color.mix(Colors.white, 0.6)
             ),
             BoxShadow(
               blurRadius: 10.0,
               offset: Offset(5, 5),
-              color: Colors.grey.shade400,
+              color: color.mix(Colors.black,  0.3)
             )
           ]),
       child: child,
