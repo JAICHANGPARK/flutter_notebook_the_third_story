@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
-extension ColorUtils on Color{
-  Color mix(Color another, double amount){
+extension ColorUtils on Color {
+  Color mix(Color another, double amount) {
     return Color.lerp(this, another, amount);
   }
 }
@@ -40,12 +39,10 @@ class SMContainer extends StatelessWidget {
 }
 
 class SMContainerV2 extends StatelessWidget {
-
   final Widget child;
-final Color color;
-  SMContainerV2({Key key, this.child, this.color}) :
+  final Color color;
 
-        super(key: key);
+  SMContainerV2({Key key, this.child, this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -56,58 +53,31 @@ final Color color;
           borderRadius: BorderRadius.circular(10),
           color: Colors.grey.shade200,
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end:  Alignment.bottomRight,
-            colors: [
-              color.mix(Colors.white, 0.2),
-              color.mix(Colors.white, 0.1),
-            ]
-          ),
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                color.mix(Colors.white, 0.1),
+                color,
+                color,
+                color.mix(Colors.white, 0.5),
+              ],
+              stops: [
+                0.0,
+                0.3,
+                0.6,
+                1.0,
+              ]),
           boxShadow: [
             BoxShadow(
-              blurRadius: 10.0,
-              offset: Offset(-5, -5),
-              color: color.mix(Colors.white, 0.6)
-            ),
+                blurRadius: 10.0,
+                offset: Offset(-5, -5),
+                color: color.mix(Colors.white, 0.6)),
             BoxShadow(
-              blurRadius: 10.0,
-              offset: Offset(5, 5),
-              color: color.mix(Colors.black,  0.3)
-            )
+                blurRadius: 10.0,
+                offset: Offset(5, 5),
+                color: color.mix(Colors.black, 0.3))
           ]),
       child: child,
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -33,7 +33,7 @@ class _SMHomeState extends State<SMHome> {
             children: <Widget>[
               SMContainerV2(
                 child:
-                    Text("Hello world"),
+                    Text("Hello neumorphic"),
               )
             ],
           ),
