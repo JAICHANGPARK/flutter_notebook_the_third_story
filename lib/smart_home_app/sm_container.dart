@@ -82,10 +82,10 @@ class _SMContainerV2State extends State<SMContainerV2> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  color.mix(Colors.white, 0.1),
-                  color,
-                  color,
-                  color.mix(Colors.white, 0.5),
+                  _isPressed ? color : color.mix(Colors.white, 0.1),
+                  _isPressed ? color.mix(Colors.black, .05) : color,
+                  _isPressed ? color.mix(Colors.black, .05) : color,
+                  color.mix(Colors.white, _isPressed ? .2 : .5)
                 ],
                 stops: [
                   0.0,
@@ -93,16 +93,18 @@ class _SMContainerV2State extends State<SMContainerV2> {
                   0.6,
                   1.0,
                 ]),
-            boxShadow: _isPressed ? null : [
-              BoxShadow(
-                  blurRadius: widget.bevel,
-                  offset: -widget.blurOffset,
-                  color: color.mix(Colors.white, 0.6)),
-              BoxShadow(
-                  blurRadius: widget.bevel,
-                  offset: widget.blurOffset,
-                  color: color.mix(Colors.black, 0.3))
-            ]),
+            boxShadow: _isPressed
+                ? null
+                : [
+                    BoxShadow(
+                        blurRadius: widget.bevel,
+                        offset: -widget.blurOffset,
+                        color: color.mix(Colors.white, 0.6)),
+                    BoxShadow(
+                        blurRadius: widget.bevel,
+                        offset: widget.blurOffset,
+                        color: color.mix(Colors.black, 0.3))
+                  ]),
         child: widget.child,
       ),
     );
