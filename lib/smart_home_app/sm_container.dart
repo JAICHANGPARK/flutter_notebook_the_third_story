@@ -41,48 +41,70 @@ class SMContainer extends StatelessWidget {
 class SMContainerV2 extends StatefulWidget {
   final Widget child;
   final Color color;
+  final double bevel;
+  final Offset blurOffset;
 
-  SMContainerV2({Key key, this.child, this.color}) : super(key: key);
+  SMContainerV2({Key key, this.child, this.color, this.bevel = 10.0})
+      : this.blurOffset = Offset(bevel / 2, bevel / 2),
+        super(key: key);
 
   @override
   _SMContainerV2State createState() => _SMContainerV2State();
 }
 
 class _SMContainerV2State extends State<SMContainerV2> {
+  bool _isPressed = false;
+
+  void _onTap(PointerDownEvent event) {
+    setState(() {
+      _isPressed = true;
+    });
+  }
+
+  void _onTapUp(PointerUpEvent event) {
+    setState(() {
+      _isPressed = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final color = this.widget.color ?? Theme.of(context).backgroundColor;
-    return Container(
-      padding: EdgeInsets.all(24),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: Colors.grey.shade200,
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                color.mix(Colors.white, 0.1),
-                color,
-                color,
-                color.mix(Colors.white, 0.5),
-              ],
-              stops: [
-                0.0,
-                0.3,
-                0.6,
-                1.0,
-              ]),
-          boxShadow: [
-            BoxShadow(
-                blurRadius: 10.0,
-                offset: Offset(-5, -5),
-                color: color.mix(Colors.white, 0.6)),
-            BoxShadow(
-                blurRadius: 10.0,
-                offset: Offset(5, 5),
-                color: color.mix(Colors.black, 0.3))
-          ]),
-      child: widget.child,
+    return Listener(
+      onPointerDown: _onTap,
+      onPointerUp: _onTapUp,
+      child: Container(
+        padding: EdgeInsets.all(24),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(widget.bevel),
+            color: Colors.grey.shade200,
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  color.mix(Colors.white, 0.1),
+                  color,
+                  color,
+                  color.mix(Colors.white, 0.5),
+                ],
+                stops: [
+                  0.0,
+                  0.3,
+                  0.6,
+                  1.0,
+                ]),
+            boxShadow: _isPressed ? null : [
+              BoxShadow(
+                  blurRadius: widget.bevel,
+                  offset: -widget.blurOffset,
+                  color: color.mix(Colors.white, 0.6)),
+              BoxShadow(
+                  blurRadius: widget.bevel,
+                  offset: widget.blurOffset,
+                  color: color.mix(Colors.black, 0.3))
+            ]),
+        child: widget.child,
+      ),
     );
   }
 }
