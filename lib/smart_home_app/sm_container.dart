@@ -73,7 +73,8 @@ class _SMContainerV2State extends State<SMContainerV2> {
     return Listener(
       onPointerDown: _onTap,
       onPointerUp: _onTapUp,
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
         padding: EdgeInsets.all(24),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(widget.bevel),
