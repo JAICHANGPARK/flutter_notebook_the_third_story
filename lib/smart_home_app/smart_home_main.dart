@@ -70,6 +70,8 @@ class _SMHomeState extends State<SMHome> {
                       width: 16,
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text.rich(TextSpan(children: [
                           TextSpan(
@@ -77,9 +79,20 @@ class _SMHomeState extends State<SMHome> {
                               style: TextStyle(
                                   fontSize: 34, fontWeight: FontWeight.w200)),
                           TextSpan(text: "kwh", style: TextStyle())
-                        ]))
+                        ])),
+                        SizedBox(
+                          height: 6,
+                        ),
+                        Text(
+                          "Power usage for today",
+                          style: TextStyle(
+                              color: Colors.black.withOpacity(
+                                0.4,
+                              ),
+                              fontWeight: FontWeight.w400),
+                        )
                       ],
-                    )
+                    ),
                   ],
                 ),
               )

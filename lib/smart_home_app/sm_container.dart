@@ -44,9 +44,11 @@ class SMContainerV2 extends StatefulWidget {
   final double bevel;
   final Offset blurOffset;
   final bool shapes;
+  final Padding padding;
 
   SMContainerV2(
-      {Key key, this.child, this.color, this.bevel = 10.0, this.shapes})
+      {Key key, this.child, this.color, this.bevel = 10.0, this.shapes,
+      this.padding})
       : this.blurOffset = Offset(bevel / 2, bevel / 2),
         super(key: key);
 
@@ -77,7 +79,7 @@ class _SMContainerV2State extends State<SMContainerV2> {
       onPointerUp: _onTapUp,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 150),
-        padding: EdgeInsets.all(24),
+        padding: widget.shapes ? widget.padding : EdgeInsets.all(24),
         decoration: BoxDecoration(
             shape: widget.shapes ? BoxShape.rectangle : BoxShape.circle,
             borderRadius: widget.shapes ? BorderRadius.circular(widget.bevel) : null,
