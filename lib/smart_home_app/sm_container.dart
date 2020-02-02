@@ -44,7 +44,7 @@ class SMContainerV2 extends StatefulWidget {
   final double bevel;
   final Offset blurOffset;
   final bool shapes;
-  final Padding padding;
+  final EdgeInsets padding;
 
   SMContainerV2(
       {Key key, this.child, this.color, this.bevel = 10.0, this.shapes,

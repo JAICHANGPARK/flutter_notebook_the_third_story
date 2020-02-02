@@ -97,16 +97,23 @@ class _SMHomeState extends State<SMHome> {
                 ),
               ),
               SizedBox(
-                height: 32,
+                height: 16,
               ),
               SizedBox(
-                  height: 270,
+                  height: 300,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
                       Container(
+                        margin: EdgeInsets.only(left: 16,top: 16, bottom:16,right: 16),
                         width: 200,
-                        decoration: BoxDecoration(color: Colors.blueGrey),
+                        child: SMContainerV2(
+                          child: Stack(),
+                          shapes: true,
+                          padding: EdgeInsets.only(
+                            bottom: 24,
+                          ),
+                        ),
                       ),
                       Container(
                         width: 200,
