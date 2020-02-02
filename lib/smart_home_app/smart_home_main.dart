@@ -7,9 +7,9 @@ class SmartHomeApp extends StatelessWidget {
     return MaterialApp(
       home: SMHome(),
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.blueGrey.shade200,
-        backgroundColor: Colors.blueGrey.shade200,
-        dialogBackgroundColor: Colors.blueGrey.shade200,
+        scaffoldBackgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.grey.shade200,
+        dialogBackgroundColor: Colors.grey.shade200,
       ),
     );
   }
@@ -24,35 +24,31 @@ class _SMHomeState extends State<SMHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              SMContainerV2(
-                child:
-                    Text("Hello neumorphic"),
-              )
-            ],
+        body: Stack(
+      children: <Widget>[
+        Positioned(
+          bottom: 0,
+          right: 0,
+          left: 0,
+          child: Container(
+            height: 160,
+            decoration: BoxDecoration(
+//                color: Colors.grey.shade400,
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: <Color>[
+                      Colors.grey.shade50,
+                      Colors.grey.shade200,
+                      Colors.grey.shade200,
+                    ]),
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(48),
+                  topLeft: Radius.circular(48),
+                )),
           ),
         ),
-      ),
-    );
+      ],
+    ));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
