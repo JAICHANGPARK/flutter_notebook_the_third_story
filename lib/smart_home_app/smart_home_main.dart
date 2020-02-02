@@ -28,7 +28,7 @@ class _SMHomeState extends State<SMHome> {
       children: <Widget>[
         Positioned(
           left: 24,
-          right: 24,
+          right: 0,
           top: 72,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +55,7 @@ class _SMHomeState extends State<SMHome> {
                     fontWeight: FontWeight.w300),
               ),
               SizedBox(
-                height: 72,
+                height: 52,
               ),
               Container(
                 height: 80,
@@ -95,7 +95,25 @@ class _SMHomeState extends State<SMHome> {
                     ),
                   ],
                 ),
-              )
+              ),
+              SizedBox(
+                height: 32,
+              ),
+              SizedBox(
+                  height: 270,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      Container(
+                        width: 200,
+                        decoration: BoxDecoration(color: Colors.blueGrey),
+                      ),
+                      Container(
+                        width: 200,
+                        decoration: BoxDecoration(color: Colors.blueGrey),
+                      )
+                    ],
+                  ))
             ],
           ),
         ),
@@ -104,7 +122,7 @@ class _SMHomeState extends State<SMHome> {
           right: 0,
           left: 0,
           child: Container(
-            height: 160,
+            height: 140,
             margin: EdgeInsets.only(top: 16),
             decoration: BoxDecoration(
 //                color: Colors.grey.shade400,
