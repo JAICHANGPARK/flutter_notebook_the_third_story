@@ -33,30 +33,56 @@ class _SMHomeState extends State<SMHome> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text.rich(TextSpan(
-                children: [
-                  TextSpan(
+              Text.rich(TextSpan(children: [
+                TextSpan(
                     text: "Hello, ",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w200,
-                      fontSize: 32
-                    )
-                  ),
-                  TextSpan(
+                    style:
+                        TextStyle(fontWeight: FontWeight.w200, fontSize: 32)),
+                TextSpan(
                     text: "Dreamwalker!",
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.w300,
+                    ))
+              ])),
+              SizedBox(
+                height: 7,
+              ),
+              Text(
+                "Aniting I can help you with?",
+                style: TextStyle(
+                    color: Colors.black.withOpacity(0.4),
+                    fontWeight: FontWeight.w300),
+              ),
+              SizedBox(
+                height: 72,
+              ),
+              Container(
+                height: 80,
+                child: Row(
+                  children: <Widget>[
+                    SMContainerV2(
+                      bevel: 10,
+                      shapes: false,
+                      child: Icon(Icons.battery_charging_full),
+                    ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text.rich(TextSpan(children: [
+                          TextSpan(
+                              text: "26.3 ",
+                              style: TextStyle(
+                                  fontSize: 34, fontWeight: FontWeight.w200)),
+                          TextSpan(text: "kwh", style: TextStyle())
+                        ]))
+                      ],
                     )
-                  )
-                ]
-              )),
-              SizedBox(height: 7,),
-              Text("Aniting I can help you with?",style: TextStyle(
-                color: Colors.black.withOpacity(0.4),
-                fontWeight: FontWeight.w300
-              ),),
-              
+                  ],
+                ),
+              )
             ],
           ),
         ),
