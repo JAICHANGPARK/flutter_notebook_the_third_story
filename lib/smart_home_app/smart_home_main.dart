@@ -110,7 +110,7 @@ class _SMHomeState extends State<SMHome> {
                 height: 16,
               ),
               SizedBox(
-                  height: 300,
+                  height: 310,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
@@ -257,10 +257,10 @@ class _SMHomeState extends State<SMHome> {
                   padding: const EdgeInsets.only(top: 16),
                   child: Center(
                     child: Container(
-                      height: 6,
-                      width: 52,
+                      height: 5,
+                      width: 42,
                       decoration: BoxDecoration(
-                        color: Colors.blueGrey.shade500,
+                        color: Colors.blueGrey.shade700,
                         borderRadius: BorderRadius.circular(8)
                       ),
                     ),
@@ -276,7 +276,15 @@ class _SMHomeState extends State<SMHome> {
                     fontSize: 22
                   ),
                 ),
-                Text("Swipe up to get a fast access to your\nwireless remote control")
+                SizedBox(
+                  height: 8,
+                ),
+                Text("Swipe up to get a fast access to your\nwireless remote control",
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey.shade400,
+
+                ),)
               ],
             ),
           ),
