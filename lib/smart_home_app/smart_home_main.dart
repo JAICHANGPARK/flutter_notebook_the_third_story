@@ -119,7 +119,24 @@ class _SMHomeState extends State<SMHome> {
                         margin: EdgeInsets.only(left: 16,top: 16, bottom:16,right: 16),
                         width: 200,
                         child: SMContainerV2(
-                          child: Stack(),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                left: -16,
+                                top: 64,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image:  NetworkImage(
+                                          "https://dribbble.com/shots/9833973-Daily-UI-007-Smart-Home-App-Settings/attachments/1866651?mode=media"
+                                      )
+                                    )
+
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                           shapes: true,
                           padding: EdgeInsets.only(
                             bottom: 24,
