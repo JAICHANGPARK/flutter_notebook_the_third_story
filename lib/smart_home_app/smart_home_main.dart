@@ -123,7 +123,7 @@ class _SMHomeState extends State<SMHome> {
                             children: <Widget>[
                               Positioned(
                                 left: -16,
-                                top: 32,
+                                top: 24,
                                 child: Container(
                                   height: 160,
                                   width: 180,
@@ -136,7 +136,7 @@ class _SMHomeState extends State<SMHome> {
                               ),
                               Positioned(
                                 left: 24,
-                                bottom: 24,
+                                bottom: 16,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
@@ -144,9 +144,14 @@ class _SMHomeState extends State<SMHome> {
                                       "Bathroom",
                                       style: TextStyle(
                                         fontSize: 26,
+                                        color: Colors.blueGrey.shade600
                                       ),
                                     ),
-                                    Text("2 device")
+                                    SizedBox(height: 4,),
+                                    Text("2 device", style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.grey.shade500
+                                    ),)
                                   ],
                                 ),
                               )
@@ -163,7 +168,44 @@ class _SMHomeState extends State<SMHome> {
                             left: 16, top: 16, bottom: 16, right: 16),
                         width: 200,
                         child: SMContainerV2(
-                          child: Stack(),
+                          child: Stack(
+                            children: <Widget>[
+                              Positioned(
+                                left: -16,
+                                top: 24,
+                                child: Container(
+                                  height: 160,
+                                  width: 180,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://freepngimg.com/thumb/aquarium/43829-2-sofa-bed-free-transparent-image-hq.png"),
+                                          fit: BoxFit.cover)),
+                                ),
+                              ),
+                              Positioned(
+                                left: 24,
+                                bottom: 16,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Living room",
+                                      style: TextStyle(
+                                          fontSize: 26,
+                                          color: Colors.blueGrey.shade600
+                                      ),
+                                    ),
+                                    SizedBox(height: 4,),
+                                    Text("3 device", style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.grey.shade500
+                                    ),)
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                           shapes: true,
                           padding: EdgeInsets.only(
                             bottom: 24,
@@ -180,7 +222,7 @@ class _SMHomeState extends State<SMHome> {
           right: 0,
           left: 0,
           child: Container(
-            height: 140,
+            height: 120,
             margin: EdgeInsets.only(top: 16),
             decoration: BoxDecoration(
 //                color: Colors.grey.shade400,
@@ -207,9 +249,43 @@ class _SMHomeState extends State<SMHome> {
 //                      offset: widget.blurOffset,
 //                      color: color.mix(Colors.black, 0.3))
                 ]),
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(top: 16),
+                  child: Container(
+                    height: 6,
+                    width: 52,
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey.shade500,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ],
     ));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
