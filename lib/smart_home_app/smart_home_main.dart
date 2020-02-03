@@ -143,15 +143,18 @@ class _SMHomeState extends State<SMHome> {
                                     Text(
                                       "Bathroom",
                                       style: TextStyle(
-                                        fontSize: 26,
-                                        color: Colors.blueGrey.shade600
-                                      ),
+                                          fontSize: 26,
+                                          color: Colors.blueGrey.shade600),
                                     ),
-                                    SizedBox(height: 4,),
-                                    Text("2 device", style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.grey.shade500
-                                    ),)
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "2 device",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.grey.shade500),
+                                    )
                                   ],
                                 ),
                               )
@@ -193,14 +196,17 @@ class _SMHomeState extends State<SMHome> {
                                       "Living room",
                                       style: TextStyle(
                                           fontSize: 26,
-                                          color: Colors.blueGrey.shade600
-                                      ),
+                                          color: Colors.blueGrey.shade600),
                                     ),
-                                    SizedBox(height: 4,),
-                                    Text("3 device", style: TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.grey.shade500
-                                    ),)
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "3 device",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.grey.shade500),
+                                    )
                                   ],
                                 ),
                               )
@@ -260,9 +266,8 @@ class _SMHomeState extends State<SMHome> {
                       height: 5,
                       width: 42,
                       decoration: BoxDecoration(
-                        color: Colors.blueGrey.shade700,
-                        borderRadius: BorderRadius.circular(8)
-                      ),
+                          color: Colors.blueGrey.shade700,
+                          borderRadius: BorderRadius.circular(8)),
                     ),
                   ),
                 ),
@@ -271,20 +276,19 @@ class _SMHomeState extends State<SMHome> {
                 ),
                 Text(
                   "Quick remote access",
-                  style: TextStyle(
-                    color: Colors.blueGrey.shade600,
-                    fontSize: 22
-                  ),
+                  style:
+                      TextStyle(color: Colors.blueGrey.shade600, fontSize: 22),
                 ),
                 SizedBox(
                   height: 8,
                 ),
-                Text("Swipe up to get a fast access to your\nwireless remote control",
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.grey.shade400,
-
-                ),)
+                Text(
+                  "Swipe up to get a fast access to your\nwireless remote control",
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.grey.shade400,
+                  ),
+                )
               ],
             ),
           ),
@@ -293,22 +297,3 @@ class _SMHomeState extends State<SMHome> {
     ));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
