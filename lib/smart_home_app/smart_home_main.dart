@@ -112,27 +112,42 @@ class _SMHomeState extends State<SMHome> {
               SizedBox(
                   height: 300,
                   child: ListView(
-
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
                       Container(
-                        margin: EdgeInsets.only(left: 16,top: 16, bottom:16,right: 16),
+                        margin: EdgeInsets.only(
+                            left: 16, top: 16, bottom: 16, right: 16),
                         width: 200,
                         child: SMContainerV2(
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                                 left: -16,
-                                top: 64,
+                                top: 32,
                                 child: Container(
+                                  height: 160,
+                                  width: 180,
                                   decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image:  NetworkImage(
-                                          "https://dribbble.com/shots/9833973-Daily-UI-007-Smart-Home-App-Settings/attachments/1866651?mode=media"
-                                      )
-                                    )
-
-                                  ),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://pngimg.com/uploads/bathtub/bathtub_PNG21.png"),
+                                          fit: BoxFit.cover)),
+                                ),
+                              ),
+                              Positioned(
+                                left: 24,
+                                bottom: 24,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Bathroom",
+                                      style: TextStyle(
+                                        fontSize: 26,
+                                      ),
+                                    ),
+                                    Text("2 device")
+                                  ],
                                 ),
                               )
                             ],
@@ -144,7 +159,8 @@ class _SMHomeState extends State<SMHome> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 16,top: 16, bottom:16,right: 16),
+                        margin: EdgeInsets.only(
+                            left: 16, top: 16, bottom: 16, right: 16),
                         width: 200,
                         child: SMContainerV2(
                           child: Stack(),
