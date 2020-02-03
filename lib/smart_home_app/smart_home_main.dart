@@ -249,19 +249,34 @@ class _SMHomeState extends State<SMHome> {
 //                      offset: widget.blurOffset,
 //                      color: color.mix(Colors.black, 0.3))
                 ]),
+            padding: EdgeInsets.only(left: 48, right: 48),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(top: 16),
-                  child: Container(
-                    height: 6,
-                    width: 52,
-                    decoration: BoxDecoration(
-                      color: Colors.blueGrey.shade500,
-                      borderRadius: BorderRadius.circular(8)
+                  child: Center(
+                    child: Container(
+                      height: 6,
+                      width: 52,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey.shade500,
+                        borderRadius: BorderRadius.circular(8)
+                      ),
                     ),
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Text(
+                  "Quick remote access",
+                  style: TextStyle(
+                    color: Colors.blueGrey.shade600,
+                    fontSize: 22
+                  ),
+                ),
+                Text("Swipe up to get a fast access to your\nwireless remote control")
               ],
             ),
           ),
