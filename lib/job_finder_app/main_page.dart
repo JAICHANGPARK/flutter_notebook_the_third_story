@@ -79,8 +79,41 @@ class _MainPageState extends State<JopFinderMainPage> {
                     ],
                   ),
                 ),
-                Container()
+                SizedBox(width: 16,),
+                Container(
+                  height: 34,
+                  width: 96,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8)),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("\$ 40/h"),
+                      IconButton(
+                        padding: EdgeInsets.zero,
+                        icon: Icon(
+                          Icons.clear,
+                        ),
+                        onPressed: () {},
+                        iconSize: 16,
+                      )
+                    ],
+                  ),
+                ),
               ],
+            ),
+            Container(
+              height: 280,
+              width: double.infinity,
+              color: Colors.blueGrey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                    Text("For you")
+                ],
+              ),
             )
           ],
         ),
@@ -88,3 +121,21 @@ class _MainPageState extends State<JopFinderMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
