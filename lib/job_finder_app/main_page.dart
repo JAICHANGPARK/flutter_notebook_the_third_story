@@ -19,7 +19,48 @@ class JopFinderMainPage extends StatefulWidget {
 class _MainPageState extends State<JopFinderMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.blueGrey.shade50,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {  },
+        ),
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
