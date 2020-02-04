@@ -116,7 +116,6 @@ class _MainPageState extends State<JopFinderMainPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text("For you"),
-
                   Container(
                     height: 200,
                     color: Colors.red,
@@ -133,6 +132,17 @@ class _MainPageState extends State<JopFinderMainPage> {
                       ],
                     ),
                   )
+                ],
+              ),
+            ),
+            Container(
+              height: 240,
+              width: double.infinity,
+              color: Colors.blue,
+              child: Column(
+                children: <Widget>[
+                  Text("Recently Added"),
+
                 ],
               ),
             )
