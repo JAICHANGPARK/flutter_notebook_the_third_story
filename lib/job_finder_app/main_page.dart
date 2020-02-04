@@ -120,7 +120,18 @@ class _MainPageState extends State<JopFinderMainPage> {
                   Container(
                     height: 200,
                     color: Colors.red,
-                    child: ListView(),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
