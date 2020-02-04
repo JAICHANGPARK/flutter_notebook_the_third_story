@@ -31,6 +31,14 @@ class _MainPageState extends State<JopFinderMainPage> {
           icon: Icon(Icons.menu),
           onPressed: () {  },
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search), onPressed: () {  },
+          ),
+          IconButton(
+            icon: Icon(Icons.tune,), onPressed: () {  },
+          )
+        ],
       ),
     );
   }
