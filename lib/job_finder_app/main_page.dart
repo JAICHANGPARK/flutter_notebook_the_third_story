@@ -150,8 +150,9 @@ class _MainPageState extends State<JopFinderMainPage> {
                   child: ListView.builder(itemBuilder : (context, index){
                     return Container(
                       height: 86,
+                      margin: EdgeInsets.only(bottom: 8),
                       decoration: BoxDecoration(
-                        color: Colors.white
+                        color: Colors.white,
                       ),
                     );
 
