@@ -19,7 +19,7 @@ class JopFinderMainPage extends StatefulWidget {
 class _MainPageState extends State<JopFinderMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 

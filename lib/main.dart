@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notebook_the_third_story/smart_home_app/smart_home_main.dart';
+import 'package:notebook_the_third_story/job_finder_app/main_page.dart';
 
-void main() => runApp(SmartHomeApp());
+
+void main() => runApp(JobFinderApp());
 
