@@ -140,9 +140,23 @@ class _MainPageState extends State<JopFinderMainPage> {
               width: double.infinity,
               color: Colors.blue,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text("Recently Added"),
+                  Container(
+                    height: 220,
+                    color: Colors.green,
+                  child: ListView.builder(itemBuilder : (context, index){
+                    return Container(
+                      height: 86,
+                      decoration: BoxDecoration(
+                        color: Colors.white
+                      ),
+                    );
 
+                  })
+                  )
                 ],
               ),
             )
