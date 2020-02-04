@@ -79,7 +79,9 @@ class _MainPageState extends State<JopFinderMainPage> {
                     ],
                   ),
                 ),
-                SizedBox(width: 16,),
+                SizedBox(
+                  width: 16,
+                ),
                 Container(
                   height: 34,
                   width: 96,
@@ -104,14 +106,22 @@ class _MainPageState extends State<JopFinderMainPage> {
                 ),
               ],
             ),
+            SizedBox(height: 48,),
             Container(
-              height: 280,
+              height: 240,
               width: double.infinity,
               color: Colors.blueGrey,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                    Text("For you")
+                  Text("For you"),
+
+                  Container(
+                    height: 200,
+                    color: Colors.red,
+                    child: ListView(),
+                  )
                 ],
               ),
             )
@@ -121,6 +131,7 @@ class _MainPageState extends State<JopFinderMainPage> {
     );
   }
 }
+
 
 
 
