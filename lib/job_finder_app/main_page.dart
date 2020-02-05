@@ -210,10 +210,71 @@ class _MainPageState extends State<JopFinderMainPage> {
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width / 2,
+                          margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8)),
-                        )
+                          padding: EdgeInsets.only(left: 16, top: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Container(
+                                    height: 48,
+                                    width: 48,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade50,
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Google",
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 24,
+                                  ),
+                                  Container(
+                                    height: 32,
+                                    width: 60,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(4),
+                                      color: Colors.grey.shade50,
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Full time",
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 12),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 52,
+                              ),
+                              Text(
+                                "Product Designer",
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 16),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "\$60/h",
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18),
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   )
