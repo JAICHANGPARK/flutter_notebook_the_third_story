@@ -232,6 +232,7 @@ class _MainPageState extends State<JopFinderMainPage> {
                                         "Google",
                                         style: TextStyle(
                                           color: Colors.black,
+                                          fontSize: 12
                                         ),
                                       ),
                                     ),
@@ -345,9 +346,10 @@ class _MainPageState extends State<JopFinderMainPage> {
                                   ],
                                 ),
                               ),
-                              Spacer(
-                              ),
-                              Text("\$50/h", )
+                              Spacer(),
+                              Text(
+                                "\$50/h",
+                              )
                             ],
                           ),
                         );
