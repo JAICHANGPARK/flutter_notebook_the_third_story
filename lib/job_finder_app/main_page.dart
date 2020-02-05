@@ -56,55 +56,58 @@ class _MainPageState extends State<JopFinderMainPage> {
             SizedBox(
               height: 48,
             ),
-            Row(
-              children: <Widget>[
-                Container(
-                  height: 34,
-                  width: 108,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text("New York"),
-                      IconButton(
-                        icon: Icon(
-                          Icons.clear,
-                        ),
-                        onPressed: () {},
-                        iconSize: 16,
-                      )
-                    ],
+            Padding(
+              padding: EdgeInsets.only( left: 24),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    height: 34,
+                    width: 108,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("New York"),
+                        IconButton(
+                          icon: Icon(
+                            Icons.clear,
+                          ),
+                          onPressed: () {},
+                          iconSize: 16,
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 16,
-                ),
-                Container(
-                  height: 34,
-                  width: 96,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text("\$ 40/h"),
-                      IconButton(
-                        padding: EdgeInsets.zero,
-                        icon: Icon(
-                          Icons.clear,
-                        ),
-                        onPressed: () {},
-                        iconSize: 16,
-                      )
-                    ],
+                  SizedBox(
+                    width: 16,
                   ),
-                ),
-              ],
+                  Container(
+                    height: 34,
+                    width: 96,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("\$ 40/h"),
+                        IconButton(
+                          padding: EdgeInsets.zero,
+                          icon: Icon(
+                            Icons.clear,
+                          ),
+                          onPressed: () {},
+                          iconSize: 16,
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
             SizedBox(
               height: 48,
@@ -113,22 +116,31 @@ class _MainPageState extends State<JopFinderMainPage> {
               height: 240,
               width: double.infinity,
               margin: EdgeInsets.only( left: 24),
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("For you"),
+                  Text("For you", style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold
+                  ),),
                   Container(
                     height: 200,
-                    color: Colors.red,
+
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
                         Container(
                           width: MediaQuery.of(context).size.width / 2,
+                          margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                               color: Colors.black,
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(8)),
                         )
                       ],
@@ -155,7 +167,7 @@ class _MainPageState extends State<JopFinderMainPage> {
                   SizedBox(height: 16,),
                   Container(
                       height: 200,
-                     
+
                       child: ListView.builder(itemBuilder: (context, index) {
                         return Container(
                           height: 86,
