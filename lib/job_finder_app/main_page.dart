@@ -155,13 +155,14 @@ class _MainPageState extends State<JopFinderMainPage> {
                   SizedBox(height: 16,),
                   Container(
                       height: 200,
-                      color: Colors.green,
+                     
                       child: ListView.builder(itemBuilder: (context, index) {
                         return Container(
                           height: 86,
                           margin: EdgeInsets.only(bottom: 8),
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(8)
                           ),
                         );
                       }))
