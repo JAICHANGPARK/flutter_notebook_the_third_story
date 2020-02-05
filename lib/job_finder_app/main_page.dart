@@ -106,7 +106,9 @@ class _MainPageState extends State<JopFinderMainPage> {
                 ),
               ],
             ),
-            SizedBox(height: 48,),
+            SizedBox(
+              height: 48,
+            ),
             Container(
               height: 240,
               width: double.infinity,
@@ -125,9 +127,8 @@ class _MainPageState extends State<JopFinderMainPage> {
                         Container(
                           width: MediaQuery.of(context).size.width / 2,
                           decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(8)),
                         )
                       ],
                     ),
@@ -137,6 +138,7 @@ class _MainPageState extends State<JopFinderMainPage> {
             ),
             Container(
               height: 240,
+              margin: EdgeInsets.only(right: 24, left: 24),
               width: double.infinity,
               color: Colors.blue,
               child: Column(
@@ -145,19 +147,17 @@ class _MainPageState extends State<JopFinderMainPage> {
                 children: <Widget>[
                   Text("Recently Added"),
                   Container(
-                    height: 220,
-                    color: Colors.green,
-                  child: ListView.builder(itemBuilder : (context, index){
-                    return Container(
-                      height: 86,
-                      margin: EdgeInsets.only(bottom: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                      ),
-                    );
-
-                  })
-                  )
+                      height: 220,
+                      color: Colors.green,
+                      child: ListView.builder(itemBuilder: (context, index) {
+                        return Container(
+                          height: 86,
+                          margin: EdgeInsets.only(bottom: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        );
+                      }))
                 ],
               ),
             )
@@ -167,22 +167,3 @@ class _MainPageState extends State<JopFinderMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
