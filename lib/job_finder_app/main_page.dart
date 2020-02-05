@@ -189,17 +189,21 @@ class _MainPageState extends State<JopFinderMainPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(
+                                height: 52,
+                              ),
                               Text(
                                 "UI / UX Designer",
                                 style: TextStyle(
-                                  color: Colors.white,
-                                ),
+                                    color: Colors.white, fontSize: 16),
+                              ),
+                              SizedBox(
+                                height: 8,
                               ),
                               Text(
                                 "\$45/h",
                                 style: TextStyle(
-                                  color: Colors.white,
-                                ),
+                                    color: Colors.white, fontSize: 18),
                               ),
                             ],
                           ),
