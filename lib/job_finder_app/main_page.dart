@@ -112,7 +112,8 @@ class _MainPageState extends State<JopFinderMainPage> {
             Container(
               height: 240,
               width: double.infinity,
-              color: Colors.blueGrey,
+              margin: EdgeInsets.only( left: 24),
+
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,7 +141,7 @@ class _MainPageState extends State<JopFinderMainPage> {
               height: 240,
               margin: EdgeInsets.only(right: 24, left: 24),
               width: double.infinity,
-              color: Colors.blue,
+             
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
