@@ -306,11 +306,50 @@ class _MainPageState extends State<JopFinderMainPage> {
                       height: 200,
                       child: ListView.builder(itemBuilder: (context, index) {
                         return Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           height: 86,
                           margin: EdgeInsets.only(bottom: 8),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8)),
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                    color: Colors.pinkAccent.shade100,
+                                    borderRadius: BorderRadius.circular(8)),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text(
+                                      "Visual Designer",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "Airbnb Inc.",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Spacer(
+                              ),
+                              Text("\$50/h", )
+                            ],
+                          ),
                         );
                       }))
                 ],
