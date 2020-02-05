@@ -51,18 +51,31 @@ class _MainPageState extends State<JopFinderMainPage> {
             SizedBox(
               height: 32,
             ),
-            Text("Designer"),
-            Text("Job"),
-            SizedBox(
-              height: 48,
+            Padding(
+              padding: const EdgeInsets.only(left: 24),
+              child: Text(
+                "Designer",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              ),
             ),
             Padding(
-              padding: EdgeInsets.only( left: 24),
+              padding: const EdgeInsets.only(left: 24),
+              child: Text(
+                "Job",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              ),
+            ),
+            SizedBox(
+              height: 32,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 24),
               child: Row(
                 children: <Widget>[
                   Container(
                     height: 34,
-                    width: 108,
+                    width: 116,
+                    padding: EdgeInsets.only(left: 8),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8)),
@@ -115,18 +128,17 @@ class _MainPageState extends State<JopFinderMainPage> {
             Container(
               height: 240,
               width: double.infinity,
-              margin: EdgeInsets.only( left: 24),
+              margin: EdgeInsets.only(left: 24),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("For you", style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold
-                  ),),
+                  Text(
+                    "For you",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
                   Container(
                     height: 200,
-
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
@@ -149,33 +161,36 @@ class _MainPageState extends State<JopFinderMainPage> {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Container(
               height: 240,
               margin: EdgeInsets.only(right: 24, left: 24),
               width: double.infinity,
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("Recently Added", style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18
-                  ),),
-                  SizedBox(height: 16,),
+                  Text(
+                    "Recently Added",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Container(
                       height: 200,
-
                       child: ListView.builder(itemBuilder: (context, index) {
                         return Container(
                           height: 86,
                           margin: EdgeInsets.only(bottom: 8),
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8)),
                         );
                       }))
                 ],
