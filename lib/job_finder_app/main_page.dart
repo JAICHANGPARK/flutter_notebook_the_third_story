@@ -188,7 +188,19 @@ class _MainPageState extends State<JopFinderMainPage> {
                                     ),
                                   ),
                                 ],
-                              )
+                              ),
+                              Text(
+                                "UI / UX Designer",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "\$45/h",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                         ),
